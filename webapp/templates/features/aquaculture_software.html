@@ -1,0 +1,223 @@
+{% extends "features/_base_feature.html" %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block feature_title %}{% trans "Aquaculture Software Platform — Fish Farm Management" %}{% endblock %}
+{% block feature_description %}{% trans "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered." %}{% endblock %}
+{% block feature_og_title %}{% trans "Aquaculture Software Platform — Fish Farm Management" %}{% endblock %}
+{% block feature_og_description %}{% trans "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data." %}{% endblock %}
+{% block feature_twitter_title %}{% trans "Aquaculture Software Platform — Fish Farm Management" %}{% endblock %}
+{% block feature_twitter_description %}{% trans "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data." %}{% endblock %}
+
+{% block breadcrumb_title %}{% trans "Aquaculture Software" %}{% endblock %}
+{% block hero_tag %}{% trans "Aquaculture" %}{% endblock %}
+{% block hero_title %}{% trans "Aquaculture Software Platform" %}{% endblock %}
+{% block hero_subtitle %}{% trans "Complete fish farm management software built in Norway. Monitor water chemistry, manage feeding schedules, track batches, and run AI-powered dosing — all from a single dashboard. Designed for RAS, flow-through, and open-pen aquaculture." %}{% endblock %}
+
+{% block overview %}
+<p>{% trans "Managing a modern fish farm means tracking dozens of variables in real time — dissolved oxygen, pH, ammonia, temperature, feed conversion ratios, and mortality rates. Suderra's aquaculture software platform connects to every sensor on your facility and unifies all data into one system." %}</p>
+<p>{% trans "Whether you run a recirculating aquaculture system (RAS), flow-through facility, or open-pen operation, our platform adapts to your setup. The edge gateway stores data locally — so your farm stays operational even without internet. When connectivity returns, everything syncs automatically." %}</p>
+{% endblock %}
+
+{% block features_title %}{% trans "Key Aquaculture Features" %}{% endblock %}
+{% block features_grid %}
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+  </div>
+  <h3>{% trans "Water Chemistry Engine" %}</h3>
+  <p>{% trans "Real-time monitoring of pH, dissolved oxygen, ammonia, nitrite, nitrate, CO₂, and alkalinity. Science-based calculations using published formulas — not guesswork." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  </div>
+  <h3>{% trans "Real-Time Dashboard" %}</h3>
+  <p>{% trans "Unified view of all sensors, tanks, and systems. Historical trends, anomaly alerts, and AI-driven insights — accessible from desktop and mobile." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09c-.658.003-1.25.396-1.51 1z"/></svg>
+  </div>
+  <h3>{% trans "Feed Management" %}</h3>
+  <p>{% trans "Automated feeding schedules, feed conversion ratio (FCR) tracking, and AI-optimized dosing. Reduce feed waste while maximizing growth rates." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M16 4h2a2 2 0 012 2v14a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h2"/><rect x="8" y="2" width="8" height="4" rx="1"/><path d="M9 14l2 2 4-4"/></svg>
+  </div>
+  <h3>{% trans "Batch Tracking" %}</h3>
+  <p>{% trans "Full lifecycle tracking from smolt to harvest. Mortality analysis, growth curves, biomass estimation, and cohort comparison — all automated." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+  </div>
+  <h3>{% trans "Smart Alerts" %}</h3>
+  <p>{% trans "AI-driven anomaly detection with multi-channel alerts via SMS, email, and push notifications. Know about problems before they become crises." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 8-2-4-4-6.05-4-8a4 4 0 014-4z"/><circle cx="12" cy="14" r="3"/><path d="M5 19.5C5.5 17 8 15.5 12 15.5s6.5 1.5 7 4"/></svg>
+  </div>
+  <h3>{% trans "RAS Optimization" %}</h3>
+  <p>{% trans "Designed for recirculating aquaculture systems. Monitor biofilter performance, water exchange rates, and system efficiency in real time." %}</p>
+</div>
+{% endblock %}
+
+{% block benefits_title %}{% trans "Why Choose Suderra for Aquaculture" %}{% endblock %}
+{% block benefits %}
+<div class="benefits-grid">
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Built in Norway, for Norway" %}</h3>
+      <p>{% trans "Developed by a team with deep aquaculture expertise. We understand Norwegian fish farming regulations, Mattilsynet reporting requirements, and the unique challenges of cold-water species." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Offline-First Architecture" %}</h3>
+      <p>{% trans "Remote fish farms don't always have reliable internet. Our edge gateway stores data locally, and the mobile app works without signal. No data loss, ever." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "No Vendor Lock-In" %}</h3>
+      <p>{% trans "Supports 8+ pump/motor brands and all major industrial protocols (MQTT, Modbus, OPC-UA). Connect any sensor from any manufacturer." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Science-Based AI" %}</h3>
+      <p>{% trans "Our AI uses published scientific formulas — not black-box models. Every recommendation is traceable and explainable. Operators decide what the AI can auto-execute." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block faq %}
+<div class="faq-item">
+  <button class="faq-question">{% trans "What types of aquaculture facilities does Suderra support?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Can Suderra integrate with my existing sensors?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss. The system auto-registers new sensors from all major manufacturers." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Does Suderra work without internet?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection. When connectivity returns, data syncs automatically — no data loss." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "How does the AI work in Suderra?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra's AI engine uses published scientific formulas and peer-reviewed data for every calculation. The AI Engineer detects anomalies and identifies root causes. The AI Manager suggests corrective actions. Operators control what the AI can auto-execute." %}</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block related_pages %}
+<a href="{% url 'feature_regulatory' %}" class="feature-related-card">
+  <h3>{% trans "Regulatory Compliance" %}</h3>
+  <p>{% trans "Automated Mattilsynet reporting and Norwegian fish farm regulations" %}</p>
+</a>
+<a href="{% url 'feature_automation' %}" class="feature-related-card">
+  <h3>{% trans "Smart Automation" %}</h3>
+  <p>{% trans "IoT sensor integration, feeder automation, and dosing control" %}</p>
+</a>
+<a href="{% url 'feature_soilless' %}" class="feature-related-card">
+  <h3>{% trans "Soilless Culture" %}</h3>
+  <p>{% trans "Hydroponics, aquaponics, and vertical farming management" %}</p>
+</a>
+<a href="{% url 'feature_waste_water' %}" class="feature-related-card">
+  <h3>{% trans "Waste Water Treatment" %}</h3>
+  <p>{% trans "Water quality monitoring and effluent management" %}</p>
+</a>
+{% endblock %}
+
+{% block feature_schema %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Aquaculture Software Platform",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web, iOS, Android",
+  "description": "Complete fish farm management software for RAS monitoring, water chemistry, feed management, batch tracking, and AI-powered dosing.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com"
+  },
+  "featureList": ["Water chemistry monitoring", "Feed management", "Batch tracking", "AI-powered dosing", "RAS optimization", "Offline-first mobile app", "Multi-protocol sensor integration"]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of aquaculture facilities does Suderra support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Suderra integrate with my existing sensors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Suderra work without internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the AI work in Suderra?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra's AI engine uses published scientific formulas and peer-reviewed data. The AI Engineer detects anomalies and the AI Manager suggests corrective actions. Operators control what the AI can auto-execute."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "Aquaculture Software", "item": "https://suderra.com{{ request.path }}"}
+  ]
+}
+</script>
+{% endblock %}

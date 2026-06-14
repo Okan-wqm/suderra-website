@@ -1,0 +1,1596 @@
+# Suderra Website Translations - Norwegian Bokmål
+# Copyright (C) 2026 Suderra AS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: no\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# ============================================================
+#  Navigation & UI  (base.html)
+# ============================================================
+
+#: templates/base.html
+msgid "Toggle Menu"
+msgstr "Veksle meny"
+
+#: templates/base.html
+msgid "Home"
+msgstr "Hjem"
+
+#: templates/base.html
+msgid "Our Technology"
+msgstr "Vår teknologi"
+
+#: templates/base.html
+msgid "Our Services"
+msgstr "Våre tjenester"
+
+#: templates/base.html
+msgid "About Us"
+msgstr "Om oss"
+
+#: templates/base.html
+msgid "Contact Us"
+msgstr "Kontakt oss"
+
+#: templates/base.html
+msgid "All rights reserved."
+msgstr "Alle rettigheter forbeholdt."
+
+#: templates/base.html
+msgid "Technology"
+msgstr "Teknologi"
+
+#: templates/base.html
+msgid "Services"
+msgstr "Tjenester"
+
+#: templates/base.html
+msgid "About"
+msgstr "Om oss"
+
+#: templates/base.html
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/base.html
+msgid "Client Portal"
+msgstr "Kundeportal"
+
+#: templates/base.html
+msgid "Change language"
+msgstr "Endre språk"
+
+# ============================================================
+#  SEO / Open Graph  (base.html)
+# ============================================================
+
+#: templates/base.html
+msgid "Innovating Aquaculture & Aquaponics for a Sustainable Future."
+msgstr "Innovasjon innen akvakultur og akvaponikk for en bærekraftig fremtid."
+
+#: templates/base.html
+msgid "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring."
+msgstr "Norsk akvakultteknologiselskap som spesialiserer seg på patentert optisk sensorteknologi for sanntids vannkvalitetsovervåking."
+
+# ============================================================
+#  Cookie Consent Banner  (base.html)
+# ============================================================
+
+#: templates/base.html
+msgid "We use cookies to improve your experience on our website. By continuing to browse, you consent to our use of cookies."
+msgstr "Vi bruker informasjonskapsler for å forbedre opplevelsen din på nettstedet vårt. Ved å fortsette å surfe, samtykker du til vår bruk av informasjonskapsler."
+
+#: templates/base.html
+msgid "Learn more"
+msgstr "Les mer"
+
+#: templates/base.html
+msgid "Accept"
+msgstr "Godta"
+
+#: templates/base.html
+msgid "Decline"
+msgstr "Avvis"
+
+# ============================================================
+#  Language Names  (base.html)
+# ============================================================
+
+#: templates/base.html
+msgid "English"
+msgstr "Engelsk"
+
+#: templates/base.html
+msgid "Norwegian"
+msgstr "Norsk"
+
+#: templates/base.html
+msgid "Turkish"
+msgstr "Tyrkisk"
+
+#: templates/base.html
+msgid "Arabic"
+msgstr "Arabisk"
+
+# ============================================================
+#  Hero Section  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Your browser does not support the video tag."
+msgstr "Nettleseren din støtter ikke video-taggen."
+
+#: templates/index.html
+msgid "Modular Operations Intelligence"
+msgstr "Modulær driftsintelligens"
+
+#: templates/index.html
+msgid "One Platform."
+msgstr "Én plattform."
+
+#: templates/index.html
+msgid "Every Facility."
+msgstr "Hvert anlegg."
+
+#: templates/index.html
+msgid ""
+"Suderra Software connects to all your sensors, collects data in one place, "
+"and turns it into actionable decisions — before problems happen. "
+"Sector-agnostic. Offline-first. AI-powered."
+msgstr ""
+"Suderra Software kobler seg til alle sensorene dine, samler data på ett "
+"sted og gjør dem om til handlingsrettede beslutninger — før problemer "
+"oppstår. Sektoruavhengig. Frakoblet først. AI-drevet."
+
+#: templates/index.html
+msgid "Explore Platform"
+msgstr "Utforsk plattformen"
+
+#: templates/index.html
+msgid "Launch Dashboard"
+msgstr "Åpne dashboard"
+
+#: templates/index.html
+msgid "Microservices"
+msgstr "Mikrotjenester"
+
+#: templates/index.html
+msgid "Pump/Motor Brands"
+msgstr "Pumpe-/motormerker"
+
+#: templates/index.html
+msgid "Industrial Protocols"
+msgstr "Industrielle protokoller"
+
+#: templates/index.html
+msgid "Global Offices"
+msgstr "Globale kontorer"
+
+#: templates/index.html
+msgid "Scroll"
+msgstr "Bla ned"
+
+# ============================================================
+#  Technology Section — The Platform  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "The Platform"
+msgstr "Plattformen"
+
+#: templates/index.html
+msgid "Software for Action"
+msgstr "Programvare for handling"
+
+#: templates/index.html
+msgid ""
+"One sensor platform that plugs into any production facility — fish farms, "
+"greenhouses, waste water plants, or any combination. Sector-agnostic. "
+"Protocol-native. AI-powered."
+msgstr ""
+"Én sensorplattform som kobles til ethvert produksjonsanlegg — fiskeoppdrett, "
+"drivhus, avløpsvannrenseanlegg, eller enhver kombinasjon. Sektoruavhengig. "
+"Protokollnativ. AI-drevet."
+
+#: templates/index.html
+msgid ""
+"A fish farm runs dozens of sensors — water temperature, dissolved oxygen, "
+"pH, ammonia. A greenhouse measures EC, humidity, nutrient levels. A waste "
+"water plant tracks flow, TSS, and chemical load. <strong>Suderra "
+"Software</strong> connects to all of them, collects the data in one place, "
+"and turns it into <strong>actionable decisions</strong> — before problems "
+"happen."
+msgstr ""
+"Et fiskeoppdrettsanlegg kjører dusinvis av sensorer — vanntemperatur, "
+"oppløst oksygen, pH, ammoniakk. Et drivhus måler EC, fuktighet, "
+"næringsnivåer. Et avløpsvannrenseanlegg sporer gjennomstrømning, suspendert "
+"stoff og kjemisk belastning. <strong>Suderra Software</strong> kobler seg "
+"til alle, samler dataene på ett sted og gjør dem om til "
+"<strong>handlingsrettede beslutninger</strong> — før problemer oppstår."
+
+#: templates/index.html
+msgid "Sensor Module"
+msgstr "Sensormodul"
+
+#: templates/index.html
+msgid "Universal Sensor Integration"
+msgstr "Universell sensorintegrasjon"
+
+#: templates/index.html
+msgid ""
+"Speaks every major industrial protocol — MQTT, Modbus, OPC-UA. Supports 8+ "
+"pump/motor brands. One installation, fast setup. Edge gateway stores data "
+"locally — no cloud dependency. Auto-registers new sensors from all major "
+"manufacturers."
+msgstr ""
+"Støtter alle store industrielle protokoller — MQTT, Modbus, OPC-UA. Støtter "
+"8+ pumpe-/motormerker. Én installasjon, rask oppstart. Edge-gateway lagrer "
+"data lokalt — ingen skyavhengighet. Registrerer automatisk nye sensorer fra "
+"alle store produsenter."
+
+#: templates/index.html
+msgid "Operations"
+msgstr "Drift"
+
+#: templates/index.html
+msgid "Sector-Specific Intelligence"
+msgstr "Sektorspesifikk intelligens"
+
+#: templates/index.html
+msgid ""
+"Modular architecture where each sector gets its own operations module. Fish "
+"farm: batch management, feed plans, mortality tracking. Soilless culture: "
+"nutrient recipes, growth stages. Waste water: flow monitoring, chemical "
+"load. Each new sector reuses 70%% of existing code."
+msgstr ""
+"Modulær arkitektur der hver sektor får sin egen driftsmodul. Fiskeoppdrett: "
+"batchstyring, fôrplaner, dødelighetsovervåking. Jordløs dyrking: "
+"næringsoppskrifter, vekststadier. Avløpsvann: strømningsmåling, kjemisk "
+"belastning. Hver ny sektor gjenbruker %%70 av eksisterende kode."
+
+#: templates/index.html
+msgid "AI Engine"
+msgstr "AI-motor"
+
+#: templates/index.html
+msgid "Science-Based Decision Making"
+msgstr "Vitenskapsbasert beslutningstaking"
+
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision uses published "
+"scientific formulas and peer-reviewed data. The AI engineer detects "
+"anomalies, identifies root causes, and the AI manager suggests corrective "
+"actions. Operators control what AI can auto-execute."
+msgstr ""
+"Vår AI beregner — den gjetter ikke. Hver beslutning bruker publiserte "
+"vitenskapelige formler og fagfellevurderte data. AI-ingeniøren oppdager "
+"avvik, identifiserer rotårsaker, og AI-manageren foreslår korrigerende "
+"tiltak. Operatører kontrollerer hva AI kan utføre automatisk."
+
+#: templates/index.html
+msgid "Suderra platform dashboard visualization"
+msgstr "Visualisering av Suderra-plattformens dashboard"
+
+#: templates/index.html
+msgid "Platform dashboard"
+msgstr "Plattform-dashboard"
+
+#: templates/index.html
+msgid "Production-Ready. 13 Microservices."
+msgstr "Produksjonsklar. 13 mikrotjenester."
+
+#: templates/index.html
+msgid "Real-time dashboards"
+msgstr "Sanntids dashboards"
+
+#: templates/index.html
+msgid "Water chemistry engine"
+msgstr "Vannkjemimotor"
+
+#: templates/index.html
+msgid "Visual automation builder"
+msgstr "Visuell automatiseringsbygger"
+
+#: templates/index.html
+msgid "Offline-first mobile app"
+msgstr "Frakoblet-først mobilapp"
+
+#: templates/index.html
+msgid "Multi-tenant SaaS"
+msgstr "Flerleietaker-SaaS"
+
+#: templates/index.html
+msgid "Smart alerts (SMS/email/push)"
+msgstr "Smarte varsler (SMS/e-post/push)"
+
+#: templates/index.html
+msgid "8+ VFD/pump brands"
+msgstr "8+ VFD/pumpemerker"
+
+#: templates/index.html
+msgid "Edge gateway (local-first)"
+msgstr "Edge-gateway (lokalt først)"
+
+#: templates/index.html
+msgid "Nutrient calculator (24+ presets)"
+msgstr "Næringskalkulator (24+ forhåndsinnstillinger)"
+
+#: templates/index.html
+msgid "Supported By"
+msgstr "Støttet av"
+
+#: templates/index.html
+msgid "Eksfin"
+msgstr "Eksfin"
+
+#: templates/index.html
+msgid "Innovation Norway"
+msgstr "Innovasjon Norge"
+
+#: templates/index.html
+msgid "Research Council of Norway"
+msgstr "Norges forskningsråd"
+
+# ============================================================
+#  Services / Sectors Section  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Sectors"
+msgstr "Sektorer"
+
+#: templates/index.html
+msgid "One Platform, Every Sector"
+msgstr "Én plattform, hver sektor"
+
+#: templates/index.html
+msgid "Each new sector reuses 70% of existing code. We add a module — the core platform stays the same."
+msgstr "Hver ny sektor gjenbruker 70 % av eksisterende kode. Vi legger til en modul — kjerneplattformen forblir den samme."
+
+#: templates/index.html
+msgid "LIVE"
+msgstr "AKTIV"
+
+#: templates/index.html
+msgid "BETA"
+msgstr "BETA"
+
+#: templates/index.html
+msgid "Aquaculture"
+msgstr "Akvakultur"
+
+#: templates/index.html
+msgid ""
+"RAS design, water chemistry monitoring, feed management, batch tracking, "
+"mortality analysis. Full fish farm operations intelligence with AI-driven "
+"dosing and real-time alerts."
+msgstr ""
+"RAS-design, vannkjemiovervåking, fôrstyring, batchsporing, "
+"dødelighetsanalyse. Full fiskeoppdrettsdriftsintelligens med AI-drevet "
+"dosering og sanntidsvarsler."
+
+#: templates/index.html
+msgid "Soilless Culture"
+msgstr "Jordløs dyrking"
+
+#: templates/index.html
+msgid ""
+"Nutrient recipe management, EC/pH/humidity monitoring, growth stage "
+"tracking, climate control integration. Hydroponics and aquaponics ready "
+"with 24+ nutrient presets."
+msgstr ""
+"Næringsoppskriftsstyring, EC/pH/fuktighetsmåling, vekststadiestyring, "
+"klimakontrollintegrasjon. Klar for hydroponikk og akvaponikk med 24+ "
+"næringsforhåndsinnstillinger."
+
+#: templates/index.html
+msgid "Waste Water"
+msgstr "Avløpsvann"
+
+#: templates/index.html
+msgid ""
+"Flow monitoring, TSS tracking, chemical load optimization, regulatory "
+"compliance reporting. Advanced reagent-free data collection and treatment "
+"plant intelligence."
+msgstr ""
+"Strømningsmåling, suspendert stoff-sporing, kjemisk "
+"belastningsoptimalisering, rapportering av regelverksetterlevelse. Avansert "
+"reagensfri datainnsamling og renseanleggsintelligens."
+
+#: templates/index.html
+msgid "Next Sectors"
+msgstr "Neste sektorer"
+
+#: templates/index.html
+msgid ""
+"The modular architecture allows rapid expansion into new industrial "
+"verticals — any sector that runs sensors and needs operational intelligence. "
+"One platform, unlimited potential."
+msgstr ""
+"Den modulære arkitekturen muliggjør rask ekspansjon til nye industrielle "
+"vertikaler — enhver sektor som bruker sensorer og trenger "
+"driftsintelligens. Én plattform, ubegrenset potensial."
+
+# ============================================================
+#  Core Promise  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Any Brand"
+msgstr "Ethvert merke"
+
+#: templates/index.html
+msgid "Siemens, ABB, Grundfos, Danfoss — connect every manufacturer."
+msgstr "Siemens, ABB, Grundfos, Danfoss — koble til enhver produsent."
+
+#: templates/index.html
+msgid "Any Sensor"
+msgstr "Enhver sensor"
+
+#: templates/index.html
+msgid "pH, O₂, temperature, flow, pressure — every data point, unified."
+msgstr "pH, O₂, temperatur, gjennomstrømning, trykk — hvert datapunkt, samlet."
+
+#: templates/index.html
+msgid "One Platform"
+msgstr "Én plattform"
+
+#: templates/index.html
+msgid "Reports, automation, AI — all in a single dashboard."
+msgstr "Rapporter, automasjon, AI — alt i ett dashboard."
+
+#: templates/index.html
+msgid ""
+"It doesn't matter which manufacturer built your sensors, PLCs, or pumps. "
+"Suderra connects to all of them — collects every data point, generates "
+"unified reports, and runs automation programs for feeding schedules, water "
+"quality dosing, climate control, and more. No vendor lock-in. No data "
+"silos. Just one system that speaks every protocol."
+msgstr ""
+"Det spiller ingen rolle hvilken produsent som bygde sensorene, PLS-ene "
+"eller pumpene dine. Suderra kobler seg til alle — samler hvert datapunkt, "
+"genererer samlede rapporter og kjører automatiseringsprogrammer for "
+"fôrplaner, vannkvalitetsdosering, klimakontroll og mer. Ingen "
+"leverandørlåsing. Ingen datasiloer. Bare ett system som snakker alle "
+"protokoller."
+
+#: templates/index.html
+msgid "Brand-agnostic data collection"
+msgstr "Merkevarenøytral datainnsamling"
+
+#: templates/index.html
+msgid "Unified reporting & analytics"
+msgstr "Samlet rapportering og analyse"
+
+#: templates/index.html
+msgid "Feeding & dosing automation"
+msgstr "Fôr- og doseringsautomasjon"
+
+#: templates/index.html
+msgid "Water quality management"
+msgstr "Vannkvalitetsstyring"
+
+#: templates/index.html
+msgid "No vendor lock-in"
+msgstr "Ingen leverandørlåsing"
+
+# ============================================================
+#  How It Works  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "How It Works"
+msgstr "Slik fungerer det"
+
+#: templates/index.html
+msgid "From sensors to decisions — in four steps."
+msgstr "Fra sensorer til beslutninger — i fire steg."
+
+#. How It Works — Step 1 (reuses "Sensor Module" from Technology Section)
+#: templates/index.html
+msgid ""
+"Connects to any sensor or device on site. Stores all data locally at the "
+"facility via edge gateway — no cloud dependency. Auto-registers new sensors. "
+"Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands."
+msgstr ""
+"Kobler til enhver sensor eller enhet på stedet. Lagrer alle data lokalt på "
+"anlegget via edge-gateway — ingen skyavhengighet. Registrerer automatisk "
+"nye sensorer. Støtter MQTT, Modbus, OPC-UA-protokoller og 8+ "
+"pumpe-/motormerker."
+
+#: templates/index.html
+msgid "Operations Modules"
+msgstr "Driftsmoduler"
+
+#: templates/index.html
+msgid ""
+"Sector-specific modules add meaning to data. The fish farm module knows "
+"batch management, feed plans, and mortality. The soilless culture module "
+"knows nutrient recipes and growth stages."
+msgstr ""
+"Sektorspesifikke moduler gir mening til data. Fiskeoppdrettsmodulen "
+"kjenner batchstyring, fôrplaner og dødelighet. Jordløs dyrking-modulen "
+"kjenner næringsoppskrifter og vekststadier."
+
+#. How It Works — Step 3 (reuses "AI Engine" from Technology Section)
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision is based on published "
+"scientific formulas and peer-reviewed data. AI detects anomalies, identifies "
+"root causes, and suggests corrective actions."
+msgstr ""
+"Vår AI beregner — den gjetter ikke. Hver beslutning er basert på publiserte "
+"vitenskapelige formler og fagfellevurderte data. AI oppdager avvik, "
+"identifiserer rotårsaker og foreslår korrigerende tiltak."
+
+#: templates/index.html
+msgid "Mobile App"
+msgstr "Mobilapp"
+
+#: templates/index.html
+msgid ""
+"Offline-first mobile app works without signal. Operators check sensor data, "
+"receive alerts, and manage operations from anywhere. Data syncs "
+"automatically when connection returns."
+msgstr ""
+"Frakoblet-først mobilapp fungerer uten signal. Operatører sjekker "
+"sensordata, mottar varsler og styrer drift fra hvor som helst. Data "
+"synkroniseres automatisk når tilkoblingen gjenopprettes."
+
+# ============================================================
+#  About Section  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Who We Are"
+msgstr "Hvem vi er"
+
+#: templates/index.html
+msgid "About Suderra"
+msgstr "Om Suderra"
+
+#: templates/index.html
+msgid "A vertically integrated aquaculture technology company with offices in Norway and Turkey, delivering end-to-end solutions from engineering to production."
+msgstr "Et vertikalt integrert akvakultteknologiselskap med kontorer i Norge og Tyrkia, som leverer helhetlige løsninger fra prosjektering til produksjon."
+
+#: templates/index.html
+msgid "Our Impact"
+msgstr "Vår påvirkning"
+
+#: templates/index.html
+msgid "Before installation"
+msgstr "Før installasjon"
+
+#: templates/index.html
+msgid "Before"
+msgstr "Før"
+
+#: templates/index.html
+msgid "After installation"
+msgstr "Etter installasjon"
+
+#: templates/index.html
+msgid "After"
+msgstr "Etter"
+
+#: templates/index.html
+msgid ""
+"Suderra AS is a vertically integrated aquaculture technology company "
+"headquartered in Sandefjord, Norway with operations in Izmir, Turkey. We "
+"combine patented optical sensor R&D, advanced engineering design, equipment "
+"manufacturing, and hands-on fish farming expertise under one roof — giving "
+"our clients a single partner for their entire aquaculture journey."
+msgstr ""
+"Suderra AS er et vertikalt integrert akvakultteknologiselskap med "
+"hovedkontor i Sandefjord, Norge, og virksomhet i Izmir, Tyrkia. Vi "
+"kombinerer patentert optisk sensor-FoU, avansert ingeniørdesign, "
+"utstyrsproduksjon og praktisk fiskeoppdrettsekspertise under ett tak — og "
+"gir våre kunder én partner for hele sin akvakulturreise."
+
+# ============================================================
+#  Contact Section  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Let's Connect"
+msgstr "Ta kontakt"
+
+#: templates/index.html
+msgid "For more information about our services, technologies, or partnership opportunities, feel free to reach out to us directly."
+msgstr "For mer informasjon om våre tjenester, teknologier eller partnerskapsmuligheter, ta gjerne kontakt med oss direkte."
+
+#: templates/index.html
+msgid "Norway Office — Headquarters"
+msgstr "Norgeskontoret — Hovedkontor"
+
+#: templates/index.html
+msgid "Turkey Office — Manufacturing & Operations"
+msgstr "Tyrkia-kontoret — Produksjon og drift"
+
+#: templates/index.html
+msgid "Suderra Norway office"
+msgstr "Suderra Norgeskontor"
+
+#: templates/index.html
+msgid "Patented Technology"
+msgstr "Patentert teknologi"
+
+#: templates/index.html
+msgid "Government Backed"
+msgstr "Statsstøttet"
+
+#: templates/index.html
+msgid "2 Global Offices"
+msgstr "2 globale kontorer"
+
+#: templates/index.html
+msgid "Get in Touch"
+msgstr "Ta kontakt"
+
+#: templates/index.html
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "Fyll ut skjemaet nedenfor, så svarer vi innen 24 timer."
+
+#: templates/index.html
+msgid "Full Name"
+msgstr "Fullt navn"
+
+#: templates/index.html
+msgid "Company"
+msgstr "Selskap"
+
+#: templates/index.html
+msgid "Email Address"
+msgstr "E-postadresse"
+
+#: templates/index.html
+msgid "Your Message"
+msgstr "Din melding"
+
+#: templates/index.html
+msgid "Send Message"
+msgstr "Send melding"
+
+#: templates/index.html
+msgid "Back to top"
+msgstr "Til toppen"
+
+# ============================================================
+#  Footer  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Quick Links"
+msgstr "Hurtiglenker"
+
+#: templates/index.html
+msgid "Recirculating Aquaculture"
+msgstr "Resirkulerende akvakultur"
+
+#: templates/index.html
+msgid "Aquaponics"
+msgstr "Akvaponikk"
+
+#: templates/index.html
+msgid "Smart Monitoring"
+msgstr "Smart overvåking"
+
+#: templates/index.html
+msgid "Ocean Monitoring"
+msgstr "Havovervåking"
+
+#: templates/index.html
+msgid "Hydroponics"
+msgstr "Hydroponikk"
+
+#: templates/index.html
+msgid "Norway"
+msgstr "Norge"
+
+#: templates/index.html
+msgid "Turkey"
+msgstr "Tyrkia"
+
+#: templates/index.html
+msgid "Newsletter"
+msgstr "Nyhetsbrev"
+
+#: templates/index.html
+msgid "Your email"
+msgstr "Din e-post"
+
+#: templates/index.html
+msgid "Subscribe"
+msgstr "Abonner"
+
+# ============================================================
+#  Contact Form JS Messages  (index.html)
+# ============================================================
+
+#: templates/index.html
+msgid "Please fill in all required fields."
+msgstr "Vennligst fyll ut alle obligatoriske felt."
+
+#: templates/index.html
+msgid "Please enter a valid email address."
+msgstr "Vennligst oppgi en gyldig e-postadresse."
+
+#: templates/index.html
+msgid "Sending..."
+msgstr "Sender..."
+
+#: templates/index.html
+msgid "Message sent successfully! We will get back to you soon."
+msgstr "Meldingen ble sendt! Vi svarer deg så snart som mulig."
+
+#: templates/index.html
+msgid "Something went wrong. Please try again."
+msgstr "Noe gikk galt. Vennligst prøv igjen."
+
+#: templates/index.html
+msgid "An error occurred. Please try again later."
+msgstr "En feil oppstod. Vennligst prøv igjen senere."
+
+# ============================================================
+#  404 Error Page  (404.html)
+# ============================================================
+
+#: templates/404.html
+msgid "Page Not Found"
+msgstr "Siden ble ikke funnet"
+
+#: templates/404.html
+msgid "Sorry, the page you are looking for does not exist or has been moved."
+msgstr "Beklager, siden du leter etter finnes ikke eller har blitt flyttet."
+
+#: templates/404.html
+msgid "Back to Home"
+msgstr "Tilbake til forsiden"
+
+#: templates/404.html
+msgid "The page you are looking for could not be found."
+msgstr "Siden du leter etter ble ikke funnet."
+
+# ============================================================
+#  500 Error Page (500.html)
+# ============================================================
+
+#: templates/500.html
+msgid "Server Error"
+msgstr "Serverfeil"
+
+#: templates/500.html
+msgid ""
+"Something went wrong on our end. Our team has been notified and is working "
+"to fix the issue. Please try again later."
+msgstr ""
+"Noe gikk galt på vår side. Teamet vårt har blitt varslet og jobber med å "
+"fikse problemet. Prøv igjen senere."
+
+# ============================================================
+#  Accessibility (base.html)
+# ============================================================
+
+#: templates/base.html
+msgid "Skip to main content"
+msgstr "Hopp til hovedinnhold"
+
+# ============================================================
+#  Client Portal  (various templates)
+# ============================================================
+
+#: templates/index.html
+msgid "Client access required"
+msgstr "Kundetilgang kreves"
+
+# ============================================================
+#  Feature Pages - Shared (features/_base_feature.html)
+# ============================================================
+
+#: templates/features/_base_feature.html
+msgid "Breadcrumb"
+msgstr "Brødsti"
+
+#: templates/features/_base_feature.html
+msgid "Key Features"
+msgstr "Hovedfunksjoner"
+
+#: templates/features/_base_feature.html
+msgid "Why Suderra"
+msgstr "Hvorfor Suderra"
+
+#: templates/features/_base_feature.html
+msgid "Frequently Asked Questions"
+msgstr "Ofte stilte spørsmål"
+
+#: templates/features/_base_feature.html
+msgid "Ready to Get Started?"
+msgstr "Klar til å komme i gang?"
+
+#: templates/features/_base_feature.html
+msgid "Contact our team to learn how Suderra can transform your operations."
+msgstr "Kontakt teamet vårt for å lære hvordan Suderra kan transformere driften din."
+
+#: templates/features/_base_feature.html
+msgid "Get in Touch"
+msgstr "Ta kontakt"
+
+#: templates/features/_base_feature.html
+msgid "Explore More"
+msgstr "Utforsk mer"
+
+#: templates/features/_base_feature.html
+msgid "Aquaculture Software"
+msgstr "Akvakulturprogramvare"
+
+#: templates/features/_base_feature.html
+msgid "Complete fish farm management platform"
+msgstr "Komplett plattform for fiskeoppdrettsstyring"
+
+#: templates/features/_base_feature.html
+msgid "Regulatory Compliance"
+msgstr "Regulatorisk overholdelse"
+
+#: templates/features/_base_feature.html
+msgid "Automated reporting for Norwegian regulations"
+msgstr "Automatisert rapportering for norske forskrifter"
+
+#: templates/features/_base_feature.html
+msgid "Smart Automation"
+msgstr "Smart automatisering"
+
+#: templates/features/_base_feature.html
+msgid "IoT sensor integration and automation"
+msgstr "IoT-sensorintegrasjon og automatisering"
+
+#: templates/features/_base_feature.html
+msgid "Soilless Culture"
+msgstr "Jordløs dyrking"
+
+#: templates/features/_base_feature.html
+msgid "Hydroponics and vertical farming management"
+msgstr "Hydroponics og vertikalt landbruksstyring"
+
+#: templates/features/_base_feature.html
+msgid "Waste Water Treatment"
+msgstr "Avløpsvannsbehandling"
+
+#: templates/features/_base_feature.html
+msgid "Water quality monitoring and effluent management"
+msgstr "Vannovervåking og utslippshåndtering"
+
+#: templates/features/_base_feature.html
+msgid "Solutions"
+msgstr "Løsninger"
+
+#: templates/features/_base_feature.html
+msgid "Company"
+msgstr "Selskapet"
+
+#: templates/features/_base_feature.html
+msgid "Learn More"
+msgstr "Les mer"
+
+# ============================================================
+#  Feature Page - Aquaculture Software
+# ============================================================
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform — Fish Farm Management"
+msgstr "Akvakultur programvareplattform — Fiskeoppdrettsstyring"
+
+#: templates/features/aquaculture.html
+msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered."
+msgstr "Norskutviklet akvakulturprogramvare for RAS-overvåking, lakseoppdrett, vannkjemi, fôrstyring og sanntids sensordata. Offline-first. AI-drevet."
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture"
+msgstr "Akvakultur"
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform"
+msgstr "Akvakultur programvareplattform"
+
+#: templates/features/aquaculture.html
+msgid "Complete fish farm management software built in Norway. Monitor water chemistry, manage feeding schedules, track batches, and run AI-powered dosing — all from a single dashboard. Designed for RAS, flow-through, and open-pen aquaculture."
+msgstr "Komplett programvare for fiskeoppdrettsstyring bygget i Norge. Overvåk vannkjemi, administrer fôringsplaner, spor partier og kjør AI-drevet dosering — alt fra ett dashbord. Designet for RAS, gjennomstrømning og åpent merd-oppdrett."
+
+#: templates/features/aquaculture.html
+msgid "Managing a modern fish farm means tracking dozens of variables in real time — dissolved oxygen, pH, ammonia, temperature, feed conversion ratios, and mortality rates. Suderra's aquaculture software platform connects to every sensor on your facility and unifies all data into one system."
+msgstr "Å drive et moderne fiskeoppdrett betyr å spore dusinvis av variabler i sanntid — oppløst oksygen, pH, ammoniakk, temperatur, fôrfaktor og dødelighet. Suderras akvakultur programvareplattform kobler seg til alle sensorer på anlegget ditt og samler alle data i ett system."
+
+#: templates/features/aquaculture.html
+msgid "Whether you run a recirculating aquaculture system (RAS), flow-through facility, or open-pen operation, our platform adapts to your setup. The edge gateway stores data locally — so your farm stays operational even without internet. When connectivity returns, everything syncs automatically."
+msgstr "Enten du driver et resirkuleringsanlegg (RAS), gjennomstrømningsanlegg eller åpent merd-oppdrett, tilpasser plattformen seg til ditt oppsett. Edge-gatewayen lagrer data lokalt — slik at anlegget ditt forblir operativt selv uten internett. Når tilkoblingen gjenopprettes, synkroniseres alt automatisk."
+
+#: templates/features/aquaculture.html
+msgid "Key Aquaculture Features"
+msgstr "Viktige akvakulturfunksjoner"
+
+#: templates/features/aquaculture.html
+msgid "Water Chemistry Engine"
+msgstr "Vannkjemimotor"
+
+#: templates/features/aquaculture.html
+msgid "Real-time monitoring of pH, dissolved oxygen, ammonia, nitrite, nitrate, CO₂, and alkalinity. Science-based calculations using published formulas — not guesswork."
+msgstr "Sanntidsovervåking av pH, oppløst oksygen, ammoniakk, nitritt, nitrat, CO₂ og alkalinitet. Vitenskapsbaserte beregninger med publiserte formler — ikke gjettverk."
+
+#: templates/features/aquaculture.html
+msgid "Real-Time Dashboard"
+msgstr "Sanntids dashbord"
+
+#: templates/features/aquaculture.html
+msgid "Unified view of all sensors, tanks, and systems. Historical trends, anomaly alerts, and AI-driven insights — accessible from desktop and mobile."
+msgstr "Samlet visning av alle sensorer, tanker og systemer. Historiske trender, avviksalarmer og AI-drevne innsikter — tilgjengelig fra PC og mobil."
+
+#: templates/features/aquaculture.html
+msgid "Feed Management"
+msgstr "Fôrstyring"
+
+#: templates/features/aquaculture.html
+msgid "Automated feeding schedules, feed conversion ratio (FCR) tracking, and AI-optimized dosing. Reduce feed waste while maximizing growth rates."
+msgstr "Automatiserte fôringsplaner, FCR-sporing og AI-optimalisert dosering. Reduser fôrsvinn og maksimer vekstrater."
+
+#: templates/features/aquaculture.html
+msgid "Batch Tracking"
+msgstr "Partisporing"
+
+#: templates/features/aquaculture.html
+msgid "Full lifecycle tracking from smolt to harvest. Mortality analysis, growth curves, biomass estimation, and cohort comparison — all automated."
+msgstr "Full livssyklussporing fra smolt til slakt. Dødelighetsanalyse, vekstkurver, biomasseestimering og kohortsammenlikning — alt automatisert."
+
+#: templates/features/aquaculture.html
+msgid "Smart Alerts"
+msgstr "Smarte alarmer"
+
+#: templates/features/aquaculture.html
+msgid "AI-driven anomaly detection with multi-channel alerts via SMS, email, and push notifications. Know about problems before they become crises."
+msgstr "AI-drevet avviksdeteksjon med flerkanalalarmer via SMS, e-post og push-varsler. Vit om problemer før de blir kriser."
+
+#: templates/features/aquaculture.html
+msgid "RAS Optimization"
+msgstr "RAS-optimalisering"
+
+#: templates/features/aquaculture.html
+msgid "Designed for recirculating aquaculture systems. Monitor biofilter performance, water exchange rates, and system efficiency in real time."
+msgstr "Designet for resirkuleringsanlegg. Overvåk biofilterytelse, vannutvekslingsrater og systemeffektivitet i sanntid."
+
+#: templates/features/aquaculture.html
+msgid "Why Choose Suderra for Aquaculture"
+msgstr "Hvorfor velge Suderra for akvakultur"
+
+#: templates/features/aquaculture.html
+msgid "Built in Norway, for Norway"
+msgstr "Bygget i Norge, for Norge"
+
+#: templates/features/aquaculture.html
+msgid "Developed by a team with deep aquaculture expertise. We understand Norwegian fish farming regulations, Mattilsynet reporting requirements, and the unique challenges of cold-water species."
+msgstr "Utviklet av et team med dyp akvakulturkompetanse. Vi forstår norske fiskeoppdrettsforskrifter, Mattilsynets rapporteringskrav og de unike utfordringene med kaldtvannsarter."
+
+#: templates/features/aquaculture.html
+msgid "Offline-First Architecture"
+msgstr "Offline-first arkitektur"
+
+#: templates/features/aquaculture.html
+msgid "Remote fish farms don't always have reliable internet. Our edge gateway stores data locally, and the mobile app works without signal. No data loss, ever."
+msgstr "Fjerntliggende oppdrettsanlegg har ikke alltid pålitelig internett. Vår edge-gateway lagrer data lokalt, og mobilappen fungerer uten signal. Ingen datatap, noensinne."
+
+#: templates/features/aquaculture.html
+msgid "No Vendor Lock-In"
+msgstr "Ingen leverandørlåsing"
+
+#: templates/features/aquaculture.html
+msgid "Supports 8+ pump/motor brands and all major industrial protocols (MQTT, Modbus, OPC-UA). Connect any sensor from any manufacturer."
+msgstr "Støtter 8+ pumpe-/motormerker og alle store industriprotokoller (MQTT, Modbus, OPC-UA). Koble til sensorer fra enhver produsent."
+
+#: templates/features/aquaculture.html
+msgid "Science-Based AI"
+msgstr "Vitenskapsbasert AI"
+
+#: templates/features/aquaculture.html
+msgid "Our AI uses published scientific formulas — not black-box models. Every recommendation is traceable and explainable. Operators decide what the AI can auto-execute."
+msgstr "Vår AI bruker publiserte vitenskapelige formler — ikke black-box-modeller. Hver anbefaling er sporbar og forklarbar. Operatører bestemmer hva AI-en kan autoeksekvere."
+
+#: templates/features/aquaculture.html
+msgid "What types of aquaculture facilities does Suderra support?"
+msgstr "Hvilke typer akvakulturanlegg støtter Suderra?"
+
+#: templates/features/aquaculture.html
+msgid "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms."
+msgstr "Suderra støtter resirkuleringsanlegg (RAS), gjennomstrømningsanlegg og åpent merd-oppdrett. Den modulære arkitekturen tilpasser seg ethvert oppsett — fra små klekkerier til storskala lakseoppdrett."
+
+#: templates/features/aquaculture.html
+msgid "Can Suderra integrate with my existing sensors?"
+msgstr "Kan Suderra integreres med mine eksisterende sensorer?"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss. The system auto-registers new sensors from all major manufacturers."
+msgstr "Ja. Suderra støtter MQTT, Modbus og OPC-UA-protokoller og fungerer med 8+ pumpe- og motormerker inkludert Siemens, ABB, Grundfos og Danfoss. Systemet autoregistrerer nye sensorer fra alle store produsenter."
+
+#: templates/features/aquaculture.html
+msgid "Does Suderra work without internet?"
+msgstr "Fungerer Suderra uten internett?"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection. When connectivity returns, data syncs automatically — no data loss."
+msgstr "Ja. Suderra er offline-first. Edge-gatewayen lagrer alle data lokalt på anlegget. Mobilappen fungerer også uten internettforbindelse. Når tilkoblingen gjenopprettes, synkroniseres data automatisk — ingen datatap."
+
+#: templates/features/aquaculture.html
+msgid "How does the AI work in Suderra?"
+msgstr "Hvordan fungerer AI-en i Suderra?"
+
+#: templates/features/aquaculture.html
+msgid "Suderra's AI engine uses published scientific formulas and peer-reviewed data for every calculation. The AI Engineer detects anomalies and identifies root causes. The AI Manager suggests corrective actions. Operators control what the AI can auto-execute."
+msgstr "Suderras AI-motor bruker publiserte vitenskapelige formler og fagfellevurderte data for alle beregninger. AI-ingeniøren oppdager avvik og identifiserer rotårsaker. AI-lederen foreslår korrigerende tiltak. Operatører kontrollerer hva AI-en kan autoeksekvere."
+
+# ============================================================
+#  Feature Page - Regulatory Compliance
+# ============================================================
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting — Aquaculture"
+msgstr "Regulatorisk overholdelse og rapportering — Akvakultur"
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly."
+msgstr "Automatisert Mattilsynet-overholdelse, lusetelling-rapportering, biomasserapportering, rømningsrapportering og norske fiskeoppdrettsforskriftsverktøy. Hold deg i samsvar uten innsats."
+
+#: templates/features/compliance.html
+msgid "Compliance"
+msgstr "Overholdelse"
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting"
+msgstr "Regulatorisk overholdelse og rapportering"
+
+#: templates/features/compliance.html
+msgid "Automate your regulatory reporting for Norwegian aquaculture authorities. Suderra generates Mattilsynet-ready reports for sea lice counts, biomass levels, mortality events, and escape incidents — directly from your operational data."
+msgstr "Automatiser din regulatoriske rapportering til norske akvakultumyndigheter. Suderra genererer Mattilsynet-klare rapporter for lusetellinger, biomassenivåer, dødelighetstilfeller og rømningshendelser — direkte fra driftsdata."
+
+#: templates/features/compliance.html
+msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
+msgstr "Norsk akvakultur opererer under strenge forskrifter fra Mattilsynet og Fiskeridirektoratet. Oppdrettsanlegg må rapportere lusetellinger, biomassenivåer, dødelighetstilfeller og rømningshendelser innen stramme frister. Manuell rapportering er feilutsatt, tidkrevende og risikabel."
+
+#: templates/features/compliance.html
+msgid "Suderra automates the entire compliance workflow. Sensor data feeds directly into report templates that match regulatory formats. When it's time to submit, your data is already organized, validated, and ready. No spreadsheets, no manual entry, no missed deadlines."
+msgstr "Suderra automatiserer hele overholdelsesarbeidsflyten. Sensordata mates direkte inn i rapportmaler som samsvarer med regulatoriske formater. Når det er tid for innlevering, er dataene allerede organisert, validert og klare. Ingen regneark, ingen manuell registrering, ingen tapte frister."
+
+#: templates/features/compliance.html
+msgid "Compliance Features"
+msgstr "Overholdelsesfunksjoner"
+
+#: templates/features/compliance.html
+msgid "Automated Report Generation"
+msgstr "Automatisert rapportgenerering"
+
+#: templates/features/compliance.html
+msgid "Generate regulatory reports directly from your operational data. Sea lice counts, biomass summaries, mortality logs, and environmental metrics — formatted to match Mattilsynet requirements."
+msgstr "Generer regulatoriske rapporter direkte fra driftsdata. Lusetellinger, biomasseoppsummeringer, dødelighetslogger og miljømålinger — formatert for å matche Mattilsynets krav."
+
+#: templates/features/compliance.html
+msgid "Sea Lice Monitoring"
+msgstr "Luseovervåking"
+
+#: templates/features/compliance.html
+msgid "Track sea lice levels across all pens with historical trends. Get alerts when counts approach regulatory thresholds so you can act before limits are breached."
+msgstr "Spor lusenivåer på tvers av alle merder med historiske trender. Få varsler når tellinger nærmer seg regulatoriske terskler slik at du kan handle før grensene overskrides."
+
+#: templates/features/compliance.html
+msgid "Biomass Reporting"
+msgstr "Biomasserapportering"
+
+#: templates/features/compliance.html
+msgid "Real-time biomass estimation using feed data, growth models, and sensor readings. Automatic MTB (Maximum Total Biomass) calculations ensure you stay within concession limits."
+msgstr "Sanntids biomasseestimering ved bruk av fôrdata, vekstmodeller og sensoravlesninger. Automatiske MTB-beregninger sikrer at du holder deg innenfor konsesjonsgrenser."
+
+#: templates/features/compliance.html
+msgid "Escape & Mortality Alerts"
+msgstr "Rømnings- og dødelighetsvarsler"
+
+#: templates/features/compliance.html
+msgid "Automated detection and logging of mortality events and potential escape incidents. Pre-formatted incident reports ready for authority submission."
+msgstr "Automatisert deteksjon og logging av dødelighetshendelser og potensielle rømningshendelser. Ferdigformaterte hendelsesrapporter klare for myndighetsinnsending."
+
+#: templates/features/compliance.html
+msgid "Deadline Management"
+msgstr "Fristadministrasjon"
+
+#: templates/features/compliance.html
+msgid "Never miss a reporting deadline. Suderra tracks all regulatory submission dates and sends reminders to responsible personnel well in advance."
+msgstr "Gå aldri glipp av en rapporteringsfrist. Suderra sporer alle regulatoriske innleveringsdatoer og sender påminnelser til ansvarlig personell i god tid."
+
+#: templates/features/compliance.html
+msgid "Audit Trail"
+msgstr "Revisjonsspor"
+
+#: templates/features/compliance.html
+msgid "Complete audit trail for all data changes and report submissions. Every sensor reading, manual entry, and correction is timestamped and traceable."
+msgstr "Komplett revisjonsspor for alle dataendringer og rapportinnleveringer. Hver sensoravlesning, manuell registrering og korreksjon er tidsstemplet og sporbar."
+
+#: templates/features/compliance.html
+msgid "Why Automate Compliance with Suderra"
+msgstr "Hvorfor automatisere overholdelse med Suderra"
+
+#: templates/features/compliance.html
+msgid "Reduce Manual Work"
+msgstr "Reduser manuelt arbeid"
+
+#: templates/features/compliance.html
+msgid "Stop copying data into spreadsheets. Reports are generated directly from the same data your operations team already uses daily."
+msgstr "Slutt å kopiere data til regneark. Rapporter genereres direkte fra de samme dataene driftsteamet ditt allerede bruker daglig."
+
+#: templates/features/compliance.html
+msgid "Eliminate Errors"
+msgstr "Eliminer feil"
+
+#: templates/features/compliance.html
+msgid "Automated data validation catches inconsistencies before reports are submitted. No more rejected filings due to formatting or calculation errors."
+msgstr "Automatisert datavalidering fanger opp inkonsekvenser før rapporter sendes. Ikke flere avviste innleveringer på grunn av formaterings- eller beregningsfeil."
+
+#: templates/features/compliance.html
+msgid "Stay Ahead of Regulations"
+msgstr "Hold deg foran regelverket"
+
+#: templates/features/compliance.html
+msgid "Proactive alerts warn you when operational parameters approach regulatory limits, giving you time to take corrective action before violations occur."
+msgstr "Proaktive varsler advarer deg når driftsparametere nærmer seg regulatoriske grenser, og gir deg tid til å iverksette korrigerende tiltak før brudd oppstår."
+
+#: templates/features/compliance.html
+msgid "What Norwegian regulations does Suderra support?"
+msgstr "Hvilke norske forskrifter støtter Suderra?"
+
+#: templates/features/compliance.html
+msgid "Suderra supports reporting requirements from Mattilsynet (Norwegian Food Safety Authority) and the Directorate of Fisheries, including sea lice counting reports, biomass/MTB tracking, mortality event logs, and escape incident reports."
+msgstr "Suderra støtter rapporteringskrav fra Mattilsynet og Fiskeridirektoratet, inkludert lusetellingrapporter, biomasse/MTB-sporing, dødelighetslogger og rømningshendelsesrapporter."
+
+#: templates/features/compliance.html
+msgid "Can Suderra generate reports for other countries' regulations?"
+msgstr "Kan Suderra generere rapporter for andre lands forskrifter?"
+
+#: templates/features/compliance.html
+msgid "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions. Contact us to discuss your specific compliance needs."
+msgstr "Plattformen er designet med modulær rapportering. Den leveres med norske regulatoriske maler, men egendefinerte rapportformater kan konfigureres for andre jurisdiksjoner. Kontakt oss for å diskutere dine spesifikke overholdelsesbehov."
+
+#: templates/features/compliance.html
+msgid "How does the sea lice monitoring work?"
+msgstr "Hvordan fungerer luseovervåkingen?"
+
+#: templates/features/compliance.html
+msgid "Suderra tracks sea lice count data from your monitoring activities, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission."
+msgstr "Suderra sporer lusetellingsdata fra overvåkingsaktivitetene dine, vedlikeholder historiske trender per merd og lokalitet, og varsler deg når tellinger nærmer seg den regulatoriske terskelen. Rapporter formateres automatisk for Mattilsynet-innsending."
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet reporting and Norwegian fish farm regulations"
+msgstr "Automatisert Mattilsynet-rapportering og norske oppdrettsforskrifter"
+
+# ============================================================
+#  Feature Page - Smart Automation & IoT
+# ============================================================
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT — Aquaculture Automation"
+msgstr "Smart automatisering og IoT — Akvakulturautomatisering"
+
+#: templates/features/automation.html
+msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control."
+msgstr "Fôrautomatisering, doseringsautomatisering, sensor-IoT-integrasjon for akvakultur. Visuelt automatiseringsverktøy, multiprotokollstøtte (MQTT, Modbus, OPC-UA) og AI-drevet styring."
+
+#: templates/features/automation.html
+msgid "Automation"
+msgstr "Automatisering"
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT"
+msgstr "Smart automatisering og IoT"
+
+#: templates/features/automation.html
+msgid "Build automation programs without writing code. Suderra's visual automation builder lets you create feeding schedules, dosing routines, and environmental controls using a drag-and-drop interface — connected to every sensor on your facility."
+msgstr "Bygg automatiseringsprogrammer uten å skrive kode. Suderras visuelle automatiseringsverktøy lar deg lage fôringsplaner, doseringsrutiner og miljøkontroller med dra-og-slipp — koblet til alle sensorer på anlegget ditt."
+
+#: templates/features/automation.html
+msgid "Modern production facilities run on sensors and controllers — but most automation systems speak different languages. Suderra bridges this gap with a universal IoT integration layer that connects to MQTT, Modbus, and OPC-UA devices from any manufacturer."
+msgstr "Moderne produksjonsanlegg drives av sensorer og kontrollere — men de fleste automatiseringssystemer snakker forskjellige språk. Suderra bygger bro over dette gapet med et universelt IoT-integrasjonslag som kobler seg til MQTT, Modbus og OPC-UA-enheter fra enhver produsent."
+
+#: templates/features/automation.html
+msgid "The visual automation builder lets operators create complex automation programs without engineering support. Set feed schedules based on water temperature, trigger dosing when pH drops, or adjust ventilation based on humidity — all through an intuitive drag-and-drop interface with real-time previews."
+msgstr "Det visuelle automatiseringsverktøyet lar operatører lage komplekse automatiseringsprogrammer uten ingeniørstøtte. Sett fôringsplaner basert på vanntemperatur, utløs dosering når pH faller, eller juster ventilasjon basert på fuktighet — alt gjennom et intuitivt dra-og-slipp-grensesnitt med sanntidsforhåndsvisning."
+
+#: templates/features/automation.html
+msgid "Automation Features"
+msgstr "Automatiseringsfunksjoner"
+
+#: templates/features/automation.html
+msgid "Visual Automation Builder"
+msgstr "Visuelt automatiseringsverktøy"
+
+#: templates/features/automation.html
+msgid "Drag-and-drop interface for creating automation programs. No coding required. Set triggers, conditions, and actions visually — then preview in real time before deploying."
+msgstr "Dra-og-slipp-grensesnitt for å lage automatiseringsprogrammer. Ingen koding nødvendig. Sett utløsere, betingelser og handlinger visuelt — forhåndsvis deretter i sanntid før utrulling."
+
+#: templates/features/automation.html
+msgid "Multi-Protocol IoT Gateway"
+msgstr "Multiprotokoll IoT-gateway"
+
+#: templates/features/automation.html
+msgid "Connects to MQTT, Modbus, and OPC-UA devices. Supports 8+ pump and motor brands. One gateway, every protocol — no integration headaches."
+msgstr "Kobler seg til MQTT, Modbus og OPC-UA-enheter. Støtter 8+ pumpe- og motormerker. En gateway, alle protokoller — ingen integrasjonsproblemer."
+
+#: templates/features/automation.html
+msgid "Feeder Automation"
+msgstr "Fôrautomatisering"
+
+#: templates/features/automation.html
+msgid "Automated feeding schedules based on water temperature, fish size, and growth models. Real-time FCR optimization with AI-driven adjustments to minimize waste and maximize growth."
+msgstr "Automatiserte fôringsplaner basert på vanntemperatur, fiskestørrelse og vekstmodeller. Sanntids FCR-optimalisering med AI-drevne justeringer for å minimere svinn og maksimere vekst."
+
+#: templates/features/automation.html
+msgid "Chemical Dosing Control"
+msgstr "Kjemisk doseringskontroll"
+
+#: templates/features/automation.html
+msgid "Automated pH adjustment, oxygen injection, and chemical dosing based on real-time sensor data. Science-based formulas ensure precise dosing — no overdosing, no waste."
+msgstr "Automatisert pH-justering, oksygeninjeksjon og kjemisk dosering basert på sanntids sensordata. Vitenskapsbaserte formler sikrer presis dosering — ingen overdosering, ingen svinn."
+
+#: templates/features/automation.html
+msgid "Conditional Alerts & Actions"
+msgstr "Betingede alarmer og handlinger"
+
+#: templates/features/automation.html
+msgid "Set multi-condition triggers: if oxygen drops AND temperature rises, trigger aeration AND send an alert. Complex logic made simple through the visual builder."
+msgstr "Sett flerbetingelsesutløsere: hvis oksygen faller OG temperatur stiger, utløs belufting OG send et varsel. Kompleks logikk gjort enkelt gjennom det visuelle verktøyet."
+
+#: templates/features/automation.html
+msgid "Edge Computing"
+msgstr "Edge Computing"
+
+#: templates/features/automation.html
+msgid "Automation runs locally on the edge gateway — no cloud dependency. Even if internet connectivity drops, your automation programs keep running without interruption."
+msgstr "Automatisering kjører lokalt på edge-gatewayen — ingen skyavhengighet. Selv om internettforbindelsen faller, fortsetter automatiseringsprogrammene å kjøre uten avbrudd."
+
+#: templates/features/automation.html
+msgid "Why Automate with Suderra"
+msgstr "Hvorfor automatisere med Suderra"
+
+#: templates/features/automation.html
+msgid "No Coding Required"
+msgstr "Ingen koding nødvendig"
+
+#: templates/features/automation.html
+msgid "The visual builder lets operators create and modify automation programs without engineering support. Reduce dependency on technical staff for day-to-day automation changes."
+msgstr "Det visuelle verktøyet lar operatører opprette og endre automatiseringsprogrammer uten ingeniørstøtte. Reduser avhengigheten av teknisk personell for daglige automatiseringsendringer."
+
+#: templates/features/automation.html
+msgid "Brand-Agnostic"
+msgstr "Merkevareuavhengig"
+
+#: templates/features/automation.html
+msgid "Works with sensors, pumps, and controllers from any manufacturer. Siemens, ABB, Grundfos, Danfoss — connect them all to one unified automation system."
+msgstr "Fungerer med sensorer, pumper og kontrollere fra enhver produsent. Siemens, ABB, Grundfos, Danfoss — koble dem alle til ett samlet automatiseringssystem."
+
+#: templates/features/automation.html
+msgid "Reliable Operation"
+msgstr "Pålitelig drift"
+
+#: templates/features/automation.html
+msgid "Edge computing ensures automation continues during internet outages. Critical processes like feeding and oxygen management never depend on cloud connectivity."
+msgstr "Edge computing sikrer at automatisering fortsetter under internettutfall. Kritiske prosesser som fôring og oksygenstyring er aldri avhengige av skytilkobling."
+
+#: templates/features/automation.html
+msgid "What protocols does the IoT gateway support?"
+msgstr "Hvilke protokoller støtter IoT-gatewayen?"
+
+#: templates/features/automation.html
+msgid "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers."
+msgstr "Suderras IoT-gateway støtter MQTT, Modbus (RTU og TCP) og OPC-UA. Den fungerer med 8+ pumpe- og motormerker og autoregistrerer nye sensorer fra alle store produsenter."
+
+#: templates/features/automation.html
+msgid "Do I need programming skills to create automations?"
+msgstr "Trenger jeg programmeringsferdigheter for å lage automatiseringer?"
+
+#: templates/features/automation.html
+msgid "No. The visual automation builder uses a drag-and-drop interface. You select triggers (sensor thresholds, time schedules), add conditions, and define actions — all visually. No code needed."
+msgstr "Nei. Det visuelle automatiseringsverktøyet bruker et dra-og-slipp-grensesnitt. Du velger utløsere (sensorterskler, tidsplaner), legger til betingelser og definerer handlinger — alt visuelt. Ingen kode nødvendig."
+
+#: templates/features/automation.html
+msgid "What happens if the internet goes down?"
+msgstr "Hva skjer hvis internett faller ut?"
+
+#: templates/features/automation.html
+msgid "All automation programs run locally on the edge gateway. If internet connectivity drops, automation continues without interruption. Data is stored locally and syncs when connectivity returns."
+msgstr "Alle automatiseringsprogrammer kjører lokalt på edge-gatewayen. Hvis internettforbindelsen faller, fortsetter automatiseringen uten avbrudd. Data lagres lokalt og synkroniseres når tilkoblingen gjenopprettes."
+
+#: templates/features/automation.html
+msgid "Can I automate feeding schedules?"
+msgstr "Kan jeg automatisere fôringsplaner?"
+
+#: templates/features/automation.html
+msgid "Yes. Suderra's feeder automation creates schedules based on water temperature, fish size, growth stage, and environmental conditions. The AI optimizes feed amounts in real time to minimize FCR and waste."
+msgstr "Ja. Suderras fôrautomatisering lager planer basert på vanntemperatur, fiskestørrelse, vekststadium og miljøforhold. AI-en optimaliserer fôrmengder i sanntid for å minimere FCR og svinn."
+
+#: templates/features/automation.html
+msgid "IoT sensor integration, feeder automation, and dosing control"
+msgstr "IoT-sensorintegrasjon, fôrautomatisering og doseringskontroll"
+
+# ============================================================
+#  Feature Page - Soilless Culture
+# ============================================================
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management — Hydroponics & Vertical Farming Software"
+msgstr "Jordløs dyrkingsstyring — Hydroponics og vertikalt landbruksprogramvare"
+
+#: templates/features/soilless.html
+msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking."
+msgstr "Programvare for jordløs dyrking for hydroponics, aquaponics og vertikalt landbruk. Næringsreseptstyring, EC/pH-overvåking, gjødslingsautomatisering og vekststadiesporing."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management"
+msgstr "Jordløs dyrkingsstyring"
+
+#: templates/features/soilless.html
+msgid "Manage hydroponics, aquaponics, and vertical farming operations with precision. Suderra provides nutrient recipe management, automated fertigation, EC/pH monitoring, and growth stage tracking — with 24+ preset nutrient formulas ready to use."
+msgstr "Administrer hydroponics, aquaponics og vertikalt landbruksdrift med presisjon. Suderra tilbyr næringsreseptstyring, automatisert fertigation, EC/pH-overvåking og vekststadiesporing — med 24+ forhåndsinnstilte næringsformler klare til bruk."
+
+#: templates/features/soilless.html
+msgid "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system."
+msgstr "Jordløst landbruk er presist av natur — hver næringskonsentrasjon, pH-nivå og miljøvariabel teller. Suderras jordløse dyrkingsmodul gir deg full kontroll over vekstmiljøet, enten du driver et kommersielt drivhus, vertikalt gårdsbruk eller aquaponics-system."
+
+#: templates/features/soilless.html
+msgid "The platform comes with 24+ preset nutrient recipes for common crop types, and lets you create custom formulas for specialized production. Real-time EC and pH monitoring triggers automatic adjustments, keeping your nutrient solution within optimal ranges 24/7."
+msgstr "Plattformen leveres med 24+ forhåndsinnstilte næringsresepter for vanlige avlingstyper, og lar deg opprette egendefinerte formler for spesialisert produksjon. Sanntids EC- og pH-overvåking utløser automatiske justeringer, og holder næringsløsningen innenfor optimale områder 24/7."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Features"
+msgstr "Funksjoner for jordløs dyrking"
+
+#: templates/features/soilless.html
+msgid "Nutrient Recipe Management"
+msgstr "Næringsreseptstyring"
+
+#: templates/features/soilless.html
+msgid "24+ preset nutrient recipes for common crops. Create, modify, and share custom formulas. Track nutrient consumption per crop cycle for accurate cost analysis."
+msgstr "24+ forhåndsinnstilte næringsresepter for vanlige avlinger. Opprett, endre og del egendefinerte formler. Spor næringsforbruk per avlingssyklus for nøyaktig kostnadsanalyse."
+
+#: templates/features/soilless.html
+msgid "EC & pH Monitoring"
+msgstr "EC- og pH-overvåking"
+
+#: templates/features/soilless.html
+msgid "Continuous electrical conductivity and pH monitoring with historical trends. Automatic alerts when values drift outside optimal ranges for your current crop."
+msgstr "Kontinuerlig overvåking av elektrisk ledningsevne og pH med historiske trender. Automatiske varsler når verdier avviker fra optimale områder for din nåværende avling."
+
+#: templates/features/soilless.html
+msgid "Automated Fertigation"
+msgstr "Automatisert fertigation"
+
+#: templates/features/soilless.html
+msgid "Automated nutrient dosing based on real-time EC and pH readings. Precision fertilizer injection keeps your solution within optimal parameters without manual intervention."
+msgstr "Automatisert næringsdosering basert på sanntids EC- og pH-avlesninger. Presisjonsgjødsling holder løsningen innenfor optimale parametere uten manuell inngripen."
+
+#: templates/features/soilless.html
+msgid "Growth Stage Tracking"
+msgstr "Vekststadiesporing"
+
+#: templates/features/soilless.html
+msgid "Track crops through germination, vegetative, flowering, and harvest stages. Automatic recipe adjustments based on growth phase for optimal nutrient delivery at every stage."
+msgstr "Spor avlinger gjennom spiring, vegetativ, blomstring og høststadier. Automatiske reseptjusteringer basert på vekstfase for optimal næringslevering på hvert stadium."
+
+#: templates/features/soilless.html
+msgid "Climate Control Integration"
+msgstr "Klimakontrollintegrasjon"
+
+#: templates/features/soilless.html
+msgid "Integrated control of temperature, humidity, CO₂, and lighting. Automation rules coordinate climate and nutrition for optimal growing conditions."
+msgstr "Integrert kontroll av temperatur, fuktighet, CO₂ og belysning. Automatiseringsregler koordinerer klima og ernæring for optimale vekstforhold."
+
+#: templates/features/soilless.html
+msgid "Yield Analytics"
+msgstr "Avlingsanalyse"
+
+#: templates/features/soilless.html
+msgid "Track yield per crop cycle, compare recipes, and optimize growing parameters. Data-driven insights help you increase production efficiency over time."
+msgstr "Spor avling per avlingssyklus, sammenlign resepter og optimaliser vekstparametere. Datadrevne innsikter hjelper deg med å øke produksjonseffektiviteten over tid."
+
+#: templates/features/soilless.html
+msgid "Why Choose Suderra for Soilless Culture"
+msgstr "Hvorfor velge Suderra for jordløs dyrking"
+
+#: templates/features/soilless.html
+msgid "Ready-to-Use Recipes"
+msgstr "Ferdige resepter"
+
+#: templates/features/soilless.html
+msgid "Start growing immediately with 24+ preset nutrient formulas for lettuce, tomatoes, herbs, strawberries, and more. Customize as you learn what works for your setup."
+msgstr "Begynn å dyrke umiddelbart med 24+ forhåndsinnstilte næringsformler for salat, tomater, urter, jordbær og mer. Tilpass etter hvert som du lærer hva som fungerer for ditt oppsett."
+
+#: templates/features/soilless.html
+msgid "Unified Platform"
+msgstr "Samlet plattform"
+
+#: templates/features/soilless.html
+msgid "If you run both aquaculture and soilless culture (aquaponics), Suderra manages both from one dashboard. Fish waste feeds plant nutrition — fully automated."
+msgstr "Hvis du driver både akvakultur og jordløs dyrking (aquaponics), administrerer Suderra begge fra ett dashbord. Fiskeavfall gir plantenæring — helautomatisert."
+
+#: templates/features/soilless.html
+msgid "Precision Automation"
+msgstr "Presisjonsautomatisering"
+
+#: templates/features/soilless.html
+msgid "Automated fertigation eliminates human error in nutrient mixing. Consistent, precise dosing leads to better yields and lower chemical costs."
+msgstr "Automatisert fertigation eliminerer menneskelig feil i næringsblanding. Konsistent, presis dosering fører til bedre avlinger og lavere kjemikaliekostnader."
+
+#: templates/features/soilless.html
+msgid "What types of soilless systems does Suderra support?"
+msgstr "Hvilke typer jordløse systemer støtter Suderra?"
+
+#: templates/features/soilless.html
+msgid "Suderra supports NFT (Nutrient Film Technique), DWC (Deep Water Culture), ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems. The platform adapts to any soilless growing method."
+msgstr "Suderra støtter NFT (Nutrient Film Technique), DWC (Deep Water Culture), flo-og-fjære, dryppvanning, vertikale gårdstårn og aquaponics-systemer. Plattformen tilpasser seg enhver jordløs dyrkingsmetode."
+
+#: templates/features/soilless.html
+msgid "How many nutrient recipes are included?"
+msgstr "Hvor mange næringsresepter er inkludert?"
+
+#: templates/features/soilless.html
+msgid "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities."
+msgstr "Suderra inkluderer 24+ forhåndsinnstilte næringsresepter for vanlige avlinger inkludert bladgrønnsaker, urter, tomater, paprika, jordbær og mer. Du kan også opprette ubegrensede egendefinerte resepter og dele dem på tvers av anlegg."
+
+#: templates/features/soilless.html
+msgid "Can Suderra manage aquaponics systems?"
+msgstr "Kan Suderra administrere aquaponics-systemer?"
+
+#: templates/features/soilless.html
+msgid "Yes. Suderra's modular design means the aquaculture and soilless culture modules work together seamlessly. Monitor fish health, water quality, and plant nutrition from one dashboard — with automated nutrient cycling between systems."
+msgstr "Ja. Suderras modulære design betyr at akvakultur- og jordløs dyrkingsmodulene fungerer sømløst sammen. Overvåk fiskehelse, vannkvalitet og plantenæring fra ett dashbord — med automatisert næringssirkulasjon mellom systemer."
+
+#: templates/features/soilless.html
+msgid "Hydroponics, aquaponics, and vertical farming management"
+msgstr "Hydroponics, aquaponics og vertikalt landbruksstyring"
+
+# ============================================================
+#  Feature Page - Waste Water Treatment
+# ============================================================
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment Software — Water Quality Monitoring"
+msgstr "Avløpsvannsbehandling-programvare — Vannkvalitetsovervåking"
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting."
+msgstr "Programvare for avløpsvannsbehandling for strømningsovervåking, vannkvalitetssporing, TSS-styring, kjemisk lastoptimalisering og utslippsoverholdelsesrapportering."
+
+#: templates/features/wastewater.html
+msgid "Waste Water"
+msgstr "Avløpsvann"
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment"
+msgstr "Avløpsvannsbehandling"
+
+#: templates/features/wastewater.html
+msgid "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators."
+msgstr "Overvåk og optimaliser avløpsvannsbehandlingsprosesser med sanntids sensordata. Spor strømningshastigheter, TSS-nivåer, kjemiske belastninger og utslippskvalitet — alt fra en enkelt plattform designet for behandlingsanleggsoperatører."
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is critical. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results mean problems are caught too late."
+msgstr "Avløpsvannsbehandlingsanlegg håndterer komplekse, flertrinns prosesser der sanntidsovervåking er kritisk. Fra innløpssilsing til endelig utslipp må hvert trinn oppfylle strenge miljøstandarder. Manuell overvåking og forsinkede laboratorieresultater betyr at problemer oppdages for sent."
+
+#: templates/features/wastewater.html
+msgid "Suderra brings the same sensor integration and automation capabilities that power our aquaculture platform to waste water treatment. Connect every sensor in your plant — flow meters, TSS probes, pH sensors, dissolved oxygen meters — to one unified dashboard with real-time alerts and automated chemical dosing."
+msgstr "Suderra bringer den samme sensorintegrasjonen og automatiseringskapabilitetene som driver vår akvakulturplattform til avløpsvannsbehandling. Koble alle sensorer i anlegget — strømningsmålere, TSS-prober, pH-sensorer, oppløst oksygenmålere — til ett samlet dashbord med sanntidsvarsler og automatisert kjemisk dosering."
+
+#: templates/features/wastewater.html
+msgid "Waste Water Features"
+msgstr "Avløpsvannsfunksjoner"
+
+#: templates/features/wastewater.html
+msgid "Flow Monitoring"
+msgstr "Strømningsovervåking"
+
+#: templates/features/wastewater.html
+msgid "Real-time flow rate tracking across all treatment stages. Historical trends, peak detection, and capacity planning tools to optimize throughput."
+msgstr "Sanntids strømningssporing på tvers av alle behandlingstrinn. Historiske trender, toppdeteksjon og kapasitetsplanleggingsverktøy for å optimalisere gjennomstrømning."
+
+#: templates/features/wastewater.html
+msgid "Water Quality Tracking"
+msgstr "Vannkvalitetssporing"
+
+#: templates/features/wastewater.html
+msgid "Monitor pH, dissolved oxygen, turbidity, conductivity, and temperature across all treatment stages. Continuous data collection replaces periodic lab sampling."
+msgstr "Overvåk pH, oppløst oksygen, turbiditet, ledningsevne og temperatur på tvers av alle behandlingstrinn. Kontinuerlig datainnsamling erstatter periodisk laboratorieprøvetaking."
+
+#: templates/features/wastewater.html
+msgid "TSS Management"
+msgstr "TSS-styring"
+
+#: templates/features/wastewater.html
+msgid "Total Suspended Solids monitoring with real-time alerts. Track sedimentation efficiency and sludge levels to optimize removal processes."
+msgstr "Overvåking av totale suspenderte stoffer med sanntidsvarsler. Spor sedimenteringseffektivitet og slamnivåer for å optimalisere fjerningsprosesser."
+
+#: templates/features/wastewater.html
+msgid "Chemical Load Optimization"
+msgstr "Kjemisk lastoptimalisering"
+
+#: templates/features/wastewater.html
+msgid "AI-driven chemical dosing reduces reagent consumption while maintaining treatment standards. Automated adjustments based on real-time influent conditions."
+msgstr "AI-drevet kjemisk dosering reduserer reagensforbruk samtidig som behandlingsstandarder opprettholdes. Automatiserte justeringer basert på sanntids innløpsforhold."
+
+#: templates/features/wastewater.html
+msgid "Effluent Compliance"
+msgstr "Utslippsoverholdelse"
+
+#: templates/features/wastewater.html
+msgid "Continuous monitoring of discharge quality against regulatory limits. Automated compliance reports and proactive alerts when parameters approach thresholds."
+msgstr "Kontinuerlig overvåking av utslippskvalitet mot regulatoriske grenser. Automatiserte overholdelsesrapporter og proaktive varsler når parametere nærmer seg terskler."
+
+#: templates/features/wastewater.html
+msgid "Process Dashboard"
+msgstr "Prosessdashbord"
+
+#: templates/features/wastewater.html
+msgid "Unified view of all treatment stages from influent to effluent. Real-time process visualization with drill-down capability for each stage."
+msgstr "Samlet visning av alle behandlingstrinn fra innløp til utløp. Sanntids prosessvisualisering med detaljvisning for hvert trinn."
+
+#: templates/features/wastewater.html
+msgid "Why Choose Suderra for Waste Water"
+msgstr "Hvorfor velge Suderra for avløpsvann"
+
+#: templates/features/wastewater.html
+msgid "Same Platform, New Sector"
+msgstr "Samme plattform, ny sektor"
+
+#: templates/features/wastewater.html
+msgid "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
+msgstr "Suderras modulære arkitektur betyr at avløpsvannsmodulen gjenbruker 70%% av den velprøvde akvakulturkodebasen. Samme pålitelighet, samme sensorintegrasjon, spesialbygget for behandlingsanlegg."
+
+#: templates/features/wastewater.html
+msgid "Reduce Chemical Costs"
+msgstr "Reduser kjemikaliekostnader"
+
+#: templates/features/wastewater.html
+msgid "AI-optimized dosing reduces chemical consumption by adjusting reagent amounts in real time based on actual influent conditions — not fixed schedules."
+msgstr "AI-optimalisert dosering reduserer kjemikalieforbruk ved å justere reagensmengder i sanntid basert på faktiske innløpsforhold — ikke faste tidsplaner."
+
+#: templates/features/wastewater.html
+msgid "Proactive Compliance"
+msgstr "Proaktiv overholdelse"
+
+#: templates/features/wastewater.html
+msgid "Get alerts before discharge parameters approach limits. Automated reports ensure you're always ready for inspections and regulatory submissions."
+msgstr "Få varsler før utslippsparametere nærmer seg grenser. Automatiserte rapporter sikrer at du alltid er klar for inspeksjoner og regulatoriske innleveringer."
+
+#: templates/features/wastewater.html
+msgid "What parameters can Suderra monitor in a waste water plant?"
+msgstr "Hvilke parametere kan Suderra overvåke i et avløpsvannsbehandlingsanlegg?"
+
+#: templates/features/wastewater.html
+msgid "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility."
+msgstr "Suderra kan overvåke strømningshastighet, pH, oppløst oksygen, turbiditet, TSS (totale suspenderte stoffer), ledningsevne, temperatur, kjemisk oksygenforbruk (COD), biologisk oksygenforbruk (BOD) og mer — avhengig av sensorene installert på anlegget."
+
+#: templates/features/wastewater.html
+msgid "Is this the same platform used for aquaculture?"
+msgstr "Er dette den samme plattformen som brukes for akvakultur?"
+
+#: templates/features/wastewater.html
+msgid "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations."
+msgstr "Ja. Suderra bruker en modulær arkitektur der hver sektor får sin egen driftsmodul. Avløpsvannsmodulen bygger på den samme velprøvde sensorintegrasjonen, automatiseringsmotoren og dashbord-rammeverket som brukes i akvakultur — tilpasset behandlingsanleggsdrift."
+
+#: templates/features/wastewater.html
+msgid "Can Suderra automate chemical dosing?"
+msgstr "Kan Suderra automatisere kjemisk dosering?"
+
+#: templates/features/wastewater.html
+msgid "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards."
+msgstr "Ja. Automatiseringsmotoren kan styre kjemiske doseringspumper basert på sanntids sensoravlesninger. Sett målparametere og la AI-en optimalisere reagensmengder — reduser kostnader samtidig som behandlingsstandarder opprettholdes."
+
+#: templates/features/wastewater.html
+msgid "Water quality monitoring and effluent management"
+msgstr "Vannkvalitetsovervåking og utslippshåndtering"
+
+#: templates/features/wastewater.html
+msgid "IoT sensor integration and automation control"
+msgstr "IoT-sensorintegrasjon og automatiseringskontroll"

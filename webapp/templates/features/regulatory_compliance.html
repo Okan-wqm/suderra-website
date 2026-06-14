@@ -1,0 +1,200 @@
+{% extends "features/_base_feature.html" %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block feature_title %}{% trans "Regulatory Compliance & Reporting — Aquaculture" %}{% endblock %}
+{% block feature_description %}{% trans "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly." %}{% endblock %}
+{% block feature_og_title %}{% trans "Regulatory Compliance & Reporting — Aquaculture" %}{% endblock %}
+{% block feature_og_description %}{% trans "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, and Norwegian fish farm regulatory tools." %}{% endblock %}
+{% block feature_twitter_title %}{% trans "Regulatory Compliance & Reporting — Aquaculture" %}{% endblock %}
+{% block feature_twitter_description %}{% trans "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, and Norwegian fish farm regulatory tools." %}{% endblock %}
+
+{% block breadcrumb_title %}{% trans "Regulatory Compliance" %}{% endblock %}
+{% block hero_tag %}{% trans "Compliance" %}{% endblock %}
+{% block hero_title %}{% trans "Regulatory Compliance & Reporting" %}{% endblock %}
+{% block hero_subtitle %}{% trans "Automate your regulatory reporting for Norwegian aquaculture authorities. Suderra generates Mattilsynet-ready reports for sea lice counts, biomass levels, mortality events, and escape incidents — directly from your operational data." %}{% endblock %}
+
+{% block overview %}
+<p>{% trans "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky." %}</p>
+<p>{% trans "Suderra automates the entire compliance workflow. Sensor data feeds directly into report templates that match regulatory formats. When it's time to submit, your data is already organized, validated, and ready. No spreadsheets, no manual entry, no missed deadlines." %}</p>
+{% endblock %}
+
+{% block features_title %}{% trans "Compliance Features" %}{% endblock %}
+{% block features_grid %}
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+  </div>
+  <h3>{% trans "Automated Report Generation" %}</h3>
+  <p>{% trans "Generate regulatory reports directly from your operational data. Sea lice counts, biomass summaries, mortality logs, and environmental metrics — formatted to match Mattilsynet requirements." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+  </div>
+  <h3>{% trans "Sea Lice Monitoring" %}</h3>
+  <p>{% trans "Track sea lice levels across all pens with historical trends. Get alerts when counts approach regulatory thresholds so you can act before limits are breached." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+  </div>
+  <h3>{% trans "Biomass Reporting" %}</h3>
+  <p>{% trans "Real-time biomass estimation using feed data, growth models, and sensor readings. Automatic MTB (Maximum Total Biomass) calculations ensure you stay within concession limits." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+  </div>
+  <h3>{% trans "Escape & Mortality Alerts" %}</h3>
+  <p>{% trans "Automated detection and logging of mortality events and potential escape incidents. Pre-formatted incident reports ready for authority submission." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+  </div>
+  <h3>{% trans "Deadline Management" %}</h3>
+  <p>{% trans "Never miss a reporting deadline. Suderra tracks all regulatory submission dates and sends reminders to responsible personnel well in advance." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+  </div>
+  <h3>{% trans "Audit Trail" %}</h3>
+  <p>{% trans "Complete audit trail for all data changes and report submissions. Every sensor reading, manual entry, and correction is timestamped and traceable." %}</p>
+</div>
+{% endblock %}
+
+{% block benefits_title %}{% trans "Why Automate Compliance with Suderra" %}{% endblock %}
+{% block benefits %}
+<div class="benefits-grid">
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Reduce Manual Work" %}</h3>
+      <p>{% trans "Stop copying data into spreadsheets. Reports are generated directly from the same data your operations team already uses daily." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Eliminate Errors" %}</h3>
+      <p>{% trans "Automated data validation catches inconsistencies before reports are submitted. No more rejected filings due to formatting or calculation errors." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Stay Ahead of Regulations" %}</h3>
+      <p>{% trans "Proactive alerts warn you when operational parameters approach regulatory limits, giving you time to take corrective action before violations occur." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block faq %}
+<div class="faq-item">
+  <button class="faq-question">{% trans "What Norwegian regulations does Suderra support?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra supports reporting requirements from Mattilsynet (Norwegian Food Safety Authority) and the Directorate of Fisheries, including sea lice counting reports, biomass/MTB tracking, mortality event logs, and escape incident reports." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Can Suderra generate reports for other countries' regulations?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions. Contact us to discuss your specific compliance needs." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "How does the sea lice monitoring work?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra tracks sea lice count data from your monitoring activities, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission." %}</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block related_pages %}
+<a href="{% url 'feature_aquaculture' %}" class="feature-related-card">
+  <h3>{% trans "Aquaculture Software" %}</h3>
+  <p>{% trans "Complete fish farm management platform" %}</p>
+</a>
+<a href="{% url 'feature_automation' %}" class="feature-related-card">
+  <h3>{% trans "Smart Automation" %}</h3>
+  <p>{% trans "IoT sensor integration, feeder automation, and dosing control" %}</p>
+</a>
+<a href="{% url 'feature_soilless' %}" class="feature-related-card">
+  <h3>{% trans "Soilless Culture" %}</h3>
+  <p>{% trans "Hydroponics, aquaponics, and vertical farming management" %}</p>
+</a>
+<a href="{% url 'feature_waste_water' %}" class="feature-related-card">
+  <h3>{% trans "Waste Water Treatment" %}</h3>
+  <p>{% trans "Water quality monitoring and effluent management" %}</p>
+</a>
+{% endblock %}
+
+{% block feature_schema %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Regulatory Compliance Module",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Automated regulatory compliance and reporting for Norwegian aquaculture. Mattilsynet-ready reports for sea lice, biomass, mortality, and escape incidents.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com"
+  },
+  "featureList": ["Automated report generation", "Sea lice monitoring", "Biomass reporting", "Escape and mortality alerts", "Deadline management", "Audit trail"]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What Norwegian regulations does Suderra support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra supports reporting requirements from Mattilsynet and the Directorate of Fisheries, including sea lice counting, biomass/MTB tracking, mortality events, and escape incidents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Suderra generate reports for other countries' regulations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the sea lice monitoring work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra tracks sea lice count data, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "Regulatory Compliance", "item": "https://suderra.com{{ request.path }}"}
+  ]
+}
+</script>
+{% endblock %}

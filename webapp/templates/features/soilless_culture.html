@@ -1,0 +1,200 @@
+{% extends "features/_base_feature.html" %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block feature_title %}{% trans "Soilless Culture Management — Hydroponics & Vertical Farming Software" %}{% endblock %}
+{% block feature_description %}{% trans "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking." %}{% endblock %}
+{% block feature_og_title %}{% trans "Soilless Culture Management — Hydroponics & Vertical Farming Software" %}{% endblock %}
+{% block feature_og_description %}{% trans "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management and fertilizer automation." %}{% endblock %}
+{% block feature_twitter_title %}{% trans "Soilless Culture Management — Hydroponics & Vertical Farming Software" %}{% endblock %}
+{% block feature_twitter_description %}{% trans "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management and fertilizer automation." %}{% endblock %}
+
+{% block breadcrumb_title %}{% trans "Soilless Culture" %}{% endblock %}
+{% block hero_tag %}{% trans "Soilless Culture" %}{% endblock %}
+{% block hero_title %}{% trans "Soilless Culture Management" %}{% endblock %}
+{% block hero_subtitle %}{% trans "Manage hydroponics, aquaponics, and vertical farming operations with precision. Suderra provides nutrient recipe management, automated fertigation, EC/pH monitoring, and growth stage tracking — with 24+ preset nutrient formulas ready to use." %}{% endblock %}
+
+{% block overview %}
+<p>{% trans "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system." %}</p>
+<p>{% trans "The platform comes with 24+ preset nutrient recipes for common crop types, and lets you create custom formulas for specialized production. Real-time EC and pH monitoring triggers automatic adjustments, keeping your nutrient solution within optimal ranges 24/7." %}</p>
+{% endblock %}
+
+{% block features_title %}{% trans "Soilless Culture Features" %}{% endblock %}
+{% block features_grid %}
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 8-2-4-4-6.05-4-8a4 4 0 014-4z"/><circle cx="12" cy="14" r="3"/><path d="M5 19.5C5.5 17 8 15.5 12 15.5s6.5 1.5 7 4"/></svg>
+  </div>
+  <h3>{% trans "Nutrient Recipe Management" %}</h3>
+  <p>{% trans "24+ preset nutrient recipes for common crops. Create, modify, and share custom formulas. Track nutrient consumption per crop cycle for accurate cost analysis." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+  </div>
+  <h3>{% trans "EC & pH Monitoring" %}</h3>
+  <p>{% trans "Continuous electrical conductivity and pH monitoring with historical trends. Automatic alerts when values drift outside optimal ranges for your current crop." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <h3>{% trans "Automated Fertigation" %}</h3>
+  <p>{% trans "Automated nutrient dosing based on real-time EC and pH readings. Precision fertilizer injection keeps your solution within optimal parameters without manual intervention." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+  </div>
+  <h3>{% trans "Growth Stage Tracking" %}</h3>
+  <p>{% trans "Track crops through germination, vegetative, flowering, and harvest stages. Automatic recipe adjustments based on growth phase for optimal nutrient delivery at every stage." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+  </div>
+  <h3>{% trans "Climate Control Integration" %}</h3>
+  <p>{% trans "Integrated control of temperature, humidity, CO₂, and lighting. Automation rules coordinate climate and nutrition for optimal growing conditions." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  </div>
+  <h3>{% trans "Yield Analytics" %}</h3>
+  <p>{% trans "Track yield per crop cycle, compare recipes, and optimize growing parameters. Data-driven insights help you increase production efficiency over time." %}</p>
+</div>
+{% endblock %}
+
+{% block benefits_title %}{% trans "Why Choose Suderra for Soilless Culture" %}{% endblock %}
+{% block benefits %}
+<div class="benefits-grid">
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Ready-to-Use Recipes" %}</h3>
+      <p>{% trans "Start growing immediately with 24+ preset nutrient formulas for lettuce, tomatoes, herbs, strawberries, and more. Customize as you learn what works for your setup." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Unified Platform" %}</h3>
+      <p>{% trans "If you run both aquaculture and soilless culture (aquaponics), Suderra manages both from one dashboard. Fish waste feeds plant nutrition — fully automated." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Precision Automation" %}</h3>
+      <p>{% trans "Automated fertigation eliminates human error in nutrient mixing. Consistent, precise dosing leads to better yields and lower chemical costs." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block faq %}
+<div class="faq-item">
+  <button class="faq-question">{% trans "What types of soilless systems does Suderra support?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra supports NFT (Nutrient Film Technique), DWC (Deep Water Culture), ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems. The platform adapts to any soilless growing method." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "How many nutrient recipes are included?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Can Suderra manage aquaponics systems?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. Suderra's modular design means the aquaculture and soilless culture modules work together seamlessly. Monitor fish health, water quality, and plant nutrition from one dashboard — with automated nutrient cycling between systems." %}</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block related_pages %}
+<a href="{% url 'feature_aquaculture' %}" class="feature-related-card">
+  <h3>{% trans "Aquaculture Software" %}</h3>
+  <p>{% trans "Complete fish farm management platform" %}</p>
+</a>
+<a href="{% url 'feature_automation' %}" class="feature-related-card">
+  <h3>{% trans "Smart Automation" %}</h3>
+  <p>{% trans "IoT sensor integration, feeder automation, and dosing control" %}</p>
+</a>
+<a href="{% url 'feature_regulatory' %}" class="feature-related-card">
+  <h3>{% trans "Regulatory Compliance" %}</h3>
+  <p>{% trans "Automated reporting for Norwegian regulations" %}</p>
+</a>
+<a href="{% url 'feature_waste_water' %}" class="feature-related-card">
+  <h3>{% trans "Waste Water Treatment" %}</h3>
+  <p>{% trans "Water quality monitoring and effluent management" %}</p>
+</a>
+{% endblock %}
+
+{% block feature_schema %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Soilless Culture Management",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, automated fertigation, and growth stage tracking.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com"
+  },
+  "featureList": ["Nutrient recipe management", "EC/pH monitoring", "Automated fertigation", "Growth stage tracking", "Climate control integration", "Yield analytics"]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What types of soilless systems does Suderra support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra supports NFT, DWC, ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many nutrient recipes are included?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra includes 24+ preset nutrient recipes for common crops. You can also create unlimited custom recipes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Suderra manage aquaponics systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The aquaculture and soilless culture modules work together seamlessly for aquaponics, managing fish health, water quality, and plant nutrition from one dashboard."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "Soilless Culture Management", "item": "https://suderra.com{{ request.path }}"}
+  ]
+}
+</script>
+{% endblock %}

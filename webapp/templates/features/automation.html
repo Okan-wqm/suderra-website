@@ -1,0 +1,214 @@
+{% extends "features/_base_feature.html" %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block feature_title %}{% trans "Smart Automation & IoT — Aquaculture Automation" %}{% endblock %}
+{% block feature_description %}{% trans "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control." %}{% endblock %}
+{% block feature_og_title %}{% trans "Smart Automation & IoT — Aquaculture Automation" %}{% endblock %}
+{% block feature_og_description %}{% trans "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder and AI-powered control." %}{% endblock %}
+{% block feature_twitter_title %}{% trans "Smart Automation & IoT — Aquaculture Automation" %}{% endblock %}
+{% block feature_twitter_description %}{% trans "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder and AI-powered control." %}{% endblock %}
+
+{% block breadcrumb_title %}{% trans "Smart Automation & IoT" %}{% endblock %}
+{% block hero_tag %}{% trans "Automation" %}{% endblock %}
+{% block hero_title %}{% trans "Smart Automation & IoT" %}{% endblock %}
+{% block hero_subtitle %}{% trans "Build automation programs without writing code. Suderra's visual automation builder lets you create feeding schedules, dosing routines, and environmental controls using a drag-and-drop interface — connected to every sensor on your facility." %}{% endblock %}
+
+{% block overview %}
+<p>{% trans "Modern production facilities run on sensors and controllers — but most automation systems speak different languages. Suderra bridges this gap with a universal IoT integration layer that connects to MQTT, Modbus, and OPC-UA devices from any manufacturer." %}</p>
+<p>{% trans "The visual automation builder lets operators create complex automation programs without engineering support. Set feed schedules based on water temperature, trigger dosing when pH drops, or adjust ventilation based on humidity — all through an intuitive drag-and-drop interface with real-time previews." %}</p>
+{% endblock %}
+
+{% block features_title %}{% trans "Automation Features" %}{% endblock %}
+{% block features_grid %}
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 10l3 3 7-7"/></svg>
+  </div>
+  <h3>{% trans "Visual Automation Builder" %}</h3>
+  <p>{% trans "Drag-and-drop interface for creating automation programs. No coding required. Set triggers, conditions, and actions visually — then preview in real time before deploying." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09c-.658.003-1.25.396-1.51 1z"/></svg>
+  </div>
+  <h3>{% trans "Multi-Protocol IoT Gateway" %}</h3>
+  <p>{% trans "Connects to MQTT, Modbus, and OPC-UA devices. Supports 8+ pump and motor brands. One gateway, every protocol — no integration headaches." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+  </div>
+  <h3>{% trans "Feeder Automation" %}</h3>
+  <p>{% trans "Automated feeding schedules based on water temperature, fish size, and growth models. Real-time FCR optimization with AI-driven adjustments to minimize waste and maximize growth." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 8-2-4-4-6.05-4-8a4 4 0 014-4z"/><circle cx="12" cy="14" r="3"/><path d="M5 19.5C5.5 17 8 15.5 12 15.5s6.5 1.5 7 4"/></svg>
+  </div>
+  <h3>{% trans "Chemical Dosing Control" %}</h3>
+  <p>{% trans "Automated pH adjustment, oxygen injection, and chemical dosing based on real-time sensor data. Science-based formulas ensure precise dosing — no overdosing, no waste." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+  </div>
+  <h3>{% trans "Conditional Alerts & Actions" %}</h3>
+  <p>{% trans "Set multi-condition triggers: if oxygen drops AND temperature rises, trigger aeration AND send an alert. Complex logic made simple through the visual builder." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  </div>
+  <h3>{% trans "Edge Computing" %}</h3>
+  <p>{% trans "Automation runs locally on the edge gateway — no cloud dependency. Even if internet connectivity drops, your automation programs keep running without interruption." %}</p>
+</div>
+{% endblock %}
+
+{% block benefits_title %}{% trans "Why Automate with Suderra" %}{% endblock %}
+{% block benefits %}
+<div class="benefits-grid">
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "No Coding Required" %}</h3>
+      <p>{% trans "The visual builder lets operators create and modify automation programs without engineering support. Reduce dependency on technical staff for day-to-day automation changes." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Brand-Agnostic" %}</h3>
+      <p>{% trans "Works with sensors, pumps, and controllers from any manufacturer. Siemens, ABB, Grundfos, Danfoss — connect them all to one unified automation system." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Reliable Operation" %}</h3>
+      <p>{% trans "Edge computing ensures automation continues during internet outages. Critical processes like feeding and oxygen management never depend on cloud connectivity." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block faq %}
+<div class="faq-item">
+  <button class="faq-question">{% trans "What protocols does the IoT gateway support?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Do I need programming skills to create automations?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "No. The visual automation builder uses a drag-and-drop interface. You select triggers (sensor thresholds, time schedules), add conditions, and define actions — all visually. No code needed." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "What happens if the internet goes down?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "All automation programs run locally on the edge gateway. If internet connectivity drops, automation continues without interruption. Data is stored locally and syncs when connectivity returns." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Can I automate feeding schedules?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. Suderra's feeder automation creates schedules based on water temperature, fish size, growth stage, and environmental conditions. The AI optimizes feed amounts in real time to minimize FCR and waste." %}</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block related_pages %}
+<a href="{% url 'feature_aquaculture' %}" class="feature-related-card">
+  <h3>{% trans "Aquaculture Software" %}</h3>
+  <p>{% trans "Complete fish farm management platform" %}</p>
+</a>
+<a href="{% url 'feature_regulatory' %}" class="feature-related-card">
+  <h3>{% trans "Regulatory Compliance" %}</h3>
+  <p>{% trans "Automated Mattilsynet reporting and Norwegian fish farm regulations" %}</p>
+</a>
+<a href="{% url 'feature_soilless' %}" class="feature-related-card">
+  <h3>{% trans "Soilless Culture" %}</h3>
+  <p>{% trans "Hydroponics, aquaponics, and vertical farming management" %}</p>
+</a>
+<a href="{% url 'feature_waste_water' %}" class="feature-related-card">
+  <h3>{% trans "Waste Water Treatment" %}</h3>
+  <p>{% trans "Water quality monitoring and effluent management" %}</p>
+</a>
+{% endblock %}
+
+{% block feature_schema %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Smart Automation & IoT",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Visual automation builder for aquaculture and industrial IoT. Feeder automation, dosing control, and multi-protocol sensor integration.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com"
+  },
+  "featureList": ["Visual automation builder", "Multi-protocol IoT gateway", "Feeder automation", "Chemical dosing control", "Edge computing", "Conditional alerts"]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What protocols does the IoT gateway support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need programming skills to create automations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The visual automation builder uses a drag-and-drop interface. Select triggers, add conditions, define actions — all visually."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the internet goes down?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "All automation programs run locally on the edge gateway. Automation continues without interruption during internet outages."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I automate feeding schedules?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Suderra creates feeding schedules based on water temperature, fish size, growth stage, and environmental conditions. AI optimizes feed amounts in real time."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "Smart Automation & IoT", "item": "https://suderra.com{{ request.path }}"}
+  ]
+}
+</script>
+{% endblock %}

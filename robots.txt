@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /suderradmin/
+Disallow: /ajax/
+Disallow: /static/
+
+Sitemap: https://suderra.com/sitemap.xml

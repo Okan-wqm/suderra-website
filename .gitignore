@@ -1,0 +1,36 @@
+# ---- Secrets / environment ----
+.env
+*.env
+!.env.example
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Django ----
+db.sqlite3
+db.sqlite3-journal
+/staticfiles/
+/media/
+*.log
+/logs/
+/.cache/
+
+# ---- Local caches / tooling ----
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# ---- Ad-hoc scripts ----
+_verify_*.py

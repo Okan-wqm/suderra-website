@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}404 - {% trans "Page Not Found" %} | SUDERRA{% endblock %}
+{% block description %}{% trans "The page you are looking for could not be found." %}{% endblock %}
+
+{% block content %}
+<section class="error-page">
+  <h1>404</h1>
+  <h2>{% trans "Page Not Found" %}</h2>
+  <p>{% trans "Sorry, the page you are looking for does not exist or has been moved." %}</p>
+  <a href="{% url 'index' %}" class="cta-button">{% trans "Back to Home" %}</a>
+</section>
+{% endblock %}
+
+{% block footer %}{% endblock %}

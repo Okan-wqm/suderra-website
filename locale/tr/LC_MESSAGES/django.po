@@ -1,0 +1,1561 @@
+# Suderra Website Translations - Turkish
+# Copyright (C) 2026 Suderra AS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. -------------------------------------------------------
+#. Navigation & UI (base.html)
+#. -------------------------------------------------------
+
+#: templates/base.html
+msgid "Toggle Menu"
+msgstr "Menüyü Aç/Kapat"
+
+#: templates/base.html
+msgid "Home"
+msgstr "Ana Sayfa"
+
+#: templates/base.html
+msgid "Our Technology"
+msgstr "Teknolojimiz"
+
+#: templates/base.html
+msgid "Our Services"
+msgstr "Hizmetlerimiz"
+
+#: templates/base.html
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: templates/base.html
+msgid "Contact Us"
+msgstr "Bize Ulaşın"
+
+#: templates/base.html
+msgid "All rights reserved."
+msgstr "Tüm hakları saklıdır."
+
+#: templates/base.html
+msgid "Technology"
+msgstr "Teknoloji"
+
+#: templates/base.html
+msgid "Services"
+msgstr "Hizmetler"
+
+#: templates/base.html
+msgid "About"
+msgstr "Hakkımızda"
+
+#: templates/base.html
+msgid "Contact"
+msgstr "İletişim"
+
+#: templates/base.html
+msgid "Client Portal"
+msgstr "Müşteri Portalı"
+
+#: templates/base.html
+msgid "Change language"
+msgstr "Dil değiştir"
+
+#. -------------------------------------------------------
+#. SEO / Open Graph (base.html)
+#. -------------------------------------------------------
+
+#: templates/base.html
+msgid "Innovating Aquaculture & Aquaponics for a Sustainable Future."
+msgstr "Sürdürülebilir Bir Gelecek İçin Aküakültür ve Aküaponik İnovasyonu."
+
+#: templates/base.html
+msgid "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring."
+msgstr "Gerçek zamanlı su kalitesi izleme için patentli optik sensör teknolojisinde uzmanlaşmış Norveçli su ürünleri teknoloji şirketi."
+
+#. -------------------------------------------------------
+#. Cookie Consent Banner (base.html)
+#. -------------------------------------------------------
+
+#: templates/base.html
+msgid "We use cookies to improve your experience on our website. By continuing to browse, you consent to our use of cookies."
+msgstr "Web sitemizdeki deneyiminizi iyileştirmek için çerezler kullanıyoruz. Göz atmaya devam ederek çerez kullanımımızı kabul etmiş olursunuz."
+
+#: templates/base.html
+msgid "Learn more"
+msgstr "Daha fazla bilgi"
+
+#: templates/base.html
+msgid "Accept"
+msgstr "Kabul Et"
+
+#: templates/base.html
+msgid "Decline"
+msgstr "Reddet"
+
+#. -------------------------------------------------------
+#. Language Names (base.html)
+#. -------------------------------------------------------
+
+#: templates/base.html
+msgid "English"
+msgstr "İngilizce"
+
+#: templates/base.html
+msgid "Norwegian"
+msgstr "Norveççe"
+
+#: templates/base.html
+msgid "Turkish"
+msgstr "Türkçe"
+
+#: templates/base.html
+msgid "Arabic"
+msgstr "Arapça"
+
+#. -------------------------------------------------------
+#. Hero Section (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Your browser does not support the video tag."
+msgstr "Tarayıcınız video etiketini desteklememektedir."
+
+#: templates/index.html
+msgid "Modular Operations Intelligence"
+msgstr "Modüler Operasyon Zekası"
+
+#: templates/index.html
+msgid "One Platform."
+msgstr "Tek Platform."
+
+#: templates/index.html
+msgid "Every Facility."
+msgstr "Her Tesis."
+
+#: templates/index.html
+msgid ""
+"Suderra Software connects to all your sensors, collects data in one place, "
+"and turns it into actionable decisions — before problems happen. "
+"Sector-agnostic. Offline-first. AI-powered."
+msgstr ""
+"Suderra Yazılımı tüm sensörlerinize bağlanır, verileri tek bir yerde toplar "
+"ve sorunlar oluşmadan önce eyleme dönüştürülebilir kararlara çevirir. "
+"Sektör bağımsız. Önce çevrimdışı. Yapay zeka destekli."
+
+#: templates/index.html
+msgid "Explore Platform"
+msgstr "Platformu Keşfet"
+
+#: templates/index.html
+msgid "Launch Dashboard"
+msgstr "Dashboard'u Aç"
+
+#: templates/index.html
+msgid "Microservices"
+msgstr "Mikro Hizmet"
+
+#: templates/index.html
+msgid "Pump/Motor Brands"
+msgstr "Pompa/Motor Markası"
+
+#: templates/index.html
+msgid "Industrial Protocols"
+msgstr "Endüstriyel Protokol"
+
+#: templates/index.html
+msgid "Global Offices"
+msgstr "Küresel Ofis"
+
+#: templates/index.html
+msgid "Scroll"
+msgstr "Kaydır"
+
+#. -------------------------------------------------------
+#. Technology Section (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "The Platform"
+msgstr "Platform"
+
+#: templates/index.html
+msgid "Software for Action"
+msgstr "Eyleme Dönüşen Yazılım"
+
+#: templates/index.html
+msgid ""
+"One sensor platform that plugs into any production facility — fish farms, "
+"greenhouses, waste water plants, or any combination. Sector-agnostic. "
+"Protocol-native. AI-powered."
+msgstr ""
+"Herhangi bir üretim tesisine entegre olan tek sensör platformu — balık "
+"çiftlikleri, seralar, atık su tesisleri veya herhangi bir kombinasyon. "
+"Sektör bağımsız. Protokol uyumlu. Yapay zeka destekli."
+
+#: templates/index.html
+msgid ""
+"A fish farm runs dozens of sensors — water temperature, dissolved oxygen, "
+"pH, ammonia. A greenhouse measures EC, humidity, nutrient levels. A waste "
+"water plant tracks flow, TSS, and chemical load. <strong>Suderra "
+"Software</strong> connects to all of them, collects the data in one place, "
+"and turns it into <strong>actionable decisions</strong> — before problems "
+"happen."
+msgstr ""
+"Bir balık çiftliği düzinelerce sensör çalıştırır — su sıcaklığı, çözünmüş "
+"oksijen, pH, amonyak. Bir sera EC, nem, besin seviyelerini ölçer. Bir atık "
+"su tesisi akış, AKM ve kimyasal yükü takip eder. <strong>Suderra "
+"Yazılımı</strong> hepsine bağlanır, verileri tek bir yerde toplar ve "
+"sorunlar oluşmadan önce <strong>eyleme dönüştürülebilir kararlara</strong> "
+"çevirir."
+
+#: templates/index.html
+msgid "Sensor Module"
+msgstr "Sensör Modülü"
+
+#: templates/index.html
+msgid "Universal Sensor Integration"
+msgstr "Evrensel Sensör Entegrasyonu"
+
+#: templates/index.html
+msgid ""
+"Speaks every major industrial protocol — MQTT, Modbus, OPC-UA. Supports 8+ "
+"pump/motor brands. One installation, fast setup. Edge gateway stores data "
+"locally — no cloud dependency. Auto-registers new sensors from all major "
+"manufacturers."
+msgstr ""
+"Tüm büyük endüstriyel protokolleri destekler — MQTT, Modbus, OPC-UA. 8'den "
+"fazla pompa/motor markasını destekler. Tek kurulum, hızlı başlangıç. Edge "
+"gateway verileri yerel olarak depolar — bulut bağımlılığı yok. Tüm büyük "
+"üreticilerin yeni sensörlerini otomatik algılar."
+
+#: templates/index.html
+msgid "Operations"
+msgstr "Operasyonlar"
+
+#: templates/index.html
+msgid "Sector-Specific Intelligence"
+msgstr "Sektöre Özel Zeka"
+
+#: templates/index.html
+msgid ""
+"Modular architecture where each sector gets its own operations module. Fish "
+"farm: batch management, feed plans, mortality tracking. Soilless culture: "
+"nutrient recipes, growth stages. Waste water: flow monitoring, chemical "
+"load. Each new sector reuses 70%% of existing code."
+msgstr ""
+"Her sektörün kendi operasyon modülüne sahip olduğu modüler mimari. Balık "
+"çiftliği: parti yönetimi, yem planları, ölüm takibi. Topraksız tarım: "
+"besin reçeteleri, büyüme aşamaları. Atık su: akış izleme, kimyasal yük. "
+"Her yeni sektör mevcut kodun %%70'ini yeniden kullanır."
+
+#: templates/index.html
+msgid "AI Engine"
+msgstr "Yapay Zeka Motoru"
+
+#: templates/index.html
+msgid "Science-Based Decision Making"
+msgstr "Bilime Dayalı Karar Alma"
+
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision uses published "
+"scientific formulas and peer-reviewed data. The AI engineer detects "
+"anomalies, identifies root causes, and the AI manager suggests corrective "
+"actions. Operators control what AI can auto-execute."
+msgstr ""
+"Yapay zekamız hesaplar — tahmin etmez. Her karar yayımlanmış bilimsel "
+"formüller ve hakemli veriler kullanır. Yapay zeka mühendisi anomalileri "
+"tespit eder, kök nedenleri belirler ve yapay zeka yöneticisi düzeltici "
+"eylemler önerir. Operatörler yapay zekanın neyi otomatik çalıştırabileceğini "
+"kontrol eder."
+
+#: templates/index.html
+msgid "Suderra platform dashboard visualization"
+msgstr "Suderra platform gösterge paneli görselleştirmesi"
+
+#: templates/index.html
+msgid "Platform dashboard"
+msgstr "Platform gösterge paneli"
+
+#: templates/index.html
+msgid "Production-Ready. 13 Microservices."
+msgstr "Üretime Hazır. 13 Mikro Hizmet."
+
+#: templates/index.html
+msgid "Real-time dashboards"
+msgstr "Gerçek zamanlı gösterge panelleri"
+
+#: templates/index.html
+msgid "Water chemistry engine"
+msgstr "Su kimyası motoru"
+
+#: templates/index.html
+msgid "Visual automation builder"
+msgstr "Görsel otomasyon oluşturucu"
+
+#: templates/index.html
+msgid "Offline-first mobile app"
+msgstr "Önce çevrimdışı mobil uygulama"
+
+#: templates/index.html
+msgid "Multi-tenant SaaS"
+msgstr "Çok kiracılı SaaS"
+
+#: templates/index.html
+msgid "Smart alerts (SMS/email/push)"
+msgstr "Akıllı uyarılar (SMS/e-posta/push)"
+
+#: templates/index.html
+msgid "8+ VFD/pump brands"
+msgstr "8+ VFD/pompa markası"
+
+#: templates/index.html
+msgid "Edge gateway (local-first)"
+msgstr "Edge gateway (önce yerel)"
+
+#: templates/index.html
+msgid "Nutrient calculator (24+ presets)"
+msgstr "Besin hesaplayıcı (24+ ön ayar)"
+
+#: templates/index.html
+msgid "Supported By"
+msgstr "Destekleyenler"
+
+#: templates/index.html
+msgid "Eksfin"
+msgstr "Eksfin"
+
+#: templates/index.html
+msgid "Innovation Norway"
+msgstr "Innovation Norway"
+
+#: templates/index.html
+msgid "Research Council of Norway"
+msgstr "Norveç Araştırma Konseyi"
+
+#. -------------------------------------------------------
+#. Services / Sectors Section (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Sectors"
+msgstr "Sektörler"
+
+#: templates/index.html
+msgid "One Platform, Every Sector"
+msgstr "Tek Platform, Her Sektör"
+
+#: templates/index.html
+msgid "Each new sector reuses 70% of existing code. We add a module — the core platform stays the same."
+msgstr "Her yeni sektör mevcut kodun %70'ini yeniden kullanır. Bir modül ekliyoruz — çekirdek platform aynı kalıyor."
+
+#: templates/index.html
+msgid "LIVE"
+msgstr "YAYINDA"
+
+#: templates/index.html
+msgid "BETA"
+msgstr "BETA"
+
+#: templates/index.html
+msgid "Aquaculture"
+msgstr "Aküakültür"
+
+#: templates/index.html
+msgid "RAS design, water chemistry monitoring, feed management, batch tracking, mortality analysis. Full fish farm operations intelligence with AI-driven dosing and real-time alerts."
+msgstr "RAS tasarımı, su kimyası izleme, yem yönetimi, parti takibi, ölüm analizi. Yapay zeka destekli dozajlama ve gerçek zamanlı uyarılarla tam balık çiftliği operasyon zekası."
+
+#: templates/index.html
+msgid "Soilless Culture"
+msgstr "Topraksız Tarım"
+
+#: templates/index.html
+msgid "Nutrient recipe management, EC/pH/humidity monitoring, growth stage tracking, climate control integration. Hydroponics and aquaponics ready with 24+ nutrient presets."
+msgstr "Besin reçetesi yönetimi, EC/pH/nem izleme, büyüme aşaması takibi, iklim kontrol entegrasyonu. 24+ besin ön ayarı ile hidroponik ve akuaponik desteği."
+
+#: templates/index.html
+msgid "Waste Water"
+msgstr "Atık Su"
+
+#: templates/index.html
+msgid "Flow monitoring, TSS tracking, chemical load optimization, regulatory compliance reporting. Advanced reagent-free data collection and treatment plant intelligence."
+msgstr "Akış izleme, AKM takibi, kimyasal yük optimizasyonu, mevzuat uyum raporlaması. Gelişmiş reaktifsiz veri toplama ve arıtma tesisi zekası."
+
+#: templates/index.html
+msgid "Next Sectors"
+msgstr "Gelecek Sektörler"
+
+#: templates/index.html
+msgid "The modular architecture allows rapid expansion into new industrial verticals — any sector that runs sensors and needs operational intelligence. One platform, unlimited potential."
+msgstr "Modüler mimari, yeni endüstriyel dikeylere hızlı genişlemeye olanak tanır — sensör çalıştıran ve operasyonel zekaya ihtiyaç duyan her sektör. Tek platform, sınırsız potansiyel."
+
+#. -------------------------------------------------------
+#. Core Promise (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Any Brand"
+msgstr "Her Marka"
+
+#: templates/index.html
+msgid "Siemens, ABB, Grundfos, Danfoss — connect every manufacturer."
+msgstr "Siemens, ABB, Grundfos, Danfoss — her üreticiyi bağlayın."
+
+#: templates/index.html
+msgid "Any Sensor"
+msgstr "Her Sensör"
+
+#: templates/index.html
+msgid "pH, O₂, temperature, flow, pressure — every data point, unified."
+msgstr "pH, O₂, sıcaklık, akış, basınç — her veri noktası, birleştirilmiş."
+
+#: templates/index.html
+msgid "One Platform"
+msgstr "Tek Platform"
+
+#: templates/index.html
+msgid "Reports, automation, AI — all in a single dashboard."
+msgstr "Raporlar, otomasyon, yapay zeka — hepsi tek bir gösterge panelinde."
+
+#: templates/index.html
+msgid ""
+"It doesn't matter which manufacturer built your sensors, PLCs, or pumps. "
+"Suderra connects to all of them — collects every data point, generates "
+"unified reports, and runs automation programs for feeding schedules, water "
+"quality dosing, climate control, and more. No vendor lock-in. No data "
+"silos. Just one system that speaks every protocol."
+msgstr ""
+"Sensörlerinizi, PLC'lerinizi veya pompalarınızı hangi üreticinin yaptığı "
+"önemli değil. Suderra hepsine bağlanır — her veri noktasını toplar, "
+"birleştirilmiş raporlar oluşturur ve yem programları, su kalitesi "
+"dozajlaması, iklim kontrolü ve daha fazlası için otomasyon programları "
+"çalıştırır. Satıcı bağımlılığı yok. Veri siloları yok. Her protokolü "
+"konuşan tek bir sistem."
+
+#: templates/index.html
+msgid "Brand-agnostic data collection"
+msgstr "Marka bağımsız veri toplama"
+
+#: templates/index.html
+msgid "Unified reporting & analytics"
+msgstr "Birleştirilmiş raporlama ve analitik"
+
+#: templates/index.html
+msgid "Feeding & dosing automation"
+msgstr "Yem ve dozajlama otomasyonu"
+
+#: templates/index.html
+msgid "Water quality management"
+msgstr "Su kalitesi yönetimi"
+
+#: templates/index.html
+msgid "No vendor lock-in"
+msgstr "Satıcı bağımlılığı yok"
+
+#. -------------------------------------------------------
+#. How It Works (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "How It Works"
+msgstr "Nasıl Çalışır"
+
+#: templates/index.html
+msgid "From sensors to decisions — in four steps."
+msgstr "Sensörlerden kararlara — dört adımda."
+
+#: templates/index.html
+msgid ""
+"Connects to any sensor or device on site. Stores all data locally at the "
+"facility via edge gateway — no cloud dependency. Auto-registers new "
+"sensors. Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands."
+msgstr ""
+"Sahadaki herhangi bir sensöre veya cihaza bağlanır. Edge gateway aracılığıyla "
+"tüm verileri tesiste yerel olarak depolar — bulut bağımlılığı yok. Yeni "
+"sensörleri otomatik algılar. MQTT, Modbus, OPC-UA protokollerini ve 8+ "
+"pompa/motor markasını destekler."
+
+#: templates/index.html
+msgid "Operations Modules"
+msgstr "Operasyon Modülleri"
+
+#: templates/index.html
+msgid ""
+"Sector-specific modules add meaning to data. The fish farm module knows "
+"batch management, feed plans, and mortality. The soilless culture module "
+"knows nutrient recipes and growth stages."
+msgstr ""
+"Sektöre özel modüller verilere anlam katar. Balık çiftliği modülü parti "
+"yönetimi, yem planları ve ölüm oranlarını bilir. Topraksız tarım modülü "
+"besin reçetelerini ve büyüme aşamalarını bilir."
+
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision is based on published "
+"scientific formulas and peer-reviewed data. AI detects anomalies, identifies "
+"root causes, and suggests corrective actions."
+msgstr ""
+"Yapay zekamız hesaplar — tahmin etmez. Her karar yayımlanmış bilimsel "
+"formüllere ve hakemli verilere dayanır. Yapay zeka anomalileri tespit eder, "
+"kök nedenleri belirler ve düzeltici eylemler önerir."
+
+#: templates/index.html
+msgid "Mobile App"
+msgstr "Mobil Uygulama"
+
+#: templates/index.html
+msgid ""
+"Offline-first mobile app works without signal. Operators check sensor data, "
+"receive alerts, and manage operations from anywhere. Data syncs "
+"automatically when connection returns."
+msgstr ""
+"Önce çevrimdışı mobil uygulama sinyal olmadan çalışır. Operatörler sensör "
+"verilerini kontrol eder, uyarılar alır ve operasyonları her yerden yönetir. "
+"Bağlantı geri geldiğinde veriler otomatik olarak senkronize olur."
+
+#. -------------------------------------------------------
+#. About Section (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Who We Are"
+msgstr "Biz Kimiz"
+
+#: templates/index.html
+msgid "About Suderra"
+msgstr "Suderra Hakkında"
+
+#: templates/index.html
+msgid "A vertically integrated aquaculture technology company with offices in Norway and Turkey, delivering end-to-end solutions from engineering to production."
+msgstr "Norveç ve Türkiye'de ofisleri bulunan, mühendislikten üretime uçtan uca çözümler sunan dikey entegre bir su ürünleri teknoloji şirketi."
+
+#: templates/index.html
+msgid "Our Impact"
+msgstr "Etkimiz"
+
+#: templates/index.html
+msgid "Before installation"
+msgstr "Kurulum öncesi"
+
+#: templates/index.html
+msgid "Before"
+msgstr "Önce"
+
+#: templates/index.html
+msgid "After installation"
+msgstr "Kurulum sonrası"
+
+#: templates/index.html
+msgid "After"
+msgstr "Sonra"
+
+#: templates/index.html
+msgid "Suderra AS is a vertically integrated aquaculture technology company headquartered in Sandefjord, Norway with operations in Izmir, Turkey. We combine patented optical sensor R&D, advanced engineering design, equipment manufacturing, and hands-on fish farming expertise under one roof — giving our clients a single partner for their entire aquaculture journey."
+msgstr "Suderra AS, merkezi Sandefjord, Norveç'te bulunan ve İzmir, Türkiye'de operasyonları olan dikey entegre bir su ürünleri teknoloji şirketidir. Patentli optik sensör Ar-Ge, ileri mühendislik tasarımı, ekipman üretimi ve uygulamalı balık yetiştiriciliği uzmanlığını tek çatı altında birleştiriyoruz — müşterilerimize tüm su ürünleri yolculukları için tek bir partner sunuyoruz."
+
+#. -------------------------------------------------------
+#. Contact Section (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Let's Connect"
+msgstr "Bağlantı Kuralım"
+
+#: templates/index.html
+msgid "For more information about our services, technologies, or partnership opportunities, feel free to reach out to us directly."
+msgstr "Hizmetlerimiz, teknolojilerimiz veya iş birliği fırsatları hakkında daha fazla bilgi almak için doğrudan bize ulaşabilirsiniz."
+
+#: templates/index.html
+msgid "Norway Office — Headquarters"
+msgstr "Norveç Ofisi — Genel Merkez"
+
+#: templates/index.html
+msgid "Turkey Office — Manufacturing & Operations"
+msgstr "Türkiye Ofisi — Üretim ve Operasyonlar"
+
+#: templates/index.html
+msgid "Suderra Norway office"
+msgstr "Suderra Norveç ofisi"
+
+#: templates/index.html
+msgid "Patented Technology"
+msgstr "Patentli Teknoloji"
+
+#: templates/index.html
+msgid "Government Backed"
+msgstr "Devlet Destekli"
+
+#: templates/index.html
+msgid "2 Global Offices"
+msgstr "2 Küresel Ofis"
+
+#: templates/index.html
+msgid "Get in Touch"
+msgstr "İletişime Geçin"
+
+#: templates/index.html
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "Aşağıdaki formu doldurun, 24 saat içinde size dönüş yapacağız."
+
+#: templates/index.html
+msgid "Full Name"
+msgstr "Ad Soyad"
+
+#: templates/index.html
+msgid "Company"
+msgstr "Şirket"
+
+#: templates/index.html
+msgid "Email Address"
+msgstr "E-posta Adresi"
+
+#: templates/index.html
+msgid "Your Message"
+msgstr "Mesajınız"
+
+#: templates/index.html
+msgid "Send Message"
+msgstr "Mesaj Gönder"
+
+#: templates/index.html
+msgid "Back to top"
+msgstr "Başa dön"
+
+#. -------------------------------------------------------
+#. Footer (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Quick Links"
+msgstr "Hızlı Bağlantılar"
+
+#: templates/index.html
+msgid "Recirculating Aquaculture"
+msgstr "Devridaim Su Ürünleri"
+
+#: templates/index.html
+msgid "Aquaponics"
+msgstr "Akuaponik"
+
+#: templates/index.html
+msgid "Smart Monitoring"
+msgstr "Akıllı İzleme"
+
+#: templates/index.html
+msgid "Ocean Monitoring"
+msgstr "Okyanus İzleme"
+
+#: templates/index.html
+msgid "Hydroponics"
+msgstr "Hidroponik"
+
+#: templates/index.html
+msgid "Norway"
+msgstr "Norveç"
+
+#: templates/index.html
+msgid "Turkey"
+msgstr "Türkiye"
+
+#: templates/index.html
+msgid "Newsletter"
+msgstr "Bülten"
+
+#: templates/index.html
+msgid "Your email"
+msgstr "E-posta adresiniz"
+
+#: templates/index.html
+msgid "Subscribe"
+msgstr "Abone Ol"
+
+#. -------------------------------------------------------
+#. Contact Form JS Messages (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Please fill in all required fields."
+msgstr "Lütfen tüm zorunlu alanları doldurun."
+
+#: templates/index.html
+msgid "Please enter a valid email address."
+msgstr "Lütfen geçerli bir e-posta adresi girin."
+
+#: templates/index.html
+msgid "Sending..."
+msgstr "Gönderiliyor..."
+
+#: templates/index.html
+msgid "Message sent successfully! We will get back to you soon."
+msgstr "Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız."
+
+#: templates/index.html
+msgid "Something went wrong. Please try again."
+msgstr "Bir şeyler ters gitti. Lütfen tekrar deneyin."
+
+#: templates/index.html
+msgid "An error occurred. Please try again later."
+msgstr "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
+
+#. -------------------------------------------------------
+#. 404 Error Page (404.html)
+#. -------------------------------------------------------
+
+#: templates/404.html
+msgid "Page Not Found"
+msgstr "Sayfa Bulunamadı"
+
+#: templates/404.html
+msgid "Sorry, the page you are looking for does not exist or has been moved."
+msgstr "Üzgünüz, aradığınız sayfa mevcut değil veya taşındı."
+
+#: templates/404.html
+msgid "Back to Home"
+msgstr "Ana Sayfaya Dön"
+
+#: templates/404.html
+msgid "The page you are looking for could not be found."
+msgstr "Aradığınız sayfa bulunamadı."
+
+#. -------------------------------------------------------
+#. 500 Error Page (500.html)
+#. -------------------------------------------------------
+
+#: templates/500.html
+msgid "Server Error"
+msgstr "Sunucu Hatası"
+
+#: templates/500.html
+msgid ""
+"Something went wrong on our end. Our team has been notified and is working "
+"to fix the issue. Please try again later."
+msgstr ""
+"Bizim tarafımızda bir sorun oluştu. Ekibimiz bilgilendirildi ve sorunu "
+"çözmek için çalışıyor. Lütfen daha sonra tekrar deneyin."
+
+#. -------------------------------------------------------
+#. Accessibility (base.html)
+#. -------------------------------------------------------
+
+#: templates/base.html
+msgid "Skip to main content"
+msgstr "Ana içeriğe geç"
+
+#. -------------------------------------------------------
+#. Client Portal (index.html)
+#. -------------------------------------------------------
+
+#: templates/index.html
+msgid "Client access required"
+msgstr "Müşteri erişimi gereklidir"
+
+# ============================================================
+#  Feature Pages - Shared (features/_base_feature.html)
+# ============================================================
+
+#: templates/features/_base_feature.html
+msgid "Breadcrumb"
+msgstr "İçerik haritası"
+
+#: templates/features/_base_feature.html
+msgid "Key Features"
+msgstr "Temel Özellikler"
+
+#: templates/features/_base_feature.html
+msgid "Why Suderra"
+msgstr "Neden Suderra"
+
+#: templates/features/_base_feature.html
+msgid "Frequently Asked Questions"
+msgstr "Sıkça Sorulan Sorular"
+
+#: templates/features/_base_feature.html
+msgid "Ready to Get Started?"
+msgstr "Başlamaya Hazır mısınız?"
+
+#: templates/features/_base_feature.html
+msgid "Contact our team to learn how Suderra can transform your operations."
+msgstr "Suderra'nın operasyonlarınızı nasıl dönüştürebileceğini öğrenmek için ekibimizle iletişime geçin."
+
+#: templates/features/_base_feature.html
+msgid "Get in Touch"
+msgstr "İletişime Geçin"
+
+#: templates/features/_base_feature.html
+msgid "Explore More"
+msgstr "Daha Fazlasını Keşfedin"
+
+#: templates/features/_base_feature.html
+msgid "Aquaculture Software"
+msgstr "Akuakültür Yazılımı"
+
+#: templates/features/_base_feature.html
+msgid "Complete fish farm management platform"
+msgstr "Kapsamlı balık çiftliği yönetim platformu"
+
+#: templates/features/_base_feature.html
+msgid "Regulatory Compliance"
+msgstr "Mevzuat Uyumluluğu"
+
+#: templates/features/_base_feature.html
+msgid "Automated reporting for Norwegian regulations"
+msgstr "Norveç mevzuatı için otomatik raporlama"
+
+#: templates/features/_base_feature.html
+msgid "Smart Automation"
+msgstr "Akıllı Otomasyon"
+
+#: templates/features/_base_feature.html
+msgid "IoT sensor integration and automation"
+msgstr "IoT sensör entegrasyonu ve otomasyon"
+
+#: templates/features/_base_feature.html
+msgid "Soilless Culture"
+msgstr "Topraksız Tarım"
+
+#: templates/features/_base_feature.html
+msgid "Hydroponics and vertical farming management"
+msgstr "Hidroponik ve dikey tarım yönetimi"
+
+#: templates/features/_base_feature.html
+msgid "Waste Water Treatment"
+msgstr "Atık Su Arıtma"
+
+#: templates/features/_base_feature.html
+msgid "Water quality monitoring and effluent management"
+msgstr "Su kalitesi izleme ve atık su yönetimi"
+
+#: templates/features/_base_feature.html
+msgid "Solutions"
+msgstr "Çözümler"
+
+#: templates/features/_base_feature.html
+msgid "Company"
+msgstr "Şirket"
+
+#: templates/features/_base_feature.html
+msgid "Learn More"
+msgstr "Daha Fazla Bilgi"
+
+# ============================================================
+#  Feature Page - Aquaculture Software
+# ============================================================
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform — Fish Farm Management"
+msgstr "Akuakültür Yazılım Platformu — Balık Çiftliği Yönetimi"
+
+#: templates/features/aquaculture.html
+msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered."
+msgstr "RAS izleme, somon yetiştiriciliği, su kimyası, yem yönetimi ve gerçek zamanlı sensör verileri için Norveç yapımı akuakültür yazılımı. Önce çevrimdışı. Yapay zeka destekli."
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture"
+msgstr "Akuakültür"
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform"
+msgstr "Akuakültür Yazılım Platformu"
+
+#: templates/features/aquaculture.html
+msgid "Complete fish farm management software built in Norway. Monitor water chemistry, manage feeding schedules, track batches, and run AI-powered dosing — all from a single dashboard. Designed for RAS, flow-through, and open-pen aquaculture."
+msgstr "Norveç'te geliştirilen kapsamlı balık çiftliği yönetim yazılımı. Su kimyasını izleyin, yemleme programlarını yönetin, partileri takip edin ve yapay zeka destekli dozajlama gerçekleştirin — tümü tek bir kontrol panelinden. RAS, akışlı ve açık kafes su ürünleri yetiştiriciliği için tasarlanmıştır."
+
+#: templates/features/aquaculture.html
+msgid "Managing a modern fish farm means tracking dozens of variables in real time — dissolved oxygen, pH, ammonia, temperature, feed conversion ratios, and mortality rates. Suderra's aquaculture software platform connects to every sensor on your facility and unifies all data into one system."
+msgstr "Modern bir balık çiftliğini yönetmek, düzinelerce değişkeni gerçek zamanlı olarak takip etmek anlamına gelir — çözünmüş oksijen, pH, amonyak, sıcaklık, yem dönüşüm oranları ve ölüm oranları. Suderra'nın akuakültür yazılım platformu tesisinizdeki her sensöre bağlanır ve tüm verileri tek bir sistemde birleştirir."
+
+#: templates/features/aquaculture.html
+msgid "Whether you run a recirculating aquaculture system (RAS), flow-through facility, or open-pen operation, our platform adapts to your setup. The edge gateway stores data locally — so your farm stays operational even without internet. When connectivity returns, everything syncs automatically."
+msgstr "İster bir devridaim su ürünleri sistemi (RAS), ister akışlı tesis, ister açık kafes operasyonu çalıştırıyor olun, platformumuz kurulumunuza uyum sağlar. Edge gateway verileri yerel olarak depolar — böylece çiftliğiniz internet olmadan bile çalışmaya devam eder. Bağlantı geri geldiğinde her şey otomatik olarak senkronize olur."
+
+#: templates/features/aquaculture.html
+msgid "Key Aquaculture Features"
+msgstr "Temel Akuakültür Özellikleri"
+
+#: templates/features/aquaculture.html
+msgid "Water Chemistry Engine"
+msgstr "Su Kimyası Motoru"
+
+#: templates/features/aquaculture.html
+msgid "Real-time monitoring of pH, dissolved oxygen, ammonia, nitrite, nitrate, CO₂, and alkalinity. Science-based calculations using published formulas — not guesswork."
+msgstr "pH, çözünmüş oksijen, amonyak, nitrit, nitrat, CO₂ ve alkalinite gerçek zamanlı izleme. Yayımlanmış formüller kullanan bilime dayalı hesaplamalar — tahmin değil."
+
+#: templates/features/aquaculture.html
+msgid "Real-Time Dashboard"
+msgstr "Gerçek Zamanlı Kontrol Paneli"
+
+#: templates/features/aquaculture.html
+msgid "Unified view of all sensors, tanks, and systems. Historical trends, anomaly alerts, and AI-driven insights — accessible from desktop and mobile."
+msgstr "Tüm sensörlerin, tankların ve sistemlerin birleştirilmiş görünümü. Geçmiş trendler, anomali uyarıları ve yapay zeka destekli içgörüler — masaüstü ve mobilden erişilebilir."
+
+#: templates/features/aquaculture.html
+msgid "Feed Management"
+msgstr "Yem Yönetimi"
+
+#: templates/features/aquaculture.html
+msgid "Automated feeding schedules, feed conversion ratio (FCR) tracking, and AI-optimized dosing. Reduce feed waste while maximizing growth rates."
+msgstr "Otomatik yemleme programları, yem dönüşüm oranı (FCR) takibi ve yapay zeka ile optimize edilmiş dozajlama. Büyüme oranlarını maksimize ederken yem israfını azaltın."
+
+#: templates/features/aquaculture.html
+msgid "Batch Tracking"
+msgstr "Parti Takibi"
+
+#: templates/features/aquaculture.html
+msgid "Full lifecycle tracking from smolt to harvest. Mortality analysis, growth curves, biomass estimation, and cohort comparison — all automated."
+msgstr "Smolt'tan hasada kadar tam yaşam döngüsü takibi. Ölüm analizi, büyüme eğrileri, biyokütle tahmini ve kohort karşılaştırması — tümü otomatik."
+
+#: templates/features/aquaculture.html
+msgid "Smart Alerts"
+msgstr "Akıllı Uyarılar"
+
+#: templates/features/aquaculture.html
+msgid "AI-driven anomaly detection with multi-channel alerts via SMS, email, and push notifications. Know about problems before they become crises."
+msgstr "SMS, e-posta ve push bildirimleri aracılığıyla çok kanallı uyarılarla yapay zeka destekli anomali tespiti. Sorunları kriz haline gelmeden önce öğrenin."
+
+#: templates/features/aquaculture.html
+msgid "RAS Optimization"
+msgstr "RAS Optimizasyonu"
+
+#: templates/features/aquaculture.html
+msgid "Designed for recirculating aquaculture systems. Monitor biofilter performance, water exchange rates, and system efficiency in real time."
+msgstr "Devridaim su ürünleri sistemleri için tasarlanmıştır. Biyofiltre performansını, su değişim oranlarını ve sistem verimliliğini gerçek zamanlı olarak izleyin."
+
+#: templates/features/aquaculture.html
+msgid "Why Choose Suderra for Aquaculture"
+msgstr "Akuakültür İçin Neden Suderra'yı Tercih Etmelisiniz"
+
+#: templates/features/aquaculture.html
+msgid "Built in Norway, for Norway"
+msgstr "Norveç'te üretildi, Norveç için tasarlandı"
+
+#: templates/features/aquaculture.html
+msgid "Developed by a team with deep aquaculture expertise. We understand Norwegian fish farming regulations, Mattilsynet reporting requirements, and the unique challenges of cold-water species."
+msgstr "Derin akuakültür uzmanlığına sahip bir ekip tarafından geliştirilmiştir. Norveç balık çiftliği mevzuatını, Mattilsynet raporlama gereksinimlerini ve soğuk su türlerinin kendine özgü zorluklarını anlıyoruz."
+
+#: templates/features/aquaculture.html
+msgid "Offline-First Architecture"
+msgstr "Önce Çevrimdışı Mimarisi"
+
+#: templates/features/aquaculture.html
+msgid "Remote fish farms don't always have reliable internet. Our edge gateway stores data locally, and the mobile app works without signal. No data loss, ever."
+msgstr "Uzak balık çiftliklerinde her zaman güvenilir internet olmayabilir. Edge gateway'imiz verileri yerel olarak depolar ve mobil uygulama sinyal olmadan çalışır. Hiçbir zaman veri kaybı yaşanmaz."
+
+#: templates/features/aquaculture.html
+msgid "No Vendor Lock-In"
+msgstr "Satıcı Bağımlılığı Yok"
+
+#: templates/features/aquaculture.html
+msgid "Supports 8+ pump/motor brands and all major industrial protocols (MQTT, Modbus, OPC-UA). Connect any sensor from any manufacturer."
+msgstr "8'den fazla pompa/motor markasını ve tüm büyük endüstriyel protokolleri (MQTT, Modbus, OPC-UA) destekler. Herhangi bir üreticiden herhangi bir sensörü bağlayın."
+
+#: templates/features/aquaculture.html
+msgid "Science-Based AI"
+msgstr "Bilime Dayalı Yapay Zeka"
+
+#: templates/features/aquaculture.html
+msgid "Our AI uses published scientific formulas — not black-box models. Every recommendation is traceable and explainable. Operators decide what the AI can auto-execute."
+msgstr "Yapay zekamız yayımlanmış bilimsel formüller kullanır — kara kutu modelleri değil. Her öneri izlenebilir ve açıklanabilirdir. Operatörler yapay zekanın neyi otomatik çalıştırabileceğine karar verir."
+
+#: templates/features/aquaculture.html
+msgid "What types of aquaculture facilities does Suderra support?"
+msgstr "Suderra hangi tür akuakültür tesislerini destekler?"
+
+#: templates/features/aquaculture.html
+msgid "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms."
+msgstr "Suderra devridaim su ürünleri sistemlerini (RAS), akışlı tesisleri ve açık kafes operasyonlarını destekler. Modüler mimari, küçük kuluçkahanelerden büyük ölçekli somon çiftliklerine kadar her kuruluma uyum sağlar."
+
+#: templates/features/aquaculture.html
+msgid "Can Suderra integrate with my existing sensors?"
+msgstr "Suderra mevcut sensörlerimle entegre olabilir mi?"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss. The system auto-registers new sensors from all major manufacturers."
+msgstr "Evet. Suderra MQTT, Modbus ve OPC-UA protokollerini destekler ve Siemens, ABB, Grundfos ve Danfoss dahil 8'den fazla pompa ve motor markasıyla çalışır. Sistem, tüm büyük üreticilerin yeni sensörlerini otomatik olarak algılar."
+
+#: templates/features/aquaculture.html
+msgid "Does Suderra work without internet?"
+msgstr "Suderra internet olmadan çalışır mı?"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection. When connectivity returns, data syncs automatically — no data loss."
+msgstr "Evet. Suderra önce çevrimdışı çalışacak şekilde tasarlanmıştır. Edge gateway tüm verileri tesiste yerel olarak depolar. Mobil uygulama da internet bağlantısı olmadan çalışır. Bağlantı geri geldiğinde veriler otomatik olarak senkronize olur — veri kaybı yaşanmaz."
+
+#: templates/features/aquaculture.html
+msgid "How does the AI work in Suderra?"
+msgstr "Suderra'daki yapay zeka nasıl çalışır?"
+
+#: templates/features/aquaculture.html
+msgid "Suderra's AI engine uses published scientific formulas and peer-reviewed data for every calculation. The AI Engineer detects anomalies and identifies root causes. The AI Manager suggests corrective actions. Operators control what the AI can auto-execute."
+msgstr "Suderra'nın yapay zeka motoru her hesaplama için yayımlanmış bilimsel formüller ve hakemli veriler kullanır. Yapay Zeka Mühendisi anomalileri tespit eder ve kök nedenleri belirler. Yapay Zeka Yöneticisi düzeltici eylemler önerir. Operatörler yapay zekanın neyi otomatik çalıştırabileceğini kontrol eder."
+
+# ============================================================
+#  Feature Page - Regulatory Compliance
+# ============================================================
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting — Aquaculture"
+msgstr "Mevzuat Uyumluluğu ve Raporlama — Akuakültür"
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly."
+msgstr "Otomatik Mattilsynet uyumluluğu, deniz biti raporlaması, biyokütle raporlaması, kaçış raporlaması ve Norveç balık çiftliği mevzuat araçları. Zahmetsizce uyumlu kalın."
+
+#: templates/features/compliance.html
+msgid "Compliance"
+msgstr "Uyumluluk"
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting"
+msgstr "Mevzuat Uyumluluğu ve Raporlama"
+
+#: templates/features/compliance.html
+msgid "Automate your regulatory reporting for Norwegian aquaculture authorities. Suderra generates Mattilsynet-ready reports for sea lice counts, biomass levels, mortality events, and escape incidents — directly from your operational data."
+msgstr "Norveç su ürünleri yetiştiriciliği otoritelerine yönelik mevzuat raporlamanızı otomatikleştirin. Suderra, deniz biti sayımları, biyokütle seviyeleri, ölüm olayları ve kaçış vakaları için Mattilsynet'e hazır raporlar oluşturur — doğrudan operasyonel verilerinizden."
+
+#: templates/features/compliance.html
+msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
+msgstr "Norveç su ürünleri yetiştiriciliği, Mattilsynet (Norveç Gıda Güvenliği Otoritesi) ve Balıkçılık Müdürlüğü'nün sıkı düzenlemeleri altında faaliyet gösterir. Balık çiftlikleri, sıkı takvimler dahilinde deniz biti sayımlarını, biyokütle seviyelerini, ölüm olaylarını ve kaçış vakalarını bildirmek zorundadır. Manuel raporlama hataya açık, zaman alıcı ve risklidir."
+
+#: templates/features/compliance.html
+msgid "Suderra automates the entire compliance workflow. Sensor data feeds directly into report templates that match regulatory formats. When it's time to submit, your data is already organized, validated, and ready. No spreadsheets, no manual entry, no missed deadlines."
+msgstr "Suderra, tüm uyumluluk iş akışını otomatikleştirir. Sensör verileri doğrudan mevzuat formatlarına uygun rapor şablonlarına aktarılır. Gönderim zamanı geldiğinde verileriniz zaten düzenlenmiş, doğrulanmış ve hazırdır. Elektronik tablo yok, manuel giriş yok, kaçırılan son tarih yok."
+
+#: templates/features/compliance.html
+msgid "Compliance Features"
+msgstr "Uyumluluk Özellikleri"
+
+#: templates/features/compliance.html
+msgid "Automated Report Generation"
+msgstr "Otomatik Rapor Oluşturma"
+
+#: templates/features/compliance.html
+msgid "Generate regulatory reports directly from your operational data. Sea lice counts, biomass summaries, mortality logs, and environmental metrics — formatted to match Mattilsynet requirements."
+msgstr "Mevzuat raporlarını doğrudan operasyonel verilerinizden oluşturun. Deniz biti sayımları, biyokütle özetleri, ölüm kayıtları ve çevresel metrikler — Mattilsynet gereksinimlerine uygun formatlanmıştır."
+
+#: templates/features/compliance.html
+msgid "Sea Lice Monitoring"
+msgstr "Deniz Biti İzleme"
+
+#: templates/features/compliance.html
+msgid "Track sea lice levels across all pens with historical trends. Get alerts when counts approach regulatory thresholds so you can act before limits are breached."
+msgstr "Geçmiş trendlerle birlikte tüm kafeslerdeki deniz biti seviyelerini takip edin. Sayımlar mevzuat eşiklerine yaklaştığında uyarılar alın, böylece limitler aşılmadan önce harekete geçebilirsiniz."
+
+#: templates/features/compliance.html
+msgid "Biomass Reporting"
+msgstr "Biyokütle Raporlaması"
+
+#: templates/features/compliance.html
+msgid "Real-time biomass estimation using feed data, growth models, and sensor readings. Automatic MTB (Maximum Total Biomass) calculations ensure you stay within concession limits."
+msgstr "Yem verileri, büyüme modelleri ve sensör okumaları kullanarak gerçek zamanlı biyokütle tahmini. Otomatik MTB (Maksimum Toplam Biyokütle) hesaplamaları, imtiyaz sınırları dahilinde kalmanızı sağlar."
+
+#: templates/features/compliance.html
+msgid "Escape & Mortality Alerts"
+msgstr "Kaçış ve Ölüm Uyarıları"
+
+#: templates/features/compliance.html
+msgid "Automated detection and logging of mortality events and potential escape incidents. Pre-formatted incident reports ready for authority submission."
+msgstr "Ölüm olaylarının ve olası kaçış vakalarının otomatik tespiti ve kayıt altına alınması. Yetkili makamlara gönderime hazır önceden formatlanmış olay raporları."
+
+#: templates/features/compliance.html
+msgid "Deadline Management"
+msgstr "Son Tarih Yönetimi"
+
+#: templates/features/compliance.html
+msgid "Never miss a reporting deadline. Suderra tracks all regulatory submission dates and sends reminders to responsible personnel well in advance."
+msgstr "Hiçbir raporlama son tarihini kaçırmayın. Suderra tüm mevzuat gönderim tarihlerini takip eder ve sorumlu personele önceden hatırlatmalar gönderir."
+
+#: templates/features/compliance.html
+msgid "Audit Trail"
+msgstr "Denetim İzi"
+
+#: templates/features/compliance.html
+msgid "Complete audit trail for all data changes and report submissions. Every sensor reading, manual entry, and correction is timestamped and traceable."
+msgstr "Tüm veri değişiklikleri ve rapor gönderimleri için eksiksiz denetim izi. Her sensör okuması, manuel giriş ve düzeltme zaman damgalı ve izlenebilirdir."
+
+#: templates/features/compliance.html
+msgid "Why Automate Compliance with Suderra"
+msgstr "Neden Suderra ile Uyumluluğu Otomatikleştirmelisiniz"
+
+#: templates/features/compliance.html
+msgid "Reduce Manual Work"
+msgstr "Manuel İş Yükünü Azaltın"
+
+#: templates/features/compliance.html
+msgid "Stop copying data into spreadsheets. Reports are generated directly from the same data your operations team already uses daily."
+msgstr "Verileri elektronik tablolara kopyalamayı bırakın. Raporlar, operasyon ekibinizin günlük olarak zaten kullandığı verilerden doğrudan oluşturulur."
+
+#: templates/features/compliance.html
+msgid "Eliminate Errors"
+msgstr "Hataları Ortadan Kaldırın"
+
+#: templates/features/compliance.html
+msgid "Automated data validation catches inconsistencies before reports are submitted. No more rejected filings due to formatting or calculation errors."
+msgstr "Otomatik veri doğrulama, raporlar gönderilmeden önce tutarsızlıkları yakalar. Formatlama veya hesaplama hatalarından kaynaklanan reddedilmiş başvurular artık söz konusu değil."
+
+#: templates/features/compliance.html
+msgid "Stay Ahead of Regulations"
+msgstr "Mevzuatın Önünde Olun"
+
+#: templates/features/compliance.html
+msgid "Proactive alerts warn you when operational parameters approach regulatory limits, giving you time to take corrective action before violations occur."
+msgstr "Proaktif uyarılar, operasyonel parametreler mevzuat sınırlarına yaklaştığında sizi uyarır ve ihlaller meydana gelmeden önce düzeltici önlem almanız için zaman tanır."
+
+#: templates/features/compliance.html
+msgid "What Norwegian regulations does Suderra support?"
+msgstr "Suderra hangi Norveç mevzuatını destekler?"
+
+#: templates/features/compliance.html
+msgid "Suderra supports reporting requirements from Mattilsynet (Norwegian Food Safety Authority) and the Directorate of Fisheries, including sea lice counting reports, biomass/MTB tracking, mortality event logs, and escape incident reports."
+msgstr "Suderra, deniz biti sayım raporları, biyokütle/MTB takibi, ölüm olay kayıtları ve kaçış vakası raporları dahil olmak üzere Mattilsynet (Norveç Gıda Güvenliği Otoritesi) ve Balıkçılık Müdürlüğü'nün raporlama gereksinimlerini destekler."
+
+#: templates/features/compliance.html
+msgid "Can Suderra generate reports for other countries' regulations?"
+msgstr "Suderra diğer ülkelerin mevzuatı için rapor oluşturabilir mi?"
+
+#: templates/features/compliance.html
+msgid "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions. Contact us to discuss your specific compliance needs."
+msgstr "Platform, modüler raporlama ile tasarlanmıştır. Norveç mevzuat şablonlarıyla birlikte gelir ancak diğer yargı bölgeleri için özel rapor formatları yapılandırılabilir. Spesifik uyumluluk ihtiyaçlarınızı görüşmek için bizimle iletişime geçin."
+
+#: templates/features/compliance.html
+msgid "How does the sea lice monitoring work?"
+msgstr "Deniz biti izleme nasıl çalışır?"
+
+#: templates/features/compliance.html
+msgid "Suderra tracks sea lice count data from your monitoring activities, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission."
+msgstr "Suderra, izleme faaliyetlerinizden deniz biti sayım verilerini takip eder, kafes ve saha bazında geçmiş trendleri korur ve sayımlar mevzuat eşiğine yaklaştığında sizi uyarır. Raporlar, Mattilsynet'e gönderim için otomatik olarak formatlanır."
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet reporting and Norwegian fish farm regulations"
+msgstr "Otomatik Mattilsynet raporlaması ve Norveç balık çiftliği mevzuatı"
+
+# ============================================================
+#  Feature Page - Smart Automation & IoT
+# ============================================================
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT — Aquaculture Automation"
+msgstr "Akıllı Otomasyon ve IoT — Akuakültür Otomasyonu"
+
+#: templates/features/automation.html
+msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control."
+msgstr "Akuakültür için yemleyici otomasyonu, dozajlama otomasyonu, sensör IoT entegrasyonu. Görsel otomasyon oluşturucu, çoklu protokol desteği (MQTT, Modbus, OPC-UA) ve yapay zeka destekli kontrol."
+
+#: templates/features/automation.html
+msgid "Automation"
+msgstr "Otomasyon"
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT"
+msgstr "Akıllı Otomasyon ve IoT"
+
+#: templates/features/automation.html
+msgid "Build automation programs without writing code. Suderra's visual automation builder lets you create feeding schedules, dosing routines, and environmental controls using a drag-and-drop interface — connected to every sensor on your facility."
+msgstr "Kod yazmadan otomasyon programları oluşturun. Suderra'nın görsel otomasyon oluşturucusu, sürükle-bırak arayüzü ile yemleme programları, dozajlama rutinleri ve çevresel kontroller oluşturmanıza olanak tanır — tesisinizdeki her sensöre bağlıdır."
+
+#: templates/features/automation.html
+msgid "Modern production facilities run on sensors and controllers — but most automation systems speak different languages. Suderra bridges this gap with a universal IoT integration layer that connects to MQTT, Modbus, and OPC-UA devices from any manufacturer."
+msgstr "Modern üretim tesisleri sensörler ve kontrolörlerle çalışır — ancak çoğu otomasyon sistemi farklı diller konuşur. Suderra, herhangi bir üreticiden MQTT, Modbus ve OPC-UA cihazlarına bağlanan evrensel bir IoT entegrasyon katmanı ile bu boşluğu doldurur."
+
+#: templates/features/automation.html
+msgid "The visual automation builder lets operators create complex automation programs without engineering support. Set feed schedules based on water temperature, trigger dosing when pH drops, or adjust ventilation based on humidity — all through an intuitive drag-and-drop interface with real-time previews."
+msgstr "Görsel otomasyon oluşturucu, operatörlerin mühendislik desteği olmadan karmaşık otomasyon programları oluşturmasına olanak tanır. Su sıcaklığına göre yemleme programları ayarlayın, pH düştüğünde dozajlama başlatın veya neme göre havalandırmayı ayarlayın — tümü gerçek zamanlı önizlemelerle sezgisel bir sürükle-bırak arayüzü üzerinden."
+
+#: templates/features/automation.html
+msgid "Automation Features"
+msgstr "Otomasyon Özellikleri"
+
+#: templates/features/automation.html
+msgid "Visual Automation Builder"
+msgstr "Görsel Otomasyon Oluşturucu"
+
+#: templates/features/automation.html
+msgid "Drag-and-drop interface for creating automation programs. No coding required. Set triggers, conditions, and actions visually — then preview in real time before deploying."
+msgstr "Otomasyon programları oluşturmak için sürükle-bırak arayüzü. Kodlama gerekmez. Tetikleyicileri, koşulları ve eylemleri görsel olarak ayarlayın — dağıtmadan önce gerçek zamanlı olarak önizleyin."
+
+#: templates/features/automation.html
+msgid "Multi-Protocol IoT Gateway"
+msgstr "Çoklu Protokol IoT Gateway"
+
+#: templates/features/automation.html
+msgid "Connects to MQTT, Modbus, and OPC-UA devices. Supports 8+ pump and motor brands. One gateway, every protocol — no integration headaches."
+msgstr "MQTT, Modbus ve OPC-UA cihazlarına bağlanır. 8'den fazla pompa ve motor markasını destekler. Tek gateway, her protokol — entegrasyon sorunları yok."
+
+#: templates/features/automation.html
+msgid "Feeder Automation"
+msgstr "Yemleyici Otomasyonu"
+
+#: templates/features/automation.html
+msgid "Automated feeding schedules based on water temperature, fish size, and growth models. Real-time FCR optimization with AI-driven adjustments to minimize waste and maximize growth."
+msgstr "Su sıcaklığı, balık boyutu ve büyüme modellerine dayalı otomatik yemleme programları. İsrafı en aza indirmek ve büyümeyi en üst düzeye çıkarmak için yapay zeka destekli ayarlamalarla gerçek zamanlı FCR optimizasyonu."
+
+#: templates/features/automation.html
+msgid "Chemical Dosing Control"
+msgstr "Kimyasal Dozajlama Kontrolü"
+
+#: templates/features/automation.html
+msgid "Automated pH adjustment, oxygen injection, and chemical dosing based on real-time sensor data. Science-based formulas ensure precise dosing — no overdosing, no waste."
+msgstr "Gerçek zamanlı sensör verilerine dayalı otomatik pH ayarı, oksijen enjeksiyonu ve kimyasal dozajlama. Bilime dayalı formüller hassas dozajlamayı sağlar — aşırı dozajlama yok, israf yok."
+
+#: templates/features/automation.html
+msgid "Conditional Alerts & Actions"
+msgstr "Koşullu Uyarılar ve Eylemler"
+
+#: templates/features/automation.html
+msgid "Set multi-condition triggers: if oxygen drops AND temperature rises, trigger aeration AND send an alert. Complex logic made simple through the visual builder."
+msgstr "Çok koşullu tetikleyiciler ayarlayın: oksijen düşerse VE sıcaklık yükselirse, havalandırmayı başlatın VE bir uyarı gönderin. Karmaşık mantık, görsel oluşturucu ile basitleştirilmiştir."
+
+#: templates/features/automation.html
+msgid "Edge Computing"
+msgstr "Edge Computing"
+
+#: templates/features/automation.html
+msgid "Automation runs locally on the edge gateway — no cloud dependency. Even if internet connectivity drops, your automation programs keep running without interruption."
+msgstr "Otomasyon, edge gateway üzerinde yerel olarak çalışır — bulut bağımlılığı yok. İnternet bağlantısı kesilse bile otomasyon programlarınız kesintisiz çalışmaya devam eder."
+
+#: templates/features/automation.html
+msgid "Why Automate with Suderra"
+msgstr "Neden Suderra ile Otomatikleştirmelisiniz"
+
+#: templates/features/automation.html
+msgid "No Coding Required"
+msgstr "Kodlama Gerekmez"
+
+#: templates/features/automation.html
+msgid "The visual builder lets operators create and modify automation programs without engineering support. Reduce dependency on technical staff for day-to-day automation changes."
+msgstr "Görsel oluşturucu, operatörlerin mühendislik desteği olmadan otomasyon programları oluşturmasına ve değiştirmesine olanak tanır. Günlük otomasyon değişiklikleri için teknik personele bağımlılığı azaltın."
+
+#: templates/features/automation.html
+msgid "Brand-Agnostic"
+msgstr "Marka Bağımsız"
+
+#: templates/features/automation.html
+msgid "Works with sensors, pumps, and controllers from any manufacturer. Siemens, ABB, Grundfos, Danfoss — connect them all to one unified automation system."
+msgstr "Herhangi bir üreticinin sensörleri, pompaları ve kontrolörleriyle çalışır. Siemens, ABB, Grundfos, Danfoss — hepsini tek bir birleşik otomasyon sistemine bağlayın."
+
+#: templates/features/automation.html
+msgid "Reliable Operation"
+msgstr "Güvenilir Çalışma"
+
+#: templates/features/automation.html
+msgid "Edge computing ensures automation continues during internet outages. Critical processes like feeding and oxygen management never depend on cloud connectivity."
+msgstr "Edge computing, internet kesintileri sırasında otomasyonun devam etmesini sağlar. Yemleme ve oksijen yönetimi gibi kritik süreçler asla bulut bağlantısına bağımlı değildir."
+
+#: templates/features/automation.html
+msgid "What protocols does the IoT gateway support?"
+msgstr "IoT gateway hangi protokolleri destekler?"
+
+#: templates/features/automation.html
+msgid "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers."
+msgstr "Suderra'nın IoT gateway'i MQTT, Modbus (RTU ve TCP) ve OPC-UA'yı destekler. 8'den fazla pompa ve motor markasıyla çalışır ve tüm büyük üreticilerin yeni sensörlerini otomatik olarak algılar."
+
+#: templates/features/automation.html
+msgid "Do I need programming skills to create automations?"
+msgstr "Otomasyon oluşturmak için programlama becerisine ihtiyacım var mı?"
+
+#: templates/features/automation.html
+msgid "No. The visual automation builder uses a drag-and-drop interface. You select triggers (sensor thresholds, time schedules), add conditions, and define actions — all visually. No code needed."
+msgstr "Hayır. Görsel otomasyon oluşturucu sürükle-bırak arayüzü kullanır. Tetikleyicileri (sensör eşikleri, zaman programları) seçer, koşullar ekler ve eylemleri tanımlarsınız — hepsi görsel olarak. Kod gerekmez."
+
+#: templates/features/automation.html
+msgid "What happens if the internet goes down?"
+msgstr "İnternet kesilirse ne olur?"
+
+#: templates/features/automation.html
+msgid "All automation programs run locally on the edge gateway. If internet connectivity drops, automation continues without interruption. Data is stored locally and syncs when connectivity returns."
+msgstr "Tüm otomasyon programları edge gateway üzerinde yerel olarak çalışır. İnternet bağlantısı kesilirse otomasyon kesintisiz devam eder. Veriler yerel olarak depolanır ve bağlantı geri geldiğinde senkronize olur."
+
+#: templates/features/automation.html
+msgid "Can I automate feeding schedules?"
+msgstr "Yemleme programlarını otomatikleştirebilir miyim?"
+
+#: templates/features/automation.html
+msgid "Yes. Suderra's feeder automation creates schedules based on water temperature, fish size, growth stage, and environmental conditions. The AI optimizes feed amounts in real time to minimize FCR and waste."
+msgstr "Evet. Suderra'nın yemleyici otomasyonu su sıcaklığı, balık boyutu, büyüme aşaması ve çevresel koşullara göre programlar oluşturur. Yapay zeka, FCR ve israfı en aza indirmek için yem miktarlarını gerçek zamanlı olarak optimize eder."
+
+#: templates/features/automation.html
+msgid "IoT sensor integration, feeder automation, and dosing control"
+msgstr "IoT sensör entegrasyonu, yemleyici otomasyonu ve dozajlama kontrolü"
+
+# ============================================================
+#  Feature Page - Soilless Culture
+# ============================================================
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management — Hydroponics & Vertical Farming Software"
+msgstr "Topraksız Tarım Yönetimi — Hidroponik ve Dikey Tarım Yazılımı"
+
+#: templates/features/soilless.html
+msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking."
+msgstr "Hidroponik, akuaponik ve dikey tarım için topraksız tarım yazılımı. Besin reçetesi yönetimi, EC/pH izleme, gübre otomasyonu ve büyüme aşaması takibi."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management"
+msgstr "Topraksız Tarım Yönetimi"
+
+#: templates/features/soilless.html
+msgid "Manage hydroponics, aquaponics, and vertical farming operations with precision. Suderra provides nutrient recipe management, automated fertigation, EC/pH monitoring, and growth stage tracking — with 24+ preset nutrient formulas ready to use."
+msgstr "Hidroponik, akuaponik ve dikey tarım operasyonlarını hassasiyetle yönetin. Suderra, besin reçetesi yönetimi, otomatik fertigasyon, EC/pH izleme ve büyüme aşaması takibi sunar — kullanıma hazır 24'ten fazla önceden ayarlanmış besin formülü ile birlikte."
+
+#: templates/features/soilless.html
+msgid "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system."
+msgstr "Topraksız tarım doğası gereği hassastır — her besin konsantrasyonu, pH seviyesi ve çevresel değişken önemlidir. Suderra'nın topraksız tarım modülü, ticari bir sera, dikey çiftlik veya akuaponik sistem işletiyor olsanız da yetiştirme ortamınız üzerinde tam kontrol sağlar."
+
+#: templates/features/soilless.html
+msgid "The platform comes with 24+ preset nutrient recipes for common crop types, and lets you create custom formulas for specialized production. Real-time EC and pH monitoring triggers automatic adjustments, keeping your nutrient solution within optimal ranges 24/7."
+msgstr "Platform, yaygın ürün türleri için 24'ten fazla önceden ayarlanmış besin reçetesi ile birlikte gelir ve özel üretim için kendi formüllerinizi oluşturmanıza olanak tanır. Gerçek zamanlı EC ve pH izleme otomatik ayarlamaları tetikler ve besin solüsyonunuzu 7/24 optimum aralıklarda tutar."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Features"
+msgstr "Topraksız Tarım Özellikleri"
+
+#: templates/features/soilless.html
+msgid "Nutrient Recipe Management"
+msgstr "Besin Reçetesi Yönetimi"
+
+#: templates/features/soilless.html
+msgid "24+ preset nutrient recipes for common crops. Create, modify, and share custom formulas. Track nutrient consumption per crop cycle for accurate cost analysis."
+msgstr "Yaygın ürünler için 24'ten fazla önceden ayarlanmış besin reçetesi. Özel formüller oluşturun, değiştirin ve paylaşın. Doğru maliyet analizi için ürün döngüsü başına besin tüketimini takip edin."
+
+#: templates/features/soilless.html
+msgid "EC & pH Monitoring"
+msgstr "EC ve pH İzleme"
+
+#: templates/features/soilless.html
+msgid "Continuous electrical conductivity and pH monitoring with historical trends. Automatic alerts when values drift outside optimal ranges for your current crop."
+msgstr "Geçmiş trendlerle birlikte sürekli elektriksel iletkenlik ve pH izleme. Değerler mevcut ürününüz için optimum aralıkların dışına çıktığında otomatik uyarılar."
+
+#: templates/features/soilless.html
+msgid "Automated Fertigation"
+msgstr "Otomatik Fertigasyon"
+
+#: templates/features/soilless.html
+msgid "Automated nutrient dosing based on real-time EC and pH readings. Precision fertilizer injection keeps your solution within optimal parameters without manual intervention."
+msgstr "Gerçek zamanlı EC ve pH okumalarına dayalı otomatik besin dozajlaması. Hassas gübre enjeksiyonu, çözeltinizi manuel müdahale olmadan optimum parametreler dahilinde tutar."
+
+#: templates/features/soilless.html
+msgid "Growth Stage Tracking"
+msgstr "Büyüme Aşaması Takibi"
+
+#: templates/features/soilless.html
+msgid "Track crops through germination, vegetative, flowering, and harvest stages. Automatic recipe adjustments based on growth phase for optimal nutrient delivery at every stage."
+msgstr "Ürünleri çimlenme, vejetatif, çiçeklenme ve hasat aşamalarında takip edin. Her aşamada optimum besin iletimi için büyüme fazına göre otomatik reçete ayarlamaları."
+
+#: templates/features/soilless.html
+msgid "Climate Control Integration"
+msgstr "İklim Kontrolü Entegrasyonu"
+
+#: templates/features/soilless.html
+msgid "Integrated control of temperature, humidity, CO₂, and lighting. Automation rules coordinate climate and nutrition for optimal growing conditions."
+msgstr "Sıcaklık, nem, CO₂ ve aydınlatmanın entegre kontrolü. Otomasyon kuralları, optimum yetiştirme koşulları için iklim ve beslenmeyi koordine eder."
+
+#: templates/features/soilless.html
+msgid "Yield Analytics"
+msgstr "Verim Analitiği"
+
+#: templates/features/soilless.html
+msgid "Track yield per crop cycle, compare recipes, and optimize growing parameters. Data-driven insights help you increase production efficiency over time."
+msgstr "Ürün döngüsü başına verimi takip edin, reçeteleri karşılaştırın ve yetiştirme parametrelerini optimize edin. Veriye dayalı içgörüler, zaman içinde üretim verimliliğinizi artırmanıza yardımcı olur."
+
+#: templates/features/soilless.html
+msgid "Why Choose Suderra for Soilless Culture"
+msgstr "Topraksız Tarım İçin Neden Suderra'yı Tercih Etmelisiniz"
+
+#: templates/features/soilless.html
+msgid "Ready-to-Use Recipes"
+msgstr "Kullanıma Hazır Reçeteler"
+
+#: templates/features/soilless.html
+msgid "Start growing immediately with 24+ preset nutrient formulas for lettuce, tomatoes, herbs, strawberries, and more. Customize as you learn what works for your setup."
+msgstr "Marul, domates, otlar, çilek ve daha fazlası için 24'ten fazla önceden ayarlanmış besin formülü ile hemen yetiştirmeye başlayın. Kurulumunuz için en uygun olanı öğrendikçe özelleştirin."
+
+#: templates/features/soilless.html
+msgid "Unified Platform"
+msgstr "Birleşik Platform"
+
+#: templates/features/soilless.html
+msgid "If you run both aquaculture and soilless culture (aquaponics), Suderra manages both from one dashboard. Fish waste feeds plant nutrition — fully automated."
+msgstr "Hem akuakültür hem de topraksız tarım (akuaponik) işletiyorsanız, Suderra her ikisini de tek bir kontrol panelinden yönetir. Balık atıkları bitki beslenmesini sağlar — tamamen otomatik."
+
+#: templates/features/soilless.html
+msgid "Precision Automation"
+msgstr "Hassas Otomasyon"
+
+#: templates/features/soilless.html
+msgid "Automated fertigation eliminates human error in nutrient mixing. Consistent, precise dosing leads to better yields and lower chemical costs."
+msgstr "Otomatik fertigasyon, besin karıştırmada insan hatasını ortadan kaldırır. Tutarlı, hassas dozajlama daha iyi verim ve daha düşük kimyasal maliyetlerine yol açar."
+
+#: templates/features/soilless.html
+msgid "What types of soilless systems does Suderra support?"
+msgstr "Suderra hangi tür topraksız sistemleri destekler?"
+
+#: templates/features/soilless.html
+msgid "Suderra supports NFT (Nutrient Film Technique), DWC (Deep Water Culture), ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems. The platform adapts to any soilless growing method."
+msgstr "Suderra NFT (Besin Filmi Tekniği), DWC (Derin Su Kültürü), gelgit sistemi, damla sulama, dikey tarım kuleleri ve akuaponik sistemleri destekler. Platform, herhangi bir topraksız yetiştirme yöntemine uyum sağlar."
+
+#: templates/features/soilless.html
+msgid "How many nutrient recipes are included?"
+msgstr "Kaç adet besin reçetesi dahildir?"
+
+#: templates/features/soilless.html
+msgid "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities."
+msgstr "Suderra; yapraklı yeşillikler, otlar, domates, biber, çilek ve daha fazlası dahil olmak üzere yaygın ürünler için 24'ten fazla önceden ayarlanmış besin reçetesi içerir. Ayrıca sınırsız özel reçete oluşturabilir ve bunları tesisler arasında paylaşabilirsiniz."
+
+#: templates/features/soilless.html
+msgid "Can Suderra manage aquaponics systems?"
+msgstr "Suderra akuaponik sistemleri yönetebilir mi?"
+
+#: templates/features/soilless.html
+msgid "Yes. Suderra's modular design means the aquaculture and soilless culture modules work together seamlessly. Monitor fish health, water quality, and plant nutrition from one dashboard — with automated nutrient cycling between systems."
+msgstr "Evet. Suderra'nın modüler tasarımı, akuakültür ve topraksız tarım modüllerinin sorunsuz bir şekilde birlikte çalışması anlamına gelir. Balık sağlığını, su kalitesini ve bitki beslenmesini tek bir kontrol panelinden izleyin — sistemler arasında otomatik besin döngüsü ile."
+
+#: templates/features/soilless.html
+msgid "Hydroponics, aquaponics, and vertical farming management"
+msgstr "Hidroponik, akuaponik ve dikey tarım yönetimi"
+
+# ============================================================
+#  Feature Page - Waste Water Treatment
+# ============================================================
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment Software — Water Quality Monitoring"
+msgstr "Atık Su Arıtma Yazılımı — Su Kalitesi İzleme"
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting."
+msgstr "Akış izleme, su kalitesi takibi, AKM yönetimi, kimyasal yük optimizasyonu ve deşarj uyumluluk raporlaması için atık su arıtma yazılımı."
+
+#: templates/features/wastewater.html
+msgid "Waste Water"
+msgstr "Atık Su"
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment"
+msgstr "Atık Su Arıtma"
+
+#: templates/features/wastewater.html
+msgid "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators."
+msgstr "Gerçek zamanlı sensör verileriyle atık su arıtma süreçlerini izleyin ve optimize edin. Akış hızlarını, AKM seviyelerini, kimyasal yükleri ve deşarj kalitesini takip edin — tümü arıtma tesisi operatörleri için tasarlanmış tek bir platformdan."
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is critical. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results mean problems are caught too late."
+msgstr "Atık su arıtma tesisleri, gerçek zamanlı izlemenin kritik olduğu karmaşık, çok aşamalı süreçleri yönetir. Giriş elekleme aşamasından nihai deşarja kadar her aşama sıkı çevre standartlarını karşılamak zorundadır. Manuel izleme ve gecikmiş laboratuvar sonuçları, sorunların çok geç fark edilmesi anlamına gelir."
+
+#: templates/features/wastewater.html
+msgid "Suderra brings the same sensor integration and automation capabilities that power our aquaculture platform to waste water treatment. Connect every sensor in your plant — flow meters, TSS probes, pH sensors, dissolved oxygen meters — to one unified dashboard with real-time alerts and automated chemical dosing."
+msgstr "Suderra, akuakültür platformumuzu destekleyen aynı sensör entegrasyonu ve otomasyon yeteneklerini atık su arıtmaya taşır. Tesisinizdeki her sensörü — akış ölçerler, AKM probları, pH sensörleri, çözünmüş oksijen ölçerler — gerçek zamanlı uyarılar ve otomatik kimyasal dozajlama ile tek bir birleşik kontrol paneline bağlayın."
+
+#: templates/features/wastewater.html
+msgid "Waste Water Features"
+msgstr "Atık Su Özellikleri"
+
+#: templates/features/wastewater.html
+msgid "Flow Monitoring"
+msgstr "Akış İzleme"
+
+#: templates/features/wastewater.html
+msgid "Real-time flow rate tracking across all treatment stages. Historical trends, peak detection, and capacity planning tools to optimize throughput."
+msgstr "Tüm arıtma aşamalarında gerçek zamanlı akış hızı takibi. Verimi optimize etmek için geçmiş trendler, tepe tespiti ve kapasite planlama araçları."
+
+#: templates/features/wastewater.html
+msgid "Water Quality Tracking"
+msgstr "Su Kalitesi Takibi"
+
+#: templates/features/wastewater.html
+msgid "Monitor pH, dissolved oxygen, turbidity, conductivity, and temperature across all treatment stages. Continuous data collection replaces periodic lab sampling."
+msgstr "Tüm arıtma aşamalarında pH, çözünmüş oksijen, bulanıklık, iletkenlik ve sıcaklığı izleyin. Sürekli veri toplama, periyodik laboratuvar örneklemesinin yerini alır."
+
+#: templates/features/wastewater.html
+msgid "TSS Management"
+msgstr "AKM Yönetimi"
+
+#: templates/features/wastewater.html
+msgid "Total Suspended Solids monitoring with real-time alerts. Track sedimentation efficiency and sludge levels to optimize removal processes."
+msgstr "Gerçek zamanlı uyarılarla Askıda Katı Madde (AKM) izleme. Giderme süreçlerini optimize etmek için çöktürme verimliliğini ve çamur seviyelerini takip edin."
+
+#: templates/features/wastewater.html
+msgid "Chemical Load Optimization"
+msgstr "Kimyasal Yük Optimizasyonu"
+
+#: templates/features/wastewater.html
+msgid "AI-driven chemical dosing reduces reagent consumption while maintaining treatment standards. Automated adjustments based on real-time influent conditions."
+msgstr "Yapay zeka destekli kimyasal dozajlama, arıtma standartlarını korurken reaktif tüketimini azaltır. Gerçek zamanlı giriş koşullarına dayalı otomatik ayarlamalar."
+
+#: templates/features/wastewater.html
+msgid "Effluent Compliance"
+msgstr "Deşarj Uyumluluğu"
+
+#: templates/features/wastewater.html
+msgid "Continuous monitoring of discharge quality against regulatory limits. Automated compliance reports and proactive alerts when parameters approach thresholds."
+msgstr "Deşarj kalitesinin mevzuat sınırlarına karşı sürekli izlenmesi. Parametreler eşiklere yaklaştığında otomatik uyumluluk raporları ve proaktif uyarılar."
+
+#: templates/features/wastewater.html
+msgid "Process Dashboard"
+msgstr "Süreç Kontrol Paneli"
+
+#: templates/features/wastewater.html
+msgid "Unified view of all treatment stages from influent to effluent. Real-time process visualization with drill-down capability for each stage."
+msgstr "Girişten deşarja kadar tüm arıtma aşamalarının birleştirilmiş görünümü. Her aşama için detaya inme özelliğiyle gerçek zamanlı süreç görselleştirme."
+
+#: templates/features/wastewater.html
+msgid "Why Choose Suderra for Waste Water"
+msgstr "Atık Su İçin Neden Suderra'yı Tercih Etmelisiniz"
+
+#: templates/features/wastewater.html
+msgid "Same Platform, New Sector"
+msgstr "Aynı Platform, Yeni Sektör"
+
+#: templates/features/wastewater.html
+msgid "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
+msgstr "Suderra'nın modüler mimarisi, atık su modülünün kanıtlanmış akuakültür kod tabanının %%70'ini yeniden kullanması anlamına gelir. Aynı güvenilirlik, aynı sensör entegrasyonu, arıtma tesisleri için özel olarak tasarlanmıştır."
+
+#: templates/features/wastewater.html
+msgid "Reduce Chemical Costs"
+msgstr "Kimyasal Maliyetleri Azaltın"
+
+#: templates/features/wastewater.html
+msgid "AI-optimized dosing reduces chemical consumption by adjusting reagent amounts in real time based on actual influent conditions — not fixed schedules."
+msgstr "Yapay zeka ile optimize edilmiş dozajlama, sabit programlara değil gerçek zamanlı giriş koşullarına göre reaktif miktarlarını ayarlayarak kimyasal tüketimini azaltır."
+
+#: templates/features/wastewater.html
+msgid "Proactive Compliance"
+msgstr "Proaktif Uyumluluk"
+
+#: templates/features/wastewater.html
+msgid "Get alerts before discharge parameters approach limits. Automated reports ensure you're always ready for inspections and regulatory submissions."
+msgstr "Deşarj parametreleri sınırlara yaklaşmadan önce uyarılar alın. Otomatik raporlar, denetimlere ve mevzuat gönderimlerine her zaman hazır olmanızı sağlar."
+
+#: templates/features/wastewater.html
+msgid "What parameters can Suderra monitor in a waste water plant?"
+msgstr "Suderra bir atık su arıtma tesisinde hangi parametreleri izleyebilir?"
+
+#: templates/features/wastewater.html
+msgid "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility."
+msgstr "Suderra; akış hızı, pH, çözünmüş oksijen, bulanıklık, AKM (Askıda Katı Madde), iletkenlik, sıcaklık, kimyasal oksijen ihtiyacı (KOİ), biyolojik oksijen ihtiyacı (BOİ) ve daha fazlasını izleyebilir — tesisinizdeki kurulan sensörlere bağlı olarak."
+
+#: templates/features/wastewater.html
+msgid "Is this the same platform used for aquaculture?"
+msgstr "Bu akuakültür için kullanılan platformun aynısı mı?"
+
+#: templates/features/wastewater.html
+msgid "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations."
+msgstr "Evet. Suderra, her sektörün kendi operasyon modülüne sahip olduğu modüler bir mimari kullanır. Atık su modülü, akuakültürde kullanılan aynı kanıtlanmış sensör entegrasyonu, otomasyon motoru ve kontrol paneli çerçevesi üzerine kuruludur — arıtma tesisi operasyonlarına uyarlanmıştır."
+
+#: templates/features/wastewater.html
+msgid "Can Suderra automate chemical dosing?"
+msgstr "Suderra kimyasal dozajlamayı otomatikleştirebilir mi?"
+
+#: templates/features/wastewater.html
+msgid "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards."
+msgstr "Evet. Otomasyon motoru, gerçek zamanlı sensör okumalarına dayalı olarak kimyasal dozajlama pompalarını kontrol edebilir. Hedef parametreleri belirleyin ve yapay zekanın reaktif miktarlarını optimize etmesine izin verin — arıtma standartlarını korurken maliyetleri düşürün."
+
+#: templates/features/wastewater.html
+msgid "Water quality monitoring and effluent management"
+msgstr "Su kalitesi izleme ve deşarj yönetimi"
+
+#: templates/features/wastewater.html
+msgid "IoT sensor integration and automation control"
+msgstr "IoT sensör entegrasyonu ve otomasyon kontrolü"

@@ -1,0 +1,200 @@
+{% extends "features/_base_feature.html" %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block feature_title %}{% trans "Waste Water Treatment Software — Water Quality Monitoring" %}{% endblock %}
+{% block feature_description %}{% trans "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting." %}{% endblock %}
+{% block feature_og_title %}{% trans "Waste Water Treatment Software — Water Quality Monitoring" %}{% endblock %}
+{% block feature_og_description %}{% trans "Waste water treatment software for flow monitoring, water quality tracking, and effluent compliance reporting." %}{% endblock %}
+{% block feature_twitter_title %}{% trans "Waste Water Treatment Software — Water Quality Monitoring" %}{% endblock %}
+{% block feature_twitter_description %}{% trans "Waste water treatment software for flow monitoring, water quality tracking, and effluent compliance reporting." %}{% endblock %}
+
+{% block breadcrumb_title %}{% trans "Waste Water Treatment" %}{% endblock %}
+{% block hero_tag %}{% trans "Waste Water" %}{% endblock %}
+{% block hero_title %}{% trans "Waste Water Treatment" %}{% endblock %}
+{% block hero_subtitle %}{% trans "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators." %}{% endblock %}
+
+{% block overview %}
+<p>{% trans "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is critical. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results mean problems are caught too late." %}</p>
+<p>{% trans "Suderra brings the same sensor integration and automation capabilities that power our aquaculture platform to waste water treatment. Connect every sensor in your plant — flow meters, TSS probes, pH sensors, dissolved oxygen meters — to one unified dashboard with real-time alerts and automated chemical dosing." %}</p>
+{% endblock %}
+
+{% block features_title %}{% trans "Waste Water Features" %}{% endblock %}
+{% block features_grid %}
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+  </div>
+  <h3>{% trans "Flow Monitoring" %}</h3>
+  <p>{% trans "Real-time flow rate tracking across all treatment stages. Historical trends, peak detection, and capacity planning tools to optimize throughput." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 8-2-4-4-6.05-4-8a4 4 0 014-4z"/><circle cx="12" cy="14" r="3"/><path d="M5 19.5C5.5 17 8 15.5 12 15.5s6.5 1.5 7 4"/></svg>
+  </div>
+  <h3>{% trans "Water Quality Tracking" %}</h3>
+  <p>{% trans "Monitor pH, dissolved oxygen, turbidity, conductivity, and temperature across all treatment stages. Continuous data collection replaces periodic lab sampling." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+  </div>
+  <h3>{% trans "TSS Management" %}</h3>
+  <p>{% trans "Total Suspended Solids monitoring with real-time alerts. Track sedimentation efficiency and sludge levels to optimize removal processes." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 11-2.83 2.83l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09c-.658.003-1.25.396-1.51 1z"/></svg>
+  </div>
+  <h3>{% trans "Chemical Load Optimization" %}</h3>
+  <p>{% trans "AI-driven chemical dosing reduces reagent consumption while maintaining treatment standards. Automated adjustments based on real-time influent conditions." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+  </div>
+  <h3>{% trans "Effluent Compliance" %}</h3>
+  <p>{% trans "Continuous monitoring of discharge quality against regulatory limits. Automated compliance reports and proactive alerts when parameters approach thresholds." %}</p>
+</div>
+<div class="feature-card">
+  <div class="feature-card-icon">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+  </div>
+  <h3>{% trans "Process Dashboard" %}</h3>
+  <p>{% trans "Unified view of all treatment stages from influent to effluent. Real-time process visualization with drill-down capability for each stage." %}</p>
+</div>
+{% endblock %}
+
+{% block benefits_title %}{% trans "Why Choose Suderra for Waste Water" %}{% endblock %}
+{% block benefits %}
+<div class="benefits-grid">
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Same Platform, New Sector" %}</h3>
+      <p>{% trans "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Reduce Chemical Costs" %}</h3>
+      <p>{% trans "AI-optimized dosing reduces chemical consumption by adjusting reagent amounts in real time based on actual influent conditions — not fixed schedules." %}</p>
+    </div>
+  </div>
+  <div class="benefit-item">
+    <div class="benefit-icon">
+      <svg viewBox="0 0 20 20" fill="currentColor" width="20" height="20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+    </div>
+    <div>
+      <h3>{% trans "Proactive Compliance" %}</h3>
+      <p>{% trans "Get alerts before discharge parameters approach limits. Automated reports ensure you're always ready for inspections and regulatory submissions." %}</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block faq %}
+<div class="faq-item">
+  <button class="faq-question">{% trans "What parameters can Suderra monitor in a waste water plant?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Is this the same platform used for aquaculture?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations." %}</p>
+  </div>
+</div>
+<div class="faq-item">
+  <button class="faq-question">{% trans "Can Suderra automate chemical dosing?" %}</button>
+  <div class="faq-answer">
+    <p>{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards." %}</p>
+  </div>
+</div>
+{% endblock %}
+
+{% block related_pages %}
+<a href="{% url 'feature_aquaculture' %}" class="feature-related-card">
+  <h3>{% trans "Aquaculture Software" %}</h3>
+  <p>{% trans "Complete fish farm management platform" %}</p>
+</a>
+<a href="{% url 'feature_automation' %}" class="feature-related-card">
+  <h3>{% trans "Smart Automation" %}</h3>
+  <p>{% trans "IoT sensor integration and automation control" %}</p>
+</a>
+<a href="{% url 'feature_regulatory' %}" class="feature-related-card">
+  <h3>{% trans "Regulatory Compliance" %}</h3>
+  <p>{% trans "Automated reporting for Norwegian regulations" %}</p>
+</a>
+<a href="{% url 'feature_soilless' %}" class="feature-related-card">
+  <h3>{% trans "Soilless Culture" %}</h3>
+  <p>{% trans "Hydroponics, aquaponics, and vertical farming management" %}</p>
+</a>
+{% endblock %}
+
+{% block feature_schema %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Waste Water Treatment Software",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "description": "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com"
+  },
+  "featureList": ["Flow monitoring", "Water quality tracking", "TSS management", "Chemical load optimization", "Effluent compliance", "Process dashboard"]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What parameters can Suderra monitor in a waste water plant?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS, conductivity, temperature, COD, BOD, and more — depending on the sensors installed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this the same platform used for aquaculture?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Suderra uses a modular architecture. The waste water module builds on the same proven sensor integration, automation, and dashboard framework used in aquaculture."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Suderra automate chemical dosing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings, optimizing reagent amounts to reduce costs."
+      }
+    }
+  ]
+}
+</script>
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "Waste Water Treatment", "item": "https://suderra.com{{ request.path }}"}
+  ]
+}
+</script>
+{% endblock %}

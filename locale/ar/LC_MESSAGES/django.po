@@ -1,0 +1,1611 @@
+# Suderra Website Translations - Arabic
+# Copyright (C) 2026 Suderra AS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+
+#. ============================================================
+#. NAVIGATION & UI (base.html)
+#. ============================================================
+
+#: templates/base.html
+msgid "Toggle Menu"
+msgstr "فتح/إغلاق القائمة"
+
+#: templates/base.html
+msgid "Home"
+msgstr "الرئيسية"
+
+#: templates/base.html
+msgid "Our Technology"
+msgstr "تقنياتنا"
+
+#: templates/base.html
+msgid "Our Services"
+msgstr "خدماتنا"
+
+#: templates/base.html
+msgid "About Us"
+msgstr "من نحن"
+
+#: templates/base.html
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+#: templates/base.html
+msgid "All rights reserved."
+msgstr "جميع الحقوق محفوظة."
+
+#: templates/base.html
+msgid "Technology"
+msgstr "التقنية"
+
+#: templates/base.html
+msgid "Services"
+msgstr "الخدمات"
+
+#: templates/base.html
+msgid "About"
+msgstr "من نحن"
+
+#: templates/base.html
+msgid "Contact"
+msgstr "التواصل"
+
+#: templates/base.html
+msgid "Client Portal"
+msgstr "بوابة العملاء"
+
+#: templates/base.html
+msgid "Change language"
+msgstr "تغيير اللغة"
+
+#. ============================================================
+#. SEO / Open Graph (base.html)
+#. ============================================================
+
+#: templates/base.html
+msgid "Innovating Aquaculture & Aquaponics for a Sustainable Future."
+msgstr "ابتكار الاستزراع المائي والأكوابونيك من أجل مستقبل مستدام."
+
+#: templates/base.html
+msgid ""
+"Norwegian aquaculture technology company specializing in patented optical "
+"sensor technology for real-time water quality monitoring."
+msgstr ""
+"شركة تكنولوجيا الاستزراع المائي النرويجية المتخصصة في تقنية المستشعرات "
+"البصرية الحاصلة على براءة اختراع لمراقبة جودة المياه في الوقت الفعلي."
+
+#. ============================================================
+#. Cookie Consent (base.html)
+#. ============================================================
+
+#: templates/base.html
+msgid ""
+"We use cookies to improve your experience on our website. By continuing to "
+"browse, you consent to our use of cookies."
+msgstr ""
+"نستخدم ملفات تعريف الارتباط لتحسين تجربتك على موقعنا. بالاستمرار في "
+"التصفح، فإنك توافق على استخدامنا لملفات تعريف الارتباط."
+
+#: templates/base.html
+msgid "Learn more"
+msgstr "اعرف المزيد"
+
+#: templates/base.html
+msgid "Accept"
+msgstr "قبول"
+
+#: templates/base.html
+msgid "Decline"
+msgstr "رفض"
+
+#. ============================================================
+#. Language Names (base.html)
+#. ============================================================
+
+#: templates/base.html
+msgid "English"
+msgstr "الإنجليزية"
+
+#: templates/base.html
+msgid "Norwegian"
+msgstr "النرويجية"
+
+#: templates/base.html
+msgid "Turkish"
+msgstr "التركية"
+
+#: templates/base.html
+msgid "Arabic"
+msgstr "العربية"
+
+#. ============================================================
+#. HERO SECTION (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Your browser does not support the video tag."
+msgstr "متصفحك لا يدعم علامة الفيديو."
+
+#: templates/index.html
+msgid "Modular Operations Intelligence"
+msgstr "ذكاء العمليات المعيارية"
+
+#: templates/index.html
+msgid "One Platform."
+msgstr "منصة واحدة."
+
+#: templates/index.html
+msgid "Every Facility."
+msgstr "كل منشأة."
+
+#: templates/index.html
+msgid ""
+"Suderra Software connects to all your sensors, collects data in one place, "
+"and turns it into actionable decisions — before problems happen. "
+"Sector-agnostic. Offline-first. AI-powered."
+msgstr ""
+"يتصل برنامج سوديرا بجميع أجهزة الاستشعار الخاصة بك، ويجمع البيانات في "
+"مكان واحد، ويحولها إلى قرارات قابلة للتنفيذ — قبل حدوث المشاكل. متعدد "
+"القطاعات. يعمل دون اتصال. مدعوم بالذكاء الاصطناعي."
+
+#: templates/index.html
+msgid "Explore Platform"
+msgstr "استكشف المنصة"
+
+#: templates/index.html
+msgid "Launch Dashboard"
+msgstr "افتح لوحة التحكم"
+
+#: templates/index.html
+msgid "Microservices"
+msgstr "خدمة مصغرة"
+
+#: templates/index.html
+msgid "Pump/Motor Brands"
+msgstr "علامة تجارية للمضخات/المحركات"
+
+#: templates/index.html
+msgid "Industrial Protocols"
+msgstr "بروتوكول صناعي"
+
+#: templates/index.html
+msgid "Global Offices"
+msgstr "مكاتب عالمية"
+
+#: templates/index.html
+msgid "Scroll"
+msgstr "مرر للأسفل"
+
+#. ============================================================
+#. TECHNOLOGY SECTION (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "The Platform"
+msgstr "المنصة"
+
+#: templates/index.html
+msgid "Software for Action"
+msgstr "برمجيات للعمل"
+
+#: templates/index.html
+msgid ""
+"One sensor platform that plugs into any production facility — fish farms, "
+"greenhouses, waste water plants, or any combination. Sector-agnostic. "
+"Protocol-native. AI-powered."
+msgstr ""
+"منصة استشعار واحدة تتصل بأي منشأة إنتاج — مزارع الأسماك، البيوت "
+"الزجاجية، محطات معالجة المياه العادمة، أو أي مزيج. متعددة القطاعات. "
+"متوافقة مع البروتوكولات. مدعومة بالذكاء الاصطناعي."
+
+#: templates/index.html
+msgid ""
+"A fish farm runs dozens of sensors — water temperature, dissolved oxygen, "
+"pH, ammonia. A greenhouse measures EC, humidity, nutrient levels. A waste "
+"water plant tracks flow, TSS, and chemical load. <strong>Suderra "
+"Software</strong> connects to all of them, collects the data in one place, "
+"and turns it into <strong>actionable decisions</strong> — before problems "
+"happen."
+msgstr ""
+"تشغّل مزرعة الأسماك عشرات أجهزة الاستشعار — حرارة الماء، الأكسجين "
+"المذاب، الرقم الهيدروجيني، الأمونيا. تقيس البيوت الزجاجية الموصلية "
+"الكهربائية والرطوبة ومستويات المغذيات. تتبع محطة معالجة المياه العادمة "
+"التدفق والمواد الصلبة العالقة والحمل الكيميائي. يتصل <strong>برنامج "
+"سوديرا</strong> بكل ذلك، ويجمع البيانات في مكان واحد، ويحولها إلى "
+"<strong>قرارات قابلة للتنفيذ</strong> — قبل حدوث المشاكل."
+
+#: templates/index.html
+msgid "Sensor Module"
+msgstr "وحدة الاستشعار"
+
+#: templates/index.html
+msgid "Universal Sensor Integration"
+msgstr "تكامل استشعار شامل"
+
+#: templates/index.html
+msgid ""
+"Speaks every major industrial protocol — MQTT, Modbus, OPC-UA. Supports 8+ "
+"pump/motor brands. One installation, fast setup. Edge gateway stores data "
+"locally — no cloud dependency. Auto-registers new sensors from all major "
+"manufacturers."
+msgstr ""
+"يدعم كل بروتوكول صناعي رئيسي — MQTT، Modbus، OPC-UA. يدعم أكثر من 8 "
+"علامات تجارية للمضخات/المحركات. تثبيت واحد، إعداد سريع. بوابة حافة تخزن "
+"البيانات محلياً — بدون اعتماد على السحابة. يسجل المستشعرات الجديدة "
+"تلقائياً من جميع الشركات المصنعة الرئيسية."
+
+#: templates/index.html
+msgid "Operations"
+msgstr "العمليات"
+
+#: templates/index.html
+msgid "Sector-Specific Intelligence"
+msgstr "ذكاء متخصص بالقطاع"
+
+#: templates/index.html
+msgid ""
+"Modular architecture where each sector gets its own operations module. Fish "
+"farm: batch management, feed plans, mortality tracking. Soilless culture: "
+"nutrient recipes, growth stages. Waste water: flow monitoring, chemical "
+"load. Each new sector reuses 70%% of existing code."
+msgstr ""
+"بنية معيارية يحصل فيها كل قطاع على وحدة عمليات خاصة به. مزرعة الأسماك: "
+"إدارة الدفعات، خطط التغذية، تتبع النفوق. الزراعة بدون تربة: وصفات "
+"المغذيات، مراحل النمو. المياه العادمة: مراقبة التدفق، الحمل الكيميائي. "
+"كل قطاع جديد يعيد استخدام %%70 من الكود الحالي."
+
+#: templates/index.html
+msgid "AI Engine"
+msgstr "محرك الذكاء الاصطناعي"
+
+#: templates/index.html
+msgid "Science-Based Decision Making"
+msgstr "اتخاذ قرارات مبنية على العلم"
+
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision uses published "
+"scientific formulas and peer-reviewed data. The AI engineer detects "
+"anomalies, identifies root causes, and the AI manager suggests corrective "
+"actions. Operators control what AI can auto-execute."
+msgstr ""
+"ذكاؤنا الاصطناعي يحسب — لا يخمن. كل قرار يستخدم صيغاً علمية منشورة "
+"وبيانات محكّمة. مهندس الذكاء الاصطناعي يكتشف الشذوذ ويحدد الأسباب "
+"الجذرية، ومدير الذكاء الاصطناعي يقترح إجراءات تصحيحية. يتحكم المشغلون "
+"فيما يمكن للذكاء الاصطناعي تنفيذه تلقائياً."
+
+#: templates/index.html
+msgid "Suderra platform dashboard visualization"
+msgstr "تصور لوحة معلومات منصة سوديرا"
+
+#: templates/index.html
+msgid "Platform dashboard"
+msgstr "لوحة معلومات المنصة"
+
+#: templates/index.html
+msgid "Production-Ready. 13 Microservices."
+msgstr "جاهزة للإنتاج. 13 خدمة مصغرة."
+
+#: templates/index.html
+msgid "Real-time dashboards"
+msgstr "لوحات معلومات آنية"
+
+#: templates/index.html
+msgid "Water chemistry engine"
+msgstr "محرك كيمياء المياه"
+
+#: templates/index.html
+msgid "Visual automation builder"
+msgstr "منشئ أتمتة بصري"
+
+#: templates/index.html
+msgid "Offline-first mobile app"
+msgstr "تطبيق جوال يعمل دون اتصال"
+
+#: templates/index.html
+msgid "Multi-tenant SaaS"
+msgstr "SaaS متعدد المستأجرين"
+
+#: templates/index.html
+msgid "Smart alerts (SMS/email/push)"
+msgstr "تنبيهات ذكية (رسائل/بريد/إشعارات)"
+
+#: templates/index.html
+msgid "8+ VFD/pump brands"
+msgstr "أكثر من 8 علامات VFD/مضخات"
+
+#: templates/index.html
+msgid "Edge gateway (local-first)"
+msgstr "بوابة حافة (محلية أولاً)"
+
+#: templates/index.html
+msgid "Nutrient calculator (24+ presets)"
+msgstr "حاسبة المغذيات (24+ إعداد مسبق)"
+
+#: templates/index.html
+msgid "Supported By"
+msgstr "بدعم من"
+
+#: templates/index.html
+msgid "Eksfin"
+msgstr "Eksfin"
+
+#: templates/index.html
+msgid "Innovation Norway"
+msgstr "Innovation Norway"
+
+#: templates/index.html
+msgid "Research Council of Norway"
+msgstr "مجلس الأبحاث النرويجي"
+
+#. ============================================================
+#. SERVICES / SECTORS SECTION (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Sectors"
+msgstr "القطاعات"
+
+#: templates/index.html
+msgid "One Platform, Every Sector"
+msgstr "منصة واحدة، كل القطاعات"
+
+#: templates/index.html
+msgid ""
+"Each new sector reuses 70% of existing code. We add a module — the core "
+"platform stays the same."
+msgstr ""
+"كل قطاع جديد يعيد استخدام 70% من الكود الحالي. نضيف وحدة — تبقى المنصة "
+"الأساسية كما هي."
+
+#: templates/index.html
+msgid "LIVE"
+msgstr "مباشر"
+
+#: templates/index.html
+msgid "BETA"
+msgstr "تجريبي"
+
+#: templates/index.html
+msgid "Aquaculture"
+msgstr "الاستزراع المائي"
+
+#: templates/index.html
+msgid ""
+"RAS design, water chemistry monitoring, feed management, batch tracking, "
+"mortality analysis. Full fish farm operations intelligence with AI-driven "
+"dosing and real-time alerts."
+msgstr ""
+"تصميم RAS، مراقبة كيمياء المياه، إدارة التغذية، تتبع الدفعات، تحليل "
+"النفوق. ذكاء عمليات مزرعة أسماك كامل مع جرعات مدعومة بالذكاء الاصطناعي "
+"وتنبيهات آنية."
+
+#: templates/index.html
+msgid "Soilless Culture"
+msgstr "الزراعة بدون تربة"
+
+#: templates/index.html
+msgid ""
+"Nutrient recipe management, EC/pH/humidity monitoring, growth stage "
+"tracking, climate control integration. Hydroponics and aquaponics ready "
+"with 24+ nutrient presets."
+msgstr ""
+"إدارة وصفات المغذيات، مراقبة EC/pH/الرطوبة، تتبع مراحل النمو، تكامل "
+"التحكم المناخي. جاهزة للزراعة المائية والأكوابونيك مع 24+ إعداد مسبق "
+"للمغذيات."
+
+#: templates/index.html
+msgid "Waste Water"
+msgstr "المياه العادمة"
+
+#: templates/index.html
+msgid ""
+"Flow monitoring, TSS tracking, chemical load optimization, regulatory "
+"compliance reporting. Advanced reagent-free data collection and treatment "
+"plant intelligence."
+msgstr ""
+"مراقبة التدفق، تتبع المواد الصلبة العالقة، تحسين الحمل الكيميائي، "
+"تقارير الامتثال التنظيمي. جمع بيانات متقدم بدون كواشف وذكاء محطة معالجة."
+
+#: templates/index.html
+msgid "Next Sectors"
+msgstr "القطاعات القادمة"
+
+#: templates/index.html
+msgid ""
+"The modular architecture allows rapid expansion into new industrial "
+"verticals — any sector that runs sensors and needs operational intelligence. "
+"One platform, unlimited potential."
+msgstr ""
+"تتيح البنية المعيارية التوسع السريع في قطاعات صناعية جديدة — أي قطاع "
+"يشغل مستشعرات ويحتاج إلى ذكاء تشغيلي. منصة واحدة، إمكانيات غير محدودة."
+
+#. ============================================================
+#. CORE PROMISE (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Any Brand"
+msgstr "أي علامة تجارية"
+
+#: templates/index.html
+msgid "Siemens, ABB, Grundfos, Danfoss — connect every manufacturer."
+msgstr "سيمنز، ABB، غروندفوس، دانفوس — اتصل بكل مصنّع."
+
+#: templates/index.html
+msgid "Any Sensor"
+msgstr "أي مستشعر"
+
+#: templates/index.html
+msgid "pH, O₂, temperature, flow, pressure — every data point, unified."
+msgstr "pH، O₂، الحرارة، التدفق، الضغط — كل نقطة بيانات، موحدة."
+
+#: templates/index.html
+msgid "One Platform"
+msgstr "منصة واحدة"
+
+#: templates/index.html
+msgid "Reports, automation, AI — all in a single dashboard."
+msgstr "التقارير، الأتمتة، الذكاء الاصطناعي — الكل في لوحة معلومات واحدة."
+
+#: templates/index.html
+msgid ""
+"It doesn't matter which manufacturer built your sensors, PLCs, or pumps. "
+"Suderra connects to all of them — collects every data point, generates "
+"unified reports, and runs automation programs for feeding schedules, water "
+"quality dosing, climate control, and more. No vendor lock-in. No data "
+"silos. Just one system that speaks every protocol."
+msgstr ""
+"لا يهم أي شركة صنعت مستشعراتك أو وحدات التحكم المنطقية أو المضخات. "
+"سوديرا يتصل بها جميعاً — يجمع كل نقطة بيانات، وينشئ تقارير موحدة، "
+"ويشغل برامج أتمتة لجداول التغذية وجرعات جودة المياه والتحكم المناخي "
+"والمزيد. لا تبعية لمورّد. لا صوامع بيانات. نظام واحد يتحدث كل بروتوكول."
+
+#: templates/index.html
+msgid "Brand-agnostic data collection"
+msgstr "جمع بيانات مستقل عن العلامة التجارية"
+
+#: templates/index.html
+msgid "Unified reporting & analytics"
+msgstr "تقارير وتحليلات موحدة"
+
+#: templates/index.html
+msgid "Feeding & dosing automation"
+msgstr "أتمتة التغذية والجرعات"
+
+#: templates/index.html
+msgid "Water quality management"
+msgstr "إدارة جودة المياه"
+
+#: templates/index.html
+msgid "No vendor lock-in"
+msgstr "لا تبعية لمورّد"
+
+#. ============================================================
+#. HOW IT WORKS (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "How It Works"
+msgstr "كيف يعمل"
+
+#: templates/index.html
+msgid "From sensors to decisions — in four steps."
+msgstr "من المستشعرات إلى القرارات — في أربع خطوات."
+
+#: templates/index.html
+msgid ""
+"Connects to any sensor or device on site. Stores all data locally at the "
+"facility via edge gateway — no cloud dependency. Auto-registers new sensors. "
+"Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands."
+msgstr ""
+"يتصل بأي مستشعر أو جهاز في الموقع. يخزن جميع البيانات محلياً في المنشأة "
+"عبر بوابة حافة — بدون اعتماد على السحابة. يسجل المستشعرات الجديدة "
+"تلقائياً. يدعم بروتوكولات MQTT وModbus وOPC-UA وأكثر من 8 علامات "
+"مضخات/محركات."
+
+#: templates/index.html
+msgid "Operations Modules"
+msgstr "وحدات العمليات"
+
+#: templates/index.html
+msgid ""
+"Sector-specific modules add meaning to data. The fish farm module knows "
+"batch management, feed plans, and mortality. The soilless culture module "
+"knows nutrient recipes and growth stages."
+msgstr ""
+"تضيف الوحدات المتخصصة بالقطاع معنى للبيانات. وحدة مزرعة الأسماك تعرف "
+"إدارة الدفعات وخطط التغذية والنفوق. وحدة الزراعة بدون تربة تعرف وصفات "
+"المغذيات ومراحل النمو."
+
+#: templates/index.html
+msgid ""
+"Our AI calculates — it doesn't guess. Every decision is based on published "
+"scientific formulas and peer-reviewed data. AI detects anomalies, identifies "
+"root causes, and suggests corrective actions."
+msgstr ""
+"ذكاؤنا الاصطناعي يحسب — لا يخمن. كل قرار مبني على صيغ علمية منشورة "
+"وبيانات محكّمة. يكتشف الذكاء الاصطناعي الشذوذ ويحدد الأسباب الجذرية "
+"ويقترح إجراءات تصحيحية."
+
+#: templates/index.html
+msgid "Mobile App"
+msgstr "تطبيق الجوال"
+
+#: templates/index.html
+msgid ""
+"Offline-first mobile app works without signal. Operators check sensor data, "
+"receive alerts, and manage operations from anywhere. Data syncs "
+"automatically when connection returns."
+msgstr ""
+"تطبيق جوال يعمل دون اتصال بالإنترنت. يتحقق المشغلون من بيانات "
+"المستشعرات ويتلقون التنبيهات ويديرون العمليات من أي مكان. تتم مزامنة "
+"البيانات تلقائياً عند عودة الاتصال."
+
+#. ============================================================
+#. ABOUT SECTION (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Who We Are"
+msgstr "من نحن"
+
+#: templates/index.html
+msgid "About Suderra"
+msgstr "عن سوديرا"
+
+#: templates/index.html
+msgid ""
+"A vertically integrated aquaculture technology company with offices in "
+"Norway and Turkey, delivering end-to-end solutions from engineering to "
+"production."
+msgstr ""
+"شركة تكنولوجيا استزراع مائي متكاملة رأسياً بمكاتب في النرويج وتركيا، "
+"تقدم حلولاً شاملة من الهندسة إلى الإنتاج."
+
+#: templates/index.html
+msgid "Our Impact"
+msgstr "تأثيرنا"
+
+#: templates/index.html
+msgid "Before installation"
+msgstr "قبل التركيب"
+
+#: templates/index.html
+msgid "Before"
+msgstr "قبل"
+
+#: templates/index.html
+msgid "After installation"
+msgstr "بعد التركيب"
+
+#: templates/index.html
+msgid "After"
+msgstr "بعد"
+
+#: templates/index.html
+msgid ""
+"Suderra AS is a vertically integrated aquaculture technology company "
+"headquartered in Sandefjord, Norway with operations in Izmir, Turkey. We "
+"combine patented optical sensor R&D, advanced engineering design, equipment "
+"manufacturing, and hands-on fish farming expertise under one roof — giving "
+"our clients a single partner for their entire aquaculture journey."
+msgstr ""
+"Suderra AS هي شركة تكنولوجيا استزراع مائي متكاملة رأسياً يقع مقرها "
+"الرئيسي في ساندفيورد، النرويج مع عمليات في إزمير، تركيا. نجمع بين البحث "
+"والتطوير في المستشعرات البصرية الحاصلة على براءة اختراع والتصميم الهندسي "
+"المتقدم وتصنيع المعدات وخبرة تربية الأسماك العملية تحت سقف واحد — مما "
+"يمنح عملاءنا شريكاً واحداً لرحلتهم الكاملة في الاستزراع المائي."
+
+#. ============================================================
+#. CONTACT SECTION (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Let's Connect"
+msgstr "تواصل معنا"
+
+#: templates/index.html
+msgid ""
+"For more information about our services, technologies, or partnership "
+"opportunities, feel free to reach out to us directly."
+msgstr ""
+"للحصول على مزيد من المعلومات حول خدماتنا أو تقنياتنا أو فرص الشراكة، "
+"لا تتردد في التواصل معنا مباشرة."
+
+#: templates/index.html
+msgid "Norway Office — Headquarters"
+msgstr "مكتب النرويج — المقر الرئيسي"
+
+#: templates/index.html
+msgid "Turkey Office — Manufacturing & Operations"
+msgstr "مكتب تركيا — التصنيع والعمليات"
+
+#: templates/index.html
+msgid "Suderra Norway office"
+msgstr "مكتب سوديرا النرويج"
+
+#: templates/index.html
+msgid "Patented Technology"
+msgstr "تقنية حاصلة على براءة اختراع"
+
+#: templates/index.html
+msgid "Government Backed"
+msgstr "بدعم حكومي"
+
+#: templates/index.html
+msgid "2 Global Offices"
+msgstr "مكتبان عالميان"
+
+#: templates/index.html
+msgid "Get in Touch"
+msgstr "تواصل معنا"
+
+#: templates/index.html
+msgid "Fill out the form below and we'll get back to you within 24 hours."
+msgstr "املأ النموذج أدناه وسنعود إليك خلال 24 ساعة."
+
+#: templates/index.html
+msgid "Full Name"
+msgstr "الاسم الكامل"
+
+#: templates/index.html
+msgid "Company"
+msgstr "الشركة"
+
+#: templates/index.html
+msgid "Email Address"
+msgstr "البريد الإلكتروني"
+
+#: templates/index.html
+msgid "Your Message"
+msgstr "رسالتك"
+
+#: templates/index.html
+msgid "Send Message"
+msgstr "إرسال الرسالة"
+
+#: templates/index.html
+msgid "Back to top"
+msgstr "العودة للأعلى"
+
+#. ============================================================
+#. FOOTER (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Quick Links"
+msgstr "روابط سريعة"
+
+#: templates/index.html
+msgid "Recirculating Aquaculture"
+msgstr "الاستزراع المائي الدوراني"
+
+#: templates/index.html
+msgid "Aquaponics"
+msgstr "الأكوابونيك"
+
+#: templates/index.html
+msgid "Smart Monitoring"
+msgstr "المراقبة الذكية"
+
+#: templates/index.html
+msgid "Ocean Monitoring"
+msgstr "مراقبة المحيطات"
+
+#: templates/index.html
+msgid "Hydroponics"
+msgstr "الزراعة المائية"
+
+#: templates/index.html
+msgid "Norway"
+msgstr "النرويج"
+
+#: templates/index.html
+msgid "Turkey"
+msgstr "تركيا"
+
+#: templates/index.html
+msgid "Newsletter"
+msgstr "النشرة الإخبارية"
+
+#: templates/index.html
+msgid "Your email"
+msgstr "بريدك الإلكتروني"
+
+#: templates/index.html
+msgid "Subscribe"
+msgstr "اشترك"
+
+#. ============================================================
+#. Contact Form JS Messages (index.html)
+#. ============================================================
+
+#: templates/index.html
+msgid "Please fill in all required fields."
+msgstr "يرجى ملء جميع الحقول المطلوبة."
+
+#: templates/index.html
+msgid "Please enter a valid email address."
+msgstr "يرجى إدخال عنوان بريد إلكتروني صالح."
+
+#: templates/index.html
+msgid "Sending..."
+msgstr "جارٍ الإرسال..."
+
+#: templates/index.html
+msgid "Message sent successfully! We will get back to you soon."
+msgstr "تم إرسال الرسالة بنجاح! سنعود إليك قريباً."
+
+#: templates/index.html
+msgid "Something went wrong. Please try again."
+msgstr "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+
+#: templates/index.html
+msgid "An error occurred. Please try again later."
+msgstr "حدث خطأ. يرجى المحاولة مرة أخرى لاحقاً."
+
+#. ============================================================
+#. 404 Error Page
+#. ============================================================
+
+#: templates/404.html
+msgid "Page Not Found"
+msgstr "الصفحة غير موجودة"
+
+#: templates/404.html
+msgid "Sorry, the page you are looking for does not exist or has been moved."
+msgstr "عذراً، الصفحة التي تبحث عنها غير موجودة أو تم نقلها."
+
+#: templates/404.html
+msgid "Back to Home"
+msgstr "العودة إلى الرئيسية"
+
+#: templates/404.html
+msgid "The page you are looking for could not be found."
+msgstr "لم يتم العثور على الصفحة التي تبحث عنها."
+
+#. ============================================================
+#. 500 Error Page (500.html)
+#. ============================================================
+
+#: templates/500.html
+msgid "Server Error"
+msgstr "خطأ في الخادم"
+
+#: templates/500.html
+msgid ""
+"Something went wrong on our end. Our team has been notified and is working "
+"to fix the issue. Please try again later."
+msgstr ""
+"حدث خطأ من جانبنا. تم إبلاغ فريقنا ويعمل على إصلاح المشكلة. "
+"يرجى المحاولة مرة أخرى لاحقاً."
+
+#. ============================================================
+#. Accessibility (base.html)
+#. ============================================================
+
+#: templates/base.html
+msgid "Skip to main content"
+msgstr "انتقل إلى المحتوى الرئيسي"
+
+#. ============================================================
+#. Client Portal
+#. ============================================================
+
+#: templates/index.html
+msgid "Client access required"
+msgstr "يتطلب وصول العملاء"
+
+# ============================================================
+#  Feature Pages - Shared (features/_base_feature.html)
+# ============================================================
+
+#: templates/features/_base_feature.html
+msgid "Breadcrumb"
+msgstr "مسار التنقل"
+
+#: templates/features/_base_feature.html
+msgid "Key Features"
+msgstr "الميزات الرئيسية"
+
+#: templates/features/_base_feature.html
+msgid "Why Suderra"
+msgstr "لماذا سوديرا"
+
+#: templates/features/_base_feature.html
+msgid "Frequently Asked Questions"
+msgstr "الأسئلة الشائعة"
+
+#: templates/features/_base_feature.html
+msgid "Ready to Get Started?"
+msgstr "هل أنت مستعد للبدء؟"
+
+#: templates/features/_base_feature.html
+msgid "Contact our team to learn how Suderra can transform your operations."
+msgstr "تواصل مع فريقنا لمعرفة كيف يمكن لسوديرا تحويل عملياتك."
+
+#: templates/features/_base_feature.html
+msgid "Get in Touch"
+msgstr "تواصل معنا"
+
+#: templates/features/_base_feature.html
+msgid "Explore More"
+msgstr "استكشف المزيد"
+
+#: templates/features/_base_feature.html
+msgid "Aquaculture Software"
+msgstr "برمجيات تربية الأحياء المائية"
+
+#: templates/features/_base_feature.html
+msgid "Complete fish farm management platform"
+msgstr "منصة متكاملة لإدارة مزارع الأسماك"
+
+#: templates/features/_base_feature.html
+msgid "Regulatory Compliance"
+msgstr "الامتثال التنظيمي"
+
+#: templates/features/_base_feature.html
+msgid "Automated reporting for Norwegian regulations"
+msgstr "إعداد التقارير الآلي وفقاً للوائح النرويجية"
+
+#: templates/features/_base_feature.html
+msgid "Smart Automation"
+msgstr "الأتمتة الذكية"
+
+#: templates/features/_base_feature.html
+msgid "IoT sensor integration and automation"
+msgstr "تكامل مستشعرات إنترنت الأشياء (IoT) والأتمتة"
+
+#: templates/features/_base_feature.html
+msgid "Soilless Culture"
+msgstr "الزراعة بدون تربة"
+
+#: templates/features/_base_feature.html
+msgid "Hydroponics and vertical farming management"
+msgstr "إدارة الزراعة المائية والزراعة العمودية"
+
+#: templates/features/_base_feature.html
+msgid "Waste Water Treatment"
+msgstr "معالجة مياه الصرف"
+
+#: templates/features/_base_feature.html
+msgid "Water quality monitoring and effluent management"
+msgstr "مراقبة جودة المياه وإدارة المخلفات السائلة"
+
+#: templates/features/_base_feature.html
+msgid "Solutions"
+msgstr "الحلول"
+
+#: templates/features/_base_feature.html
+msgid "Company"
+msgstr "الشركة"
+
+#: templates/features/_base_feature.html
+msgid "Learn More"
+msgstr "اعرف المزيد"
+
+# ============================================================
+#  Feature Page - Aquaculture Software
+# ============================================================
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform — Fish Farm Management"
+msgstr "منصة برمجيات تربية الأحياء المائية — إدارة مزارع الأسماك"
+
+#: templates/features/aquaculture.html
+msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered."
+msgstr "برمجيات تربية أحياء مائية مطوّرة في النرويج لمراقبة أنظمة RAS، واستزراع السلمون، وكيمياء المياه، وإدارة التغذية، وبيانات المستشعرات الآنية. تعمل دون اتصال. مدعومة بالذكاء الاصطناعي."
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture"
+msgstr "تربية الأحياء المائية"
+
+#: templates/features/aquaculture.html
+msgid "Aquaculture Software Platform"
+msgstr "منصة برمجيات تربية الأحياء المائية"
+
+#: templates/features/aquaculture.html
+msgid "Complete fish farm management software built in Norway. Monitor water chemistry, manage feeding schedules, track batches, and run AI-powered dosing — all from a single dashboard. Designed for RAS, flow-through, and open-pen aquaculture."
+msgstr "برمجيات متكاملة لإدارة مزارع الأسماك مطوّرة في النرويج. راقب كيمياء المياه، وأدِر جداول التغذية، وتتبع الدفعات، وشغّل الجرعات المدعومة بالذكاء الاصطناعي — كل ذلك من لوحة تحكم واحدة. مصممة لأنظمة RAS والتدفق المفتوح والأقفاص البحرية."
+
+#: templates/features/aquaculture.html
+msgid "Managing a modern fish farm means tracking dozens of variables in real time — dissolved oxygen, pH, ammonia, temperature, feed conversion ratios, and mortality rates. Suderra's aquaculture software platform connects to every sensor on your facility and unifies all data into one system."
+msgstr "إدارة مزرعة أسماك حديثة تعني تتبع عشرات المتغيرات في الوقت الفعلي — الأكسجين المذاب، ودرجة الحموضة، والأمونيا، والحرارة، ومعدلات تحويل العلف، ومعدلات النفوق. تتصل منصة سوديرا لبرمجيات تربية الأحياء المائية بكل مستشعر في منشأتك وتوحّد جميع البيانات في نظام واحد."
+
+#: templates/features/aquaculture.html
+msgid "Whether you run a recirculating aquaculture system (RAS), flow-through facility, or open-pen operation, our platform adapts to your setup. The edge gateway stores data locally — so your farm stays operational even without internet. When connectivity returns, everything syncs automatically."
+msgstr "سواء كنت تدير نظام استزراع مائي دوراني (RAS)، أو منشأة تدفق مفتوح، أو أقفاص بحرية، تتكيف منصتنا مع إعداداتك. تخزّن بوابة الحافة (Edge Gateway) البيانات محلياً — لتبقى مزرعتك عاملة حتى بدون إنترنت. عند عودة الاتصال، تتم المزامنة تلقائياً."
+
+#: templates/features/aquaculture.html
+msgid "Key Aquaculture Features"
+msgstr "الميزات الرئيسية لتربية الأحياء المائية"
+
+#: templates/features/aquaculture.html
+msgid "Water Chemistry Engine"
+msgstr "محرك كيمياء المياه"
+
+#: templates/features/aquaculture.html
+msgid "Real-time monitoring of pH, dissolved oxygen, ammonia, nitrite, nitrate, CO₂, and alkalinity. Science-based calculations using published formulas — not guesswork."
+msgstr "مراقبة آنية لدرجة الحموضة والأكسجين المذاب والأمونيا والنيتريت والنترات وثاني أكسيد الكربون والقلوية. حسابات مبنية على أسس علمية باستخدام صيغ منشورة — وليس تخميناً."
+
+#: templates/features/aquaculture.html
+msgid "Real-Time Dashboard"
+msgstr "لوحة المعلومات الآنية"
+
+#: templates/features/aquaculture.html
+msgid "Unified view of all sensors, tanks, and systems. Historical trends, anomaly alerts, and AI-driven insights — accessible from desktop and mobile."
+msgstr "عرض موحّد لجميع المستشعرات والأحواض والأنظمة. اتجاهات تاريخية، وتنبيهات الشذوذ، ورؤى مدعومة بالذكاء الاصطناعي — متاحة من الحاسوب والجوال."
+
+#: templates/features/aquaculture.html
+msgid "Feed Management"
+msgstr "إدارة التغذية"
+
+#: templates/features/aquaculture.html
+msgid "Automated feeding schedules, feed conversion ratio (FCR) tracking, and AI-optimized dosing. Reduce feed waste while maximizing growth rates."
+msgstr "جداول تغذية آلية، وتتبع معدل تحويل العلف (FCR)، وجرعات محسّنة بالذكاء الاصطناعي. قلّل هدر العلف مع تعظيم معدلات النمو."
+
+#: templates/features/aquaculture.html
+msgid "Batch Tracking"
+msgstr "تتبع الدفعات"
+
+#: templates/features/aquaculture.html
+msgid "Full lifecycle tracking from smolt to harvest. Mortality analysis, growth curves, biomass estimation, and cohort comparison — all automated."
+msgstr "تتبع دورة الحياة الكاملة من الإصبعيات إلى الحصاد. تحليل النفوق، ومنحنيات النمو، وتقدير الكتلة الحيوية، ومقارنة المجموعات — كل ذلك بشكل آلي."
+
+#: templates/features/aquaculture.html
+msgid "Smart Alerts"
+msgstr "التنبيهات الذكية"
+
+#: templates/features/aquaculture.html
+msgid "AI-driven anomaly detection with multi-channel alerts via SMS, email, and push notifications. Know about problems before they become crises."
+msgstr "كشف الشذوذ المدعوم بالذكاء الاصطناعي مع تنبيهات متعددة القنوات عبر الرسائل النصية والبريد الإلكتروني والإشعارات الفورية. اعرف بالمشاكل قبل أن تتحول إلى أزمات."
+
+#: templates/features/aquaculture.html
+msgid "RAS Optimization"
+msgstr "تحسين أنظمة RAS"
+
+#: templates/features/aquaculture.html
+msgid "Designed for recirculating aquaculture systems. Monitor biofilter performance, water exchange rates, and system efficiency in real time."
+msgstr "مصمم لأنظمة الاستزراع المائي الدوراني. راقب أداء المرشح الحيوي ومعدلات تبادل المياه وكفاءة النظام في الوقت الفعلي."
+
+#: templates/features/aquaculture.html
+msgid "Why Choose Suderra for Aquaculture"
+msgstr "لماذا تختار سوديرا لتربية الأحياء المائية"
+
+#: templates/features/aquaculture.html
+msgid "Built in Norway, for Norway"
+msgstr "مطوّرة في النرويج، للنرويج"
+
+#: templates/features/aquaculture.html
+msgid "Developed by a team with deep aquaculture expertise. We understand Norwegian fish farming regulations, Mattilsynet reporting requirements, and the unique challenges of cold-water species."
+msgstr "مطوّرة من قبل فريق يمتلك خبرة عميقة في تربية الأحياء المائية. نحن نفهم لوائح استزراع الأسماك النرويجية، ومتطلبات تقارير هيئة سلامة الغذاء النرويجية (Mattilsynet)، والتحديات الفريدة لأنواع المياه الباردة."
+
+#: templates/features/aquaculture.html
+msgid "Offline-First Architecture"
+msgstr "بنية تعمل دون اتصال أولاً"
+
+#: templates/features/aquaculture.html
+msgid "Remote fish farms don't always have reliable internet. Our edge gateway stores data locally, and the mobile app works without signal. No data loss, ever."
+msgstr "مزارع الأسماك النائية لا تتوفر فيها دائماً خدمة إنترنت موثوقة. تخزّن بوابة الحافة البيانات محلياً، ويعمل تطبيق الجوال بدون إشارة. لا فقدان للبيانات، أبداً."
+
+#: templates/features/aquaculture.html
+msgid "No Vendor Lock-In"
+msgstr "لا تبعية لمورّد واحد"
+
+#: templates/features/aquaculture.html
+msgid "Supports 8+ pump/motor brands and all major industrial protocols (MQTT, Modbus, OPC-UA). Connect any sensor from any manufacturer."
+msgstr "يدعم أكثر من 8 علامات تجارية للمضخات/المحركات وجميع البروتوكولات الصناعية الرئيسية (MQTT، Modbus، OPC-UA). اربط أي مستشعر من أي مصنّع."
+
+#: templates/features/aquaculture.html
+msgid "Science-Based AI"
+msgstr "ذكاء اصطناعي مبني على العلم"
+
+#: templates/features/aquaculture.html
+msgid "Our AI uses published scientific formulas — not black-box models. Every recommendation is traceable and explainable. Operators decide what the AI can auto-execute."
+msgstr "يستخدم ذكاؤنا الاصطناعي صيغاً علمية منشورة — وليس نماذج مبهمة. كل توصية قابلة للتتبع والتفسير. يقرر المشغلون ما يمكن للذكاء الاصطناعي تنفيذه تلقائياً."
+
+#: templates/features/aquaculture.html
+msgid "What types of aquaculture facilities does Suderra support?"
+msgstr "ما أنواع منشآت تربية الأحياء المائية التي يدعمها سوديرا؟"
+
+#: templates/features/aquaculture.html
+msgid "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms."
+msgstr "يدعم سوديرا أنظمة الاستزراع المائي الدوراني (RAS)، ومنشآت التدفق المفتوح، وعمليات الأقفاص البحرية. تتكيف البنية المعيارية مع أي إعداد — من المفاقس الصغيرة إلى مزارع السلمون الكبيرة."
+
+#: templates/features/aquaculture.html
+msgid "Can Suderra integrate with my existing sensors?"
+msgstr "هل يمكن لسوديرا التكامل مع المستشعرات الحالية لديّ؟"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss. The system auto-registers new sensors from all major manufacturers."
+msgstr "نعم. يدعم سوديرا بروتوكولات MQTT وModbus وOPC-UA ويعمل مع أكثر من 8 علامات تجارية للمضخات والمحركات بما في ذلك سيمنز وABB وغروندفوس ودانفوس. يسجّل النظام المستشعرات الجديدة تلقائياً من جميع الشركات المصنعة الرئيسية."
+
+#: templates/features/aquaculture.html
+msgid "Does Suderra work without internet?"
+msgstr "هل يعمل سوديرا بدون إنترنت؟"
+
+#: templates/features/aquaculture.html
+msgid "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection. When connectivity returns, data syncs automatically — no data loss."
+msgstr "نعم. سوديرا يعمل دون اتصال أولاً. تخزّن بوابة الحافة جميع البيانات محلياً في المنشأة. يعمل تطبيق الجوال أيضاً بدون اتصال بالإنترنت. عند عودة الاتصال، تتم مزامنة البيانات تلقائياً — بدون فقدان للبيانات."
+
+#: templates/features/aquaculture.html
+msgid "How does the AI work in Suderra?"
+msgstr "كيف يعمل الذكاء الاصطناعي في سوديرا؟"
+
+#: templates/features/aquaculture.html
+msgid "Suderra's AI engine uses published scientific formulas and peer-reviewed data for every calculation. The AI Engineer detects anomalies and identifies root causes. The AI Manager suggests corrective actions. Operators control what the AI can auto-execute."
+msgstr "يستخدم محرك الذكاء الاصطناعي في سوديرا صيغاً علمية منشورة وبيانات محكّمة لكل عملية حسابية. يكتشف مهندس الذكاء الاصطناعي الشذوذ ويحدد الأسباب الجذرية. يقترح مدير الذكاء الاصطناعي إجراءات تصحيحية. يتحكم المشغلون فيما يمكن للذكاء الاصطناعي تنفيذه تلقائياً."
+
+# ============================================================
+#  Feature Page - Regulatory Compliance
+# ============================================================
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting — Aquaculture"
+msgstr "الامتثال التنظيمي وإعداد التقارير — تربية الأحياء المائية"
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly."
+msgstr "امتثال آلي لهيئة Mattilsynet، وتقارير قمل البحر، وتقارير الكتلة الحيوية، وتقارير الهروب، وأدوات اللوائح التنظيمية لمزارع الأسماك النرويجية. حافظ على الامتثال بسهولة."
+
+#: templates/features/compliance.html
+msgid "Compliance"
+msgstr "الامتثال التنظيمي"
+
+#: templates/features/compliance.html
+msgid "Regulatory Compliance & Reporting"
+msgstr "الامتثال التنظيمي وإعداد التقارير"
+
+#: templates/features/compliance.html
+msgid "Automate your regulatory reporting for Norwegian aquaculture authorities. Suderra generates Mattilsynet-ready reports for sea lice counts, biomass levels, mortality events, and escape incidents — directly from your operational data."
+msgstr "أتمت إعداد تقاريرك التنظيمية لسلطات تربية الأحياء المائية النرويجية. ينشئ سوديرا تقارير جاهزة لهيئة Mattilsynet لأعداد قمل البحر ومستويات الكتلة الحيوية وأحداث النفوق وحوادث الهروب — مباشرة من بياناتك التشغيلية."
+
+#: templates/features/compliance.html
+msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
+msgstr "تعمل تربية الأحياء المائية النرويجية وفق لوائح صارمة من هيئة Mattilsynet (هيئة سلامة الغذاء النرويجية) ومديرية المصايد. يجب على مزارع الأسماك الإبلاغ عن أعداد قمل البحر ومستويات الكتلة الحيوية وأحداث النفوق وحوادث الهروب وفق جداول زمنية صارمة. الإبلاغ اليدوي عرضة للأخطاء ويستهلك الوقت وينطوي على مخاطر."
+
+#: templates/features/compliance.html
+msgid "Suderra automates the entire compliance workflow. Sensor data feeds directly into report templates that match regulatory formats. When it's time to submit, your data is already organized, validated, and ready. No spreadsheets, no manual entry, no missed deadlines."
+msgstr "يؤتمت سوديرا سير عمل الامتثال بالكامل. تُغذّى بيانات المستشعرات مباشرة في قوالب التقارير المتوافقة مع التنسيقات التنظيمية. عند حلول موعد التقديم، تكون بياناتك منظمة ومُتحقق منها وجاهزة. لا جداول بيانات، ولا إدخال يدوي، ولا مواعيد نهائية فائتة."
+
+#: templates/features/compliance.html
+msgid "Compliance Features"
+msgstr "ميزات الامتثال التنظيمي"
+
+#: templates/features/compliance.html
+msgid "Automated Report Generation"
+msgstr "إنشاء التقارير الآلي"
+
+#: templates/features/compliance.html
+msgid "Generate regulatory reports directly from your operational data. Sea lice counts, biomass summaries, mortality logs, and environmental metrics — formatted to match Mattilsynet requirements."
+msgstr "أنشئ تقارير تنظيمية مباشرة من بياناتك التشغيلية. أعداد قمل البحر، وملخصات الكتلة الحيوية، وسجلات النفوق، والمقاييس البيئية — مُنسّقة لتتوافق مع متطلبات Mattilsynet."
+
+#: templates/features/compliance.html
+msgid "Sea Lice Monitoring"
+msgstr "مراقبة قمل البحر"
+
+#: templates/features/compliance.html
+msgid "Track sea lice levels across all pens with historical trends. Get alerts when counts approach regulatory thresholds so you can act before limits are breached."
+msgstr "تتبع مستويات قمل البحر عبر جميع الأقفاص مع الاتجاهات التاريخية. احصل على تنبيهات عندما تقترب الأعداد من العتبات التنظيمية حتى تتمكن من التصرف قبل تجاوز الحدود."
+
+#: templates/features/compliance.html
+msgid "Biomass Reporting"
+msgstr "تقارير الكتلة الحيوية"
+
+#: templates/features/compliance.html
+msgid "Real-time biomass estimation using feed data, growth models, and sensor readings. Automatic MTB (Maximum Total Biomass) calculations ensure you stay within concession limits."
+msgstr "تقدير الكتلة الحيوية في الوقت الفعلي باستخدام بيانات العلف ونماذج النمو وقراءات المستشعرات. حسابات MTB (الحد الأقصى للكتلة الحيوية الإجمالية) التلقائية تضمن بقاءك ضمن حدود الامتياز."
+
+#: templates/features/compliance.html
+msgid "Escape & Mortality Alerts"
+msgstr "تنبيهات الهروب والنفوق"
+
+#: templates/features/compliance.html
+msgid "Automated detection and logging of mortality events and potential escape incidents. Pre-formatted incident reports ready for authority submission."
+msgstr "كشف وتسجيل آلي لأحداث النفوق وحوادث الهروب المحتملة. تقارير حوادث مُنسّقة مسبقاً وجاهزة للتقديم إلى الجهات المختصة."
+
+#: templates/features/compliance.html
+msgid "Deadline Management"
+msgstr "إدارة المواعيد النهائية"
+
+#: templates/features/compliance.html
+msgid "Never miss a reporting deadline. Suderra tracks all regulatory submission dates and sends reminders to responsible personnel well in advance."
+msgstr "لا تفوّت أي موعد نهائي لتقديم التقارير. يتتبع سوديرا جميع مواعيد التقديم التنظيمية ويرسل تذكيرات إلى الموظفين المسؤولين مسبقاً."
+
+#: templates/features/compliance.html
+msgid "Audit Trail"
+msgstr "مسار التدقيق"
+
+#: templates/features/compliance.html
+msgid "Complete audit trail for all data changes and report submissions. Every sensor reading, manual entry, and correction is timestamped and traceable."
+msgstr "مسار تدقيق كامل لجميع تغييرات البيانات وتقديمات التقارير. كل قراءة مستشعر وإدخال يدوي وتصحيح يحمل طابعاً زمنياً وقابل للتتبع."
+
+#: templates/features/compliance.html
+msgid "Why Automate Compliance with Suderra"
+msgstr "لماذا تؤتمت الامتثال التنظيمي مع سوديرا"
+
+#: templates/features/compliance.html
+msgid "Reduce Manual Work"
+msgstr "تقليل العمل اليدوي"
+
+#: templates/features/compliance.html
+msgid "Stop copying data into spreadsheets. Reports are generated directly from the same data your operations team already uses daily."
+msgstr "توقف عن نسخ البيانات إلى جداول البيانات. تُنشأ التقارير مباشرة من نفس البيانات التي يستخدمها فريق العمليات يومياً."
+
+#: templates/features/compliance.html
+msgid "Eliminate Errors"
+msgstr "القضاء على الأخطاء"
+
+#: templates/features/compliance.html
+msgid "Automated data validation catches inconsistencies before reports are submitted. No more rejected filings due to formatting or calculation errors."
+msgstr "يكتشف التحقق الآلي من البيانات التناقضات قبل تقديم التقارير. لا مزيد من التقارير المرفوضة بسبب أخطاء التنسيق أو الحسابات."
+
+#: templates/features/compliance.html
+msgid "Stay Ahead of Regulations"
+msgstr "ابقَ متقدماً على اللوائح"
+
+#: templates/features/compliance.html
+msgid "Proactive alerts warn you when operational parameters approach regulatory limits, giving you time to take corrective action before violations occur."
+msgstr "تحذّرك التنبيهات الاستباقية عندما تقترب معايير التشغيل من الحدود التنظيمية، مما يمنحك الوقت لاتخاذ إجراءات تصحيحية قبل حدوث المخالفات."
+
+#: templates/features/compliance.html
+msgid "What Norwegian regulations does Suderra support?"
+msgstr "ما اللوائح النرويجية التي يدعمها سوديرا؟"
+
+#: templates/features/compliance.html
+msgid "Suderra supports reporting requirements from Mattilsynet (Norwegian Food Safety Authority) and the Directorate of Fisheries, including sea lice counting reports, biomass/MTB tracking, mortality event logs, and escape incident reports."
+msgstr "يدعم سوديرا متطلبات إعداد التقارير من هيئة Mattilsynet (هيئة سلامة الغذاء النرويجية) ومديرية المصايد، بما في ذلك تقارير إحصاء قمل البحر، وتتبع الكتلة الحيوية/MTB، وسجلات أحداث النفوق، وتقارير حوادث الهروب."
+
+#: templates/features/compliance.html
+msgid "Can Suderra generate reports for other countries' regulations?"
+msgstr "هل يمكن لسوديرا إنشاء تقارير وفقاً للوائح دول أخرى؟"
+
+#: templates/features/compliance.html
+msgid "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions. Contact us to discuss your specific compliance needs."
+msgstr "صُممت المنصة بنظام تقارير معياري. بينما تأتي مع قوالب تنظيمية نرويجية، يمكن تهيئة تنسيقات تقارير مخصصة لولايات قضائية أخرى. تواصل معنا لمناقشة احتياجاتك المحددة للامتثال."
+
+#: templates/features/compliance.html
+msgid "How does the sea lice monitoring work?"
+msgstr "كيف تعمل مراقبة قمل البحر؟"
+
+#: templates/features/compliance.html
+msgid "Suderra tracks sea lice count data from your monitoring activities, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission."
+msgstr "يتتبع سوديرا بيانات إحصاء قمل البحر من أنشطة المراقبة الخاصة بك، ويحافظ على الاتجاهات التاريخية لكل قفص وموقع، وينبّهك عندما تقترب الأعداد من العتبة التنظيمية. تُنسّق التقارير تلقائياً للتقديم إلى Mattilsynet."
+
+#: templates/features/compliance.html
+msgid "Automated Mattilsynet reporting and Norwegian fish farm regulations"
+msgstr "إعداد تقارير Mattilsynet الآلي ولوائح مزارع الأسماك النرويجية"
+
+# ============================================================
+#  Feature Page - Smart Automation & IoT
+# ============================================================
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT — Aquaculture Automation"
+msgstr "الأتمتة الذكية وإنترنت الأشياء (IoT) — أتمتة تربية الأحياء المائية"
+
+#: templates/features/automation.html
+msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control."
+msgstr "أتمتة التغذية، وأتمتة الجرعات، وتكامل مستشعرات إنترنت الأشياء لتربية الأحياء المائية. منشئ أتمتة بصري، ودعم متعدد البروتوكولات (MQTT، Modbus، OPC-UA)، وتحكم مدعوم بالذكاء الاصطناعي."
+
+#: templates/features/automation.html
+msgid "Automation"
+msgstr "الأتمتة"
+
+#: templates/features/automation.html
+msgid "Smart Automation & IoT"
+msgstr "الأتمتة الذكية وإنترنت الأشياء (IoT)"
+
+#: templates/features/automation.html
+msgid "Build automation programs without writing code. Suderra's visual automation builder lets you create feeding schedules, dosing routines, and environmental controls using a drag-and-drop interface — connected to every sensor on your facility."
+msgstr "أنشئ برامج أتمتة دون كتابة أكواد. يتيح لك منشئ الأتمتة البصري في سوديرا إنشاء جداول التغذية وروتينات الجرعات وضوابط البيئة باستخدام واجهة السحب والإفلات — متصلة بكل مستشعر في منشأتك."
+
+#: templates/features/automation.html
+msgid "Modern production facilities run on sensors and controllers — but most automation systems speak different languages. Suderra bridges this gap with a universal IoT integration layer that connects to MQTT, Modbus, and OPC-UA devices from any manufacturer."
+msgstr "تعمل منشآت الإنتاج الحديثة على المستشعرات والمتحكمات — لكن معظم أنظمة الأتمتة تتحدث بلغات مختلفة. يسدّ سوديرا هذه الفجوة بطبقة تكامل شاملة لإنترنت الأشياء تتصل بأجهزة MQTT وModbus وOPC-UA من أي مصنّع."
+
+#: templates/features/automation.html
+msgid "The visual automation builder lets operators create complex automation programs without engineering support. Set feed schedules based on water temperature, trigger dosing when pH drops, or adjust ventilation based on humidity — all through an intuitive drag-and-drop interface with real-time previews."
+msgstr "يتيح منشئ الأتمتة البصري للمشغلين إنشاء برامج أتمتة متقدمة دون دعم هندسي. حدد جداول التغذية بناءً على حرارة المياه، أو شغّل الجرعات عند انخفاض درجة الحموضة، أو اضبط التهوية بناءً على الرطوبة — كل ذلك عبر واجهة سحب وإفلات سهلة الاستخدام مع معاينة آنية."
+
+#: templates/features/automation.html
+msgid "Automation Features"
+msgstr "ميزات الأتمتة"
+
+#: templates/features/automation.html
+msgid "Visual Automation Builder"
+msgstr "منشئ الأتمتة البصري"
+
+#: templates/features/automation.html
+msgid "Drag-and-drop interface for creating automation programs. No coding required. Set triggers, conditions, and actions visually — then preview in real time before deploying."
+msgstr "واجهة سحب وإفلات لإنشاء برامج الأتمتة. لا حاجة لكتابة أكواد. حدد المشغّلات والشروط والإجراءات بصرياً — ثم عاين في الوقت الفعلي قبل النشر."
+
+#: templates/features/automation.html
+msgid "Multi-Protocol IoT Gateway"
+msgstr "بوابة إنترنت الأشياء متعددة البروتوكولات"
+
+#: templates/features/automation.html
+msgid "Connects to MQTT, Modbus, and OPC-UA devices. Supports 8+ pump and motor brands. One gateway, every protocol — no integration headaches."
+msgstr "تتصل بأجهزة MQTT وModbus وOPC-UA. تدعم أكثر من 8 علامات تجارية للمضخات والمحركات. بوابة واحدة، كل البروتوكولات — بدون صعوبات في التكامل."
+
+#: templates/features/automation.html
+msgid "Feeder Automation"
+msgstr "أتمتة التغذية"
+
+#: templates/features/automation.html
+msgid "Automated feeding schedules based on water temperature, fish size, and growth models. Real-time FCR optimization with AI-driven adjustments to minimize waste and maximize growth."
+msgstr "جداول تغذية آلية بناءً على حرارة المياه وحجم الأسماك ونماذج النمو. تحسين معدل تحويل العلف (FCR) في الوقت الفعلي مع تعديلات مدعومة بالذكاء الاصطناعي لتقليل الهدر وتعظيم النمو."
+
+#: templates/features/automation.html
+msgid "Chemical Dosing Control"
+msgstr "التحكم في الجرعات الكيميائية"
+
+#: templates/features/automation.html
+msgid "Automated pH adjustment, oxygen injection, and chemical dosing based on real-time sensor data. Science-based formulas ensure precise dosing — no overdosing, no waste."
+msgstr "ضبط آلي لدرجة الحموضة وحقن الأكسجين والجرعات الكيميائية بناءً على بيانات المستشعرات الآنية. صيغ مبنية على أسس علمية تضمن جرعات دقيقة — بدون إفراط في الجرعات، وبدون هدر."
+
+#: templates/features/automation.html
+msgid "Conditional Alerts & Actions"
+msgstr "التنبيهات والإجراءات المشروطة"
+
+#: templates/features/automation.html
+msgid "Set multi-condition triggers: if oxygen drops AND temperature rises, trigger aeration AND send an alert. Complex logic made simple through the visual builder."
+msgstr "حدد مشغّلات متعددة الشروط: إذا انخفض الأكسجين وارتفعت الحرارة، شغّل التهوية وأرسل تنبيهاً. منطق متقدم يصبح بسيطاً من خلال المنشئ البصري."
+
+#: templates/features/automation.html
+msgid "Edge Computing"
+msgstr "الحوسبة الطرفية (Edge Computing)"
+
+#: templates/features/automation.html
+msgid "Automation runs locally on the edge gateway — no cloud dependency. Even if internet connectivity drops, your automation programs keep running without interruption."
+msgstr "تعمل الأتمتة محلياً على بوابة الحافة — بدون اعتماد على السحابة. حتى لو انقطع الاتصال بالإنترنت، تستمر برامج الأتمتة في العمل دون انقطاع."
+
+#: templates/features/automation.html
+msgid "Why Automate with Suderra"
+msgstr "لماذا تؤتمت مع سوديرا"
+
+#: templates/features/automation.html
+msgid "No Coding Required"
+msgstr "لا حاجة لكتابة أكواد"
+
+#: templates/features/automation.html
+msgid "The visual builder lets operators create and modify automation programs without engineering support. Reduce dependency on technical staff for day-to-day automation changes."
+msgstr "يتيح المنشئ البصري للمشغلين إنشاء وتعديل برامج الأتمتة دون دعم هندسي. قلّل الاعتماد على الموظفين التقنيين في تغييرات الأتمتة اليومية."
+
+#: templates/features/automation.html
+msgid "Brand-Agnostic"
+msgstr "مستقل عن العلامة التجارية"
+
+#: templates/features/automation.html
+msgid "Works with sensors, pumps, and controllers from any manufacturer. Siemens, ABB, Grundfos, Danfoss — connect them all to one unified automation system."
+msgstr "يعمل مع المستشعرات والمضخات والمتحكمات من أي مصنّع. سيمنز، ABB، غروندفوس، دانفوس — اربطها جميعاً بنظام أتمتة موحّد واحد."
+
+#: templates/features/automation.html
+msgid "Reliable Operation"
+msgstr "تشغيل موثوق"
+
+#: templates/features/automation.html
+msgid "Edge computing ensures automation continues during internet outages. Critical processes like feeding and oxygen management never depend on cloud connectivity."
+msgstr "تضمن الحوسبة الطرفية استمرار الأتمتة أثناء انقطاع الإنترنت. العمليات الحرجة مثل التغذية وإدارة الأكسجين لا تعتمد أبداً على الاتصال السحابي."
+
+#: templates/features/automation.html
+msgid "What protocols does the IoT gateway support?"
+msgstr "ما البروتوكولات التي تدعمها بوابة إنترنت الأشياء؟"
+
+#: templates/features/automation.html
+msgid "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers."
+msgstr "تدعم بوابة إنترنت الأشياء في سوديرا بروتوكولات MQTT وModbus (RTU وTCP) وOPC-UA. تعمل مع أكثر من 8 علامات تجارية للمضخات والمحركات وتسجّل المستشعرات الجديدة تلقائياً من جميع الشركات المصنعة الرئيسية."
+
+#: templates/features/automation.html
+msgid "Do I need programming skills to create automations?"
+msgstr "هل أحتاج إلى مهارات برمجية لإنشاء برامج الأتمتة؟"
+
+#: templates/features/automation.html
+msgid "No. The visual automation builder uses a drag-and-drop interface. You select triggers (sensor thresholds, time schedules), add conditions, and define actions — all visually. No code needed."
+msgstr "لا. يستخدم منشئ الأتمتة البصري واجهة سحب وإفلات. تختار المشغّلات (عتبات المستشعرات، الجداول الزمنية)، وتضيف الشروط، وتحدد الإجراءات — كل ذلك بصرياً. لا حاجة لكتابة أكواد."
+
+#: templates/features/automation.html
+msgid "What happens if the internet goes down?"
+msgstr "ماذا يحدث إذا انقطع الإنترنت؟"
+
+#: templates/features/automation.html
+msgid "All automation programs run locally on the edge gateway. If internet connectivity drops, automation continues without interruption. Data is stored locally and syncs when connectivity returns."
+msgstr "تعمل جميع برامج الأتمتة محلياً على بوابة الحافة. إذا انقطع الاتصال بالإنترنت، تستمر الأتمتة دون انقطاع. تُخزّن البيانات محلياً وتتم المزامنة عند عودة الاتصال."
+
+#: templates/features/automation.html
+msgid "Can I automate feeding schedules?"
+msgstr "هل يمكنني أتمتة جداول التغذية؟"
+
+#: templates/features/automation.html
+msgid "Yes. Suderra's feeder automation creates schedules based on water temperature, fish size, growth stage, and environmental conditions. The AI optimizes feed amounts in real time to minimize FCR and waste."
+msgstr "نعم. تنشئ أتمتة التغذية في سوديرا جداول بناءً على حرارة المياه وحجم الأسماك ومرحلة النمو والظروف البيئية. يحسّن الذكاء الاصطناعي كميات العلف في الوقت الفعلي لتقليل معدل تحويل العلف والهدر."
+
+#: templates/features/automation.html
+msgid "IoT sensor integration, feeder automation, and dosing control"
+msgstr "تكامل مستشعرات إنترنت الأشياء، وأتمتة التغذية، والتحكم في الجرعات"
+
+# ============================================================
+#  Feature Page - Soilless Culture
+# ============================================================
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management — Hydroponics & Vertical Farming Software"
+msgstr "إدارة الزراعة بدون تربة — برمجيات الزراعة المائية والزراعة العمودية"
+
+#: templates/features/soilless.html
+msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking."
+msgstr "برمجيات الزراعة بدون تربة للزراعة المائية والأكوابونيك والزراعة العمودية. إدارة وصفات المغذيات، ومراقبة EC/pH، وأتمتة التسميد، وتتبع مراحل النمو."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Management"
+msgstr "إدارة الزراعة بدون تربة"
+
+#: templates/features/soilless.html
+msgid "Manage hydroponics, aquaponics, and vertical farming operations with precision. Suderra provides nutrient recipe management, automated fertigation, EC/pH monitoring, and growth stage tracking — with 24+ preset nutrient formulas ready to use."
+msgstr "أدِر عمليات الزراعة المائية والأكوابونيك والزراعة العمودية بدقة. يوفر سوديرا إدارة وصفات المغذيات، والتسميد الآلي، ومراقبة EC/pH، وتتبع مراحل النمو — مع أكثر من 24 صيغة مغذيات معدّة مسبقاً وجاهزة للاستخدام."
+
+#: templates/features/soilless.html
+msgid "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system."
+msgstr "الزراعة بدون تربة دقيقة بطبيعتها — كل تركيز للمغذيات ومستوى حموضة ومتغير بيئي له أهميته. تمنحك وحدة الزراعة بدون تربة في سوديرا تحكماً كاملاً في بيئة النمو، سواء كنت تدير بيتاً زجاجياً تجارياً أو مزرعة عمودية أو نظام أكوابونيك."
+
+#: templates/features/soilless.html
+msgid "The platform comes with 24+ preset nutrient recipes for common crop types, and lets you create custom formulas for specialized production. Real-time EC and pH monitoring triggers automatic adjustments, keeping your nutrient solution within optimal ranges 24/7."
+msgstr "تأتي المنصة مع أكثر من 24 وصفة مغذيات معدّة مسبقاً لأنواع المحاصيل الشائعة، وتتيح لك إنشاء صيغ مخصصة للإنتاج المتخصص. تُطلق مراقبة EC وpH الآنية تعديلات تلقائية، مما يحافظ على محلول المغذيات ضمن النطاقات المثلى على مدار الساعة."
+
+#: templates/features/soilless.html
+msgid "Soilless Culture Features"
+msgstr "ميزات الزراعة بدون تربة"
+
+#: templates/features/soilless.html
+msgid "Nutrient Recipe Management"
+msgstr "إدارة وصفات المغذيات"
+
+#: templates/features/soilless.html
+msgid "24+ preset nutrient recipes for common crops. Create, modify, and share custom formulas. Track nutrient consumption per crop cycle for accurate cost analysis."
+msgstr "أكثر من 24 وصفة مغذيات معدّة مسبقاً للمحاصيل الشائعة. أنشئ وعدّل وشارك صيغاً مخصصة. تتبع استهلاك المغذيات لكل دورة محصول لتحليل تكاليف دقيق."
+
+#: templates/features/soilless.html
+msgid "EC & pH Monitoring"
+msgstr "مراقبة EC ودرجة الحموضة"
+
+#: templates/features/soilless.html
+msgid "Continuous electrical conductivity and pH monitoring with historical trends. Automatic alerts when values drift outside optimal ranges for your current crop."
+msgstr "مراقبة مستمرة للموصلية الكهربائية ودرجة الحموضة مع الاتجاهات التاريخية. تنبيهات تلقائية عندما تنحرف القيم خارج النطاقات المثلى لمحصولك الحالي."
+
+#: templates/features/soilless.html
+msgid "Automated Fertigation"
+msgstr "التسميد الآلي"
+
+#: templates/features/soilless.html
+msgid "Automated nutrient dosing based on real-time EC and pH readings. Precision fertilizer injection keeps your solution within optimal parameters without manual intervention."
+msgstr "جرعات مغذيات آلية بناءً على قراءات EC وpH الآنية. حقن الأسمدة بدقة يحافظ على محلولك ضمن المعايير المثلى دون تدخل يدوي."
+
+#: templates/features/soilless.html
+msgid "Growth Stage Tracking"
+msgstr "تتبع مراحل النمو"
+
+#: templates/features/soilless.html
+msgid "Track crops through germination, vegetative, flowering, and harvest stages. Automatic recipe adjustments based on growth phase for optimal nutrient delivery at every stage."
+msgstr "تتبع المحاصيل عبر مراحل الإنبات والنمو الخضري والإزهار والحصاد. تعديلات تلقائية للوصفات بناءً على مرحلة النمو لتوصيل مثالي للمغذيات في كل مرحلة."
+
+#: templates/features/soilless.html
+msgid "Climate Control Integration"
+msgstr "تكامل التحكم المناخي"
+
+#: templates/features/soilless.html
+msgid "Integrated control of temperature, humidity, CO₂, and lighting. Automation rules coordinate climate and nutrition for optimal growing conditions."
+msgstr "تحكم متكامل في الحرارة والرطوبة وثاني أكسيد الكربون والإضاءة. قواعد الأتمتة تنسّق بين المناخ والتغذية لتحقيق ظروف نمو مثالية."
+
+#: templates/features/soilless.html
+msgid "Yield Analytics"
+msgstr "تحليلات المحصول"
+
+#: templates/features/soilless.html
+msgid "Track yield per crop cycle, compare recipes, and optimize growing parameters. Data-driven insights help you increase production efficiency over time."
+msgstr "تتبع المحصول لكل دورة زراعية، وقارن الوصفات، وحسّن معايير النمو. رؤى مبنية على البيانات تساعدك على زيادة كفاءة الإنتاج بمرور الوقت."
+
+#: templates/features/soilless.html
+msgid "Why Choose Suderra for Soilless Culture"
+msgstr "لماذا تختار سوديرا للزراعة بدون تربة"
+
+#: templates/features/soilless.html
+msgid "Ready-to-Use Recipes"
+msgstr "وصفات جاهزة للاستخدام"
+
+#: templates/features/soilless.html
+msgid "Start growing immediately with 24+ preset nutrient formulas for lettuce, tomatoes, herbs, strawberries, and more. Customize as you learn what works for your setup."
+msgstr "ابدأ الزراعة فوراً مع أكثر من 24 صيغة مغذيات معدّة مسبقاً للخس والطماطم والأعشاب والفراولة والمزيد. خصّصها كلما تعلّمت ما يناسب إعداداتك."
+
+#: templates/features/soilless.html
+msgid "Unified Platform"
+msgstr "منصة موحّدة"
+
+#: templates/features/soilless.html
+msgid "If you run both aquaculture and soilless culture (aquaponics), Suderra manages both from one dashboard. Fish waste feeds plant nutrition — fully automated."
+msgstr "إذا كنت تدير تربية أحياء مائية وزراعة بدون تربة (أكوابونيك) معاً، يدير سوديرا كليهما من لوحة تحكم واحدة. نفايات الأسماك تغذي النباتات — بشكل آلي بالكامل."
+
+#: templates/features/soilless.html
+msgid "Precision Automation"
+msgstr "أتمتة دقيقة"
+
+#: templates/features/soilless.html
+msgid "Automated fertigation eliminates human error in nutrient mixing. Consistent, precise dosing leads to better yields and lower chemical costs."
+msgstr "يزيل التسميد الآلي الخطأ البشري في خلط المغذيات. الجرعات المتسقة والدقيقة تؤدي إلى محاصيل أفضل وتكاليف كيميائية أقل."
+
+#: templates/features/soilless.html
+msgid "What types of soilless systems does Suderra support?"
+msgstr "ما أنواع الأنظمة بدون تربة التي يدعمها سوديرا؟"
+
+#: templates/features/soilless.html
+msgid "Suderra supports NFT (Nutrient Film Technique), DWC (Deep Water Culture), ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems. The platform adapts to any soilless growing method."
+msgstr "يدعم سوديرا تقنية الغشاء المغذي (NFT)، والزراعة المائية العميقة (DWC)، ونظام المد والجزر، والري بالتنقيط، وأبراج الزراعة العمودية، وأنظمة الأكوابونيك. تتكيف المنصة مع أي طريقة زراعة بدون تربة."
+
+#: templates/features/soilless.html
+msgid "How many nutrient recipes are included?"
+msgstr "كم عدد وصفات المغذيات المضمّنة؟"
+
+#: templates/features/soilless.html
+msgid "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities."
+msgstr "يتضمن سوديرا أكثر من 24 وصفة مغذيات معدّة مسبقاً للمحاصيل الشائعة بما في ذلك الخضروات الورقية والأعشاب والطماطم والفلفل والفراولة والمزيد. يمكنك أيضاً إنشاء وصفات مخصصة غير محدودة ومشاركتها عبر المنشآت."
+
+#: templates/features/soilless.html
+msgid "Can Suderra manage aquaponics systems?"
+msgstr "هل يمكن لسوديرا إدارة أنظمة الأكوابونيك؟"
+
+#: templates/features/soilless.html
+msgid "Yes. Suderra's modular design means the aquaculture and soilless culture modules work together seamlessly. Monitor fish health, water quality, and plant nutrition from one dashboard — with automated nutrient cycling between systems."
+msgstr "نعم. التصميم المعياري لسوديرا يعني أن وحدتي تربية الأحياء المائية والزراعة بدون تربة تعملان معاً بسلاسة. راقب صحة الأسماك وجودة المياه وتغذية النباتات من لوحة تحكم واحدة — مع دوران آلي للمغذيات بين الأنظمة."
+
+#: templates/features/soilless.html
+msgid "Hydroponics, aquaponics, and vertical farming management"
+msgstr "إدارة الزراعة المائية والأكوابونيك والزراعة العمودية"
+
+# ============================================================
+#  Feature Page - Waste Water Treatment
+# ============================================================
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment Software — Water Quality Monitoring"
+msgstr "برمجيات معالجة مياه الصرف — مراقبة جودة المياه"
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting."
+msgstr "برمجيات معالجة مياه الصرف لمراقبة التدفق وتتبع جودة المياه وإدارة المواد الصلبة العالقة (TSS) وتحسين الحمل الكيميائي وتقارير امتثال المخلفات السائلة."
+
+#: templates/features/wastewater.html
+msgid "Waste Water"
+msgstr "مياه الصرف"
+
+#: templates/features/wastewater.html
+msgid "Waste Water Treatment"
+msgstr "معالجة مياه الصرف"
+
+#: templates/features/wastewater.html
+msgid "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators."
+msgstr "راقب وحسّن عمليات معالجة مياه الصرف ببيانات المستشعرات الآنية. تتبع معدلات التدفق ومستويات المواد الصلبة العالقة والأحمال الكيميائية وجودة المخلفات السائلة — كل ذلك من منصة واحدة مصممة لمشغلي محطات المعالجة."
+
+#: templates/features/wastewater.html
+msgid "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is critical. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results mean problems are caught too late."
+msgstr "تتعامل محطات معالجة مياه الصرف مع عمليات متعددة المراحل حيث تكون المراقبة الآنية أمراً بالغ الأهمية. من فحص المياه الواردة إلى التصريف النهائي، يجب أن تستوفي كل مرحلة معايير بيئية صارمة. المراقبة اليدوية ونتائج المختبر المتأخرة تعني اكتشاف المشاكل بعد فوات الأوان."
+
+#: templates/features/wastewater.html
+msgid "Suderra brings the same sensor integration and automation capabilities that power our aquaculture platform to waste water treatment. Connect every sensor in your plant — flow meters, TSS probes, pH sensors, dissolved oxygen meters — to one unified dashboard with real-time alerts and automated chemical dosing."
+msgstr "يجلب سوديرا نفس قدرات تكامل المستشعرات والأتمتة التي تشغّل منصة تربية الأحياء المائية إلى معالجة مياه الصرف. اربط كل مستشعر في محطتك — مقاييس التدفق، ومجسات المواد الصلبة العالقة، ومستشعرات الحموضة، ومقاييس الأكسجين المذاب — بلوحة معلومات موحّدة مع تنبيهات آنية وجرعات كيميائية آلية."
+
+#: templates/features/wastewater.html
+msgid "Waste Water Features"
+msgstr "ميزات معالجة مياه الصرف"
+
+#: templates/features/wastewater.html
+msgid "Flow Monitoring"
+msgstr "مراقبة التدفق"
+
+#: templates/features/wastewater.html
+msgid "Real-time flow rate tracking across all treatment stages. Historical trends, peak detection, and capacity planning tools to optimize throughput."
+msgstr "تتبع معدلات التدفق الآنية عبر جميع مراحل المعالجة. اتجاهات تاريخية، وكشف الذروة، وأدوات تخطيط السعة لتحسين الإنتاجية."
+
+#: templates/features/wastewater.html
+msgid "Water Quality Tracking"
+msgstr "تتبع جودة المياه"
+
+#: templates/features/wastewater.html
+msgid "Monitor pH, dissolved oxygen, turbidity, conductivity, and temperature across all treatment stages. Continuous data collection replaces periodic lab sampling."
+msgstr "راقب درجة الحموضة والأكسجين المذاب والعكارة والموصلية والحرارة عبر جميع مراحل المعالجة. جمع البيانات المستمر يحل محل أخذ العينات المخبرية الدورية."
+
+#: templates/features/wastewater.html
+msgid "TSS Management"
+msgstr "إدارة المواد الصلبة العالقة (TSS)"
+
+#: templates/features/wastewater.html
+msgid "Total Suspended Solids monitoring with real-time alerts. Track sedimentation efficiency and sludge levels to optimize removal processes."
+msgstr "مراقبة إجمالي المواد الصلبة العالقة مع تنبيهات آنية. تتبع كفاءة الترسيب ومستويات الحمأة لتحسين عمليات الإزالة."
+
+#: templates/features/wastewater.html
+msgid "Chemical Load Optimization"
+msgstr "تحسين الحمل الكيميائي"
+
+#: templates/features/wastewater.html
+msgid "AI-driven chemical dosing reduces reagent consumption while maintaining treatment standards. Automated adjustments based on real-time influent conditions."
+msgstr "الجرعات الكيميائية المدعومة بالذكاء الاصطناعي تقلل استهلاك الكواشف مع الحفاظ على معايير المعالجة. تعديلات آلية بناءً على ظروف المياه الواردة الآنية."
+
+#: templates/features/wastewater.html
+msgid "Effluent Compliance"
+msgstr "امتثال المخلفات السائلة"
+
+#: templates/features/wastewater.html
+msgid "Continuous monitoring of discharge quality against regulatory limits. Automated compliance reports and proactive alerts when parameters approach thresholds."
+msgstr "مراقبة مستمرة لجودة التصريف مقابل الحدود التنظيمية. تقارير امتثال آلية وتنبيهات استباقية عندما تقترب المعايير من العتبات."
+
+#: templates/features/wastewater.html
+msgid "Process Dashboard"
+msgstr "لوحة معلومات العمليات"
+
+#: templates/features/wastewater.html
+msgid "Unified view of all treatment stages from influent to effluent. Real-time process visualization with drill-down capability for each stage."
+msgstr "عرض موحّد لجميع مراحل المعالجة من المياه الواردة إلى المخلفات السائلة. تصوّر آني للعمليات مع إمكانية التعمق في تفاصيل كل مرحلة."
+
+#: templates/features/wastewater.html
+msgid "Why Choose Suderra for Waste Water"
+msgstr "لماذا تختار سوديرا لمعالجة مياه الصرف"
+
+#: templates/features/wastewater.html
+msgid "Same Platform, New Sector"
+msgstr "نفس المنصة، قطاع جديد"
+
+#: templates/features/wastewater.html
+msgid "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
+msgstr "البنية المعيارية لسوديرا تعني أن وحدة مياه الصرف تعيد استخدام 70%% من قاعدة أكواد تربية الأحياء المائية المُثبتة. نفس الموثوقية، ونفس تكامل المستشعرات، ومصممة خصيصاً لمحطات المعالجة."
+
+#: templates/features/wastewater.html
+msgid "Reduce Chemical Costs"
+msgstr "خفض تكاليف المواد الكيميائية"
+
+#: templates/features/wastewater.html
+msgid "AI-optimized dosing reduces chemical consumption by adjusting reagent amounts in real time based on actual influent conditions — not fixed schedules."
+msgstr "الجرعات المحسّنة بالذكاء الاصطناعي تقلل استهلاك المواد الكيميائية عن طريق ضبط كميات الكواشف في الوقت الفعلي بناءً على ظروف المياه الواردة الفعلية — وليس جداول ثابتة."
+
+#: templates/features/wastewater.html
+msgid "Proactive Compliance"
+msgstr "الامتثال الاستباقي"
+
+#: templates/features/wastewater.html
+msgid "Get alerts before discharge parameters approach limits. Automated reports ensure you're always ready for inspections and regulatory submissions."
+msgstr "احصل على تنبيهات قبل اقتراب معايير التصريف من الحدود. التقارير الآلية تضمن جاهزيتك الدائمة لعمليات التفتيش والتقديمات التنظيمية."
+
+#: templates/features/wastewater.html
+msgid "What parameters can Suderra monitor in a waste water plant?"
+msgstr "ما المعايير التي يمكن لسوديرا مراقبتها في محطة معالجة مياه الصرف؟"
+
+#: templates/features/wastewater.html
+msgid "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility."
+msgstr "يمكن لسوديرا مراقبة معدل التدفق ودرجة الحموضة والأكسجين المذاب والعكارة والمواد الصلبة العالقة (TSS) والموصلية والحرارة والطلب الكيميائي على الأكسجين (COD) والطلب الحيوي على الأكسجين (BOD) والمزيد — بحسب المستشعرات المثبتة في منشأتك."
+
+#: templates/features/wastewater.html
+msgid "Is this the same platform used for aquaculture?"
+msgstr "هل هذه نفس المنصة المستخدمة لتربية الأحياء المائية؟"
+
+#: templates/features/wastewater.html
+msgid "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations."
+msgstr "نعم. يستخدم سوديرا بنية معيارية يحصل فيها كل قطاع على وحدة عمليات خاصة به. تُبنى وحدة مياه الصرف على نفس تكامل المستشعرات ومحرك الأتمتة وإطار لوحة المعلومات المُثبت المستخدم في تربية الأحياء المائية — مع تكييفه لعمليات محطات المعالجة."
+
+#: templates/features/wastewater.html
+msgid "Can Suderra automate chemical dosing?"
+msgstr "هل يمكن لسوديرا أتمتة الجرعات الكيميائية؟"
+
+#: templates/features/wastewater.html
+msgid "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards."
+msgstr "نعم. يمكن لمحرك الأتمتة التحكم في مضخات الجرعات الكيميائية بناءً على قراءات المستشعرات الآنية. حدد المعايير المستهدفة ودع الذكاء الاصطناعي يحسّن كميات الكواشف — لخفض التكاليف مع الحفاظ على معايير المعالجة."
+
+#: templates/features/wastewater.html
+msgid "Water quality monitoring and effluent management"
+msgstr "مراقبة جودة المياه وإدارة المخلفات السائلة"
+
+#: templates/features/wastewater.html
+msgid "IoT sensor integration and automation control"
+msgstr "تكامل مستشعرات إنترنت الأشياء والتحكم بالأتمتة"

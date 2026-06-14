@@ -1,0 +1,490 @@
+/* ============================================
+   SUDERRA - RTL (Right-to-Left) Stylesheet
+   Applied when language is Arabic
+   Complete Redesign - RTL Support
+   ============================================ */
+
+/* Global RTL direction */
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Arabic font family */
+html[dir="rtl"] body,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] h3,
+html[dir="rtl"] h4,
+html[dir="rtl"] h5,
+html[dir="rtl"] h6,
+html[dir="rtl"] p,
+html[dir="rtl"] a,
+html[dir="rtl"] li,
+html[dir="rtl"] input,
+html[dir="rtl"] textarea,
+html[dir="rtl"] button,
+html[dir="rtl"] label,
+html[dir="rtl"] span {
+  font-family: 'Noto Sans Arabic', 'Open Sans', sans-serif;
+}
+
+/* ============================================
+   HEADER / NAV
+   ============================================ */
+html[dir="rtl"] .header-container {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar ul {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .navbar li a {
+  flex-direction: row-reverse;
+}
+
+/* Client Portal button RTL */
+html[dir="rtl"] .header-portal-btn {
+  margin-left: 0;
+  margin-right: var(--space-sm);
+  flex-direction: row-reverse;
+}
+
+/* Language switcher RTL */
+html[dir="rtl"] .lang-switcher {
+  margin-left: 0;
+  margin-right: var(--space-sm);
+}
+
+html[dir="rtl"] .lang-dropdown {
+  right: auto;
+  left: 0;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+html[dir="rtl"] .hero-content {
+  text-align: right;
+}
+
+html[dir="rtl"] .hero-cta-group {
+  justify-content: flex-start;
+}
+
+html[dir="rtl"] .btn-icon {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .btn:hover .btn-icon {
+  transform: scaleX(-1) translateX(4px);
+}
+
+html[dir="rtl"] .scroll-indicator {
+  right: auto;
+  left: var(--space-2xl);
+}
+
+html[dir="rtl"] .scroll-text {
+  writing-mode: vertical-rl;
+  transform: rotate(0deg);
+}
+
+/* ============================================
+   TECHNOLOGY SECTION
+   ============================================ */
+html[dir="rtl"] .tech-layout {
+  direction: rtl;
+}
+
+html[dir="rtl"] .tech-intro {
+  text-align: right;
+}
+
+html[dir="rtl"] .tech-tab-panel {
+  text-align: right;
+}
+
+html[dir="rtl"] .tech-tab-btn {
+  flex-direction: row-reverse;
+}
+
+/* ============================================
+   SERVICES SECTION
+   ============================================ */
+html[dir="rtl"] .service-card-inner {
+  text-align: right;
+}
+
+html[dir="rtl"] .service-link {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .service-link svg {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .service-link:hover {
+  gap: 10px;
+}
+
+/* ============================================
+   ABOUT SECTION
+   ============================================ */
+html[dir="rtl"] .about-intro-text {
+  text-align: right;
+}
+
+html[dir="rtl"] .subsidiary-card-inner {
+  text-align: right;
+}
+
+/* Timeline RTL */
+html[dir="rtl"] .timeline {
+  padding-left: 0;
+  padding-right: var(--space-2xl);
+}
+
+html[dir="rtl"] .timeline::before {
+  left: auto;
+  right: 7px;
+}
+
+html[dir="rtl"] .timeline-marker {
+  left: auto;
+  right: calc(-1 * var(--space-2xl) + 2px);
+}
+
+html[dir="rtl"] .timeline-content {
+  text-align: right;
+}
+
+/* Comparison labels */
+html[dir="rtl"] .comparison-label-before {
+  left: auto;
+  right: var(--space-md);
+}
+
+html[dir="rtl"] .comparison-label-after {
+  right: auto;
+  left: var(--space-md);
+}
+
+/* ============================================
+   CONTACT SECTION
+   ============================================ */
+html[dir="rtl"] .contact-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .contact-detail {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .contact-info-card {
+  text-align: right;
+}
+
+html[dir="rtl"] .contact-form-card {
+  text-align: right;
+}
+
+/* Floating label RTL */
+html[dir="rtl"] .form-group label {
+  left: auto;
+  right: 16px;
+}
+
+html[dir="rtl"] .form-group input,
+html[dir="rtl"] .form-group textarea {
+  text-align: right;
+  padding: 16px 16px 8px;
+}
+
+/* Trust badges RTL */
+html[dir="rtl"] .trust-badges {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .trust-badge {
+  flex-direction: row-reverse;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+html[dir="rtl"] .footer-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .footer-col-brand {
+  padding-right: 0;
+  padding-left: var(--space-xl);
+}
+
+html[dir="rtl"] .footer-links a:hover {
+  transform: translateX(-4px);
+}
+
+html[dir="rtl"] .footer-contact-links li {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .footer-social {
+  flex-direction: row-reverse;
+}
+
+/* Newsletter RTL */
+html[dir="rtl"] .newsletter-form {
+  direction: rtl;
+}
+
+html[dir="rtl"] .newsletter-input {
+  border-right: 1px solid rgba(255,255,255,0.15);
+  border-left: none;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  text-align: right;
+}
+
+html[dir="rtl"] .newsletter-btn {
+  border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+}
+
+/* ============================================
+   BACK TO TOP
+   ============================================ */
+html[dir="rtl"] .back-to-top {
+  right: auto;
+  left: var(--space-xl);
+}
+
+/* ============================================
+   PARTNER MARQUEE
+   ============================================ */
+html[dir="rtl"] .marquee-inner {
+  animation-direction: reverse;
+}
+
+/* ============================================
+   MOBILE NAV RTL
+   ============================================ */
+@media (max-width: 768px) {
+  html[dir="rtl"] .navbar ul {
+    left: 0;
+    right: 0;
+  }
+
+  html[dir="rtl"] .lang-switcher {
+    margin-right: var(--space-xs);
+    margin-left: 0;
+  }
+
+  html[dir="rtl"] .lang-dropdown {
+    right: auto;
+    left: -8px;
+  }
+
+  html[dir="rtl"] .header-portal-btn {
+    margin-right: var(--space-xs);
+    margin-left: 0;
+  }
+}
+
+/* ============================================
+   COOKIE BANNER RTL
+   ============================================ */
+html[dir="rtl"] .cookie-banner-content {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .cookie-banner-text {
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .cookie-banner-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  html[dir="rtl"] .cookie-banner-text {
+    text-align: center;
+  }
+}
+
+/* ============================================
+   STATS GRID RTL
+   ============================================ */
+html[dir="rtl"] .stats-grid {
+  flex-direction: row-reverse;
+}
+
+/* ============================================
+   SECTION HEADERS
+   ============================================ */
+html[dir="rtl"] .section-header {
+  text-align: center;
+}
+
+/* ============================================
+   REVEAL ANIMATIONS RTL
+   ============================================ */
+html[dir="rtl"] .reveal-left {
+  transform: translateX(40px);
+}
+
+html[dir="rtl"] .reveal-right {
+  transform: translateX(-40px);
+}
+
+html[dir="rtl"] .reveal-left.revealed,
+html[dir="rtl"] .reveal-right.revealed {
+  transform: translate(0, 0);
+}
+
+/* ============================================
+   CORE PROMISE RTL
+   ============================================ */
+html[dir="rtl"] .core-promise-pillars {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .core-pillar-divider svg {
+  transform: scaleX(-1);
+}
+
+@media (max-width: 768px) {
+  html[dir="rtl"] .core-promise-pillars {
+    flex-direction: column;
+  }
+  html[dir="rtl"] .core-pillar-divider svg {
+    transform: scaleX(-1) rotate(90deg);
+  }
+}
+
+/* ============================================
+   HOW IT WORKS CARDS RTL
+   ============================================ */
+html[dir="rtl"] .how-it-works-grid {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .how-card-arrow svg {
+  transform: scaleX(-1);
+}
+
+/* ============================================
+   DASHBOARD HEADER RTL
+   ============================================ */
+html[dir="rtl"] .dashboard-header {
+  flex-direction: row-reverse;
+}
+
+html[dir="rtl"] .dashboard-badge {
+  flex-direction: row-reverse;
+}
+
+/* ============================================
+   SECTION NAVIGATION DOTS RTL
+   ============================================ */
+html[dir="rtl"] .section-dots {
+  right: auto;
+  left: 24px;
+}
+
+/* ============================================
+   FEATURE PAGES RTL
+   ============================================ */
+
+/* Breadcrumb */
+html[dir="rtl"] .feature-breadcrumb {
+  direction: rtl;
+}
+
+html[dir="rtl"] .feature-breadcrumb a,
+html[dir="rtl"] .feature-breadcrumb span {
+  direction: rtl;
+}
+
+html[dir="rtl"] .breadcrumb-separator {
+  transform: scaleX(-1);
+}
+
+/* Feature hero */
+html[dir="rtl"] .feature-hero-content {
+  text-align: right;
+}
+
+/* Feature cards grid */
+html[dir="rtl"] .feature-cards-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .feature-card {
+  text-align: right;
+}
+
+html[dir="rtl"] .feature-card-icon {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Benefits section */
+html[dir="rtl"] .feature-benefits {
+  text-align: right;
+}
+
+html[dir="rtl"] .benefit-item {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .benefit-icon {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* FAQ section */
+html[dir="rtl"] .faq-question {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+html[dir="rtl"] .faq-question::after {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+html[dir="rtl"] .faq-answer {
+  text-align: right;
+}
+
+/* CTA section */
+html[dir="rtl"] .feature-cta-content {
+  text-align: right;
+}
+
+/* Related pages */
+html[dir="rtl"] .feature-related-grid {
+  direction: rtl;
+}
+
+html[dir="rtl"] .feature-related-card {
+  text-align: right;
+}
+
+/* Feature overview */
+html[dir="rtl"] .feature-overview {
+  text-align: right;
+}
+
+/* Tech intro (override mobile LTR text-align) */
+@media (max-width: 768px) {
+  html[dir="rtl"] .tech-intro-centered {
+    text-align: right;
+  }
+}
+
