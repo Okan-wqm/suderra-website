@@ -1,0 +1,216 @@
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}SUDERRA{% endblock %}</title>
+  <meta name="google-site-verification" content="jJfmrvnn6dpNVPWYQn7HyDNt2GPmjl065L9brl3M5mQ" />
+  <meta name="description" content="{% block description %}{% trans "End-to-end recirculating aquaculture — system design, audit, and live water-quality intelligence." %}{% endblock %}">
+  <link rel="canonical" href="https://suderra.com{{ request.path }}">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{% static 'webapp/images/logo5.png' %}">
+  <link rel="apple-touch-icon" href="{% static 'webapp/images/logo5.png' %}">
+
+  <!-- Hreflang Tags for Multilingual SEO -->
+  <link rel="alternate" hreflang="en" href="https://suderra.com/en{{ request.path|slice:'3:' }}">
+  <link rel="alternate" hreflang="no" href="https://suderra.com/no{{ request.path|slice:'3:' }}">
+  <link rel="alternate" hreflang="tr" href="https://suderra.com/tr{{ request.path|slice:'3:' }}">
+  <link rel="alternate" hreflang="ar" href="https://suderra.com/ar{{ request.path|slice:'3:' }}">
+  <link rel="alternate" hreflang="x-default" href="https://suderra.com/en{{ request.path|slice:'3:' }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% block og_title %}SUDERRA — {% trans 'End-to-end recirculating aquaculture' %}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{% trans 'We design, audit and run recirculating aquaculture systems — Suderra Edge and real-time AI on top of the equipment you already have.' %}{% endblock %}">
+  <meta property="og:image" content="{% block og_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
+  <meta property="og:url" content="https://suderra.com{{ request.path }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Suderra AS">
+  <meta property="og:locale" content="{% if CURRENT_LANGUAGE == 'en' %}en_US{% elif CURRENT_LANGUAGE == 'no' %}nb_NO{% elif CURRENT_LANGUAGE == 'tr' %}tr_TR{% elif CURRENT_LANGUAGE == 'ar' %}ar_AR{% endif %}">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% block twitter_title %}SUDERRA — {% trans 'End-to-end recirculating aquaculture' %}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{% trans 'We design, audit and run recirculating aquaculture systems — Suderra Edge and real-time AI on top of the equipment you already have.' %}{% endblock %}">
+  <meta name="twitter:image" content="{% block twitter_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta name="author" content="Suderra AS">
+  <meta name="geo.region" content="NO-38">
+  <meta name="geo.placename" content="Sandefjord">
+  <meta name="theme-color" content="#04141f">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Display: Fraunces (editorial serif w/ italics) · Body: Hanken Grotesk · Data/labels: JetBrains Mono -->
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&family=Hanken+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  {% if LANGUAGE_BIDI %}
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;600;800&display=swap" rel="stylesheet">
+  {% endif %}
+
+  <link rel="preload" href="{% static 'webapp/css/clarity.css' %}" as="style">
+  <link rel="stylesheet" href="{% static 'webapp/css/clarity.css' %}">
+  {% block extra_css %}{% endblock %}
+
+  <!-- Organization JSON-LD -->
+  <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Suderra AS",
+    "url": "https://suderra.com",
+    "logo": "https://suderra.com{% static 'webapp/images/logo5.png' %}",
+    "description": "Norwegian recirculating aquaculture (RAS) partner — system design, audit, and the Suderra Edge / Suderra OS platform with real-time AI for water quality monitoring.",
+    "address": {"@type": "PostalAddress", "streetAddress": "Dronningens gate 5-7", "addressLocality": "Sandefjord", "postalCode": "3211", "addressCountry": "NO"},
+    "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "okan@suderra.com"},
+    "sameAs": [],
+    "foundingLocation": "Sandefjord, Norway",
+    "industry": "Aquaculture Technology"
+  }
+  </script>
+</head>
+<body class="clarity {% if LANGUAGE_BIDI %}rtl{% endif %}" data-clarity-root>
+  <a href="#main-content" class="skip-link">{% trans "Skip to main content" %}</a>
+
+  <!-- Living water canvas (signature) -->
+  <canvas id="waterCanvas" class="water-canvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="site-head" id="siteHead">
+    <div class="head-inner">
+      <a href="{% url 'index' %}" class="brand" aria-label="Suderra">
+        <img src="{% static 'webapp/images/logo5.png' %}" alt="Suderra" class="brand-mark">
+      </a>
+
+      <nav class="nav" aria-label="{% trans 'Primary' %}">
+        <a href="#approach">{% trans "Approach" %}</a>
+        <a href="#capabilities">{% trans "Capabilities" %}</a>
+        <a href="#sectors">{% trans "Sectors" %}</a>
+        <a href="#about">{% trans "About" %}</a>
+      </nav>
+
+      <div class="head-actions">
+        <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="portal-link">
+          {% trans "Client Portal" %}
+        </a>
+        <a href="#contact" class="btn btn-coral btn-sm">{% trans "Talk to us" %}</a>
+
+        <div class="lang" id="langSwitch">
+          <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="{% trans 'Change language' %}">
+            <span>{{ CURRENT_LANGUAGE|upper }}</span>
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="lang-menu" role="menu">
+            <button type="button" data-lang-switch="en" class="{% if CURRENT_LANGUAGE == 'en' %}on{% endif %}" role="menuitem">English</button>
+            <button type="button" data-lang-switch="no" class="{% if CURRENT_LANGUAGE == 'no' %}on{% endif %}" role="menuitem">Norsk</button>
+            <button type="button" data-lang-switch="tr" class="{% if CURRENT_LANGUAGE == 'tr' %}on{% endif %}" role="menuitem">Türkçe</button>
+            <button type="button" data-lang-switch="ar" class="{% if CURRENT_LANGUAGE == 'ar' %}on{% endif %}" role="menuitem">العربية</button>
+          </div>
+        </div>
+
+        <button class="burger" id="burger" aria-label="{% trans 'Toggle Menu' %}" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hidden i18n language forms -->
+  {% for code in 'en,no,tr,ar'|cut:' ' %}{% endfor %}
+  <form id="lang-form-en" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="en"><input type="hidden" name="next" value="/en/"></form>
+  <form id="lang-form-no" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="no"><input type="hidden" name="next" value="/no/"></form>
+  <form id="lang-form-tr" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="tr"><input type="hidden" name="next" value="/tr/"></form>
+  <form id="lang-form-ar" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="ar"><input type="hidden" name="next" value="/ar/"></form>
+
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block footer %}
+  <footer class="site-foot">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <img src="{% static 'webapp/images/logo5.png' %}" alt="Suderra" class="foot-mark">
+        <p>{% trans "End-to-end recirculating aquaculture — designed, audited, and run on live water data." %}</p>
+        <p class="foot-loc">Sandefjord, {% trans "Norway" %} {% include "partials/flag_no.html" %}</p>
+      </div>
+      <div class="foot-col">
+        <h4>{% trans "Capabilities" %}</h4>
+        <a href="#capabilities">{% trans "RAS Design & Engineering" %}</a>
+        <a href="#capabilities">{% trans "Audit & Optimization" %}</a>
+        <a href="{% url 'feature_aquaculture' %}">{% trans "Aquaculture Software" %}</a>
+        <a href="{% url 'feature_automation' %}">{% trans "Smart Automation" %}</a>
+      </div>
+      <div class="foot-col">
+        <h4>{% trans "Company" %}</h4>
+        <a href="#about">{% trans "About" %}</a>
+        <a href="#approach">{% trans "Approach" %}</a>
+        <a href="mailto:okan@suderra.com">okan@suderra.com</a>
+        <a href="https://app.suderra.com/" target="_blank" rel="noopener">{% trans "Client Portal" %}</a>
+      </div>
+      <div class="foot-col foot-news">
+        <h4>{% trans "Newsletter" %}</h4>
+        <p>{% trans "Water-tech notes, occasionally." %}</p>
+        <form id="newsletterForm" class="news-form" data-ajax-url="{% url 'ajax_newsletter' %}">
+          {% csrf_token %}
+          <input type="email" name="email" placeholder="{% trans 'you@company.com' %}" aria-label="{% trans 'Email address' %}" required>
+          <button type="submit" class="news-btn" aria-label="{% trans 'Subscribe' %}">→</button>
+        </form>
+        <p id="newsletterFeedback" class="news-feedback" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>&copy; 2026 Suderra AS. {% trans "All rights reserved." %}</span>
+      <span class="foot-pulse"><i></i>{% trans "Systems nominal" %}</span>
+    </div>
+  </footer>
+  {% endblock footer %}
+
+  <!-- GDPR cookie banner -->
+  <div id="cookie-consent-banner" class="cookie-banner" hidden>
+    <p>{% trans "We use cookies to improve your experience on our website. By continuing to browse, you consent to our use of cookies." %}</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept" class="btn btn-coral btn-sm">{% trans "Accept" %}</button>
+      <button id="cookie-decline" class="btn btn-ghost btn-sm">{% trans "Decline" %}</button>
+    </div>
+  </div>
+
+  <script src="{% static 'webapp/js/clarity.js' %}" defer></script>
+
+  <script nonce="{{ request.csp_nonce }}">
+    (function () {
+      // Language switch (CSP-safe, no inline handlers)
+      var sw = document.getElementById('langSwitch');
+      if (sw) {
+        var btn = sw.querySelector('.lang-btn');
+        btn.addEventListener('click', function (e) {
+          e.stopPropagation();
+          var open = sw.classList.toggle('open');
+          btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+        document.addEventListener('click', function () { sw.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); });
+        sw.querySelectorAll('[data-lang-switch]').forEach(function (b) {
+          b.addEventListener('click', function () {
+            var f = document.getElementById('lang-form-' + b.getAttribute('data-lang-switch'));
+            if (f) f.submit();
+          });
+        });
+      }
+      // Cookie consent
+      var banner = document.getElementById('cookie-consent-banner');
+      if (banner && !localStorage.getItem('cookieConsent')) banner.hidden = false;
+      function choose(v) { localStorage.setItem('cookieConsent', v); if (banner) banner.hidden = true; }
+      var a = document.getElementById('cookie-accept'), d = document.getElementById('cookie-decline');
+      if (a) a.addEventListener('click', function () { choose('accepted'); });
+      if (d) d.addEventListener('click', function () { choose('declined'); });
+    })();
+  </script>
+
+  {% block extra_js %}{% endblock %}
+</body>
+</html>
