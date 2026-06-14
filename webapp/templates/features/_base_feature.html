@@ -1,211 +1,106 @@
-{% extends "base.html" %}
+{% extends "base_clarity.html" %}
 {% load static %}
 {% load i18n %}
 {% get_current_language as CURRENT_LANGUAGE %}
 
 {% block title %}{% block feature_title %}{% endblock %} | SUDERRA{% endblock %}
 {% block description %}{% block feature_description %}{% endblock %}{% endblock %}
-
 {% block og_title %}{% block feature_og_title %}{% endblock %} | SUDERRA{% endblock %}
 {% block og_description %}{% block feature_og_description %}{% endblock %}{% endblock %}
 {% block twitter_title %}{% block feature_twitter_title %}{% endblock %} | SUDERRA{% endblock %}
 {% block twitter_description %}{% block feature_twitter_description %}{% endblock %}{% endblock %}
 
 {% block content %}
-<!-- Breadcrumb Navigation -->
-<nav class="feature-breadcrumb" aria-label="{% trans 'Breadcrumb' %}">
+<!-- Feature hero (dark, over water) -->
+<section class="fhero" data-stage="murky">
   <div class="container">
-    <ol class="breadcrumb-list">
-      <li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>
-      <li class="breadcrumb-separator" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
-      </li>
-      <li aria-current="page">{% block breadcrumb_title %}{% endblock %}</li>
-    </ol>
-  </div>
-</nav>
-
-<!-- Feature Hero -->
-<section class="feature-hero">
-  <div class="feature-hero-bg"></div>
-  <div class="container">
-    <div class="feature-hero-content">
-      <span class="feature-hero-tag">{% block hero_tag %}{% endblock %}</span>
-      <h1 class="feature-hero-title">{% block hero_title %}{% endblock %}</h1>
-      <p class="feature-hero-subtitle">{% block hero_subtitle %}{% endblock %}</p>
-    </div>
+    <nav class="fbreadcrumb reveal" aria-label="{% trans 'Breadcrumb' %}">
+      <a href="{% url 'index' %}">{% trans "Home" %}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{% block breadcrumb_title %}{% endblock %}</span>
+    </nav>
+    <span class="fhero-tag reveal">{% block hero_tag %}{% endblock %}</span>
+    <h1 class="fhero-title reveal">{% block hero_title %}{% endblock %}</h1>
+    <p class="fhero-sub reveal">{% block hero_subtitle %}{% endblock %}</p>
+    <div class="reveal"><a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a></div>
   </div>
 </section>
 
-<!-- Feature Overview -->
-<section class="feature-section feature-overview">
-  <div class="container">
-    {% block overview %}{% endblock %}
+<!-- Overview -->
+<section class="fsec section">
+  <div class="container fnarrow">
+    <div class="foverview reveal">{% block overview %}{% endblock %}</div>
   </div>
 </section>
 
-<!-- Key Features Grid -->
-<section class="feature-section feature-grid-section">
+<!-- Key features -->
+<section class="fsec section fsec-alt">
   <div class="container">
-    <h2 class="feature-section-title">{% block features_title %}{% trans "Key Features" %}{% endblock %}</h2>
-    <div class="feature-cards-grid">
-      {% block features_grid %}{% endblock %}
-    </div>
+    <header class="sec-head reveal"><h2 class="sec-title">{% block features_title %}{% trans "Key Features" %}{% endblock %}</h2></header>
+    <div class="feature-cards-grid reveal">{% block features_grid %}{% endblock %}</div>
   </div>
 </section>
 
-<!-- Benefits Section -->
-<section class="feature-section feature-benefits">
+<!-- Benefits -->
+<section class="fsec section">
   <div class="container">
-    <h2 class="feature-section-title">{% block benefits_title %}{% trans "Why Suderra" %}{% endblock %}</h2>
-    {% block benefits %}{% endblock %}
+    <header class="sec-head reveal"><h2 class="sec-title">{% block benefits_title %}{% trans "Why Suderra" %}{% endblock %}</h2></header>
+    <div class="reveal">{% block benefits %}{% endblock %}</div>
   </div>
 </section>
 
-<!-- FAQ Section -->
-<section class="feature-section feature-faq">
-  <div class="container">
-    <h2 class="feature-section-title">{% trans "Frequently Asked Questions" %}</h2>
-    <div class="faq-list">
-      {% block faq %}{% endblock %}
-    </div>
+<!-- FAQ -->
+<section class="fsec section fsec-alt">
+  <div class="container fnarrow">
+    <header class="sec-head reveal"><h2 class="sec-title">{% trans "Frequently Asked Questions" %}</h2></header>
+    <div class="faq-list reveal">{% block faq %}{% endblock %}</div>
   </div>
 </section>
 
-<!-- CTA Section -->
-<section class="feature-cta">
+<!-- CTA -->
+<section class="fcta section">
   <div class="container">
-    <div class="feature-cta-inner">
+    <div class="fcta-inner reveal">
       <h2>{% block cta_title %}{% trans "Ready to Get Started?" %}{% endblock %}</h2>
       <p>{% block cta_text %}{% trans "Contact our team to learn how Suderra can transform your operations." %}{% endblock %}</p>
-      <a href="{% url 'index' %}#contact-footer" class="btn btn-primary btn-lg">
-        {% trans "Get in Touch" %}
-        <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-      </a>
+      <a href="{% url 'index' %}#contact" class="btn btn-coral btn-lg">{% trans "Get in Touch" %}</a>
     </div>
   </div>
 </section>
 
-<!-- Internal Links to Other Feature Pages -->
-<section class="feature-section feature-related">
+<!-- Related -->
+<section class="fsec section">
   <div class="container">
-    <h2 class="feature-section-title">{% trans "Explore More" %}</h2>
-    <div class="feature-related-grid">
+    <header class="sec-head reveal"><h2 class="sec-title">{% trans "Explore More" %}</h2></header>
+    <div class="feature-related-grid reveal">
       {% block related_pages %}
-      <a href="{% url 'feature_aquaculture' %}" class="feature-related-card">
-        <h3>{% trans "Aquaculture Software" %}</h3>
-        <p>{% trans "Complete fish farm management platform" %}</p>
-      </a>
-      <a href="{% url 'feature_regulatory' %}" class="feature-related-card">
-        <h3>{% trans "Regulatory Compliance" %}</h3>
-        <p>{% trans "Automated reporting for Norwegian regulations" %}</p>
-      </a>
-      <a href="{% url 'feature_automation' %}" class="feature-related-card">
-        <h3>{% trans "Smart Automation" %}</h3>
-        <p>{% trans "IoT sensor integration and automation" %}</p>
-      </a>
-      <a href="{% url 'feature_soilless' %}" class="feature-related-card">
-        <h3>{% trans "Soilless Culture" %}</h3>
-        <p>{% trans "Hydroponics and vertical farming management" %}</p>
-      </a>
-      <a href="{% url 'feature_waste_water' %}" class="feature-related-card">
-        <h3>{% trans "Waste Water Treatment" %}</h3>
-        <p>{% trans "Water quality monitoring and effluent management" %}</p>
-      </a>
+      <a href="{% url 'feature_aquaculture' %}" class="feature-related-card"><h3>{% trans "Aquaculture Software" %}</h3><p>{% trans "Complete fish farm management platform" %}</p></a>
+      <a href="{% url 'feature_regulatory' %}" class="feature-related-card"><h3>{% trans "Regulatory Compliance" %}</h3><p>{% trans "Automated reporting for Norwegian regulations" %}</p></a>
+      <a href="{% url 'feature_automation' %}" class="feature-related-card"><h3>{% trans "Smart Automation" %}</h3><p>{% trans "IoT sensor integration and automation" %}</p></a>
+      <a href="{% url 'feature_soilless' %}" class="feature-related-card"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Hydroponics and vertical farming management" %}</p></a>
+      <a href="{% url 'feature_waste_water' %}" class="feature-related-card"><h3>{% trans "Waste Water Treatment" %}</h3><p>{% trans "Water quality monitoring and effluent management" %}</p></a>
       {% endblock %}
     </div>
   </div>
 </section>
-
 {% endblock %}
 
-{% block footer %}
-<!-- Feature Page Footer -->
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col footer-col-brand">
-        <a href="{% url 'index' %}" class="footer-logo">
-          <img src="{% static 'webapp/images/logo5.png' %}" alt="Suderra" width="120">
-        </a>
-        <p class="footer-brand-desc">{% trans "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring." %}</p>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">{% trans "Solutions" %}</h4>
-        <ul class="footer-links">
-          <li><a href="{% url 'feature_aquaculture' %}">{% trans "Aquaculture Software" %}</a></li>
-          <li><a href="{% url 'feature_regulatory' %}">{% trans "Regulatory Compliance" %}</a></li>
-          <li><a href="{% url 'feature_automation' %}">{% trans "Smart Automation" %}</a></li>
-          <li><a href="{% url 'feature_soilless' %}">{% trans "Soilless Culture" %}</a></li>
-          <li><a href="{% url 'feature_waste_water' %}">{% trans "Waste Water Treatment" %}</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">{% trans "Company" %}</h4>
-        <ul class="footer-links">
-          <li><a href="{% url 'index' %}">{% trans "Home" %}</a></li>
-          <li><a href="{% url 'index' %}#technology">{% trans "Technology" %}</a></li>
-          <li><a href="{% url 'index' %}#about">{% trans "About Us" %}</a></li>
-          <li><a href="{% url 'index' %}#contact-footer">{% trans "Contact Us" %}</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">{% trans "Contact" %}</h4>
-        <ul class="footer-links footer-contact-links">
-          <li>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Sandefjord, {% trans "Norway" %}
-          </li>
-          <li>
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <a href="mailto:okan@suderra.com">okan@suderra.com</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Suderra AS. {% trans "All rights reserved." %}</p>
-    </div>
-  </div>
-</footer>
-
-{% block feature_schema %}{% endblock %}
-{% endblock footer %}
-
 {% block extra_js %}
+{% block feature_schema %}{% endblock %}
 <script nonce="{{ request.csp_nonce }}">
-// FAQ accordion
-(function() {
-  var faqItems = document.querySelectorAll('.faq-item');
-  faqItems.forEach(function(item) {
-    var question = item.querySelector('.faq-question');
-    if (question) {
-      // A11y init
-      question.setAttribute('role', 'button');
-      question.setAttribute('tabindex', '0');
-      question.setAttribute('aria-expanded', 'false');
-      var toggle = function() {
-        var isOpen = item.classList.contains('open');
-        // Close all
-        faqItems.forEach(function(i) {
-          i.classList.remove('open');
-          var q = i.querySelector('.faq-question');
-          if (q) q.setAttribute('aria-expanded', 'false');
-        });
-        // Toggle current
-        if (!isOpen) {
-          item.classList.add('open');
-          question.setAttribute('aria-expanded', 'true');
-        }
-      };
-      question.addEventListener('click', toggle);
-      question.addEventListener('keydown', function(e) {
-        if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
-          if (e.key === ' ' || e.key === 'Spacebar') e.preventDefault();
-          toggle();
-        }
-      });
+(function () {
+  var items = document.querySelectorAll('.faq-item');
+  items.forEach(function (item) {
+    var q = item.querySelector('.faq-question');
+    if (!q) return;
+    q.setAttribute('aria-expanded', 'false');
+    function toggle() {
+      var open = item.classList.contains('open');
+      items.forEach(function (i) { i.classList.remove('open'); var qq = i.querySelector('.faq-question'); if (qq) qq.setAttribute('aria-expanded', 'false'); });
+      if (!open) { item.classList.add('open'); q.setAttribute('aria-expanded', 'true'); }
     }
+    q.addEventListener('click', toggle);
+    q.addEventListener('keydown', function (e) { if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') { e.preventDefault(); toggle(); } });
   });
 })();
 </script>

@@ -79,7 +79,7 @@
   /* ---------------- 3D cursor tilt on cards ---------------- */
   function initTilt() {
     if (reduce) return;
-    var cards = document.querySelectorAll('.cell, .sector, .loop-step, .about-card, .product-shot, .dash');
+    var cards = document.querySelectorAll('.cell, .sector, .loop-step, .about-card, .product-shot, .dash, .feature-card, .feature-related-card');
     cards.forEach(function (card) {
       card.classList.add('tilt-on');
       card.addEventListener('pointermove', function (e) {
