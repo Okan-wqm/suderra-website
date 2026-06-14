@@ -130,6 +130,9 @@ msgstr "Automatiser din regulatoriske rapportering til norske akvakultumyndighet
 msgid "Automated Fertigation"
 msgstr "Automatisert fertigation"
 
+msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, and Norwegian fish farm regulatory tools."
+msgstr "Automatisk Mattilsynet-samsvar, lakselusrapportering, biomasserapportering og norske oppdrettsregulatoriske verktøy."
+
 msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly."
 msgstr "Automatisert Mattilsynet-overholdelse, lusetelling-rapportering, biomasserapportering, rømningsrapportering og norske fiskeoppdrettsforskriftsverktøy. Hold deg i samsvar uten innsats."
 
@@ -430,6 +433,9 @@ msgstr "Fôrstyring"
 msgid "Feeder Automation"
 msgstr "Fôrautomatisering"
 
+msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder and AI-powered control."
+msgstr "Fôringsautomasjon, doseringsautomasjon og IoT-sensorintegrasjon for akvakultur. Visuell automasjonsbygger og AI-drevet styring."
+
 msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control."
 msgstr "Fôrautomatisering, doseringsautomatisering, sensor-IoT-integrasjon for akvakultur. Visuelt automatiseringsverktøy, multiprotokollstøtte (MQTT, Modbus, OPC-UA) og AI-drevet styring."
 
@@ -631,7 +637,7 @@ msgstr "Moderne produksjonsanlegg drives av sensorer og kontrollere — men de f
 msgid "Modular Operations Intelligence"
 msgstr "Modulær driftsintelligens"
 
-msgid "Modular architecture where each sector gets its own operations module. Fish farm: batch management, feed plans, mortality tracking. Soilless culture: nutrient recipes, growth stages. Waste water: flow monitoring, chemical load. Each new sector reuses 70%% of existing code."
+msgid "Modular architecture where each sector gets its own operations module. Fish farm: batch management, feed plans, mortality tracking. Soilless culture: nutrient recipes, growth stages. Waste water: flow monitoring, chemical load. Each new sector reuses 70% of existing code."
 msgstr "Modulær arkitektur der hver sektor får sin egen driftsmodul. Fiskeoppdrett: batchstyring, fôrplaner, dødelighetsovervåking. Jordløs dyrking: næringsoppskrifter, vekststadier. Avløpsvann: strømningsmåling, kjemisk belastning. Hver ny sektor gjenbruker %%70 av eksisterende kode."
 
 msgid "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators."
@@ -676,17 +682,26 @@ msgstr "Norge"
 msgid "Norway Office — Headquarters"
 msgstr "Norgeskontoret — Hovedkontor"
 
+msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data."
+msgstr "Norskbygd akvakulturprogramvare for RAS-overvåking, lakseoppdrett, vannkjemi, fôrstyring og sanntids sensordata."
+
 msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered."
 msgstr "Norskutviklet akvakulturprogramvare for RAS-overvåking, lakseoppdrett, vannkjemi, fôrstyring og sanntids sensordata. Offline-first. AI-drevet."
 
 msgid "Norwegian"
 msgstr "Norsk"
 
+msgid "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform."
+msgstr "Norsk RAS-partner: design, revisjon, finansiering, bygging og drift av resirkulerende akvakultur — oktagonal Single Tank Design og Suderra Edge AI-plattform."
+
 msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
 msgstr "Norsk akvakultur opererer under strenge forskrifter fra Mattilsynet og Fiskeridirektoratet. Oppdrettsanlegg må rapportere lusetellinger, biomassenivåer, dødelighetstilfeller og rømningshendelser innen stramme frister. Manuell rapportering er feilutsatt, tidkrevende og risikabel."
 
 msgid "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring."
 msgstr "Norsk akvakultteknologiselskap som spesialiserer seg på patentert optisk sensorteknologi for sanntids vannkvalitetsovervåking."
+
+msgid "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI."
+msgstr "Norsk partner for resirkulerende akvakultur (RAS) — vi designer, reviderer, finansierer, bygger og drifter landbaserte fiskeanlegg, fra oktagonal Single Tank Design til Suderra Edge-plattformen med sanntids-AI."
 
 msgid "Norwegian water engineering,"
 msgstr "Norsk vannteknikk,"
@@ -1009,6 +1024,9 @@ msgstr "Jordløs dyrkingsstyring — Hydroponics og vertikalt landbruksprogramva
 msgid "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system."
 msgstr "Jordløst landbruk er presist av natur — hver næringskonsentrasjon, pH-nivå og miljøvariabel teller. Suderras jordløse dyrkingsmodul gir deg full kontroll over vekstmiljøet, enten du driver et kommersielt drivhus, vertikalt gårdsbruk eller aquaponics-system."
 
+msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management and fertilizer automation."
+msgstr "Programvare for jordløst landbruk for hydroponikk, akvaponikk og vertikal dyrking. Næringsoppskriftstyring og gjødselautomasjon."
+
 msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking."
 msgstr "Programvare for jordløs dyrking for hydroponics, aquaponics og vertikalt landbruk. Næringsreseptstyring, EC/pH-overvåking, gjødslingsautomatisering og vekststadiesporing."
 
@@ -1105,8 +1123,8 @@ msgstr "Suderras AI-motor bruker publiserte vitenskapelige formler og fagfellevu
 msgid "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers."
 msgstr "Suderras IoT-gateway støtter MQTT, Modbus (RTU og TCP) og OPC-UA. Den fungerer med 8+ pumpe- og motormerker og autoregistrerer nye sensorer fra alle store produsenter."
 
-msgid "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
-msgstr "Suderras modulære arkitektur betyr at avløpsvannsmodulen gjenbruker 70%% av den velprøvde akvakulturkodebasen. Samme pålitelighet, samme sensorintegrasjon, spesialbygget for behandlingsanlegg."
+msgid "Suderra's modular architecture means the waste water module reuses 70% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
+msgstr "Suderras modulære arkitektur betyr at avløpsvannsmodulen gjenbruker 70% av den velprøvde akvakulturkodebasen. Samme pålitelighet, samme sensorintegrasjon, spesialbygget for behandlingsanlegg."
 
 msgid "Support through construction and commissioning — and we train your team to run the system with confidence."
 msgstr "Støtte gjennom bygging og igangkjøring — og vi lærer opp teamet ditt til å drive systemet trygt."
@@ -1240,6 +1258,9 @@ msgstr "Avløpsvannsbehandlingsanlegg håndterer komplekse, flertrinns prosesser
 msgid "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting."
 msgstr "Programvare for avløpsvannsbehandling for strømningsovervåking, vannkvalitetssporing, TSS-styring, kjemisk lastoptimalisering og utslippsoverholdelsesrapportering."
 
+msgid "Waste water treatment software for flow monitoring, water quality tracking, and effluent compliance reporting."
+msgstr "Programvare for avløpsrensing for strømningsovervåking, vannkvalitetssporing og utslippssamsvarsrapportering."
+
 msgid "Water Chemistry Engine"
 msgstr "Vannkjemimotor"
 
@@ -1260,6 +1281,9 @@ msgstr "Vannkvalitetsovervåking og utslippshåndtering"
 
 msgid "Water recirculated"
 msgstr "Resirkulert vann"
+
+msgid "Water-chemistry stability diagram"
+msgstr "Stabilitetsdiagram for vannkjemi"
 
 msgid "Water-tech notes, occasionally."
 msgstr "Vannteknologi-notater, av og til."
@@ -1383,6 +1407,9 @@ msgstr "t/år"
 
 msgid "to living biomass."
 msgstr "til levende biomasse."
+
+msgid "visits"
+msgstr "besøk"
 
 msgid "you@company.com"
 msgstr "deg@firma.no"

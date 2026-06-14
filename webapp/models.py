@@ -12,3 +12,11 @@ class NewsletterSubscriber(models.Model):
 
     def __str__(self):
         return self.email
+
+
+class VisitCounter(models.Model):
+    """Single-row site visit counter (unique visits per session)."""
+    count = models.BigIntegerField(default=0)
+
+    def __str__(self):
+        return f'{self.count} visits'

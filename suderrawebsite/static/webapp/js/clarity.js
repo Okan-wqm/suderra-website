@@ -12,6 +12,7 @@
     initTicker();
     initTilt();
     initDash();
+    initHeroVideo();
     initForms();
     var fl = document.getElementById('form_loaded');
     if (fl) fl.value = Date.now();
@@ -74,6 +75,18 @@
         s.el.textContent = s.v.toFixed(dec[s.m] != null ? dec[s.m] : 1);
       });
     }, 1300);
+  }
+
+  /* ---------------- Hero video: load only on capable connections ---------------- */
+  function initHeroVideo() {
+    var v = document.querySelector('.hero-video');
+    if (!v) return;
+    var src = v.getAttribute('data-src');
+    var saveData = navigator.connection && navigator.connection.saveData;
+    if (!src || reduce || saveData || window.innerWidth < 900) return; // skip the heavy video on mobile/save-data/reduced-motion
+    v.src = src;
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});
   }
 
   /* ---------------- 3D cursor tilt on cards ---------------- */
@@ -315,16 +328,25 @@
         gl.drawArrays(gl.POINTS, 0, N);
       }
 
-      if (!reduce) raf = window.requestAnimationFrame(frame);
+      raf = (!reduce && inView && !document.hidden) ? window.requestAnimationFrame(frame) : null;
     }
-    var raf = window.requestAnimationFrame(frame);
-    if (reduce) { // draw a single clarified frame, no animation loop
-      clarity = 0.6; frame(start + 16);
+    var inView = true, raf = null;
+    function resume() { if (!raf && !reduce && inView && !document.hidden) raf = window.requestAnimationFrame(frame); }
+    if (reduce) { clarity = 0.6; frame(start + 16); }   // single clarified frame, no loop
+    else { raf = window.requestAnimationFrame(frame); }
+    // Only render while a water-backed section (hero / feature hero / footer) is on screen.
+    if ('IntersectionObserver' in window && !reduce) {
+      var seen = new Set();
+      var vo = new IntersectionObserver(function (es) {
+        es.forEach(function (e) { if (e.isIntersecting) seen.add(e.target); else seen.delete(e.target); });
+        inView = seen.size > 0;
+        if (inView) resume();
+      }, { rootMargin: '140px' });
+      document.querySelectorAll('.hero, .fhero, .site-foot').forEach(function (el) { vo.observe(el); });
     }
-    // pause when tab hidden
     document.addEventListener('visibilitychange', function () {
-      if (document.hidden) { if (raf) cancelAnimationFrame(raf); }
-      else if (!reduce) { start = performance.now() - 1; raf = window.requestAnimationFrame(frame); }
+      if (document.hidden) { if (raf) { cancelAnimationFrame(raf); raf = null; } }
+      else { resume(); }
     });
   }
 

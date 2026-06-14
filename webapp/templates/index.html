@@ -3,14 +3,16 @@
 {% load i18n %}
 
 {% block title %}SUDERRA — {% trans "Recirculating Aquaculture, Engineered in Norway" %}{% endblock %}
+{% block description %}{% trans "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI." %}{% endblock %}
+{% block og_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
+{% block twitter_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
 
 {% block content %}
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero" data-stage="murky">
-  <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
-    <source src="{% static 'webapp/videos/salmondance.mp4' %}" type="video/mp4">
-  </video>
+  <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true"
+         data-src="{% static 'webapp/videos/salmondance.mp4' %}"></video>
   <div class="hero-inner">
     <p class="eyebrow reveal"><span class="eyebrow-dot"></span>{% trans "Water Intelligence" %} · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
     <h1 class="hero-title reveal">

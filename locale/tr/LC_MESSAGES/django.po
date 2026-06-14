@@ -130,6 +130,9 @@ msgstr "Norveç su ürünleri yetiştiriciliği otoritelerine yönelik mevzuat r
 msgid "Automated Fertigation"
 msgstr "Otomatik Fertigasyon"
 
+msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, and Norwegian fish farm regulatory tools."
+msgstr "Otomatik Mattilsynet uyumu, deniz biti raporlaması, biyokütle raporlaması ve Norveç balık çiftliği mevzuat araçları."
+
 msgid "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly."
 msgstr "Otomatik Mattilsynet uyumluluğu, deniz biti raporlaması, biyokütle raporlaması, kaçış raporlaması ve Norveç balık çiftliği mevzuat araçları. Zahmetsizce uyumlu kalın."
 
@@ -430,6 +433,9 @@ msgstr "Yem Yönetimi"
 msgid "Feeder Automation"
 msgstr "Yemleyici Otomasyonu"
 
+msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder and AI-powered control."
+msgstr "Su ürünleri için yemleme otomasyonu, dozaj otomasyonu ve sensör IoT entegrasyonu. Görsel otomasyon oluşturucu ve AI destekli kontrol."
+
 msgid "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control."
 msgstr "Akuakültür için yemleyici otomasyonu, dozajlama otomasyonu, sensör IoT entegrasyonu. Görsel otomasyon oluşturucu, çoklu protokol desteği (MQTT, Modbus, OPC-UA) ve yapay zeka destekli kontrol."
 
@@ -631,7 +637,7 @@ msgstr "Modern üretim tesisleri sensörler ve kontrolörlerle çalışır — a
 msgid "Modular Operations Intelligence"
 msgstr "Modüler Operasyon Zekası"
 
-msgid "Modular architecture where each sector gets its own operations module. Fish farm: batch management, feed plans, mortality tracking. Soilless culture: nutrient recipes, growth stages. Waste water: flow monitoring, chemical load. Each new sector reuses 70%% of existing code."
+msgid "Modular architecture where each sector gets its own operations module. Fish farm: batch management, feed plans, mortality tracking. Soilless culture: nutrient recipes, growth stages. Waste water: flow monitoring, chemical load. Each new sector reuses 70% of existing code."
 msgstr "Her sektörün kendi operasyon modülüne sahip olduğu modüler mimari. Balık çiftliği: parti yönetimi, yem planları, ölüm takibi. Topraksız tarım: besin reçeteleri, büyüme aşamaları. Atık su: akış izleme, kimyasal yük. Her yeni sektör mevcut kodun %%70'ini yeniden kullanır."
 
 msgid "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators."
@@ -676,17 +682,26 @@ msgstr "Norveç"
 msgid "Norway Office — Headquarters"
 msgstr "Norveç Ofisi — Genel Merkez"
 
+msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data."
+msgstr "RAS izleme, somon yetiştiriciliği, su kimyası, yem yönetimi ve gerçek zamanlı sensör verileri için Norveç yapımı su ürünleri yazılımı."
+
 msgid "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered."
 msgstr "RAS izleme, somon yetiştiriciliği, su kimyası, yem yönetimi ve gerçek zamanlı sensör verileri için Norveç yapımı akuakültür yazılımı. Önce çevrimdışı. Yapay zeka destekli."
 
 msgid "Norwegian"
 msgstr "Norveççe"
 
+msgid "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform."
+msgstr "Norveçli RAS ortağı: resirkülasyonlu su ürünlerini tasarla, denetle, finanse et, kur ve işlet — sekizgen Tek Tank Tasarımı ve Suderra Edge AI platformu."
+
 msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
 msgstr "Norveç su ürünleri yetiştiriciliği, Mattilsynet (Norveç Gıda Güvenliği Otoritesi) ve Balıkçılık Müdürlüğü'nün sıkı düzenlemeleri altında faaliyet gösterir. Balık çiftlikleri, sıkı takvimler dahilinde deniz biti sayımlarını, biyokütle seviyelerini, ölüm olaylarını ve kaçış vakalarını bildirmek zorundadır. Manuel raporlama hataya açık, zaman alıcı ve risklidir."
 
 msgid "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring."
 msgstr "Gerçek zamanlı su kalitesi izleme için patentli optik sensör teknolojisinde uzmanlaşmış Norveçli su ürünleri teknoloji şirketi."
+
+msgid "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI."
+msgstr "Norveçli resirkülasyonlu su ürünleri (RAS) ortağı — karada balık çiftliklerini tasarlar, denetler, finanse eder, kurar ve işletiriz; sekizgen Tek Tank Tasarımı’ndan gerçek zamanlı AI’lı Suderra Edge platformuna."
 
 msgid "Norwegian water engineering,"
 msgstr "Norveç su mühendisliği,"
@@ -1009,6 +1024,9 @@ msgstr "Topraksız Tarım Yönetimi — Hidroponik ve Dikey Tarım Yazılımı"
 msgid "Soilless agriculture is precise by nature — every nutrient concentration, pH level, and environmental variable matters. Suderra's soilless culture module gives you complete control over your growing environment, whether you run a commercial greenhouse, vertical farm, or aquaponics system."
 msgstr "Topraksız tarım doğası gereği hassastır — her besin konsantrasyonu, pH seviyesi ve çevresel değişken önemlidir. Suderra'nın topraksız tarım modülü, ticari bir sera, dikey çiftlik veya akuaponik sistem işletiyor olsanız da yetiştirme ortamınız üzerinde tam kontrol sağlar."
 
+msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management and fertilizer automation."
+msgstr "Hidroponik, akuaponik ve dikey tarım için topraksız tarım yazılımı. Besin reçetesi yönetimi ve gübre otomasyonu."
+
 msgid "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking."
 msgstr "Hidroponik, akuaponik ve dikey tarım için topraksız tarım yazılımı. Besin reçetesi yönetimi, EC/pH izleme, gübre otomasyonu ve büyüme aşaması takibi."
 
@@ -1105,7 +1123,7 @@ msgstr "Suderra'nın yapay zeka motoru her hesaplama için yayımlanmış bilims
 msgid "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers."
 msgstr "Suderra'nın IoT gateway'i MQTT, Modbus (RTU ve TCP) ve OPC-UA'yı destekler. 8'den fazla pompa ve motor markasıyla çalışır ve tüm büyük üreticilerin yeni sensörlerini otomatik olarak algılar."
 
-msgid "Suderra's modular architecture means the waste water module reuses 70%% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
+msgid "Suderra's modular architecture means the waste water module reuses 70% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants."
 msgstr "Suderra'nın modüler mimarisi, atık su modülünün kanıtlanmış akuakültür kod tabanının %%70'ini yeniden kullanması anlamına gelir. Aynı güvenilirlik, aynı sensör entegrasyonu, arıtma tesisleri için özel olarak tasarlanmıştır."
 
 msgid "Support through construction and commissioning — and we train your team to run the system with confidence."
@@ -1240,6 +1258,9 @@ msgstr "Atık su arıtma tesisleri, gerçek zamanlı izlemenin kritik olduğu ka
 msgid "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting."
 msgstr "Akış izleme, su kalitesi takibi, AKM yönetimi, kimyasal yük optimizasyonu ve deşarj uyumluluk raporlaması için atık su arıtma yazılımı."
 
+msgid "Waste water treatment software for flow monitoring, water quality tracking, and effluent compliance reporting."
+msgstr "Akış izleme, su kalitesi takibi ve atık su uyum raporlaması için atık su arıtma yazılımı."
+
 msgid "Water Chemistry Engine"
 msgstr "Su Kimyası Motoru"
 
@@ -1260,6 +1281,9 @@ msgstr "Su kalitesi izleme ve deşarj yönetimi"
 
 msgid "Water recirculated"
 msgstr "Geri kazanılan su"
+
+msgid "Water-chemistry stability diagram"
+msgstr "Su kimyası kararlılık diyagramı"
 
 msgid "Water-tech notes, occasionally."
 msgstr "Ara sıra su teknolojisi notları."
@@ -1383,6 +1407,9 @@ msgstr "t/yıl"
 
 msgid "to living biomass."
 msgstr "canlı biyokütleye."
+
+msgid "visits"
+msgstr "ziyaret"
 
 msgid "you@company.com"
 msgstr "siz@sirket.com"

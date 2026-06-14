@@ -55,6 +55,10 @@ img { max-width: 100%; display: block; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; color: inherit; cursor: pointer; background: none; border: none; }
 
+/* Accessibility: visible keyboard focus everywhere */
+:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: 3px; }
+.btn:focus-visible { outline-offset: 4px; }
+
 /* ---- Signature background ---- */
 .water-canvas {
   position: fixed; inset: 0; width: 100%; height: 100%;
@@ -396,6 +400,9 @@ main { position: relative; z-index: 2; }
 .news-feedback.success { display: block; color: var(--cyan); }
 .news-feedback.error { display: block; color: var(--coral); }
 .foot-base { max-width: var(--maxw); margin: 50px auto 0; padding-top: 24px; border-top: 1px solid var(--line-d); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .84rem; color: rgba(244,239,228,.5); }
+.foot-meta { display: inline-flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+.foot-visits { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-variant-numeric: tabular-nums; }
+.foot-visits i { width: 6px; height: 6px; border-radius: 50%; background: var(--coral); }
 .foot-pulse { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); }
 .foot-pulse i { width: 8px; height: 8px; border-radius: 50%; background: var(--cyan); box-shadow: 0 0 8px var(--cyan); animation: pulse 2.4s infinite; }
 
@@ -501,6 +508,12 @@ main { position: relative; z-index: 2; }
 
 /* ---- RTL ---- */
 html[dir="rtl"] body.clarity { font-family: "Noto Sans Arabic", var(--sans); }
+/* Flip the hero scrim so RTL text keeps its dark backing */
+html[dir="rtl"] .hero::before {
+  background:
+    linear-gradient(270deg, rgba(4,20,31,.94) 0%, rgba(4,20,31,.62) 48%, rgba(4,20,31,.22) 100%),
+    linear-gradient(to bottom, rgba(4,20,31,.55), rgba(4,20,31,.15) 38%, rgba(4,20,31,.9));
+}
 html[dir="rtl"] .sector-go, html[dir="rtl"] .hero-title em.serif { transform: none; }
 html[dir="rtl"] .sector:hover .sector-go { transform: translate(-4px,-4px); }
 html[dir="rtl"] .scroll-rail i { } /* unaffected */

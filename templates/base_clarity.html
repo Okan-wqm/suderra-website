@@ -1,5 +1,6 @@
 {% load static %}
 {% load i18n %}
+{% load humanize %}
 {% get_current_language as CURRENT_LANGUAGE %}
 {% get_current_language_bidi as LANGUAGE_BIDI %}
 <!DOCTYPE html>
@@ -30,7 +31,7 @@
   <meta property="og:url" content="https://suderra.com{{ request.path }}">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Suderra AS">
-  <meta property="og:locale" content="{% if CURRENT_LANGUAGE == 'en' %}en_US{% elif CURRENT_LANGUAGE == 'no' %}nb_NO{% elif CURRENT_LANGUAGE == 'tr' %}tr_TR{% elif CURRENT_LANGUAGE == 'ar' %}ar_AR{% endif %}">
+  <meta property="og:locale" content="{% if CURRENT_LANGUAGE == 'en' %}en_US{% elif CURRENT_LANGUAGE == 'no' %}nb_NO{% elif CURRENT_LANGUAGE == 'tr' %}tr_TR{% elif CURRENT_LANGUAGE == 'ar' %}ar_SA{% endif %}">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -56,20 +57,41 @@
   <link rel="stylesheet" href="{% static 'webapp/css/clarity.css' %}">
   {% block extra_css %}{% endblock %}
 
-  <!-- Organization JSON-LD -->
+  <!-- Structured data -->
   <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": "https://suderra.com/#organization",
     "name": "Suderra AS",
     "url": "https://suderra.com",
     "logo": "https://suderra.com{% static 'webapp/images/logo5.png' %}",
-    "description": "Norwegian recirculating aquaculture (RAS) partner — system design, audit, and the Suderra Edge / Suderra OS platform with real-time AI for water quality monitoring.",
+    "description": "Norwegian recirculating aquaculture (RAS) partner — design, audit, finance, build and run, on the Suderra Edge / Suderra OS platform with real-time AI.",
     "address": {"@type": "PostalAddress", "streetAddress": "Dronningens gate 5-7", "addressLocality": "Sandefjord", "postalCode": "3211", "addressCountry": "NO"},
-    "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "okan@suderra.com"},
-    "sameAs": [],
+    "contactPoint": {"@type": "ContactPoint", "contactType": "sales", "email": "okan@suderra.com", "telephone": "+47-912-46-490"},
     "foundingLocation": "Sandefjord, Norway",
     "industry": "Aquaculture Technology"
+  }
+  </script>
+  <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://suderra.com/#website",
+    "name": "Suderra",
+    "url": "https://suderra.com",
+    "publisher": {"@id": "https://suderra.com/#organization"},
+    "inLanguage": ["en", "no", "tr", "ar"]
+  }
+  </script>
+  <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Recirculating Aquaculture System (RAS) — design, audit, finance, build & run",
+    "provider": {"@id": "https://suderra.com/#organization"},
+    "serviceType": "Recirculating aquaculture engineering",
+    "areaServed": ["NO", "EU"]
   }
   </script>
 </head>
@@ -122,10 +144,10 @@
 
   <!-- Hidden i18n language forms -->
   {% for code in 'en,no,tr,ar'|cut:' ' %}{% endfor %}
-  <form id="lang-form-en" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="en"><input type="hidden" name="next" value="/en/"></form>
-  <form id="lang-form-no" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="no"><input type="hidden" name="next" value="/no/"></form>
-  <form id="lang-form-tr" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="tr"><input type="hidden" name="next" value="/tr/"></form>
-  <form id="lang-form-ar" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="ar"><input type="hidden" name="next" value="/ar/"></form>
+  <form id="lang-form-en" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="en"><input type="hidden" name="next" value="/en{{ request.path|slice:'3:' }}"></form>
+  <form id="lang-form-no" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="no"><input type="hidden" name="next" value="/no{{ request.path|slice:'3:' }}"></form>
+  <form id="lang-form-tr" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="tr"><input type="hidden" name="next" value="/tr{{ request.path|slice:'3:' }}"></form>
+  <form id="lang-form-ar" action="{% url 'set_language' %}" method="post" hidden>{% csrf_token %}<input type="hidden" name="language" value="ar"><input type="hidden" name="next" value="/ar{{ request.path|slice:'3:' }}"></form>
 
   <main id="main-content">
     {% block content %}{% endblock %}
@@ -166,7 +188,10 @@
     </div>
     <div class="foot-base">
       <span>&copy; 2026 Suderra AS. {% trans "All rights reserved." %}</span>
-      <span class="foot-pulse"><i></i>{% trans "Systems nominal" %}</span>
+      <span class="foot-meta">
+        <span class="foot-visits"><i></i>{{ visit_count|intcomma }} {% trans "visits" %}</span>
+        <span class="foot-pulse"><i></i>{% trans "Systems nominal" %}</span>
+      </span>
     </div>
   </footer>
   {% endblock footer %}

@@ -7,6 +7,35 @@ Custom middleware for Suderra website.
 import secrets
 
 from django.conf import settings
+from django.core.cache import cache
+from django.db.models import F
+
+
+class VisitCounterMiddleware:
+    """Counts unique visits (once per session) on successful HTML page loads.
+
+    Must be placed AFTER SessionMiddleware. Uses an atomic F()+1 update; failures
+    never affect the response.
+    """
+
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        response = self.get_response(request)
+        try:
+            if (request.method == 'GET'
+                    and response.status_code == 200
+                    and not request.session.get('_counted')
+                    and 'text/html' in response.headers.get('Content-Type', '')):
+                from webapp.models import VisitCounter
+                if not VisitCounter.objects.filter(pk=1).update(count=F('count') + 1):
+                    VisitCounter.objects.get_or_create(pk=1, defaults={'count': 1})
+                request.session['_counted'] = True
+                cache.delete('visit_count')
+        except Exception:
+            pass
+        return response
 
 
 class SecurityHeadersMiddleware:

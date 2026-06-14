@@ -295,3 +295,39 @@ class RedesignTests(TestCase):
         for token in ('id="contactForm"', 'id="name"', 'id="email"', 'id="message"',
                       'name="company_url"', 'id="form_loaded"', 'data-ajax-url'):
             self.assertIn(token, html)
+
+
+@override_settings(**TEST_SETTINGS)
+class VisitCounterTests(TestCase):
+    def setUp(self):
+        cache.clear()
+
+    def test_counts_once_per_session(self):
+        from webapp.models import VisitCounter
+        self.client.get('/en/')
+        self.client.get('/en/')  # same session → not double-counted
+        self.assertEqual(VisitCounter.objects.get(pk=1).count, 1)
+
+    def test_new_session_counts_again(self):
+        from webapp.models import VisitCounter
+        self.client.get('/en/')
+        Client().get('/en/')  # fresh session
+        self.assertEqual(VisitCounter.objects.get(pk=1).count, 2)
+
+    def test_count_rendered_in_footer(self):
+        self.client.get('/en/')
+        cache.clear()
+        self.assertIn('visits', self.client.get('/en/').content.decode().lower())
+
+
+@override_settings(**TEST_SETTINGS)
+class FeaturePageRedesignTests(TestCase):
+    def test_feature_pages_use_clarity_base(self):
+        html = self.client.get('/en/automation/').content.decode()
+        self.assertIn('clarity.css', html)
+        self.assertNotIn('webapp/css/style.css', html)  # legacy CSS gone
+
+    def test_language_switch_preserves_page(self):
+        # the hidden lang forms must point back to the SAME page in the target language
+        html = self.client.get('/en/automation/').content.decode()
+        self.assertIn('value="/tr/automation/"', html)
