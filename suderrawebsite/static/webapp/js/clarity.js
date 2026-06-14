@@ -97,19 +97,64 @@
     });
   }
 
-  /* ---------------- Dashboard: AI decision cycling ---------------- */
+  /* ---------------- Dashboard: Deffeyes diagram + AI correction ---------------- */
   function initDash() {
-    var ai = document.querySelector('.dash-ai');
-    if (!ai) return;
-    var textEl = ai.querySelector('.dash-ai-text');
-    var states = (ai.getAttribute('data-states') || '').split('|').filter(Boolean);
-    if (reduce || !textEl || !states.length) return;
-    var i = 0;
-    setInterval(function () {
-      i = (i + 1) % states.length;
-      textEl.style.opacity = '0';
-      setTimeout(function () { textEl.textContent = states[i]; textEl.style.opacity = '1'; }, 350);
-    }, 2600);
+    var dash = document.querySelector('.dash');
+    var svg = dash && dash.querySelector('.deffeyes');
+    if (!dash || !svg) return;
+    var starEl = svg.querySelector('.dfx-star'),
+        targetEl = svg.querySelector('.dfx-target'),
+        arrowEl = svg.querySelector('.dfx-arrow'),
+        aiText = dash.querySelector('.dash-ai-text'),
+        chipDic = dash.querySelector('[data-chip="dic"]'),
+        chipAlk = dash.querySelector('[data-chip="alk"]'),
+        chipPh = dash.querySelector('[data-chip="ph"]');
+    var msg = function (k, d) { return dash.getAttribute('data-ai-' + k) || d; };
+    var safe = { x0: 122, y0: 66, x1: 214, y1: 120 }, center = { x: 168, y: 93 };
+    var pos = { x: center.x, y: center.y }, goal = { x: center.x, y: center.y };
+
+    function setStar() { starEl.setAttribute('transform', 'translate(' + pos.x.toFixed(1) + ',' + pos.y.toFixed(1) + ')'); }
+    function showTarget(p) {
+      if (targetEl) { targetEl.setAttribute('transform', 'translate(' + p.x + ',' + p.y + ')'); targetEl.style.opacity = '1'; }
+      if (arrowEl) { arrowEl.setAttribute('x2', p.x); arrowEl.setAttribute('y2', p.y); arrowEl.style.opacity = '1'; }
+    }
+    function hideTarget() { if (targetEl) targetEl.style.opacity = '0'; if (arrowEl) arrowEl.style.opacity = '0'; }
+    function updateChips() {
+      if (chipDic) chipDic.textContent = (2.5 + (pos.x - 40) / 260 * 4).toFixed(1);
+      if (chipAlk) chipAlk.textContent = (1.0 + (172 - pos.y) / 156 * 3).toFixed(1);
+      if (chipPh) chipPh.textContent = (6.7 + (172 - pos.y) / 156 * 1.5 - (pos.x - 40) / 260 * 0.5).toFixed(1);
+    }
+    setStar(); updateChips();
+    if (reduce) { if (aiText) aiText.textContent = msg('stable', 'AI: stable'); return; }
+
+    var raf2;
+    function loop() {
+      pos.x += (goal.x - pos.x) * 0.07; pos.y += (goal.y - pos.y) * 0.07;
+      setStar(); updateChips();
+      if (arrowEl && arrowEl.style.opacity === '1') { arrowEl.setAttribute('x1', pos.x.toFixed(1)); arrowEl.setAttribute('y1', pos.y.toFixed(1)); }
+      raf2 = requestAnimationFrame(loop);
+    }
+    raf2 = requestAnimationFrame(loop);
+
+    function excursion() {
+      return Math.random() < 0.5
+        ? { x: safe.x0 - 26 - Math.random() * 22, y: safe.y0 - 16 - Math.random() * 16 }
+        : { x: safe.x1 + 16 + Math.random() * 30, y: safe.y1 + 12 + Math.random() * 18 };
+    }
+    function setAI(k, alert) { if (aiText) aiText.textContent = msg(k, ''); dash.classList.toggle('alert', !!alert); }
+
+    var steps = [
+      function () { goal = { x: center.x, y: center.y }; hideTarget(); setAI('analyze', false); },
+      function () { setAI('stable', false); },
+      function () { goal = excursion(); setAI('drift', true); },                                   // drifts outside safe zone
+      function () { showTarget(center); goal = { x: center.x, y: center.y }; setAI('dose', true); }, // AI targets + pulls back
+      function () { hideTarget(); setAI('back', false); }
+    ];
+    var si = 0;
+    (function sched() { steps[si % steps.length](); si++; setTimeout(sched, 2900); })();
+    document.addEventListener('visibilitychange', function () {
+      if (document.hidden) { if (raf2) cancelAnimationFrame(raf2); } else { raf2 = requestAnimationFrame(loop); }
+    });
   }
 
   /* ---------------- WebGL: water + 3D octagon ---------------- */

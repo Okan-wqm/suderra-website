@@ -8,6 +8,9 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="hero" data-stage="murky">
+  <video class="hero-video" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+    <source src="{% static 'webapp/videos/salmondance.mp4' %}" type="video/mp4">
+  </video>
   <div class="hero-inner">
     <p class="eyebrow reveal"><span class="eyebrow-dot"></span>{% trans "Water Intelligence" %} · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
     <h1 class="hero-title reveal">
@@ -146,30 +149,45 @@
       </div>
 
       <div class="platform-viz reveal" aria-hidden="true">
-        <div class="dash">
+        <div class="dash"
+             data-ai-analyze="{% trans 'AI: analyzing water chemistry…' %}"
+             data-ai-stable="{% trans 'AI: alkalinity stable — within safe range' %}"
+             data-ai-drift="{% trans 'AI: pH drifting out of safe range' %}"
+             data-ai-dose="{% trans 'AI: dosing bicarbonate → target' %}"
+             data-ai-back="{% trans 'AI: corrected — back in safe range' %}">
           <div class="dash-head">
             <span class="dash-title">{% trans "Farm 01" %} · {% trans "Live" %}</span>
-            <span class="dash-live"><i></i>{% trans "streaming" %}</span>
+            <span class="dash-live"><i></i></span>
           </div>
-          <svg class="dash-chart" viewBox="0 0 320 150" preserveAspectRatio="none" role="img">
-            <defs>
-              <linearGradient id="dgrad" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0" stop-color="#2bd4d9" stop-opacity=".34"/>
-                <stop offset="1" stop-color="#2bd4d9" stop-opacity="0"/>
-              </linearGradient>
-            </defs>
-            <g stroke="rgba(255,255,255,.08)" stroke-width="1">
-              <line x1="0" y1="38" x2="320" y2="38"/><line x1="0" y1="76" x2="320" y2="76"/><line x1="0" y1="114" x2="320" y2="114"/>
+          <svg class="deffeyes" viewBox="0 0 320 196" role="img" aria-label="{% trans 'Water-chemistry stability diagram' %}">
+            <!-- constant-pH iso-lines (radial from origin) -->
+            <g stroke="rgba(255,255,255,.07)" stroke-width="1">
+              <line x1="40" y1="172" x2="300" y2="124"/>
+              <line x1="40" y1="172" x2="300" y2="74"/>
+              <line x1="40" y1="172" x2="262" y2="22"/>
+              <line x1="40" y1="172" x2="150" y2="22"/>
             </g>
-            <path class="dash-area" d="M0,112 C40,92 70,72 100,82 C140,97 170,42 210,57 C250,70 280,32 320,47 L320,150 L0,150 Z" fill="url(#dgrad)"/>
-            <path class="dash-line-b" d="M0,122 C50,117 80,102 120,107 C160,112 200,92 240,97 C280,102 300,87 320,90" fill="none" stroke="#0c7b93" stroke-width="1.5" stroke-dasharray="3 4"/>
-            <path class="dash-line-a" pathLength="1" d="M0,112 C40,92 70,72 100,82 C140,97 170,42 210,57 C250,70 280,32 320,47" fill="none" stroke="#2bd4d9" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- safe zone -->
+            <rect class="dfx-safe" x="120" y="64" width="96" height="58" rx="12"/>
+            <text class="dfx-safe-lab" x="168" y="96" text-anchor="middle">{% trans "safe zone" %}</text>
+            <!-- axes -->
+            <g stroke="rgba(255,255,255,.22)" stroke-width="1.2">
+              <line x1="40" y1="16" x2="40" y2="172"/>
+              <line x1="40" y1="172" x2="300" y2="172"/>
+            </g>
+            <defs><marker id="dfx-ah" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ef5a47"/></marker></defs>
+            <!-- AI action arrow (star → target) -->
+            <line class="dfx-arrow" x1="168" y1="93" x2="168" y2="93" stroke="#ef5a47" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#dfx-ah)" style="opacity:0"/>
+            <!-- target (shown while correcting) -->
+            <g class="dfx-target" transform="translate(168,93)" style="opacity:0">
+              <circle r="8" fill="none" stroke="#ef5a47" stroke-width="1.5"/>
+              <circle r="1.8" fill="#ef5a47"/>
+            </g>
+            <!-- current water state -->
+            <path class="dfx-star" transform="translate(168,93)" d="M0,-7.5 L2.1,-2.4 7.6,-2.4 3.2,1.5 4.7,7.1 0,3.8 -4.7,7.1 -3.2,1.5 -7.6,-2.4 -2.1,-2.4 Z"/>
           </svg>
-          <div class="dash-chips">
-            <span><i>DO</i>8.2</span><span><i>pH</i>7.1</span><span><i>°C</i>12.4</span><span><i>NTU</i>1.2</span>
-          </div>
-          <div class="dash-ai" data-states="{% trans 'Analyzing water chemistry…' %}|{% trans 'O₂ optimal — holding' %}|{% trans 'pH stable — no action' %}|{% trans 'Feed +2% recommended' %}">
-            <span class="dash-ai-dot"></span><span class="dash-ai-text">{% trans "AI: water stable — no action needed" %}</span>
+          <div class="dash-ai">
+            <span class="dash-ai-dot"></span><span class="dash-ai-text">{% trans "AI: alkalinity stable — within safe range" %}</span>
           </div>
         </div>
       </div>
@@ -189,7 +207,7 @@
       <li class="loop-step reveal" style="--i:0"><span class="loop-no">01</span><h3>{% trans "Design" %}</h3><p>{% trans "Full RAS engineering — flow, biofiltration, oxygenation and degassing sized to your species and density." %}</p></li>
       <li class="loop-step reveal" style="--i:1"><span class="loop-no">02</span><h3>{% trans "Audit" %}</h3><p>{% trans "Independent review of an existing facility — water balance, biosecurity and risk — with a prioritized roadmap." %}</p></li>
       <li class="loop-step reveal" style="--i:2"><span class="loop-no">03</span><h3>{% trans "Finance" %}</h3><p>{% trans "We help you secure Eksfin-backed financing — 90% under €2M, 60–70% above · 10–15-year term · 2.5–3.5% interest." %}</p></li>
-      <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build" %}</h3><p>{% trans "Support through construction and commissioning — from tank fabrication to a working, validated system." %}</p></li>
+      <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build & Train" %}</h3><p>{% trans "Support through construction and commissioning — and we train your team to run the system with confidence." %}</p></li>
       <li class="loop-step reveal" style="--i:4"><span class="loop-no">05</span><h3>{% trans "Run" %}</h3><p>{% trans "Operational support to keep the site running 24/7 with a lean 3–4 person crew." %}</p></li>
       <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Sense & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously and AI turns the data into decisions you approve." %}</p></li>
     </ol>
@@ -201,9 +219,15 @@
   <div class="container">
     <p class="partners-label reveal">{% trans "Supported by" %}</p>
     <div class="partners-row">
-      <img class="partner-logo reveal" style="--i:0" src="{% static 'webapp/images/innovation-norge.png' %}" alt="Innovation Norway" loading="lazy">
-      <img class="partner-logo reveal" style="--i:1" src="{% static 'webapp/images/eksfin.png' %}" alt="Eksfin" loading="lazy">
-      <img class="partner-logo reveal" style="--i:2" src="{% static 'webapp/images/Forskningsradet.png' %}" alt="Research Council of Norway" loading="lazy">
+      <a class="partner-link reveal" style="--i:0" href="https://www.innovasjonnorge.no/en/" target="_blank" rel="noopener" aria-label="Innovation Norway">
+        <img class="partner-logo" src="{% static 'webapp/images/innovation-norge.png' %}" alt="Innovation Norway" loading="lazy">
+      </a>
+      <a class="partner-link reveal" style="--i:1" href="https://www.eksfin.no/" target="_blank" rel="noopener" aria-label="Eksfin">
+        <img class="partner-logo" src="{% static 'webapp/images/eksfin.png' %}" alt="Eksfin" loading="lazy">
+      </a>
+      <a class="partner-link reveal" style="--i:2" href="https://www.forskningsradet.no/en/" target="_blank" rel="noopener" aria-label="Research Council of Norway">
+        <img class="partner-logo" src="{% static 'webapp/images/Forskningsradet.png' %}" alt="Research Council of Norway" loading="lazy">
+      </a>
     </div>
   </div>
 </section>
@@ -234,9 +258,10 @@
     </div>
     <div class="about-card glass reveal">
       <div class="about-row"><span>{% trans "Headquarters" %}</span><strong>Sandefjord, {% trans "Norway" %} {% include "partials/flag_no.html" %}</strong></div>
-      <div class="about-row"><span>{% trans "Focus" %}</span><strong>{% trans "Recirculating aquaculture" %}</strong></div>
+      <div class="about-row"><span>{% trans "Focus" %}</span><strong>{% trans "RAS engineering, design & management" %}</strong></div>
       <div class="about-row"><span>{% trans "Platform" %}</span><strong>Suderra Edge · Suderra OS</strong></div>
-      <div class="about-row"><span>{% trans "Origin" %}</span><strong>{% trans "Norwegian engineering" %} {% include "partials/flag_no.html" %}</strong></div>
+      <div class="about-row"><span>{% trans "Strength" %}</span><strong>{% trans "10+ years hands-on experience" %}</strong></div>
+      <div class="about-row"><span>{% trans "Origin" %}</span><strong>{% trans "Norway" %} {% include "partials/flag_no.html" %}</strong></div>
     </div>
   </div>
 </section>
