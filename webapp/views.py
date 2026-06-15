@@ -68,19 +68,20 @@ def _get_client_ip(request):
 def _rate_limit_exceeded(cache_key, limit, window=RATE_LIMIT_WINDOW):
     """Count this attempt and return True if the IP is over ``limit``.
 
-    Uses add+incr so the counter increments on EVERY attempt (not only on
-    success). FileBasedCache is not perfectly atomic across workers — see the
-    note in settings.CACHES — but this is sufficient for basic abuse control.
+    Fixed-window limiter: the value stores ``(count, reset_at)`` so the window
+    has a real, fixed expiry. (Plain cache.incr() would reset the TTL on every
+    hit, turning the window into a perpetually-sliding one that never frees a
+    limited IP.) FileBasedCache is not fully atomic across gunicorn workers —
+    use Redis in production for strict guarantees; see settings.CACHES.
     """
-    if cache.add(cache_key, 1, window):
-        return 1 > limit  # first attempt in the window
-    try:
-        current = cache.incr(cache_key)
-    except ValueError:
-        # Key expired between add and incr — start a fresh window.
-        cache.add(cache_key, 1, window)
-        current = 1
-    return current > limit
+    now = time.time()
+    data = cache.get(cache_key)
+    if not data or now >= data[1]:
+        cache.set(cache_key, (1, now + window), window)
+        return 1 > limit
+    count = data[0] + 1
+    cache.set(cache_key, (count, data[1]), max(1, int(data[1] - now)))
+    return count > limit
 
 
 def index(request):

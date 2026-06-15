@@ -1,5 +1,10 @@
+from datetime import date
+
 from django.contrib.sitemaps import Sitemap
 from django.urls import reverse
+
+# Bump on each content release so search engines prioritise recrawl.
+CONTENT_LASTMOD = date(2026, 6, 14)
 
 
 class StaticViewSitemap(Sitemap):
@@ -17,6 +22,9 @@ class StaticViewSitemap(Sitemap):
     def location(self, item):
         return reverse(item)
 
+    def lastmod(self, item):
+        return CONTENT_LASTMOD
+
 
 class FeaturePageSitemap(Sitemap):
     priority = 0.8
@@ -26,6 +34,9 @@ class FeaturePageSitemap(Sitemap):
     languages = ['en', 'no', 'tr', 'ar']
     alternates = True
     x_default = 'en'
+
+    def lastmod(self, item):
+        return CONTENT_LASTMOD
 
     def items(self):
         return [

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sitemaps',
+    'django.contrib.humanize',
     'webapp'
 ]
 
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'webapp.middleware.VisitCounterMiddleware',
 ]
 
 ROOT_URLCONF = 'suderrawebsite.urls'
@@ -74,6 +76,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.i18n',
+                'webapp.context_processors.visit_count',
             ],
         },
     },
@@ -177,15 +180,20 @@ STATICFILES_DIRS = [
 ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# WhiteNoise: serve compressed static files in production (DEBUG=False).
-# CompressedStaticFilesStorage (not the Manifest variant) is used so a single
-# missing referenced asset cannot break `collectstatic`.
+# WhiteNoise static serving.
+# - Production (DEBUG=False): CompressedManifestStaticFilesStorage → hashed
+#   filenames so assets can be served immutable + far-future cached.
+# - Development (DEBUG=True): plain storage so {% static %} resolves to
+#   unhashed names that the runserver static handler can serve.
 STORAGES = {
     'default': {
         'BACKEND': 'django.core.files.storage.FileSystemStorage',
     },
     'staticfiles': {
-        'BACKEND': 'whitenoise.storage.CompressedStaticFilesStorage',
+        'BACKEND': (
+            'django.contrib.staticfiles.storage.StaticFilesStorage' if DEBUG
+            else 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+        ),
     },
 }
 

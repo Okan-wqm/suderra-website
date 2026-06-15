@@ -1,909 +1,407 @@
-{% extends "base.html" %}
+{% extends "base_clarity.html" %}
 {% load static %}
 {% load i18n %}
 
-{% block title %}SUDERRA - {% trans "Innovating Aquaculture & Aquaponics for a Sustainable Future." %}{% endblock %}
+{% block title %}SUDERRA — {% trans "Recirculating Aquaculture, Engineered in Norway" %}{% endblock %}
+{% block description %}{% trans "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI." %}{% endblock %}
+{% block og_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
+{% block twitter_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
 
 {% block content %}
 
-  <!-- HERO SECTION -->
-  <section id="hero" class="hero-section">
-    <video autoplay muted loop playsinline preload="metadata" class="hero-video" aria-hidden="true">
-      <source src="{% static 'webapp/videos/salmondance.mp4' %}" type="video/mp4">
-      {% trans "Your browser does not support the video tag." %}
-    </video>
-    <div class="hero-overlay"></div>
-
-    <!-- Animated wave particles (CSS-only) -->
-    <div class="hero-particles">
-      <div class="particle particle-1"></div>
-      <div class="particle particle-2"></div>
-      <div class="particle particle-3"></div>
-      <div class="particle particle-4"></div>
-      <div class="particle particle-5"></div>
-      <div class="particle particle-6"></div>
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" data-stage="murky">
+  <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true"
+         data-src="{% static 'webapp/videos/salmondance.mp4' %}"></video>
+  <div class="hero-inner">
+    <p class="eyebrow reveal"><span class="eyebrow-dot"></span>{% trans "Water Intelligence" %} · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
+    <h1 class="hero-title reveal">
+      {% trans "From blueprint" %}<br>
+      <em class="serif">{% trans "to living biomass." %}</em>
+    </h1>
+    <p class="hero-lede reveal">
+      {% trans "Suderra designs and audits recirculating aquaculture systems — then runs them on Suderra Edge and real-time AI, integrating instantly with the sensors and equipment you already have. One partner, from the first drawing to the last decision." %}
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#product" class="btn btn-coral">{% trans "See the Single Tank" %}</a>
+      <a href="#approach" class="btn btn-ghost">{% trans "How we work" %}</a>
     </div>
 
-    <div class="container hero-container">
-      <div class="hero-content">
-        <p class="hero-eyebrow">{% trans "Modular Operations Intelligence" %}</p>
-        <h1 class="hero-title">
-          <span class="hero-title-line">{% trans "One Platform." %}</span>
-          <span class="hero-title-line hero-title-gradient">{% trans "Every Facility." %}</span>
-        </h1>
-        <p class="hero-subtitle">{% trans "Suderra Software connects to all your sensors, collects data in one place, and turns it into actionable decisions — before problems happen. Sector-agnostic. Offline-first. AI-powered." %}</p>
-        <div class="hero-cta-group">
-          <a href="#technology" class="btn btn-primary btn-lg">
-            {% trans "Explore Platform" %}
-            <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-          </a>
-          <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg">{% trans "Launch Dashboard" %}</a>
+    <div class="ticker reveal" aria-hidden="true">
+      <div class="ticker-item"><span class="t-label">DO</span><span class="t-val" data-metric="do" data-base="8.2" data-range="0.6">8.2</span><span class="t-unit">mg/L</span></div>
+      <div class="ticker-item"><span class="t-label">pH</span><span class="t-val" data-metric="ph" data-base="7.1" data-range="0.2">7.10</span><span class="t-unit"></span></div>
+      <div class="ticker-item"><span class="t-label">Temp</span><span class="t-val" data-metric="temp" data-base="12.4" data-range="0.5">12.4</span><span class="t-unit">°C</span></div>
+      <div class="ticker-item"><span class="t-label">Turb</span><span class="t-val" data-metric="turb" data-base="1.2" data-range="0.9">1.2</span><span class="t-unit">NTU</span></div>
+    </div>
+  </div>
+  <div class="scroll-hint reveal" aria-hidden="true">
+    <span>{% trans "Scroll to clarify" %}</span>
+    <div class="scroll-rail"><i></i></div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT — Single Tank Design ============ -->
+<section class="product section" id="product" data-stage="clearing">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Recirculating Aquaculture System" %}</span>
+      <h2 class="sec-title">{% trans "The Single Tank" %} <em class="serif">{% trans "Design." %}</em></h2>
+      <p class="sec-lede">{% trans "A tested, CFD-validated tank-in-tank system that recirculates over 94% of its water — built around your species, your site, your scale." %}</p>
+    </header>
+
+    <div class="product-grid">
+      <figure class="product-shot reveal">
+        <img src="{% static 'webapp/images/oktagon.jpeg' %}" alt="{% trans 'Suderra octagonal tank-in-tank RAS concept' %}" loading="lazy">
+        <figcaption><span class="geo-badge">{% trans "Geometry 02" %}</span> {% trans "Octagonal tank-in-tank — 15–20% more efficient footprint" %}</figcaption>
+      </figure>
+
+      <div class="product-side reveal">
+        <div class="metrics">
+          <div class="metric"><span class="metric-num">&gt;94<i>%</i></span><span class="metric-cap">{% trans "Water recirculated" %}</span></div>
+          <div class="metric"><span class="metric-num">−95<i>%</i></span><span class="metric-cap">{% trans "Less piping" %}</span></div>
+          <div class="metric"><span class="metric-num">~30–35<i>%</i></span><span class="metric-cap">{% trans "Lower investment" %}</span></div>
+          <div class="metric"><span class="metric-num">&lt;2<i>kW/kg</i></span><span class="metric-cap">{% trans "Energy per kg fish (excl. heat)" %}</span></div>
         </div>
+
+        <div class="geos">
+          <div class="geo"><span class="geo-no">01</span><span>{% trans "Circular tank-in-tank" %}</span></div>
+          <div class="geo geo-on"><span class="geo-no">02</span><span>{% trans "Octagonal tank-in-tank" %}</span><span class="geo-flag">{% trans "Signature" %}</span></div>
+        </div>
+
+        <dl class="specs">
+          <div><dt>{% trans "Tank diameter" %}</dt><dd>12–40 m</dd></div>
+          <div><dt>{% trans "Production capacity" %}</dt><dd>60–1500 {% trans "t/yr" %}</dd></div>
+          <div><dt>{% trans "Biofilter stages" %}</dt><dd>3–4</dd></div>
+          <div><dt>{% trans "Investment" %}</dt><dd>1.75–2k $/m³</dd></div>
+        </dl>
       </div>
     </div>
+  </div>
+</section>
 
-    <!-- Stats bar -->
-    <div class="hero-stats">
-      <div class="container">
-        <div class="stats-grid">
-          <div class="stat-item">
-            <span class="stat-number" data-target="13">0</span>
-            <span class="stat-label">{% trans "Microservices" %}</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="8">0</span><span class="stat-plus">+</span>
-            <span class="stat-label">{% trans "Pump/Motor Brands" %}</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="3">0</span>
-            <span class="stat-label">{% trans "Industrial Protocols" %}</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-number" data-target="2">0</span>
-            <span class="stat-label">{% trans "Global Offices" %}</span>
-          </div>
-        </div>
-      </div>
+<!-- ============ CAPABILITIES — bento ============ -->
+<section class="capabilities section" id="capabilities" data-stage="clear">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "What's inside" %}</span>
+      <h2 class="sec-title">{% trans "Proven where it matters." %}</h2>
+    </header>
+
+    <div class="bento">
+      <article class="cell cell-lg glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="check" %}</div>
+        <h3>{% trans "Tested & CFD-validated" %}</h3>
+        <p>{% trans "Biofilter, flow and bottom-drain design proven in the field and in simulation — not theory." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="loop" %}</div>
+        <h3>{% trans "Closed-loop, low piping" %}</h3>
+        <p>{% trans "Site-dependent 90%+ recirculation and ~90% less piping." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="drop" %}</div>
+        <h3>{% trans "Fresh, salt, any climate" %}</h3>
+        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="pulse" %}</div>
+        <h3>{% trans "AI-driven water quality" %}</h3>
+        <p>{% trans "AI-assisted live water-quality panel for fast, data-driven decisions." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="clock" %}</div>
+        <h3>{% trans "Fully automatic feeding" %}</h3>
+        <p>{% trans "Scheduled, self-dosing feed delivery across every tank." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="tune" %}</div>
+        <h3>{% trans "Species-adaptive tuning" %}</h3>
+        <p>{% trans "Stocking density, water velocity and biofilter sizing tune dynamically per species." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="team" %}</div>
+        <h3>{% trans "24/7 with a lean team" %}</h3>
+        <p>{% trans "The whole site runs around the clock with a 3–4 person crew." %}</p>
+      </article>
+      <article class="cell glass reveal">
+        <div class="cell-ico">{% include "partials/ico.html" with name="shield" %}</div>
+        <h3>{% trans "Uptime & IP-secured" %}</h3>
+        <p>{% trans "Service without downtime; proprietary, protected design and software." %}</p>
+      </article>
     </div>
+  </div>
+</section>
 
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <span class="scroll-text">{% trans "Scroll" %}</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
-
-  <!-- TECHNOLOGY SECTION -->
-  <section id="technology" class="section section-technology">
-    <div class="section-bg-gradient"></div>
-    <!-- Ambient swimming fish -->
-    <!-- Ambient sparkle figures -->
-    <div class="sparkle-ambient" aria-hidden="true"></div>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">{% trans "The Platform" %}</span>
-        <h2 class="section-title">{% trans "Software for Action" %}</h2>
-        <p class="section-subtitle">{% trans "One sensor platform that plugs into any production facility — fish farms, greenhouses, waste water plants, or any combination. Sector-agnostic. Protocol-native. AI-powered." %}</p>
+<!-- ============ PLATFORM — multi-tenant software ============ -->
+<section class="platform section" id="platform" data-stage="clear">
+  <div class="container">
+    <div class="platform-grid">
+      <div class="platform-copy reveal">
+        <span class="sec-tag">{% trans "The platform" %}</span>
+        <h2 class="sec-title">{% trans "Your whole farm," %} <em class="serif">{% trans "one pane of glass." %}</em></h2>
+        <p class="platform-lede">{% trans "Suderra Edge runs on our own Suderra OS and plugs into your existing sensors and equipment in minutes — no rip-and-replace. Above it, a secure platform gives every client its own isolated database, unlimited sensors, mobile operations and science-based charts — with AI helping you decide." %}</p>
+        <ul class="platform-points">
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="loop" %}</span><div><strong>{% trans "Runs on Suderra OS" %}</strong>{% trans "Suderra Edge speaks MQTT, Modbus and OPC-UA — it adapts to your existing sensors and equipment in minutes." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="shield" %}</span><div><strong>{% trans "Isolated per client" %}</strong>{% trans "Every client has its own database — your data never mixes with anyone else's." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="pulse" %}</span><div><strong>{% trans "Unlimited sensors" %}</strong>{% trans "Add as many sensors and devices as you need — no per-sensor ceiling." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="phone" %}</span><div><strong>{% trans "Mobile operations" %}</strong>{% trans "Enter farm data and run every operation from the field — offline-first mobile app." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="chart" %}</span><div><strong>{% trans "Scientific, unified charts" %}</strong>{% trans "Combined, science-based graphs that put every parameter in context, with AI-assisted decisions." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="report" %}</span><div><strong>{% trans "Compliance-ready reports" %}</strong>{% trans "One-click reports in the formats authorities expect — e.g. Mattilsynet." %}</div></li>
+        </ul>
       </div>
 
-      <p class="tech-intro-centered reveal-up">
-        {% trans 'A fish farm runs dozens of sensors — water temperature, dissolved oxygen, pH, ammonia. A greenhouse measures EC, humidity, nutrient levels. A waste water plant tracks flow, TSS, and chemical load. <strong>Suderra Software</strong> connects to all of them, collects the data in one place, and turns it into <strong>actionable decisions</strong> — before problems happen.' %}
-      </p>
-
-      <!-- Three pillars — all visible -->
-      <div class="tech-pillars-grid">
-        <div class="tech-pillar-card reveal-up">
-          <div class="tech-pillar-icon-wrap">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9c.26.604.852.997 1.51 1H21a2 2 0 010 4h-.09c-.658.003-1.25.396-1.51 1z"/></svg>
+      <div class="platform-viz reveal" aria-hidden="true">
+        <div class="dash"
+             data-ai-analyze="{% trans 'AI: analyzing water chemistry…' %}"
+             data-ai-stable="{% trans 'AI: alkalinity stable — within safe range' %}"
+             data-ai-drift="{% trans 'AI: pH drifting out of safe range' %}"
+             data-ai-dose="{% trans 'AI: dosing bicarbonate → target' %}"
+             data-ai-back="{% trans 'AI: corrected — back in safe range' %}">
+          <div class="dash-head">
+            <span class="dash-title">{% trans "Farm 01" %} · {% trans "Live" %}</span>
+            <span class="dash-live"><i></i></span>
           </div>
-          <h3>{% trans "Sensor Module" %}</h3>
-          <h4>{% trans "Universal Sensor Integration" %}</h4>
-          <p>{% trans 'Speaks every major industrial protocol — MQTT, Modbus, OPC-UA. Supports 8+ pump/motor brands. One installation, fast setup. Edge gateway stores data locally — no cloud dependency. Auto-registers new sensors from all major manufacturers.' %}</p>
-        </div>
-
-        <div class="tech-pillar-card reveal-up">
-          <div class="tech-pillar-icon-wrap">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8M12 17v4"/></svg>
-          </div>
-          <h3>{% trans "Operations" %}</h3>
-          <h4>{% trans "Sector-Specific Intelligence" %}</h4>
-          <p>{% trans 'Modular architecture where each sector gets its own operations module. Fish farm: batch management, feed plans, mortality tracking. Soilless culture: nutrient recipes, growth stages. Waste water: flow monitoring, chemical load. Each new sector reuses 70%% of existing code.' %}</p>
-        </div>
-
-        <div class="tech-pillar-card reveal-up">
-          <div class="tech-pillar-icon-wrap">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 014 4c0 1.95-2 4-4 8-2-4-4-6.05-4-8a4 4 0 014-4z"/><circle cx="12" cy="14" r="3"/><path d="M5 19.5C5.5 17 8 15.5 12 15.5s6.5 1.5 7 4"/></svg>
-          </div>
-          <h3>{% trans "AI Engine" %}</h3>
-          <h4>{% trans "Science-Based Decision Making" %}</h4>
-          <p>{% trans 'Our AI calculates — it doesn\'t guess. Every decision uses published scientific formulas and peer-reviewed data. The AI engineer detects anomalies, identifies root causes, and the AI manager suggests corrective actions. Operators control what AI can auto-execute.' %}</p>
-        </div>
-      </div>
-
-      <!-- Dashboard SVG -->
-      <div class="tech-visual-full reveal-up">
-        <div class="glass-card tech-svg-card">
-          <object type="image/svg+xml" data="{% static 'webapp/svg/dashboard.svg' %}" class="tech-svg" aria-label="{% trans 'Suderra platform dashboard visualization' %}">
-            {% trans "Platform dashboard" %}
-          </object>
-        </div>
-      </div>
-
-      <!-- What's Already Built -->
-      <div class="built-features reveal-up">
-        <div class="glass-card built-features-card">
-          <h3 class="built-features-title">{% trans "Production-Ready. 13 Microservices." %}</h3>
-          <div class="built-features-grid">
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Real-time dashboards" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Water chemistry engine" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Visual automation builder" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Offline-first mobile app" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Multi-tenant SaaS" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Smart alerts (SMS/email/push)" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "8+ VFD/pump brands" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Edge gateway (local-first)" %}</div>
-            <div class="built-feature-item"><svg viewBox="0 0 20 20" fill="currentColor" width="16" height="16"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg> {% trans "Nutrient calculator (24+ presets)" %}</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Partner logos marquee -->
-      <div class="partners-marquee reveal-up">
-        <p class="partners-label">{% trans "Supported By" %}</p>
-        <div class="marquee-track">
-          <div class="marquee-inner">
-            <img src="{% static 'webapp/images/eksfin.png' %}" alt="Eksfin" class="partner-logo" loading="lazy">
-            <img src="{% static 'webapp/images/innovation-norge.png' %}" alt="Innovation Norway" class="partner-logo" loading="lazy">
-            <img src="{% static 'webapp/images/Forskningsradet.png' %}" alt="Research Council of Norway" class="partner-logo" loading="lazy">
-            <!-- Duplicate for seamless loop -->
-            <img src="{% static 'webapp/images/eksfin.png' %}" alt="Eksfin" class="partner-logo" aria-hidden="true">
-            <img src="{% static 'webapp/images/innovation-norge.png' %}" alt="Innovation Norway" class="partner-logo" aria-hidden="true">
-            <img src="{% static 'webapp/images/Forskningsradet.png' %}" alt="Research Council of Norway" class="partner-logo" aria-hidden="true">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION -->
-  <section id="services" class="section section-services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">{% trans "Sectors" %}</span>
-        <h2 class="section-title">{% trans "One Platform, Every Sector" %}</h2>
-        <p class="section-subtitle">{% trans "Each new sector reuses 70% of existing code. We add a module — the core platform stays the same." %}</p>
-      </div>
-
-      <!-- Sector Roadmap Cards -->
-      <div class="services-grid services-grid-4">
-        <article class="service-card reveal-up">
-          <div class="service-card-inner">
-            <div class="service-status service-status-live">{% trans "LIVE" %}</div>
-            <div class="service-icon">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-                <path d="M8 28c4-6 8-2 12-8s8-2 12-8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M8 32c4-6 8-2 12-8s8-2 12-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-                <path d="M8 36c4-6 8-2 12-8s8-2 12-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.3"/>
-              </svg>
-            </div>
-            <h3 class="service-title">{% trans "Aquaculture" %}</h3>
-            <p class="service-desc">{% trans "RAS design, water chemistry monitoring, feed management, batch tracking, mortality analysis. Full fish farm operations intelligence with AI-driven dosing and real-time alerts." %}</p>
-            <a href="{% url 'feature_aquaculture' %}" class="service-card-link">{% trans "Learn More" %} &rarr;</a>
-          </div>
-        </article>
-
-        <article class="service-card reveal-up" style="--reveal-delay: 0.1s;">
-          <div class="service-card-inner">
-            <div class="service-status service-status-beta">{% trans "BETA" %}</div>
-            <div class="service-icon service-icon-green">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-                <path d="M24 38V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M24 22c0-6 6-10 12-10-2 6-6 10-12 10z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.15"/>
-                <path d="M24 28c0-5-5-8-10-8 2 5 5 8 10 8z" stroke="currentColor" stroke-width="2" fill="currentColor" opacity="0.15"/>
-              </svg>
-            </div>
-            <h3 class="service-title">{% trans "Soilless Culture" %}</h3>
-            <p class="service-desc">{% trans "Nutrient recipe management, EC/pH/humidity monitoring, growth stage tracking, climate control integration. Hydroponics and aquaponics ready with 24+ nutrient presets." %}</p>
-            <a href="{% url 'feature_soilless' %}" class="service-card-link">{% trans "Learn More" %} &rarr;</a>
-          </div>
-        </article>
-
-        <article class="service-card reveal-up" style="--reveal-delay: 0.2s;">
-          <div class="service-card-inner">
-            <div class="service-status service-status-upcoming">2026</div>
-            <div class="service-icon service-icon-navy">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-                <path d="M24 8l3 4-3 4-3-4 3-4z" stroke="currentColor" stroke-width="2"/>
-                <path d="M24 16v4" stroke="currentColor" stroke-width="2"/>
-                <circle cx="24" cy="28" r="8" stroke="currentColor" stroke-width="2"/>
-                <path d="M20 28l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <h3 class="service-title">{% trans "Waste Water" %}</h3>
-            <p class="service-desc">{% trans "Flow monitoring, TSS tracking, chemical load optimization, regulatory compliance reporting. Advanced reagent-free data collection and treatment plant intelligence." %}</p>
-            <a href="{% url 'feature_waste_water' %}" class="service-card-link">{% trans "Learn More" %} &rarr;</a>
-          </div>
-        </article>
-
-        <article class="service-card reveal-up" style="--reveal-delay: 0.3s;">
-          <div class="service-card-inner">
-            <div class="service-status service-status-upcoming">2027+</div>
-            <div class="service-icon service-icon-coral">
-              <svg viewBox="0 0 48 48" width="48" height="48" fill="none">
-                <circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5" opacity="0.2"/>
-                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/>
-                <path d="M24 14v-4M24 38v-4M14 24h-4M38 24h-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-                <path d="M18 18l-2-2M32 32l-2-2M32 18l2-2M18 32l-2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
-              </svg>
-            </div>
-            <h3 class="service-title">{% trans "Next Sectors" %}</h3>
-            <p class="service-desc">{% trans "The modular architecture allows rapid expansion into new industrial verticals — any sector that runs sensors and needs operational intelligence. One platform, unlimited potential." %}</p>
-          </div>
-        </article>
-      </div>
-
-      <!-- Core Promise Banner -->
-      <div class="core-promise reveal-up">
-        <div class="core-promise-inner">
-          <!-- Three pillar icons -->
-          <div class="core-promise-pillars">
-            <div class="core-pillar">
-              <div class="core-pillar-icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="6" y="12" width="22" height="16" rx="3"/>
-                  <rect x="36" y="12" width="22" height="16" rx="3"/>
-                  <rect x="6" y="36" width="22" height="16" rx="3"/>
-                  <rect x="36" y="36" width="22" height="16" rx="3"/>
-                  <circle cx="17" cy="20" r="3" fill="currentColor" opacity="0.3"/>
-                  <circle cx="47" cy="20" r="3" fill="currentColor" opacity="0.3"/>
-                  <circle cx="17" cy="44" r="3" fill="currentColor" opacity="0.3"/>
-                  <circle cx="47" cy="44" r="3" fill="currentColor" opacity="0.3"/>
-                  <path d="M28 20h8" stroke-dasharray="2 2"/>
-                  <path d="M28 44h8" stroke-dasharray="2 2"/>
-                  <path d="M17 28v8" stroke-dasharray="2 2"/>
-                  <path d="M47 28v8" stroke-dasharray="2 2"/>
-                </svg>
-              </div>
-              <h4 class="core-pillar-title">{% trans "Any Brand" %}</h4>
-              <p class="core-pillar-desc">{% trans "Siemens, ABB, Grundfos, Danfoss — connect every manufacturer." %}</p>
-            </div>
-            <div class="core-pillar-divider">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </div>
-            <div class="core-pillar">
-              <div class="core-pillar-icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="32" cy="18" r="10"/>
-                  <path d="M32 8v-4M32 28v4M22 18h-4M42 18h4"/>
-                  <path d="M24.9 10.9l-2.8-2.8M39.1 25.1l2.8 2.8M24.9 25.1l-2.8 2.8M39.1 10.9l2.8-2.8"/>
-                  <circle cx="32" cy="18" r="4" fill="currentColor" opacity="0.2"/>
-                  <path d="M16 40h32" stroke-width="2"/>
-                  <path d="M20 46h24"/>
-                  <path d="M22 52h20"/>
-                  <circle cx="24" cy="40" r="2" fill="currentColor" opacity="0.3"/>
-                  <circle cx="32" cy="40" r="2" fill="currentColor" opacity="0.3"/>
-                  <circle cx="40" cy="40" r="2" fill="currentColor" opacity="0.3"/>
-                </svg>
-              </div>
-              <h4 class="core-pillar-title">{% trans "Any Sensor" %}</h4>
-              <p class="core-pillar-desc">{% trans "pH, O₂, temperature, flow, pressure — every data point, unified." %}</p>
-            </div>
-            <div class="core-pillar-divider">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-            </div>
-            <div class="core-pillar">
-              <div class="core-pillar-icon">
-                <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="8" y="8" width="48" height="36" rx="4"/>
-                  <path d="M8 16h48"/>
-                  <circle cx="14" cy="12" r="1.5" fill="#E63946"/>
-                  <circle cx="20" cy="12" r="1.5" fill="#F4A261"/>
-                  <circle cx="26" cy="12" r="1.5" fill="#2D8A4E"/>
-                  <polyline points="16 30 24 24 30 28 38 20 48 26" stroke-width="2" stroke="currentColor" opacity="0.8"/>
-                  <rect x="16" y="34" width="6" height="6" rx="1" fill="currentColor" opacity="0.15"/>
-                  <rect x="26" y="30" width="6" height="10" rx="1" fill="currentColor" opacity="0.2"/>
-                  <rect x="36" y="26" width="6" height="14" rx="1" fill="currentColor" opacity="0.25"/>
-                  <path d="M22 48h20"/>
-                  <path d="M28 44h8v4h-8z"/>
-                  <circle cx="50" cy="22" r="3"/>
-                  <path d="M50 20v4M48 22h4" stroke-width="1"/>
-                </svg>
-              </div>
-              <h4 class="core-pillar-title">{% trans "One Platform" %}</h4>
-              <p class="core-pillar-desc">{% trans "Reports, automation, AI — all in a single dashboard." %}</p>
-            </div>
-          </div>
-
-          <p class="core-promise-text">{% trans "It doesn't matter which manufacturer built your sensors, PLCs, or pumps. Suderra connects to all of them — collects every data point, generates unified reports, and runs automation programs for feeding schedules, water quality dosing, climate control, and more. No vendor lock-in. No data silos. Just one system that speaks every protocol." %}</p>
-          <div class="core-promise-pills">
-            <span class="core-promise-pill">
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" stroke-linecap="round"><path d="M4 10.5l3.5 3.5L16 6"/></svg>
-              {% trans "Brand-agnostic data collection" %}
-            </span>
-            <span class="core-promise-pill">
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="16" height="14" rx="2"/><path d="M2 7h16"/><path d="M6 12h3M11 12h3"/></svg>
-              {% trans "Unified reporting & analytics" %}
-            </span>
-            <span class="core-promise-pill">
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="10" r="7"/><path d="M10 6v4l2.5 2.5"/></svg>
-              {% trans "Feeding & dosing automation" %}
-            </span>
-            <span class="core-promise-pill">
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" width="15" height="15" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2C6 2 4 6 4 9c0 4 6 9 6 9s6-5 6-9c0-3-2-7-6-7z"/><circle cx="10" cy="9" r="2.5"/></svg>
-              {% trans "Water quality management" %}
-            </span>
-            <span class="core-promise-pill">
-              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11l-4 4M17 3l-4 4"/><circle cx="5" cy="5" r="3"/><circle cx="15" cy="15" r="3"/><path d="M8.5 8.5l3 3"/></svg>
-              {% trans "No vendor lock-in" %}
-            </span>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS SECTION -->
-  <section id="how-it-works" class="section section-how-it-works">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">{% trans "How It Works" %}</span>
-        <h2 class="section-title">{% trans "From sensors to decisions — in four steps." %}</h2>
-      </div>
-      <div class="how-it-works reveal-up">
-        <div class="how-it-works-grid">
-          <div class="how-card">
-            <div class="how-card-step">01</div>
-            <div class="how-card-illustration">
-              <!-- Sensor Module: edge gateway hub connecting to multiple sensor types -->
-              <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Central gateway box -->
-                <rect x="55" y="38" width="50" height="34" rx="6" fill="rgba(12,123,147,0.08)" stroke="#0C7B93" stroke-width="1.5"/>
-                <text x="80" y="52" text-anchor="middle" fill="#0C7B93" font-size="7" font-weight="600" font-family="sans-serif">EDGE</text>
-                <text x="80" y="62" text-anchor="middle" fill="#0C7B93" font-size="6" font-family="sans-serif">GATEWAY</text>
-                <!-- Sensor nodes -->
-                <circle cx="20" cy="25" r="10" fill="rgba(45,138,78,0.1)" stroke="#2D8A4E" stroke-width="1"/>
-                <text x="20" y="28" text-anchor="middle" fill="#2D8A4E" font-size="6" font-family="sans-serif">pH</text>
-                <circle cx="140" cy="25" r="10" fill="rgba(230,57,70,0.1)" stroke="#E63946" stroke-width="1"/>
-                <text x="140" y="28" text-anchor="middle" fill="#E63946" font-size="5" font-family="sans-serif">O₂</text>
-                <circle cx="20" cy="85" r="10" fill="rgba(0,51,102,0.1)" stroke="#003366" stroke-width="1"/>
-                <text x="20" y="88" text-anchor="middle" fill="#003366" font-size="5" font-family="sans-serif">EC</text>
-                <circle cx="140" cy="85" r="10" fill="rgba(95,180,201,0.1)" stroke="#5FB4C9" stroke-width="1"/>
-                <text x="140" y="88" text-anchor="middle" fill="#5FB4C9" font-size="5" font-family="sans-serif">T°C</text>
-                <!-- Connection lines with animated dashes -->
-                <line x1="30" y1="28" x2="55" y2="48" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
-                <line x1="130" y1="28" x2="105" y2="48" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
-                <line x1="30" y1="82" x2="55" y2="65" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
-                <line x1="130" y1="82" x2="105" y2="65" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
-                <!-- Protocol labels -->
-                <rect x="25" y="100" width="30" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/>
-                <text x="40" y="110" text-anchor="middle" fill="#0C7B93" font-size="5.5" font-family="sans-serif">MQTT</text>
-                <rect x="65" y="100" width="30" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/>
-                <text x="80" y="110" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">Modbus</text>
-                <rect x="105" y="100" width="32" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/>
-                <text x="121" y="110" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">OPC-UA</text>
-                <!-- Data pulse dots -->
-                <circle cx="42" cy="38" r="2.5" fill="#0C7B93" opacity="0.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle>
-                <circle cx="118" cy="38" r="2.5" fill="#0C7B93" opacity="0.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/></circle>
-              </svg>
-            </div>
-            <h3>{% trans "Sensor Module" %}</h3>
-            <p>{% trans "Connects to any sensor or device on site. Stores all data locally at the facility via edge gateway — no cloud dependency. Auto-registers new sensors. Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands." %}</p>
-          </div>
-          <div class="how-card-arrow">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="how-card">
-            <div class="how-card-step">02</div>
-            <div class="how-card-illustration">
-              <!-- Operations Modules: layered module blocks -->
-              <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Fish farm module -->
-                <rect x="10" y="10" width="60" height="44" rx="6" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="1.2"/>
-                <text x="40" y="26" text-anchor="middle" fill="#0C7B93" font-size="6.5" font-weight="600" font-family="sans-serif">🐟 Aquaculture</text>
-                <line x1="18" y1="33" x2="62" y2="33" stroke="#0C7B93" stroke-width="0.5" opacity="0.3"/>
-                <text x="18" y="42" fill="#64748b" font-size="5" font-family="sans-serif">Batch mgmt</text>
-                <text x="18" y="50" fill="#64748b" font-size="5" font-family="sans-serif">Feed plans</text>
-                <!-- Soilless culture module -->
-                <rect x="90" y="10" width="60" height="44" rx="6" fill="rgba(45,138,78,0.06)" stroke="#2D8A4E" stroke-width="1.2"/>
-                <text x="120" y="26" text-anchor="middle" fill="#2D8A4E" font-size="6.5" font-weight="600" font-family="sans-serif">🌱 Soilless</text>
-                <line x1="98" y1="33" x2="142" y2="33" stroke="#2D8A4E" stroke-width="0.5" opacity="0.3"/>
-                <text x="98" y="42" fill="#64748b" font-size="5" font-family="sans-serif">Nutrient recipes</text>
-                <text x="98" y="50" fill="#64748b" font-size="5" font-family="sans-serif">Growth stages</text>
-                <!-- Waste water module -->
-                <rect x="10" y="64" width="60" height="44" rx="6" fill="rgba(0,51,102,0.06)" stroke="#003366" stroke-width="1.2"/>
-                <text x="40" y="80" text-anchor="middle" fill="#003366" font-size="6.5" font-weight="600" font-family="sans-serif">💧 Waste Water</text>
-                <line x1="18" y1="87" x2="62" y2="87" stroke="#003366" stroke-width="0.5" opacity="0.3"/>
-                <text x="18" y="96" fill="#64748b" font-size="5" font-family="sans-serif">Flow &amp; TSS</text>
-                <text x="18" y="104" fill="#64748b" font-size="5" font-family="sans-serif">Chemical load</text>
-                <!-- Shared core block -->
-                <rect x="90" y="64" width="60" height="44" rx="6" fill="rgba(12,123,147,0.03)" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,2"/>
-                <text x="120" y="82" text-anchor="middle" fill="#0C7B93" font-size="6" font-weight="600" font-family="sans-serif">SHARED CORE</text>
-                <text x="120" y="94" text-anchor="middle" fill="#64748b" font-size="5.5" font-family="sans-serif">70% reuse</text>
-                <text x="120" y="104" text-anchor="middle" fill="#64748b" font-size="5" font-family="sans-serif">per new sector</text>
-                <!-- Connecting lines -->
-                <path d="M75 32 L85 32" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
-                <path d="M75 86 L85 86" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
-                <path d="M40 58 L40 60" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
-                <path d="M120 58 L120 60" stroke="#94a3b8" stroke-width="0.8" stroke-dasharray="2,2"/>
-              </svg>
-            </div>
-            <h3>{% trans "Operations Modules" %}</h3>
-            <p>{% trans "Sector-specific modules add meaning to data. The fish farm module knows batch management, feed plans, and mortality. The soilless culture module knows nutrient recipes and growth stages." %}</p>
-          </div>
-          <div class="how-card-arrow">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="how-card">
-            <div class="how-card-step">03</div>
-            <div class="how-card-illustration">
-              <!-- AI Engine: brain/neural network with formula outputs -->
-              <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Neural network nodes -->
-                <circle cx="30" cy="30" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/>
-                <circle cx="30" cy="60" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/>
-                <circle cx="30" cy="90" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/>
-                <!-- Hidden layer -->
-                <circle cx="80" cy="40" r="10" fill="rgba(12,123,147,0.15)" stroke="#0C7B93" stroke-width="1.5"/>
-                <circle cx="80" cy="75" r="10" fill="rgba(12,123,147,0.15)" stroke="#0C7B93" stroke-width="1.5"/>
-                <!-- Output -->
-                <circle cx="130" cy="58" r="12" fill="rgba(45,138,78,0.12)" stroke="#2D8A4E" stroke-width="1.5"/>
-                <text x="130" y="55" text-anchor="middle" fill="#2D8A4E" font-size="5" font-weight="600" font-family="sans-serif">ACTION</text>
-                <text x="130" y="63" text-anchor="middle" fill="#2D8A4E" font-size="4.5" font-family="sans-serif">OUTPUT</text>
-                <!-- Connections -->
-                <line x1="38" y1="30" x2="70" y2="40" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/>
-                <line x1="38" y1="30" x2="70" y2="75" stroke="#0C7B93" stroke-width="0.8" opacity="0.3"/>
-                <line x1="38" y1="60" x2="70" y2="40" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/>
-                <line x1="38" y1="60" x2="70" y2="75" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/>
-                <line x1="38" y1="90" x2="70" y2="40" stroke="#0C7B93" stroke-width="0.8" opacity="0.3"/>
-                <line x1="38" y1="90" x2="70" y2="75" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/>
-                <line x1="90" y1="40" x2="118" y2="55" stroke="#2D8A4E" stroke-width="1" opacity="0.5"/>
-                <line x1="90" y1="75" x2="118" y2="61" stroke="#2D8A4E" stroke-width="1" opacity="0.5"/>
-                <!-- Input labels -->
-                <text x="30" y="33" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">pH</text>
-                <text x="30" y="63" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">T°C</text>
-                <text x="30" y="93" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">NH₃</text>
-                <!-- Formula box -->
-                <rect x="55" y="96" width="80" height="18" rx="4" fill="rgba(12,123,147,0.05)" stroke="#0C7B93" stroke-width="0.7"/>
-                <text x="95" y="108" text-anchor="middle" fill="#0C7B93" font-size="5.5" font-family="sans-serif">NH₃ = f(pH, T°C) → dose</text>
-                <!-- Animated pulse on output -->
-                <circle cx="130" cy="58" r="12" fill="none" stroke="#2D8A4E" stroke-width="0.8" opacity="0.4"><animate attributeName="r" values="12;18;12" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
-                <!-- Labels -->
-                <text x="80" y="37" text-anchor="middle" fill="#64748b" font-size="4.5" font-family="sans-serif">AI</text>
-                <text x="80" y="44" text-anchor="middle" fill="#64748b" font-size="4" font-family="sans-serif">ENG</text>
-                <text x="80" y="72" text-anchor="middle" fill="#64748b" font-size="4.5" font-family="sans-serif">AI</text>
-                <text x="80" y="79" text-anchor="middle" fill="#64748b" font-size="4" font-family="sans-serif">MGR</text>
-              </svg>
-            </div>
-            <h3>{% trans "AI Engine" %}</h3>
-            <p>{% trans "Our AI calculates — it doesn't guess. Every decision is based on published scientific formulas and peer-reviewed data. AI detects anomalies, identifies root causes, and suggests corrective actions." %}</p>
-          </div>
-          <div class="how-card-arrow">
-            <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </div>
-          <div class="how-card">
-            <div class="how-card-step">04</div>
-            <div class="how-card-illustration">
-              <!-- Mobile App: phone with data cards and offline indicator -->
-              <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Phone frame -->
-                <rect x="48" y="5" width="64" height="110" rx="10" fill="#f8fafc" stroke="#1a1a2e" stroke-width="1.5"/>
-                <rect x="52" y="18" width="56" height="82" rx="2" fill="#fff" stroke="#e2e8f0" stroke-width="0.5"/>
-                <!-- Phone top bar -->
-                <rect x="70" y="10" width="20" height="3" rx="1.5" fill="#e2e8f0"/>
-                <!-- Status bar in phone -->
-                <rect x="54" y="20" width="52" height="12" rx="1" fill="rgba(12,123,147,0.06)"/>
-                <circle cx="60" cy="26" r="3" fill="#2D8A4E"/><text x="60" y="28" text-anchor="middle" fill="#fff" font-size="3.5" font-family="sans-serif">✓</text>
-                <text x="67" y="28" fill="#2D8A4E" font-size="4.5" font-weight="600" font-family="sans-serif">ONLINE</text>
-                <!-- Data cards inside phone -->
-                <rect x="54" y="35" width="24" height="18" rx="3" fill="rgba(12,123,147,0.08)" stroke="#0C7B93" stroke-width="0.5"/>
-                <text x="66" y="43" text-anchor="middle" fill="#0C7B93" font-size="4" font-family="sans-serif">pH</text>
-                <text x="66" y="50" text-anchor="middle" fill="#0C7B93" font-size="6" font-weight="700" font-family="sans-serif">7.2</text>
-                <rect x="82" y="35" width="24" height="18" rx="3" fill="rgba(45,138,78,0.08)" stroke="#2D8A4E" stroke-width="0.5"/>
-                <text x="94" y="43" text-anchor="middle" fill="#2D8A4E" font-size="4" font-family="sans-serif">O₂</text>
-                <text x="94" y="50" text-anchor="middle" fill="#2D8A4E" font-size="6" font-weight="700" font-family="sans-serif">8.4</text>
-                <!-- Mini chart -->
-                <rect x="54" y="56" width="52" height="20" rx="2" fill="rgba(12,123,147,0.03)"/>
-                <polyline points="58,72 64,68 70,70 76,64 82,66 88,62 94,65 100,60" stroke="#0C7B93" stroke-width="1" fill="none" stroke-linecap="round"/>
-                <!-- Alert notification -->
-                <rect x="54" y="80" width="52" height="16" rx="3" fill="rgba(230,57,70,0.08)" stroke="#E63946" stroke-width="0.5"/>
-                <circle cx="60" cy="88" r="3" fill="#E63946"/>
-                <text x="60" y="90" text-anchor="middle" fill="#fff" font-size="4" font-family="sans-serif">!</text>
-                <text x="68" y="90" fill="#E63946" font-size="4.5" font-family="sans-serif">NH₃ alert</text>
-                <!-- Phone button -->
-                <circle cx="80" cy="106" r="3" stroke="#e2e8f0" stroke-width="1" fill="none"/>
-                <!-- Wifi waves (offline capability) -->
-                <path d="M18 55 Q25 48 32 55" stroke="#94a3b8" stroke-width="1" fill="none" stroke-linecap="round"/>
-                <path d="M21 52 Q25 48 29 52" stroke="#94a3b8" stroke-width="1" fill="none" stroke-linecap="round"/>
-                <circle cx="25" cy="56" r="1.5" fill="#94a3b8"/>
-                <line x1="22" y1="49" x2="28" y2="43" stroke="#E63946" stroke-width="1.2" stroke-linecap="round"/>
-                <text x="25" y="68" text-anchor="middle" fill="#94a3b8" font-size="4.5" font-weight="600" font-family="sans-serif">OFFLINE</text>
-                <text x="25" y="75" text-anchor="middle" fill="#94a3b8" font-size="4" font-family="sans-serif">OK</text>
-                <!-- Sync icon -->
-                <path d="M130 55 a8 8 0 1 1 0 -1" stroke="#0C7B93" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-                <path d="M130 47 l0 4 l4 0" stroke="#0C7B93" stroke-width="1.2" fill="none" stroke-linecap="round"/>
-                <text x="134" y="68" text-anchor="middle" fill="#0C7B93" font-size="4.5" font-weight="600" font-family="sans-serif">AUTO</text>
-                <text x="134" y="75" text-anchor="middle" fill="#0C7B93" font-size="4" font-family="sans-serif">SYNC</text>
-              </svg>
-            </div>
-            <h3>{% trans "Mobile App" %}</h3>
-            <p>{% trans "Offline-first mobile app works without signal. Operators check sensor data, receive alerts, and manage operations from anywhere. Data syncs automatically when connection returns." %}</p>
+          <svg class="deffeyes" viewBox="0 0 320 196" role="img" aria-label="{% trans 'Water-chemistry stability diagram' %}">
+            <!-- constant-pH iso-lines (radial from origin) -->
+            <g stroke="rgba(255,255,255,.07)" stroke-width="1">
+              <line x1="40" y1="172" x2="300" y2="124"/>
+              <line x1="40" y1="172" x2="300" y2="74"/>
+              <line x1="40" y1="172" x2="262" y2="22"/>
+              <line x1="40" y1="172" x2="150" y2="22"/>
+            </g>
+            <!-- safe zone -->
+            <rect class="dfx-safe" x="120" y="64" width="96" height="58" rx="12"/>
+            <text class="dfx-safe-lab" x="168" y="96" text-anchor="middle">{% trans "safe zone" %}</text>
+            <!-- axes -->
+            <g stroke="rgba(255,255,255,.22)" stroke-width="1.2">
+              <line x1="40" y1="16" x2="40" y2="172"/>
+              <line x1="40" y1="172" x2="300" y2="172"/>
+            </g>
+            <defs><marker id="dfx-ah" markerWidth="7" markerHeight="7" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#ef5a47"/></marker></defs>
+            <!-- AI action arrow (star → target) -->
+            <line class="dfx-arrow" x1="168" y1="93" x2="168" y2="93" stroke="#ef5a47" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#dfx-ah)" style="opacity:0"/>
+            <!-- target (shown while correcting) -->
+            <g class="dfx-target" transform="translate(168,93)" style="opacity:0">
+              <circle r="8" fill="none" stroke="#ef5a47" stroke-width="1.5"/>
+              <circle r="1.8" fill="#ef5a47"/>
+            </g>
+            <!-- current water state -->
+            <path class="dfx-star" transform="translate(168,93)" d="M0,-7.5 L2.1,-2.4 7.6,-2.4 3.2,1.5 4.7,7.1 0,3.8 -4.7,7.1 -3.2,1.5 -7.6,-2.4 -2.1,-2.4 Z"/>
+          </svg>
+          <div class="dash-ai">
+            <span class="dash-ai-dot"></span><span class="dash-ai-text">{% trans "AI: alkalinity stable — within safe range" %}</span>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- ABOUT SECTION -->
-  <section id="about" class="section section-about">
-    <!-- Ambient swimming fish -->
-    <!-- Ambient sparkle figures -->
-    <div class="sparkle-ambient" aria-hidden="true"></div>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">{% trans "Who We Are" %}</span>
-        <h2 class="section-title">{% trans "About Suderra" %}</h2>
-        <p class="section-subtitle">{% trans "A vertically integrated aquaculture technology company with offices in Norway and Turkey, delivering end-to-end solutions from engineering to production." %}</p>
+<!-- ============ HOW IT WORKS — sensors to decisions ============ -->
+<section class="howit section" id="how" data-stage="clear">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "How It Works" %}</span>
+      <h2 class="sec-title">{% trans "From sensors to decisions — in four steps." %}</h2>
+    </header>
+    <div class="how-grid">
+      <div class="how-card reveal" style="--i:0">
+        <div class="how-card-step">01</div>
+        <div class="how-card-illustration">
+          <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="55" y="38" width="50" height="34" rx="6" fill="rgba(12,123,147,0.08)" stroke="#0C7B93" stroke-width="1.5"/>
+            <text x="80" y="52" text-anchor="middle" fill="#0C7B93" font-size="7" font-weight="600" font-family="sans-serif">EDGE</text>
+            <text x="80" y="62" text-anchor="middle" fill="#0C7B93" font-size="6" font-family="sans-serif">GATEWAY</text>
+            <circle cx="20" cy="25" r="10" fill="rgba(43,212,217,0.1)" stroke="#2bd4d9" stroke-width="1"/><text x="20" y="28" text-anchor="middle" fill="#2bd4d9" font-size="6" font-family="sans-serif">pH</text>
+            <circle cx="140" cy="25" r="10" fill="rgba(239,90,71,0.1)" stroke="#ef5a47" stroke-width="1"/><text x="140" y="28" text-anchor="middle" fill="#ef5a47" font-size="5" font-family="sans-serif">O₂</text>
+            <circle cx="20" cy="85" r="10" fill="rgba(12,39,51,0.1)" stroke="#0c2733" stroke-width="1"/><text x="20" y="88" text-anchor="middle" fill="#0c2733" font-size="5" font-family="sans-serif">EC</text>
+            <circle cx="140" cy="85" r="10" fill="rgba(43,212,217,0.1)" stroke="#2bd4d9" stroke-width="1"/><text x="140" y="88" text-anchor="middle" fill="#2bd4d9" font-size="5" font-family="sans-serif">T°C</text>
+            <line x1="30" y1="28" x2="55" y2="48" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/><line x1="130" y1="28" x2="105" y2="48" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/><line x1="30" y1="82" x2="55" y2="65" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/><line x1="130" y1="82" x2="105" y2="65" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+            <rect x="25" y="100" width="30" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/><text x="40" y="110" text-anchor="middle" fill="#0C7B93" font-size="5.5" font-family="sans-serif">MQTT</text>
+            <rect x="65" y="100" width="30" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/><text x="80" y="110" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">Modbus</text>
+            <rect x="105" y="100" width="32" height="14" rx="3" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="0.5"/><text x="121" y="110" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">OPC-UA</text>
+            <circle cx="42" cy="38" r="2.5" fill="#0C7B93" opacity="0.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/></circle>
+            <circle cx="118" cy="38" r="2.5" fill="#0C7B93" opacity="0.7"><animate attributeName="opacity" values="0.3;1;0.3" dur="2s" begin="0.5s" repeatCount="indefinite"/></circle>
+          </svg>
+        </div>
+        <h3>{% trans "Sensor Module" %}</h3>
+        <p>{% trans "Connects to any sensor or device on site. Stores all data locally at the facility via edge gateway — no cloud dependency. Auto-registers new sensors. Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands." %}</p>
       </div>
 
-      <!-- About intro -->
-      <div class="about-intro-text reveal-up">
-        <p>{% trans "Suderra AS is a vertically integrated aquaculture technology company headquartered in Sandefjord, Norway with operations in Izmir, Turkey. We combine patented optical sensor R&D, advanced engineering design, equipment manufacturing, and hands-on fish farming expertise under one roof — giving our clients a single partner for their entire aquaculture journey." %}</p>
+      <div class="how-card reveal" style="--i:1">
+        <div class="how-card-step">02</div>
+        <div class="how-card-illustration">
+          <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="60" height="44" rx="6" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="1.2"/><text x="40" y="26" text-anchor="middle" fill="#0C7B93" font-size="6.5" font-weight="600" font-family="sans-serif">Aquaculture</text>
+            <text x="18" y="42" fill="#566d76" font-size="5" font-family="sans-serif">Batch mgmt</text><text x="18" y="50" fill="#566d76" font-size="5" font-family="sans-serif">Feed plans</text>
+            <rect x="90" y="10" width="60" height="44" rx="6" fill="rgba(43,212,217,0.06)" stroke="#2bd4d9" stroke-width="1.2"/><text x="120" y="26" text-anchor="middle" fill="#2bd4d9" font-size="6.5" font-weight="600" font-family="sans-serif">Soilless</text>
+            <text x="98" y="42" fill="#566d76" font-size="5" font-family="sans-serif">Nutrient recipes</text><text x="98" y="50" fill="#566d76" font-size="5" font-family="sans-serif">Growth stages</text>
+            <rect x="10" y="64" width="60" height="44" rx="6" fill="rgba(12,39,51,0.06)" stroke="#0c2733" stroke-width="1.2"/><text x="40" y="80" text-anchor="middle" fill="#0c2733" font-size="6.5" font-weight="600" font-family="sans-serif">Waste Water</text>
+            <text x="18" y="96" fill="#566d76" font-size="5" font-family="sans-serif">Flow &amp; TSS</text><text x="18" y="104" fill="#566d76" font-size="5" font-family="sans-serif">Chemical load</text>
+            <rect x="90" y="64" width="60" height="44" rx="6" fill="rgba(12,123,147,0.03)" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,2"/><text x="120" y="82" text-anchor="middle" fill="#0C7B93" font-size="6" font-weight="600" font-family="sans-serif">SHARED CORE</text>
+            <text x="120" y="94" text-anchor="middle" fill="#566d76" font-size="5.5" font-family="sans-serif">70% reuse</text><text x="120" y="104" text-anchor="middle" fill="#566d76" font-size="5" font-family="sans-serif">per new sector</text>
+          </svg>
+        </div>
+        <h3>{% trans "Operations Modules" %}</h3>
+        <p>{% trans "Sector-specific modules add meaning to data. The fish farm module knows batch management, feed plans, and mortality. The soilless culture module knows nutrient recipes and growth stages." %}</p>
+      </div>
+
+      <div class="how-card reveal" style="--i:2">
+        <div class="how-card-step">03</div>
+        <div class="how-card-illustration">
+          <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="30" cy="30" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/><circle cx="30" cy="60" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/><circle cx="30" cy="90" r="8" fill="rgba(12,123,147,0.1)" stroke="#0C7B93" stroke-width="1"/>
+            <circle cx="80" cy="40" r="10" fill="rgba(12,123,147,0.15)" stroke="#0C7B93" stroke-width="1.5"/><circle cx="80" cy="75" r="10" fill="rgba(12,123,147,0.15)" stroke="#0C7B93" stroke-width="1.5"/>
+            <circle cx="130" cy="58" r="12" fill="rgba(43,212,217,0.12)" stroke="#2bd4d9" stroke-width="1.5"/><text x="130" y="55" text-anchor="middle" fill="#2bd4d9" font-size="5" font-weight="600" font-family="sans-serif">ACTION</text><text x="130" y="63" text-anchor="middle" fill="#2bd4d9" font-size="4.5" font-family="sans-serif">OUTPUT</text>
+            <line x1="38" y1="30" x2="70" y2="40" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/><line x1="38" y1="60" x2="70" y2="40" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/><line x1="38" y1="90" x2="70" y2="75" stroke="#0C7B93" stroke-width="0.8" opacity="0.4"/><line x1="90" y1="40" x2="118" y2="55" stroke="#2bd4d9" stroke-width="1" opacity="0.5"/><line x1="90" y1="75" x2="118" y2="61" stroke="#2bd4d9" stroke-width="1" opacity="0.5"/>
+            <text x="30" y="33" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">pH</text><text x="30" y="63" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">T°C</text><text x="30" y="93" text-anchor="middle" fill="#0C7B93" font-size="5" font-family="sans-serif">NH₃</text>
+            <rect x="55" y="96" width="80" height="18" rx="4" fill="rgba(12,123,147,0.05)" stroke="#0C7B93" stroke-width="0.7"/><text x="95" y="108" text-anchor="middle" fill="#0C7B93" font-size="5.5" font-family="sans-serif">NH₃ = f(pH, T°C) → dose</text>
+            <circle cx="130" cy="58" r="12" fill="none" stroke="#2bd4d9" stroke-width="0.8" opacity="0.4"><animate attributeName="r" values="12;18;12" dur="2.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.4;0;0.4" dur="2.5s" repeatCount="indefinite"/></circle>
+          </svg>
+        </div>
+        <h3>{% trans "AI Engine" %}</h3>
+        <p>{% trans "Our AI calculates — it doesn't guess. Every decision is based on published scientific formulas and peer-reviewed data. AI detects anomalies, identifies root causes, and suggests corrective actions." %}</p>
+      </div>
+
+      <div class="how-card reveal" style="--i:3">
+        <div class="how-card-step">04</div>
+        <div class="how-card-illustration">
+          <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="48" y="5" width="64" height="110" rx="10" fill="#f4efe4" stroke="#0c2733" stroke-width="1.5"/><rect x="52" y="18" width="56" height="82" rx="2" fill="#fff" stroke="#d9d0c0" stroke-width="0.5"/><rect x="70" y="10" width="20" height="3" rx="1.5" fill="#d9d0c0"/>
+            <rect x="54" y="20" width="52" height="12" rx="1" fill="rgba(12,123,147,0.06)"/><circle cx="60" cy="26" r="3" fill="#2bd4d9"/><text x="67" y="28" fill="#2bd4d9" font-size="4.5" font-weight="600" font-family="sans-serif">ONLINE</text>
+            <rect x="54" y="35" width="24" height="18" rx="3" fill="rgba(12,123,147,0.08)" stroke="#0C7B93" stroke-width="0.5"/><text x="66" y="43" text-anchor="middle" fill="#0C7B93" font-size="4" font-family="sans-serif">pH</text><text x="66" y="50" text-anchor="middle" fill="#0C7B93" font-size="6" font-weight="700" font-family="sans-serif">7.2</text>
+            <rect x="82" y="35" width="24" height="18" rx="3" fill="rgba(43,212,217,0.08)" stroke="#2bd4d9" stroke-width="0.5"/><text x="94" y="43" text-anchor="middle" fill="#2bd4d9" font-size="4" font-family="sans-serif">O₂</text><text x="94" y="50" text-anchor="middle" fill="#2bd4d9" font-size="6" font-weight="700" font-family="sans-serif">8.4</text>
+            <rect x="54" y="56" width="52" height="20" rx="2" fill="rgba(12,123,147,0.03)"/><polyline points="58,72 64,68 70,70 76,64 82,66 88,62 94,65 100,60" stroke="#0C7B93" stroke-width="1" fill="none" stroke-linecap="round"/>
+            <rect x="54" y="80" width="52" height="16" rx="3" fill="rgba(239,90,71,0.08)" stroke="#ef5a47" stroke-width="0.5"/><circle cx="60" cy="88" r="3" fill="#ef5a47"/><text x="68" y="90" fill="#ef5a47" font-size="4.5" font-family="sans-serif">NH₃ alert</text>
+            <text x="25" y="68" text-anchor="middle" fill="#8aa0a8" font-size="4.5" font-weight="600" font-family="sans-serif">OFFLINE OK</text>
+            <text x="134" y="68" text-anchor="middle" fill="#0C7B93" font-size="4.5" font-weight="600" font-family="sans-serif">AUTO SYNC</text>
+          </svg>
+        </div>
+        <h3>{% trans "Mobile App" %}</h3>
+        <p>{% trans "Offline-first mobile app works without signal. Operators check sensor data, receive alerts, and manage operations from anywhere. Data syncs automatically when connection returns." %}</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CONTACT & FOOTER SECTION -->
-  <section id="contact-footer" class="section section-contact">
-    <!-- Ambient swimming fish -->
-    <!-- Ambient sparkle figures -->
-    <div class="sparkle-ambient" aria-hidden="true"></div>
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag">{% trans "Let's Connect" %}</span>
-        <h2 class="section-title">{% trans "Contact Us" %}</h2>
-        <p class="section-subtitle">{% trans "For more information about our services, technologies, or partnership opportunities, feel free to reach out to us directly." %}</p>
-      </div>
+<!-- ============ APPROACH — end to end ============ -->
+<section class="approach section" id="approach" data-stage="clear">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "End to end" %}</span>
+      <h2 class="sec-title">{% trans "We design it, audit it," %} <em class="serif">{% trans "and sense it." %}</em></h2>
+      <p class="sec-lede">{% trans "From the first drawing to live operation, Suderra stays in the loop — we design, help you audit, finance, build and run, and keep the water honest with sensors and AI." %}</p>
+    </header>
+    <ol class="loop">
+      <li class="loop-step reveal" style="--i:0"><span class="loop-no">01</span><h3>{% trans "Design" %}</h3><p>{% trans "Full RAS engineering — flow, biofiltration, oxygenation and degassing sized to your species and density." %}</p></li>
+      <li class="loop-step reveal" style="--i:1"><span class="loop-no">02</span><h3>{% trans "Audit" %}</h3><p>{% trans "Independent review of an existing facility — water balance, biosecurity and risk — with a prioritized roadmap." %}</p></li>
+      <li class="loop-step reveal" style="--i:2"><span class="loop-no">03</span><h3>{% trans "Finance" %}</h3><p>{% trans "We help you secure Eksfin-backed financing — 90% under €2M, 60–70% above · 10–15-year term · 2.5–3.5% interest." %}</p></li>
+      <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build & Train" %}</h3><p>{% trans "Support through construction and commissioning — and we train your team to run the system with confidence." %}</p></li>
+      <li class="loop-step reveal" style="--i:4"><span class="loop-no">05</span><h3>{% trans "Run" %}</h3><p>{% trans "Operational support to keep the site running 24/7 with a lean 3–4 person crew." %}</p></li>
+      <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Sense & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously and AI turns the data into decisions you approve." %}</p></li>
+    </ol>
+  </div>
+</section>
 
-      <div class="contact-grid">
-        <!-- Left: Two Offices + Map -->
-        <div class="contact-info-card reveal-left">
-          <!-- Norway Office -->
-          <div class="office-block">
-            <h3 class="office-title">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              {% trans "Norway Office — Headquarters" %}
-            </h3>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              </div>
-              <div>
-                <p>Dronningens gate 5 - 7, 3211 Sandefjord, Norway</p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              </div>
-              <div>
-                <p><a href="tel:+4791246490">+47 912 46 490</a></p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <p><a href="mailto:okan@suderra.com">okan@suderra.com</a></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="office-divider"></div>
-
-          <!-- Turkey Office -->
-          <div class="office-block">
-            <h3 class="office-title">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              {% trans "Turkey Office — Manufacturing & Operations" %}
-            </h3>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-              </div>
-              <div>
-                <p>Folkart Towers, Kat 34, No: 3407, Bayrakli, 35530 Izmir, Turkey</p>
-              </div>
-            </div>
-            <div class="contact-detail">
-              <div class="contact-detail-icon">
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              </div>
-              <div>
-                <p><a href="mailto:turkey@suderra.com">turkey@suderra.com</a></p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Map - Norway -->
-          <div class="map-container">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2303.2101326813967!2d10.21593011564582!3d59.13204418194456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464e7a3ef3c85b59%3A0x93d724d2e8e58a60!2sSandefjord%2C%20Norway!5e0!3m2!1sen!2sus!4v1588814715645"
-              loading="lazy"
-              title="{% trans 'Suderra Norway office' %}">
-            </iframe>
-          </div>
-
-          <!-- Trust badges -->
-          <div class="trust-badges">
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              <span>{% trans "Patented Technology" %}</span>
-            </div>
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-              <span>{% trans "Government Backed" %}</span>
-            </div>
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-              <span>{% trans "2 Global Offices" %}</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right: Contact form -->
-        <div class="contact-form-card reveal-right">
-          <h3>{% trans "Get in Touch" %}</h3>
-          <p class="form-subtitle">{% trans "Fill out the form below and we'll get back to you within 24 hours." %}</p>
-          <form id="contactForm" method="post" action=""
-                data-ajax-url="{% url 'ajax_contact' %}"
-                data-msg-required="{% trans 'Please fill in all required fields.' %}"
-                data-msg-email="{% trans 'Please enter a valid email address.' %}"
-                data-msg-sending="{% trans 'Sending...' %}"
-                data-msg-success="{% trans 'Message sent successfully! We will get back to you soon.' %}"
-                data-msg-error="{% trans 'Something went wrong. Please try again.' %}"
-                data-msg-network-error="{% trans 'An error occurred. Please try again later.' %}"
-                data-msg-submit="{% trans 'Send Message' %}">
-            {% csrf_token %}
-            <!-- Honeypot field — invisible to humans, bots auto-fill it -->
-            <div style="position:absolute;left:-9999px;" aria-hidden="true">
-              <input type="text" name="company_url" tabindex="-1" autocomplete="off">
-            </div>
-            <!-- Timestamp for time-based bot check -->
-            <input type="hidden" name="form_loaded" id="form_loaded" value="">
-            <div class="form-group">
-              <input type="text" id="name" name="name" required aria-required="true" placeholder=" " maxlength="150">
-              <label for="name">{% trans "Full Name" %}</label>
-            </div>
-            <div class="form-group">
-              <input type="text" id="company" name="company" required aria-required="true" placeholder=" " maxlength="200">
-              <label for="company">{% trans "Company" %}</label>
-            </div>
-            <div class="form-group">
-              <input type="email" id="email" name="email" required aria-required="true" placeholder=" " maxlength="254">
-              <label for="email">{% trans "Email Address" %}</label>
-            </div>
-            <div class="form-group">
-              <textarea id="message" name="message" rows="5" required aria-required="true" placeholder=" " maxlength="5000"></textarea>
-              <label for="message">{% trans "Your Message" %}</label>
-            </div>
-
-            <div class="form-feedback" id="formFeedback" role="alert" aria-live="polite" style="display:none;">
-              <span class="form-feedback-icon"></span>
-              <span class="form-feedback-text"></span>
-            </div>
-
-            <button type="submit" class="btn btn-primary btn-submit">
-              <span class="btn-text">{% trans "Send Message" %}</span>
-              <span class="btn-loader" style="display:none;">
-                <svg class="spinner" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="3" fill="none" stroke-dasharray="31.4 31.4" stroke-linecap="round"/></svg>
-              </span>
-              <svg class="btn-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
-            </button>
-          </form>
-        </div>
-      </div>
+<!-- ============ PARTNERS ============ -->
+<section class="partners section" id="partners" data-stage="clear">
+  <div class="container">
+    <p class="partners-label reveal">{% trans "Supported by" %}</p>
+    <div class="partners-row">
+      <a class="partner-link reveal" style="--i:0" href="https://www.innovasjonnorge.no/en/" target="_blank" rel="noopener" aria-label="Innovation Norway">
+        <img class="partner-logo" src="{% static 'webapp/images/innovation-norge.png' %}" alt="Innovation Norway" loading="lazy">
+      </a>
+      <a class="partner-link reveal" style="--i:1" href="https://www.eksfin.no/" target="_blank" rel="noopener" aria-label="Eksfin">
+        <img class="partner-logo" src="{% static 'webapp/images/eksfin.png' %}" alt="Eksfin" loading="lazy">
+      </a>
+      <a class="partner-link reveal" style="--i:2" href="https://www.forskningsradet.no/en/" target="_blank" rel="noopener" aria-label="Research Council of Norway">
+        <img class="partner-logo" src="{% static 'webapp/images/Forskningsradet.png' %}" alt="Research Council of Norway" loading="lazy">
+      </a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Back to top button -->
-  <button class="back-to-top" id="backToTop" aria-label="{% trans 'Back to top' %}">
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
-  </button>
+<!-- ============ SECTORS ============ -->
+<section class="sectors section" id="sectors" data-stage="clear">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "One platform, every sector" %}</span>
+      <h2 class="sec-title">{% trans "Sector-agnostic. Protocol-native." %}</h2>
+    </header>
+    <div class="sector-grid">
+      <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_soilless' %}" class="sector glass reveal"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about section" id="about" data-stage="clear">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <span class="sec-tag">{% trans "About Suderra" %}</span>
+      <h2 class="sec-title">{% trans "Norwegian water engineering," %} <em class="serif">{% trans "made measurable." %}</em></h2>
+      <p>{% trans "We pair recirculating aquaculture engineering with the Suderra Edge platform and AI so producers can build, audit and operate with confidence — from our home base in Sandefjord, Norway." %}</p>
+      <a href="#contact" class="btn btn-ghost">{% trans "Work with us" %}</a>
+    </div>
+    <div class="about-card glass reveal">
+      <div class="about-row"><span>{% trans "Headquarters" %}</span><strong>Sandefjord, {% trans "Norway" %} {% include "partials/flag_no.html" %}</strong></div>
+      <div class="about-row"><span>{% trans "Focus" %}</span><strong>{% trans "RAS engineering, design & management" %}</strong></div>
+      <div class="about-row"><span>{% trans "Platform" %}</span><strong>Suderra Edge · Suderra OS</strong></div>
+      <div class="about-row"><span>{% trans "Strength" %}</span><strong>{% trans "10+ years hands-on experience" %}</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact section" id="contact" data-stage="clear">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <span class="sec-tag">{% trans "Get in Touch" %}</span>
+      <h2 class="sec-title">{% trans "Tell us about" %} <em class="serif">{% trans "your system." %}</em></h2>
+      <p>{% trans "Designing a new RAS facility, auditing an existing one, or ready to put sensors in the water — start the conversation." %}</p>
+      <ul class="contact-points">
+        <li><a href="mailto:okan@suderra.com">okan@suderra.com</a></li>
+        <li><a href="tel:+4791246490">+47 912 46 490</a></li>
+        <li>Sandefjord, {% trans "Norway" %}</li>
+      </ul>
+    </div>
+
+    <form id="contactForm" class="contact-form glass reveal"
+          data-ajax-url="{% url 'ajax_contact' %}"
+          data-msg-required="{% trans 'Please fill in all required fields.' %}"
+          data-msg-email="{% trans 'Please enter a valid email address.' %}"
+          data-msg-sending="{% trans 'Sending…' %}"
+          data-msg-success="{% trans 'Message sent successfully! We will get back to you soon.' %}"
+          data-msg-error="{% trans 'Something went wrong. Please try again.' %}"
+          data-msg-network-error="{% trans 'An error occurred. Please try again later.' %}"
+          data-msg-submit="{% trans 'Send message' %}">
+      {% csrf_token %}
+      <input type="hidden" id="form_loaded" name="form_loaded" value="">
+      <div class="hp" aria-hidden="true"><label>Company URL<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
+      <div class="field"><label for="name">{% trans "Name" %}</label><input type="text" id="name" name="name" autocomplete="name" required aria-required="true"></div>
+      <div class="field"><label for="company">{% trans "Company" %}</label><input type="text" id="company" name="company" autocomplete="organization" required aria-required="true"></div>
+      <div class="field"><label for="email">{% trans "Email" %}</label><input type="email" id="email" name="email" autocomplete="email" required aria-required="true"></div>
+      <div class="field"><label for="message">{% trans "Message" %}</label><textarea id="message" name="message" rows="4" required aria-required="true"></textarea></div>
+      <button type="submit" class="btn btn-coral btn-block"><span class="btn-text">{% trans "Send message" %}</span></button>
+      <p id="formFeedback" class="form-feedback" role="alert" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
 
 {% endblock %}
 
-{% block footer %}
-  <!-- MULTI-COLUMN FOOTER -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <!-- Column 1: Company -->
-        <div class="footer-col footer-col-brand">
-          <a href="#hero" class="footer-logo">
-            <img src="{% static 'webapp/images/logo5.png' %}" alt="Suderra" width="180">
-          </a>
-          <p class="footer-brand-desc">{% trans "Norwegian aquaculture technology company specializing in patented optical sensor technology for real-time water quality monitoring." %}</p>
-          <div class="footer-social">
-            <a href="#" aria-label="LinkedIn" class="social-link">
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
-            </a>
-          </div>
-        </div>
-
-        <!-- Column 2: Quick Links -->
-        <div class="footer-col">
-          <h4 class="footer-col-title">{% trans "Quick Links" %}</h4>
-          <ul class="footer-links">
-            <li><a href="#hero">{% trans "Home" %}</a></li>
-            <li><a href="#technology">{% trans "Our Technology" %}</a></li>
-            <li><a href="#services">{% trans "Our Services" %}</a></li>
-            <li><a href="#about">{% trans "About Us" %}</a></li>
-            <li><a href="#contact-footer">{% trans "Contact Us" %}</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Solutions -->
-        <div class="footer-col">
-          <h4 class="footer-col-title">{% trans "Solutions" %}</h4>
-          <ul class="footer-links">
-            <li><a href="{% url 'feature_aquaculture' %}">{% trans "Aquaculture Software" %}</a></li>
-            <li><a href="{% url 'feature_regulatory' %}">{% trans "Regulatory Compliance" %}</a></li>
-            <li><a href="{% url 'feature_automation' %}">{% trans "Smart Automation" %}</a></li>
-            <li><a href="{% url 'feature_soilless' %}">{% trans "Soilless Culture" %}</a></li>
-            <li><a href="{% url 'feature_waste_water' %}">{% trans "Waste Water Treatment" %}</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Contact -->
-        <div class="footer-col">
-          <h4 class="footer-col-title">{% trans "Contact" %}</h4>
-          <ul class="footer-links footer-contact-links">
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              {% trans "Norway" %}: Sandefjord
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              {% trans "Turkey" %}: Folkart Towers, Izmir
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-              <a href="tel:+4791246490">+47 912 46 490</a>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <a href="mailto:okan@suderra.com">okan@suderra.com</a>
-            </li>
-          </ul>
-
-          <!-- Newsletter -->
-          <div class="newsletter">
-            <h4 class="footer-col-title">{% trans "Newsletter" %}</h4>
-            <form class="newsletter-form" id="newsletterForm" data-ajax-url="{% url 'ajax_newsletter' %}">
-              {% csrf_token %}
-              <input type="email" name="email" placeholder="{% trans 'Your email' %}" aria-label="{% trans 'Email address' %}" class="newsletter-input" required maxlength="254">
-              <button type="submit" class="newsletter-btn" aria-label="{% trans 'Subscribe' %}">
-                <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
-              </button>
-            </form>
-            <p class="newsletter-feedback" id="newsletterFeedback" role="status" aria-live="polite" style="display:none;"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2026 Suderra AS. {% trans "All rights reserved." %}</p>
-      </div>
-    </div>
-  </footer>
-<!-- FAQ Schema for Rich Snippets -->
+{% block extra_js %}
 <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
 {
   "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is Suderra Software?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Suderra Software is a modular operations intelligence platform that connects to all your sensors, collects data in one place, and turns it into actionable decisions. It supports fish farms, greenhouses, waste water plants, and any combination of production facilities."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What industrial protocols does Suderra support?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Suderra supports every major industrial protocol including MQTT, Modbus, and OPC-UA. It also works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Does Suderra work offline?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, Suderra is offline-first. The edge gateway stores all data locally at the facility with no cloud dependency. The mobile app also works without an internet connection and syncs automatically when the connection returns."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Suderra headquartered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Suderra AS is headquartered in Sandefjord, Norway with manufacturing and operations in Izmir, Turkey."
-      }
-    }
-  ]
+  "@type": "Product",
+  "name": "Suderra Single Tank Design (RAS)",
+  "category": "Recirculating Aquaculture System",
+  "brand": {"@type": "Brand", "name": "Suderra"},
+  "description": "Octagonal tank-in-tank recirculating aquaculture system: >94% water recirculation, ~95% less piping, 12–40 m diameter, 60–1500 t/yr.",
+  "manufacturer": {"@type": "Organization", "name": "Suderra AS", "url": "https://suderra.com"}
 }
 </script>
-<!-- Service Schema -->
-<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
-{
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Aquaculture Technology Solutions",
-  "provider": {
-    "@type": "Organization",
-    "name": "Suderra AS"
-  },
-  "areaServed": {
-    "@type": "Place",
-    "name": "Worldwide"
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Suderra Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Aquaculture Operations Intelligence",
-          "description": "RAS design, water chemistry monitoring, feed management, batch tracking, mortality analysis with AI-driven dosing and real-time alerts."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Soilless Culture Monitoring",
-          "description": "Nutrient recipe management, EC/pH/humidity monitoring, growth stage tracking, climate control integration for hydroponics and aquaponics."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Waste Water Plant Intelligence",
-          "description": "Flow monitoring, TSS tracking, chemical load optimization, regulatory compliance reporting with advanced reagent-free data collection."
-        }
-      }
-    ]
-  }
-}
-</script>
-<!-- Breadcrumb Schema -->
-<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://suderra.com"
-    }
-  ]
-}
-</script>
-{% endblock footer %}
+{% endblock %}

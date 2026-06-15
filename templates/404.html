@@ -1,16 +1,33 @@
-{% extends "base.html" %}
 {% load i18n %}
-
-{% block title %}404 - {% trans "Page Not Found" %} | SUDERRA{% endblock %}
-{% block description %}{% trans "The page you are looking for could not be found." %}{% endblock %}
-
-{% block content %}
-<section class="error-page">
-  <h1>404</h1>
+{% load static %}
+{% get_current_language_bidi as LANGUAGE_BIDI %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE|default:'en' }}" dir="{% if LANGUAGE_BIDI %}rtl{% else %}ltr{% endif %}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, follow">
+  <title>404 - {% trans "Page Not Found" %} | SUDERRA</title>
+  <link rel="icon" type="image/png" href="{% static 'webapp/images/logo5.png' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0}
+    body{font-family:"Hanken Grotesk",system-ui,sans-serif;background:#04141f;color:#f4efe4;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;gap:6px}
+    .code{font-family:"Fraunces",serif;font-size:clamp(5rem,18vw,11rem);line-height:1;color:#2bd4d9;font-weight:500}
+    h2{font-family:"Fraunces",serif;font-weight:500;font-size:1.8rem;color:#fff;margin:8px 0}
+    p{color:rgba(244,239,228,.7);max-width:440px;margin:0 0 28px}
+    a{display:inline-flex;align-items:center;gap:8px;background:#ef5a47;color:#fff;padding:13px 26px;border-radius:100px;text-decoration:none;font-weight:600}
+    a:hover{background:#d8412f}
+    footer{margin-top:48px;font-size:.85rem;color:rgba(244,239,228,.4)}
+  </style>
+</head>
+<body>
+  <div class="code">404</div>
   <h2>{% trans "Page Not Found" %}</h2>
   <p>{% trans "Sorry, the page you are looking for does not exist or has been moved." %}</p>
-  <a href="{% url 'index' %}" class="cta-button">{% trans "Back to Home" %}</a>
-</section>
-{% endblock %}
-
-{% block footer %}{% endblock %}
+  <a href="{% url 'index' %}">{% trans "Back to Home" %}</a>
+  <footer>&copy; 2026 Suderra AS</footer>
+</body>
+</html>
