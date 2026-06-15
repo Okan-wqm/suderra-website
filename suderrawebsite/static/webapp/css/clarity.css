@@ -28,8 +28,9 @@
   --maxw: 1440px;
   --r: 18px;
   --r-sm: 11px;
-  --ease: cubic-bezier(.22, 1, .36, .08);
   --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --lift: -4px;                                      /* unified card hover lift */
+  --shadow-card: 0 26px 50px -28px rgba(12, 39, 51, .42);
 
   --clarity: 0; /* 0 = murky, 1 = clear — driven by JS on the hero */
 }
@@ -49,6 +50,7 @@ body.clarity {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-optical-sizing: auto;
 }
 
 img { max-width: 100%; display: block; }
@@ -106,9 +108,8 @@ main { position: relative; z-index: 2; }
 .btn-coral { background: var(--coral); color: #fff; box-shadow: 0 10px 30px -10px rgba(239,90,71,.7); }
 .btn-coral:hover { background: var(--coral-d); box-shadow: 0 16px 40px -12px rgba(239,90,71,.85); }
 .btn-ghost { border-color: currentColor; color: inherit; opacity: .9; }
-.btn-ghost:hover { background: currentColor; }
-.btn-ghost:hover { color: var(--paper); }
-.product .btn-ghost:hover, .about .btn-ghost:hover { color: var(--paper); }
+.btn-ghost:hover { background: currentColor; color: var(--paper); }
+.btn:disabled, .btn[disabled] { opacity: .55; cursor: not-allowed; transform: none; box-shadow: none; }
 .btn-sm { padding: 9px 18px; font-size: .85rem; }
 .btn-block { width: 100%; }
 
@@ -395,8 +396,9 @@ main { position: relative; z-index: 2; }
 .news-form { display: flex; gap: 8px; }
 .news-form input { flex: 1; background: rgba(255,255,255,.06); border: 1px solid var(--line-d); border-radius: 100px; padding: 11px 16px; color: var(--paper); font: inherit; font-size: .9rem; }
 .news-form input:focus { outline: none; border-color: var(--cyan); }
-.news-btn { width: 44px; flex-shrink: 0; background: var(--coral); color: #fff; border-radius: 100px; font-size: 1.1rem; transition: background .2s; }
+.news-btn { width: 44px; height: 44px; flex-shrink: 0; background: var(--coral); color: #fff; border-radius: 100px; font-size: 1.1rem; transition: background .2s; display: grid; place-items: center; line-height: 1; }
 .news-btn:hover { background: var(--coral-d); }
+.news-btn:disabled { opacity: .55; cursor: not-allowed; }
 .news-feedback { display: none; margin-top: 10px; font-size: .85rem; }
 .news-feedback.success { display: block; color: var(--cyan); }
 .news-feedback.error { display: block; color: var(--coral); }
@@ -474,6 +476,13 @@ main { position: relative; z-index: 2; }
 .feature-related-card h3 { font-family: var(--serif); font-weight: 500; font-size: 1.25rem; color: var(--ink); margin-bottom: 6px; }
 .feature-related-card p { font-size: .9rem; color: var(--ink-3); }
 
+/* ---- Unified card elevation on hover (one consistent lift + shadow) ---- */
+.cell:hover, .sector:hover, .loop-step:hover,
+.feature-card:hover, .how-card:hover, .feature-related-card:hover {
+  transform: translateY(var(--lift));
+  box-shadow: var(--shadow-card);
+}
+
 /* ---- Mobile menu (burger replaces inline nav before the header crowds) ---- */
 @media (max-width: 1024px) {
   .nav { position: fixed; inset: var(--header-h) 0 auto 0; flex-direction: column; gap: 0; background: rgba(4,20,31,.98); backdrop-filter: blur(16px); padding: 14px clamp(20px,5vw,48px) 24px; border-bottom: 1px solid var(--line-d); transform: translateY(-120%); transition: transform .4s var(--ease-out); }
@@ -539,6 +548,7 @@ html[dir="rtl"] .scroll-rail i { } /* unaffected */
   .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
   .eyebrow-dot, .foot-pulse i, .scroll-rail i, .dash-live i, .dash-ai-dot { animation: none !important; }
   .hero-video { display: none !important; }
-  .btn:hover, .sector:hover, .loop-step:hover { transform: none !important; }
+  .btn:hover, .cell:hover, .sector:hover, .loop-step:hover,
+  .feature-card:hover, .how-card:hover, .feature-related-card:hover { transform: none !important; }
   .tilt-on { transform: none !important; }
 }
