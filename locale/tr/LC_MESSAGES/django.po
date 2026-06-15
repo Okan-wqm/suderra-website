@@ -212,7 +212,7 @@ msgid "Brand-agnostic data collection"
 msgstr "Marka bağımsız veri toplama"
 
 msgid "Breadcrumb"
-msgstr "İçerik haritası"
+msgstr "Gezinti yolu"
 
 msgid "Build & Train"
 msgstr "İnşa ve Eğitim"
@@ -221,7 +221,7 @@ msgid "Build automation programs without writing code. Suderra's visual automati
 msgstr "Kod yazmadan otomasyon programları oluşturun. Suderra'nın görsel otomasyon oluşturucusu, sürükle-bırak arayüzü ile yemleme programları, dozajlama rutinleri ve çevresel kontroller oluşturmanıza olanak tanır — tesisinizdeki her sensöre bağlıdır."
 
 msgid "Built in Norway, for Norway"
-msgstr "Norveç'te üretildi, Norveç için tasarlandı"
+msgstr "Norveç'te, Norveç için üretildi"
 
 msgid "Can I automate feeding schedules?"
 msgstr "Yemleme programlarını otomatikleştirebilir miyim?"
@@ -338,7 +338,7 @@ msgid "Designed for recirculating aquaculture systems. Monitor biofilter perform
 msgstr "Devridaim su ürünleri sistemleri için tasarlanmıştır. Biyofiltre performansını, su değişim oranlarını ve sistem verimliliğini gerçek zamanlı olarak izleyin."
 
 msgid "Designing a new RAS facility, auditing an existing one, or ready to put sensors in the water — start the conversation."
-msgstr "Yeni bir RAS tesisi tasarlamak, mevcut bir tesisi denetlemek ya da suya sensör koymaya hazır olmak — konuşmaya başlayalım."
+msgstr "İster yeni bir RAS tesisi tasarlıyor, ister mevcut bir tesisi denetliyor ya da suya sensör koymaya hazır olun — konuşmaya başlayalım."
 
 msgid "Developed by a team with deep aquaculture expertise. We understand Norwegian fish farming regulations, Mattilsynet reporting requirements, and the unique challenges of cold-water species."
 msgstr "Derin akuakültür uzmanlığına sahip bir ekip tarafından geliştirilmiştir. Norveç balık çiftliği mevzuatını, Mattilsynet raporlama gereksinimlerini ve soğuk su türlerinin kendine özgü zorluklarını anlıyoruz."
@@ -356,7 +356,7 @@ msgid "EC & pH Monitoring"
 msgstr "EC ve pH İzleme"
 
 msgid "Each new sector reuses 70% of existing code. We add a module — the core platform stays the same."
-msgstr "Her yeni sektör mevcut kodun %70'ini yeniden kullanır. Bir modül ekliyoruz — çekirdek platform aynı kalıyor."
+msgstr "Her yeni sektör mevcut kodun %70'ini yeniden kullanır. Biz bir modül ekleriz — çekirdek platform aynı kalır."
 
 msgid "Edge Computing"
 msgstr "Edge Computing"
@@ -470,7 +470,7 @@ msgid "Fresh, salt, any climate"
 msgstr "Tatlı, tuzlu, her iklim"
 
 msgid "From blueprint"
-msgstr "Çizimden"
+msgstr "Tasarımdan"
 
 msgid "From sensors to decisions — in four steps."
 msgstr "Sensörlerden kararlara — dört adımda."
@@ -551,7 +551,7 @@ msgid "Industrial Protocols"
 msgstr "Endüstriyel Protokol"
 
 msgid "Innovating Aquaculture & Aquaponics for a Sustainable Future."
-msgstr "Sürdürülebilir Bir Gelecek İçin Aküakültür ve Aküaponik İnovasyonu."
+msgstr "Sürdürülebilir Bir Gelecek İçin Akuakültür ve Akuaponik İnovasyonu."
 
 msgid "Innovation Norway"
 msgstr "Innovation Norway"
@@ -926,7 +926,7 @@ msgid "Scroll"
 msgstr "Kaydır"
 
 msgid "Scroll to clarify"
-msgstr "Berraklaşmak için kaydırın"
+msgstr "Netleşmesi için kaydırın"
 
 msgid "Sea Lice Monitoring"
 msgstr "Deniz Biti İzleme"
@@ -935,7 +935,7 @@ msgid "Sector-Specific Intelligence"
 msgstr "Sektöre Özel Zeka"
 
 msgid "Sector-agnostic. Protocol-native."
-msgstr "Sektörden bağımsız. Protokol-yerel."
+msgstr "Sektörden bağımsız. Tüm protokollerle uyumlu."
 
 msgid "Sector-specific modules add meaning to data. The fish farm module knows batch management, feed plans, and mortality. The soilless culture module knows nutrient recipes and growth stages."
 msgstr "Sektöre özel modüller verilere anlam katar. Balık çiftliği modülü parti yönetimi, yem planları ve ölüm oranlarını bilir. Topraksız tarım modülü besin reçetelerini ve büyüme aşamalarını bilir."
@@ -968,7 +968,7 @@ msgid "Server Error"
 msgstr "Sunucu Hatası"
 
 msgid "Service without downtime; proprietary, protected design and software."
-msgstr "Kesintisiz servis; tescilli, korumalı tasarım ve yazılım."
+msgstr "Kesintisiz hizmet; tescilli ve korumalı tasarım ve yazılım."
 
 msgid "Services"
 msgstr "Hizmetler"
@@ -1091,7 +1091,7 @@ msgid "Suderra brings the same sensor integration and automation capabilities th
 msgstr "Suderra, akuakültür platformumuzu destekleyen aynı sensör entegrasyonu ve otomasyon yeteneklerini atık su arıtmaya taşır. Tesisinizdeki her sensörü — akış ölçerler, AKM probları, pH sensörleri, çözünmüş oksijen ölçerler — gerçek zamanlı uyarılar ve otomatik kimyasal dozajlama ile tek bir birleşik kontrol paneline bağlayın."
 
 msgid "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility."
-msgstr "Suderra; akış hızı, pH, çözünmüş oksijen, bulanıklık, AKM (Askıda Katı Madde), iletkenlik, sıcaklık, kimyasal oksijen ihtiyacı (KOİ), biyolojik oksijen ihtiyacı (BOİ) ve daha fazlasını izleyebilir — tesisinizdeki kurulan sensörlere bağlı olarak."
+msgstr "Suderra; akış hızı, pH, çözünmüş oksijen, bulanıklık, AKM (Askıda Katı Madde), iletkenlik, sıcaklık, kimyasal oksijen ihtiyacı (KOİ), biyolojik oksijen ihtiyacı (BOİ) ve daha fazlasını izleyebilir — tesisinizde kurulu sensörlere bağlı olarak."
 
 msgid "Suderra designs and audits recirculating aquaculture systems — then runs them on Suderra Edge and real-time AI, integrating instantly with the sensors and equipment you already have. One partner, from the first drawing to the last decision."
 msgstr "Suderra resirkülasyonlu su ürünleri sistemlerini tasarlar ve denetler — sonra bunları Suderra Edge ve gerçek zamanlı AI ile işletir, mevcut sensör ve ekipmanlarınıza anında entegre olur. Tek bir ortak, ilk çizimden son karara kadar."
@@ -1130,10 +1130,10 @@ msgid "Support through construction and commissioning — and we train your team
 msgstr "İnşa ve devreye alma boyunca destek — ve ekibinizi sistemi güvenle işletmesi için eğitiriz."
 
 msgid "Supported By"
-msgstr "Destekleyenler"
+msgstr "Destekçilerimiz"
 
 msgid "Supported by"
-msgstr "Destekleyenler"
+msgstr "Destekçilerimiz"
 
 msgid "Supports 8+ pump/motor brands and all major industrial protocols (MQTT, Modbus, OPC-UA). Connect any sensor from any manufacturer."
 msgstr "8'den fazla pompa/motor markasını ve tüm büyük endüstriyel protokolleri (MQTT, Modbus, OPC-UA) destekler. Herhangi bir üreticiden herhangi bir sensörü bağlayın."
@@ -1232,7 +1232,7 @@ msgid "Unlimited sensors"
 msgstr "Sınırsız sensör"
 
 msgid "Uptime & IP-secured"
-msgstr "Kesintisiz ve fikri mülkiyetle korumalı"
+msgstr "Kesintisiz çalışma ve fikri mülkiyetle korumalı"
 
 msgid "Visual Automation Builder"
 msgstr "Görsel Otomasyon Oluşturucu"
@@ -1325,7 +1325,7 @@ msgid "What's inside"
 msgstr "İçinde ne var"
 
 msgid "Whether you run a recirculating aquaculture system (RAS), flow-through facility, or open-pen operation, our platform adapts to your setup. The edge gateway stores data locally — so your farm stays operational even without internet. When connectivity returns, everything syncs automatically."
-msgstr "İster bir devridaim su ürünleri sistemi (RAS), ister akışlı tesis, ister açık kafes operasyonu çalıştırıyor olun, platformumuz kurulumunuza uyum sağlar. Edge gateway verileri yerel olarak depolar — böylece çiftliğiniz internet olmadan bile çalışmaya devam eder. Bağlantı geri geldiğinde her şey otomatik olarak senkronize olur."
+msgstr "İster bir devridaim su ürünleri sistemi (RAS), ister akışlı bir tesis, ister açık kafes operasyonu işletiyor olun, platformumuz kurulumunuza uyum sağlar. Edge gateway verileri yerel olarak depolar — böylece çiftliğiniz internet olmadan bile çalışmaya devam eder. Bağlantı geri geldiğinde her şey otomatik olarak senkronize olur."
 
 msgid "Who We Are"
 msgstr "Biz Kimiz"
@@ -1412,7 +1412,7 @@ msgid "visits"
 msgstr "ziyaret"
 
 msgid "you@company.com"
-msgstr "siz@sirket.com"
+msgstr "ad@sirket.com"
 
 msgid "your system."
 msgstr "sisteminizi."
