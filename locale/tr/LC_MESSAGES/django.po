@@ -415,6 +415,9 @@ msgstr "Kaçış ve Ölüm Uyarıları"
 msgid "Every Facility."
 msgstr "Her Tesis."
 
+msgid "Every client has its own database — your data never mixes with anyone else's."
+msgstr "Her client'ın kendi veritabanı vardır — verileriniz asla başkasınınkiyle karışmaz."
+
 msgid "Every tenant has its own database — your data never mixes with anyone else's."
 msgstr "Her kiracının kendi veritabanı vardır — verileriniz asla başkasınınkiyle karışmaz."
 
@@ -573,6 +576,9 @@ msgstr "IoT sensör entegrasyonu, yemleyici otomasyonu ve dozajlama kontrolü"
 
 msgid "Is this the same platform used for aquaculture?"
 msgstr "Bu akuakültür için kullanılan platformun aynısı mı?"
+
+msgid "Isolated per client"
+msgstr "Client başına izole"
 
 msgid "Isolated per tenant"
 msgstr "Kiracı başına izole"
@@ -1074,6 +1080,9 @@ msgstr "Suderra Edge mevcut sensörlerinizi sürekli okur ve AI veriyi onayladı
 
 msgid "Suderra Edge runs on our own Suderra OS and plugs into your existing sensors and equipment in minutes — no rip-and-replace. Above it, a multi-tenant platform gives every tenant its own isolated database, unlimited sensors, mobile operations and science-based charts — with AI helping you decide."
 msgstr "Suderra Edge kendi Suderra OS’umuz üzerinde çalışır ve mevcut sensör ve ekipmanlarınıza dakikalar içinde bağlanır — söküp değiştirmek yok. Üstünde, çok kiracılı platform her kiracıya kendi izole veritabanını, sınırsız sensörü, mobil operasyonları ve bilime dayalı grafikleri sunar — kararlarınızda AI yardımıyla."
+
+msgid "Suderra Edge runs on our own Suderra OS and plugs into your existing sensors and equipment in minutes — no rip-and-replace. Above it, a secure platform gives every client its own isolated database, unlimited sensors, mobile operations and science-based charts — with AI helping you decide."
+msgstr "Suderra Edge kendi Suderra OS’umuz üzerinde çalışır ve mevcut sensör ve ekipmanlarınıza dakikalar içinde bağlanır — söküp değiştirmek yok. Üstünde, güvenli bir platform her client’a kendi izole veritabanını, sınırsız sensörü, mobil operasyonları ve bilime dayalı grafikleri sunar — kararlarınızda AI yardımıyla."
 
 msgid "Suderra Edge speaks MQTT, Modbus and OPC-UA — it adapts to your existing sensors and equipment in minutes."
 msgstr "Suderra Edge MQTT, Modbus ve OPC-UA konuşur — mevcut sensör ve ekipmanlarınıza dakikalar içinde uyum sağlar."

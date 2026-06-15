@@ -92,7 +92,7 @@
   /* ---------------- 3D cursor tilt on cards ---------------- */
   function initTilt() {
     if (reduce) return;
-    var cards = document.querySelectorAll('.cell, .sector, .loop-step, .about-card, .product-shot, .dash, .feature-card, .feature-related-card');
+    var cards = document.querySelectorAll('.product-shot, .dash');  // tilt reserved for the two showpiece visuals
     cards.forEach(function (card) {
       card.classList.add('tilt-on');
       card.addEventListener('pointermove', function (e) {
@@ -285,6 +285,7 @@
     function trans(x, y, z) { return new Float32Array([1,0,0,0, 0,1,0,0, 0,0,1,0, x,y,z,1]); }
     function rotY(a) { var c = Math.cos(a), s = Math.sin(a); return new Float32Array([c,0,-s,0, 0,1,0,0, s,0,c,0, 0,0,0,1]); }
     function rotX(a) { var c = Math.cos(a), s = Math.sin(a); return new Float32Array([1,0,0,0, 0,c,s,0, 0,-s,c,0, 0,0,0,1]); }
+    function rotZ(a) { var c = Math.cos(a), s = Math.sin(a); return new Float32Array([c,s,0,0, -s,c,0,0, 0,0,1,0, 0,0,0,1]); }
 
     var mouse = [0.7, 0.2], mt = [0.7, 0.2];
     window.addEventListener('pointermove', function (e) { mt = [e.clientX / window.innerWidth, 1 - e.clientY / window.innerHeight]; }, { passive: true });
@@ -312,7 +313,7 @@
         // place to the side; mouse parallax
         var offX = (isRTL ? -1 : 1) * (asp > 0.9 ? 0.9 : 0.0);
         var V = trans(offX, 0.05, -3.4);
-        var M = mul(rotY(t * 0.22 + (mouse[0] - 0.5) * 0.5), rotX(-0.35 + (mouse[1] - 0.5) * -0.25));
+        var M = mul(rotZ(0.5), mul(rotY(Math.sin(t * 0.16) * 0.5 + (mouse[0] - 0.5) * 0.6), rotX(-0.55 + (mouse[1] - 0.5) * -0.25)));
         var MVP = mul(P, mul(V, M));
         gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
         gl.useProgram(objP); gl.uniformMatrix4fv(o_mvp, false, MVP); gl.uniform1f(o_t, t); gl.uniform1f(o_clar, clarity); gl.uniform1f(o_alpha, heroFade);

@@ -16,7 +16,7 @@
   --paper-2: #ece3d2;
   --ink:     #0c2733;
   --ink-2:   #34505b;
-  --ink-3:   #6a8088;
+  --ink-3:   #566d76;
   --line:    rgba(12, 39, 51, .12);
   --line-d:  rgba(255, 255, 255, .12);
 
@@ -25,7 +25,7 @@
   --mono:  "JetBrains Mono", ui-monospace, "SFMono-Regular", monospace;
 
   --header-h: 86px;
-  --maxw: 1320px;
+  --maxw: 1440px;
   --r: 18px;
   --r-sm: 11px;
   --ease: cubic-bezier(.22, 1, .36, .08);
@@ -202,8 +202,9 @@ main { position: relative; z-index: 2; }
   background: rgba(255,255,255,.05); border: 1px solid var(--line-d);
   padding: 10px 16px; border-radius: 12px; backdrop-filter: blur(6px);
 }
-.t-label { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ink-3); }
-.t-val { font-size: 1.1rem; font-weight: 700; color: var(--cyan); font-variant-numeric: tabular-nums; min-width: 3ch; }
+.t-label { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(244,239,228,.6); }
+.t-val { font-size: 1.1rem; font-weight: 700; color: var(--cyan); font-variant-numeric: tabular-nums lining-nums; min-width: 3ch; }
+.metric-num, .specs dd { font-variant-numeric: tabular-nums lining-nums; }
 .t-unit { font-size: .72rem; color: rgba(244,239,228,.5); }
 
 .scroll-hint { position: absolute; z-index: 2; bottom: 34px; left: clamp(20px,5vw,48px); display: flex; align-items: center; gap: 14px; font-family: var(--mono); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: rgba(244,239,228,.55); }
@@ -221,9 +222,9 @@ main { position: relative; z-index: 2; }
 .sec-title .serif { color: inherit; }   /* italic only — accent colour reserved for the hero */
 .sec-lede { margin-top: 16px; font-size: clamp(1.02rem, 1.45vw, 1.14rem); color: var(--ink-2); line-height: 1.65; }
 
-/* ---- Reveal animation (3D perspective entrance) ---- */
-.reveal { opacity: 0; transform: perspective(1200px) rotateX(7deg) translateY(34px); transform-origin: 50% 100%; transition: opacity .9s var(--ease-out), transform 1s var(--ease-out); will-change: opacity, transform; }
-.reveal.in { opacity: 1; transform: perspective(1200px) rotateX(0) translateY(0); }
+/* ---- Reveal animation (clean vertical settle) ---- */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .55s var(--ease-out), transform .65s var(--ease-out); will-change: opacity, transform; }
+.reveal.in { opacity: 1; transform: none; }
 
 /* 3D cursor tilt (JS-driven via .tilt-on; transition managed inline) */
 .tilt-on { transform-style: preserve-3d; will-change: transform; }
@@ -266,7 +267,7 @@ main { position: relative; z-index: 2; }
 .specs dd { font-family: var(--serif); font-size: 1.5rem; font-weight: 500; color: var(--ink); margin-top: 4px; }
 
 /* ---- Bento ---- */
-.bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.bento { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; grid-auto-flow: dense; }
 .cell { padding: 26px; border-radius: var(--r); }
 .cell h3 { font-family: var(--sans); font-weight: 700; font-size: 1.12rem; color: var(--ink); margin: 16px 0 8px; }
 .cell p { font-size: .94rem; color: var(--ink-2); }
@@ -298,7 +299,7 @@ main { position: relative; z-index: 2; }
 .partner-link:hover .partner-logo { opacity: 1; filter: grayscale(0); transform: translateY(-5px) scale(1.05); }
 
 /* Staggered reveal (loop steps, partner logos) */
-.reveal[style*="--i"] { transition-delay: calc(var(--i) * 0.09s); }
+.reveal[style*="--i"] { transition-delay: calc(var(--i) * 0.05s); }
 
 /* ---- Sectors ---- */
 .sector-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }

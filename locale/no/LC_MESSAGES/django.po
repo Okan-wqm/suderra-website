@@ -415,6 +415,9 @@ msgstr "Rømnings- og dødelighetsvarsler"
 msgid "Every Facility."
 msgstr "Hvert anlegg."
 
+msgid "Every client has its own database — your data never mixes with anyone else's."
+msgstr "Hver klient har sin egen database — dataene dine blandes aldri med andres."
+
 msgid "Every tenant has its own database — your data never mixes with anyone else's."
 msgstr "Hver leietaker har sin egen database — dataene dine blandes aldri med andres."
 
@@ -574,6 +577,9 @@ msgstr "IoT-sensorintegrasjon, fôrautomatisering og doseringskontroll"
 msgid "Is this the same platform used for aquaculture?"
 msgstr "Er dette den samme plattformen som brukes for akvakultur?"
 
+msgid "Isolated per client"
+msgstr "Isolert per klient"
+
 msgid "Isolated per tenant"
 msgstr "Isolert per leietaker"
 
@@ -692,7 +698,7 @@ msgid "Norwegian"
 msgstr "Norsk"
 
 msgid "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform."
-msgstr "Norsk RAS-partner: design, revisjon, finansiering, bygging og drift av resirkulerende akvakultur — oktagonal Single Tank Design og Suderra Edge AI-plattform."
+msgstr "Norsk RAS-partner: design, revisjon, finansiering, bygging og drift av resirkulerende akvakultur — oktagonal Single Tank Design og Suderra Edge AI-plattformen."
 
 msgid "Norwegian aquaculture operates under strict regulations from Mattilsynet (the Norwegian Food Safety Authority) and the Directorate of Fisheries. Fish farms must report sea lice counts, biomass levels, mortality events, and escape incidents on tight schedules. Manual reporting is error-prone, time-consuming, and risky."
 msgstr "Norsk akvakultur opererer under strenge forskrifter fra Mattilsynet og Fiskeridirektoratet. Oppdrettsanlegg må rapportere lusetellinger, biomassenivåer, dødelighetstilfeller og rømningshendelser innen stramme frister. Manuell rapportering er feilutsatt, tidkrevende og risikabel."
@@ -713,7 +719,7 @@ msgid "Nutrient calculator (24+ presets)"
 msgstr "Næringskalkulator (24+ forhåndsinnstillinger)"
 
 msgid "Nutrient recipe management, EC/pH/humidity monitoring, growth stage tracking, climate control integration. Hydroponics and aquaponics ready with 24+ nutrient presets."
-msgstr "Næringsoppskriftsstyring, EC/pH/fuktighetsmåling, vekststadiestyring, klimakontrollintegrasjon. Klar for hydroponikk og akvaponikk med 24+ næringsforhåndsinnstillinger."
+msgstr "Næringsreseptstyring, EC/pH/fuktighetsovervåking, vekststadiesporing, klimakontrollintegrasjon. Klar for hydroponikk og akvaponikk med 24+ næringsforhåndsinnstillinger."
 
 msgid "Nutrient recipes, growth stages and climate for hydroponics and vertical farming."
 msgstr "Næringsoppskrifter, vekstfaser og klima for hydroponikk og vertikal dyrking."
@@ -1075,6 +1081,9 @@ msgstr "Suderra Edge leser de eksisterende sensorene dine kontinuerlig, og AI gj
 msgid "Suderra Edge runs on our own Suderra OS and plugs into your existing sensors and equipment in minutes — no rip-and-replace. Above it, a multi-tenant platform gives every tenant its own isolated database, unlimited sensors, mobile operations and science-based charts — with AI helping you decide."
 msgstr "Suderra Edge kjører på vårt eget Suderra OS og kobles til dine eksisterende sensorer og utstyr på minutter — ingen utskifting. Over den gir en flerleietakerplattform hver leietaker sin egen isolerte database, ubegrenset antall sensorer, mobil drift og vitenskapsbaserte grafer — med AI som hjelper deg å beslutte."
 
+msgid "Suderra Edge runs on our own Suderra OS and plugs into your existing sensors and equipment in minutes — no rip-and-replace. Above it, a secure platform gives every client its own isolated database, unlimited sensors, mobile operations and science-based charts — with AI helping you decide."
+msgstr "Suderra Edge kjører på vårt eget Suderra OS og kobles til dine eksisterende sensorer og utstyr på minutter — ingen utskifting. Over den gir en sikker plattform hver klient sin egen isolerte database, ubegrenset antall sensorer, mobil drift og vitenskapsbaserte grafer — med AI som hjelper deg å beslutte."
+
 msgid "Suderra Edge speaks MQTT, Modbus and OPC-UA — it adapts to your existing sensors and equipment in minutes."
 msgstr "Suderra Edge snakker MQTT, Modbus og OPC-UA — den tilpasser seg dine eksisterende sensorer og utstyr på minutter."
 
@@ -1097,7 +1106,7 @@ msgid "Suderra designs and audits recirculating aquaculture systems — then run
 msgstr "Suderra designer og reviderer resirkulerende akvakultursystemer — og driver dem deretter på Suderra Edge og sanntids-AI, integrert umiddelbart med sensorene og utstyret du allerede har. Én partner, fra første tegning til siste beslutning."
 
 msgid "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities."
-msgstr "Suderra inkluderer 24+ forhåndsinnstilte næringsresepter for vanlige avlinger inkludert bladgrønnsaker, urter, tomater, paprika, jordbær og mer. Du kan også opprette ubegrensede egendefinerte resepter og dele dem på tvers av anlegg."
+msgstr "Suderra inkluderer 24+ forhåndsinnstilte næringsresepter for vanlige avlinger, inkludert bladgrønnsaker, urter, tomater, paprika, jordbær og mer. Du kan også opprette et ubegrenset antall egendefinerte resepter og dele dem på tvers av anlegg."
 
 msgid "Suderra octagonal tank-in-tank RAS concept"
 msgstr "Suderra oktagonal tank-i-tank RAS-konsept"
@@ -1169,7 +1178,7 @@ msgid "The modular architecture allows rapid expansion into new industrial verti
 msgstr "Den modulære arkitekturen muliggjør rask ekspansjon til nye industrielle vertikaler — enhver sektor som bruker sensorer og trenger driftsintelligens. Én plattform, ubegrenset potensial."
 
 msgid "The page you are looking for could not be found."
-msgstr "Siden du leter etter ble ikke funnet."
+msgstr "Siden du leter etter, ble ikke funnet."
 
 msgid "The platform"
 msgstr "Plattformen"
@@ -1289,7 +1298,7 @@ msgid "Water-tech notes, occasionally."
 msgstr "Vannteknologi-notater, av og til."
 
 msgid "We design it, audit it,"
-msgstr "Vi designer det, reviderer det,"
+msgstr "Vi designer, reviderer"
 
 msgid "We design, audit and run recirculating aquaculture systems — Suderra Edge and real-time AI on top of the equipment you already have."
 msgstr "Vi designer, reviderer og drifter resirkulerende akvakultursystemer — Suderra Edge og sanntids-AI oppå utstyret du allerede har."
