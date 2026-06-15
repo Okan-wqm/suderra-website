@@ -169,11 +169,12 @@ python manage.py compilemessages                  # needs msgfmt
 
 ## Rollback
 
-The pre-redesign baseline is committed; the redesign lives on a branch.
+`master` now carries the Clarity redesign. The pre-redesign (audit-fixed legacy)
+site is preserved as the tag **`pre-redesign`**.
 
 ```bash
-git checkout master            # return to the audited, pre-redesign site
-# or hard reset working tree:   git reset --hard <baseline-commit>
+git checkout pre-redesign        # inspect the pre-redesign site
+git reset --hard pre-redesign    # roll the current branch back to it
 ```
 
 ---
