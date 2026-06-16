@@ -6,6 +6,13 @@ updates:
       interval: weekly
     open-pull-requests-limit: 5
     labels: [dependencies, security]
+    ignore:
+      # Pin to current major lines (prod stability): Django 5.1.x needs Python <3.12 here;
+      # gunicorn runs the production server. Still receive minor/patch + security updates.
+      - dependency-name: "django"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "gunicorn"
+        update-types: ["version-update:semver-major"]
   - package-ecosystem: github-actions
     directory: "/"
     schedule:
