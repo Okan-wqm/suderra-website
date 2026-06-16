@@ -69,6 +69,7 @@
     });
     if (reduce) return;
     setInterval(function () {
+      if (document.hidden) return;
       state.forEach(function (s) {
         var target = s.base + (Math.random() - 0.5) * s.range;
         s.v += (target - s.v) * 0.5;
@@ -140,14 +141,15 @@
     setStar(); updateChips();
     if (reduce) { if (aiText) aiText.textContent = msg('stable', 'AI: stable'); return; }
 
-    var raf2;
+    var raf2 = null;
     function loop() {
       pos.x += (goal.x - pos.x) * 0.07; pos.y += (goal.y - pos.y) * 0.07;
       setStar(); updateChips();
       if (arrowEl && arrowEl.style.opacity === '1') { arrowEl.setAttribute('x1', pos.x.toFixed(1)); arrowEl.setAttribute('y1', pos.y.toFixed(1)); }
-      raf2 = requestAnimationFrame(loop);
+      raf2 = document.hidden ? null : requestAnimationFrame(loop);
     }
-    raf2 = requestAnimationFrame(loop);
+    function startDash() { if (!raf2 && !document.hidden) raf2 = requestAnimationFrame(loop); }
+    startDash();
 
     function excursion() {
       return Math.random() < 0.5
@@ -164,9 +166,9 @@
       function () { hideTarget(); setAI('back', false); }
     ];
     var si = 0;
-    (function sched() { steps[si % steps.length](); si++; setTimeout(sched, 2900); })();
+    (function sched() { if (!document.hidden) { steps[si % steps.length](); si++; } setTimeout(sched, 2900); })();
     document.addEventListener('visibilitychange', function () {
-      if (document.hidden) { if (raf2) cancelAnimationFrame(raf2); } else { raf2 = requestAnimationFrame(loop); }
+      if (document.hidden) { if (raf2) { cancelAnimationFrame(raf2); raf2 = null; } } else { startDash(); }
     });
   }
 

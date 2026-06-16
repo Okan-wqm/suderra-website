@@ -180,6 +180,7 @@
         <p>{% trans "Water-tech notes, occasionally." %}</p>
         <form id="newsletterForm" class="news-form" data-ajax-url="{% url 'ajax_newsletter' %}">
           {% csrf_token %}
+          <div class="hp" aria-hidden="true"><label>Company URL<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
           <input type="email" name="email" placeholder="{% trans 'you@company.com' %}" aria-label="{% trans 'Email address' %}" required>
           <button type="submit" class="news-btn" aria-label="{% trans 'Subscribe' %}">→</button>
         </form>

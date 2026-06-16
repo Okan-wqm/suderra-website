@@ -16,9 +16,13 @@ from decouple import config, Csv, UndefinedValueError
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# Ensure runtime directories exist (logs for RotatingFileHandler, .cache for FileBasedCache)
-os.makedirs(BASE_DIR / 'logs', exist_ok=True)
-os.makedirs(BASE_DIR / '.cache', exist_ok=True)
+# Ensure runtime directories exist (logs for RotatingFileHandler, .cache for FileBasedCache).
+# Best-effort: never crash startup on a read-only/locked filesystem.
+for _runtime_dir in ('logs', '.cache'):
+    try:
+        os.makedirs(BASE_DIR / _runtime_dir, exist_ok=True)
+    except OSError:
+        pass
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
@@ -87,6 +91,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
+EMAIL_TIMEOUT = 10  # seconds — fail fast so a slow SMTP can't hang a gunicorn worker
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='suderra.no@gmail.com')
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 DEFAULT_FROM_EMAIL = config('DEFAULT_FROM_EMAIL', default='suderra.no@gmail.com')

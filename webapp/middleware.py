@@ -4,11 +4,14 @@ Custom middleware for Suderra website.
 - GeoLanguageMiddleware: Auto-detects visitor country for language selection
 - SecurityHeadersMiddleware: Adds CSP (with per-request nonce), Permissions-Policy
 """
+import logging
 import secrets
 
 from django.conf import settings
 from django.core.cache import cache
 from django.db.models import F
+
+logger = logging.getLogger('webapp')
 
 
 class VisitCounterMiddleware:
@@ -34,7 +37,7 @@ class VisitCounterMiddleware:
                 request.session['_counted'] = True
                 cache.delete('visit_count')
         except Exception:
-            pass
+            logger.debug('visit count update failed', exc_info=True)
         return response
 
 
@@ -63,16 +66,19 @@ class SecurityHeadersMiddleware:
         # pervasive in markup, so style-src keeps 'unsafe-inline' as a pragmatic trade-off.)
         csp_directives = [
             "default-src 'self'",
-            f"script-src 'self' 'nonce-{nonce}' https://www.googletagmanager.com",
+            f"script-src 'self' 'nonce-{nonce}'",
             "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
             "font-src 'self' https://fonts.gstatic.com",
             "img-src 'self' data: https:",
+            "media-src 'self'",
             "connect-src 'self'",
+            "object-src 'none'",
             "frame-ancestors 'none'",
             "base-uri 'self'",
             "form-action 'self'",
         ]
         response['Content-Security-Policy'] = '; '.join(csp_directives)
+        response.setdefault('Cross-Origin-Resource-Policy', 'same-origin')
 
         # Permissions-Policy — restrict unused browser features
         response['Permissions-Policy'] = (

@@ -74,13 +74,14 @@ suderrawebsite/        project (settings, urls, wsgi/asgi, static/)
     images/             logo5.png, oktagon.jpeg, partner logos, media
 webapp/                 app: views, urls, models, admin, middleware, sitemaps, tests
 templates/
-  base_clarity.html     NEW base for the redesigned homepage (head plumbing + chrome)
-  base.html             legacy base (feature pages, 404/500)
+  base_clarity.html     base for all pages (head plumbing + Clarity chrome)
   partials/ico.html     inline icon set
   partials/flag_no.html Norwegian flag SVG
+  404.html / 500.html   standalone Clarity error pages (noindex)
 webapp/templates/
-  index.html            redesigned homepage (extends base_clarity.html)
-  features/*.html       feature pages (extend base.html, legacy design)
+  index.html            homepage (extends base_clarity.html)
+  features/_base_feature.html  feature layout (extends base_clarity.html)
+  features/*.html       feature pages (Clarity design)
 locale/{no,tr,ar}/      translations (.po / .mo)
 ```
 
@@ -122,18 +123,18 @@ Concept: as you scroll, dark/murky water **clarifies** into the bright editorial
   `prefers-reduced-motion` path (no WebGL animation loop, no tilt, instant reveals). A
   no-WebGL fallback paints a gradient.
 
-Feature pages (`/…/aquaculture-software/` etc.) still use the legacy `base.html` and are
-slated to migrate to `base_clarity.html` in a later pass.
+All pages (homepage + feature pages + error pages) are on the Clarity design; the
+legacy `base.html`/`main.js`/`style.css`/`rtl.css` and unused media have been removed.
 
 ---
 
 ## Tests
 
 ```bash
-python manage.py test
+python manage.py test    # 46 tests, also run on every push by GitHub Actions CI
 ```
 
-36 tests in `webapp/tests.py` cover routing/i18n, security headers + CSP nonce,
+`webapp/tests.py` covers routing/i18n, security headers + CSP nonce,
 contact/newsletter (bot protection, validation, rate limiting, email, Reply-To, reactivation),
 Cloudflare-aware client IP, geo-language detection, the admin CSV export action, and the
 redesigned homepage / form contract. Email is captured in-memory (no real mail sent).
@@ -158,14 +159,10 @@ Production checklist:
   `FileBasedCache` to Redis/Memcached (see `settings.CACHES`).
 
 ### Translations
-Reused copy keeps its `no/tr/ar` translations; **new redesign copy currently falls back to
-English** on non-English pages. To complete it:
-```bash
-python manage.py makemessages -l no -l tr -l ar   # needs GNU gettext (xgettext)
-#  …translate the new msgids in locale/*/LC_MESSAGES/django.po…
-python manage.py compilemessages                  # needs msgfmt
-```
-(`msgfmt`/`xgettext` are not installed in this dev environment — install GNU gettext-tools.)
+All UI copy is fully translated in `no`, `tr`, `ar` (native-reviewed) and the `.mo`
+files are compiled. To change strings: edit templates, then update
+`locale/*/LC_MESSAGES/django.po` and recompile to `.mo` (`compilemessages` needs GNU
+gettext's `msgfmt`; if unavailable, a small pure-Python po→mo compiler works too).
 
 ---
 
@@ -182,7 +179,8 @@ git reset --hard pre-redesign    # roll the current branch back to it
 ---
 
 ## Notes / follow-ups
-- Rotate the Gmail **app password** that was previously exposed in plaintext (account action).
-- Missing asset `webapp/svg/dashboard.svg` is referenced by a legacy feature section
-  (`<object>` falls back to text) — supply the SVG or remove the reference.
-- Migrate feature pages to the Clarity base and finish the `no/tr/ar` translation pass.
+- **Rotate the Gmail app password and SECRET_KEY** that were exposed in the iCloud-synced
+  `.env` (account action — the repo itself never tracked them).
+- Replace the octagon product photo with a clean render and simplify the logo (asset work).
+- Auto-deploy (GitHub Actions → droplet over SSH) is scaffolded but dormant; enable it by
+  adding the `DROPLET_*` secrets and setting the `DEPLOY_ENABLED` repo variable.

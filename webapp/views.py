@@ -4,9 +4,9 @@ import time
 import json
 import logging
 import ipaddress
-import threading
 import urllib.request
 import urllib.error
+from concurrent.futures import ThreadPoolExecutor
 
 from django.core.exceptions import ValidationError
 from django.core.validators import validate_email
@@ -18,6 +18,10 @@ from django.core.cache import cache
 from django.shortcuts import render
 
 logger = logging.getLogger('webapp')
+
+# Bounded executor for off-request Brevo syncs — prevents unbounded thread spawn
+# under a burst of subscriptions.
+_BREVO_POOL = ThreadPoolExecutor(max_workers=4, thread_name_prefix='brevo')
 
 # Input length limits
 MAX_NAME_LENGTH = 150
@@ -61,7 +65,11 @@ def _get_client_ip(request):
     if _remote_addr_is_cloudflare(remote_addr):
         cf_ip = request.META.get('HTTP_CF_CONNECTING_IP', '').strip()
         if cf_ip:
-            return cf_ip
+            try:
+                ipaddress.ip_address(cf_ip)  # only trust a well-formed IP (avoids cache-key injection)
+                return cf_ip
+            except ValueError:
+                pass
     return remote_addr
 
 
@@ -76,7 +84,8 @@ def _rate_limit_exceeded(cache_key, limit, window=RATE_LIMIT_WINDOW):
     """
     now = time.time()
     data = cache.get(cache_key)
-    if not data or now >= data[1]:
+    # Treat missing / corrupt / legacy / expired entries as a fresh window.
+    if not (isinstance(data, (tuple, list)) and len(data) == 2) or now >= data[1]:
         cache.set(cache_key, (1, now + window), window)
         return 1 > limit
     count = data[0] + 1
@@ -85,8 +94,10 @@ def _rate_limit_exceeded(cache_key, limit, window=RATE_LIMIT_WINDOW):
 
 
 def index(request):
-    # Set server-side timestamp for bot protection timing check
-    request.session['_form_ts'] = int(time.time())
+    # Server-side timestamp for the bot-protection timing check. Only set it once
+    # per session so repeat visits don't rewrite the session row every refresh.
+    if '_form_ts' not in request.session:
+        request.session['_form_ts'] = int(time.time())
     return render(request, 'index.html')
 
 
@@ -137,7 +148,7 @@ def ajax_contact(request):
         form_loaded = request.POST.get('form_loaded', '')
         if form_loaded:
             try:
-                elapsed_ms = time.time() * 1000 - int(form_loaded)
+                elapsed_ms = time.time() * 1000 - int(float(form_loaded))
                 if elapsed_ms < 3000:
                     return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
             except (ValueError, TypeError):
@@ -146,7 +157,7 @@ def ajax_contact(request):
     # Sanitize inputs — strip newlines to prevent email header injection + enforce length limits
     name = re.sub(r'[\r\n]', '', request.POST.get('name', '').strip())[:MAX_NAME_LENGTH]
     company = re.sub(r'[\r\n]', '', request.POST.get('company', '').strip())[:MAX_COMPANY_LENGTH]
-    email = re.sub(r'[\r\n]', '', request.POST.get('email', '').strip())[:MAX_EMAIL_LENGTH]
+    email = re.sub(r'[\r\n]', '', request.POST.get('email', '').strip())[:MAX_EMAIL_LENGTH].lower()
     message = request.POST.get('message', '').strip()[:MAX_MESSAGE_LENGTH]
 
     if not (name and company and email and message):
@@ -173,13 +184,13 @@ def ajax_contact(request):
             subject=subject,
             body=mail_body,
             from_email=settings.DEFAULT_FROM_EMAIL,
-            to=[getattr(settings, 'CONTACT_RECIPIENT', 'okan@suderra.com')],
+            to=[settings.CONTACT_RECIPIENT],
             reply_to=[email],
         ).send(fail_silently=False)
-        logger.info('Contact form submitted by %s <%s> from IP %s', name, email, ip)
+        logger.info('Contact form submitted from IP %s', ip)
         return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
     except Exception:
-        logger.exception('Failed to send contact form email from %s', email)
+        logger.exception('Failed to send contact form email (IP %s)', ip)
         return JsonResponse({'status': 'error', 'message': 'An error occurred. Please try again later.'})
 
 
@@ -192,7 +203,11 @@ def ajax_newsletter(request):
     if _rate_limit_exceeded(f'newsletter_rate_{ip}', NEWSLETTER_RATE_LIMIT):
         return JsonResponse({'status': 'error', 'message': 'Too many attempts. Please try again later.'}, status=429)
 
-    email = re.sub(r'[\r\n]', '', request.POST.get('email', '').strip())[:MAX_EMAIL_LENGTH]
+    # Honeypot — bots fill the hidden field; humans never see it.
+    if request.POST.get('company_url', ''):
+        return JsonResponse({'status': 'success', 'message': 'Successfully subscribed!'})
+
+    email = re.sub(r'[\r\n]', '', request.POST.get('email', '').strip())[:MAX_EMAIL_LENGTH].lower()
 
     if not email:
         return JsonResponse({'status': 'error', 'message': 'Please enter your email address.'})
@@ -217,11 +232,9 @@ def ajax_newsletter(request):
     brevo_key = getattr(settings, 'BREVO_API_KEY', '')
     brevo_list = getattr(settings, 'BREVO_LIST_ID', None)
     if brevo_key and brevo_list:
-        threading.Thread(
-            target=_sync_to_brevo, args=(email, brevo_key, brevo_list), daemon=True
-        ).start()
+        _BREVO_POOL.submit(_sync_to_brevo, email, brevo_key, brevo_list)
 
-    logger.info('Newsletter subscription: %s from IP %s', email, ip)
+    logger.info('Newsletter subscription from IP %s', ip)
     return JsonResponse({'status': 'success', 'message': 'Successfully subscribed!'})
 
 

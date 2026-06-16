@@ -331,3 +331,41 @@ class FeaturePageRedesignTests(TestCase):
         # the hidden lang forms must point back to the SAME page in the target language
         html = self.client.get('/en/automation/').content.decode()
         self.assertIn('value="/tr/automation/"', html)
+
+
+@override_settings(**TEST_SETTINGS)
+class HardeningTests(TestCase):
+    def setUp(self):
+        cache.clear()
+
+    def test_newsletter_email_lowercased_and_deduped(self):
+        self.client.post(reverse('ajax_newsletter'), {'email': 'A@Example.com'})
+        self.client.post(reverse('ajax_newsletter'), {'email': 'a@example.com'})
+        self.assertEqual(NewsletterSubscriber.objects.filter(email='a@example.com').count(), 1)
+        self.assertFalse(NewsletterSubscriber.objects.filter(email='A@Example.com').exists())
+
+    def test_newsletter_honeypot_silently_succeeds(self):
+        r = self.client.post(reverse('ajax_newsletter'), {'email': 'bot@example.com', 'company_url': 'http://x'})
+        self.assertEqual(r.json()['status'], 'success')
+        self.assertFalse(NewsletterSubscriber.objects.filter(email='bot@example.com').exists())
+
+    def test_contact_email_failure_returns_error(self):
+        from unittest.mock import patch
+        self.client.get('/en/')
+        s = self.client.session; s['_form_ts'] = int(time.time()) - 10; s.save()
+        with patch('webapp.views.EmailMessage.send', side_effect=Exception('smtp down')):
+            r = self.client.post(reverse('ajax_contact'),
+                                 {'name': 'A', 'company': 'B', 'email': 'a@b.com', 'message': 'hello there'})
+        self.assertEqual(r.json()['status'], 'error')
+
+    def test_rate_limiter_survives_corrupt_cache(self):
+        from webapp import views
+        cache.set('contact_rate_9.9.9.9', 'corrupt-not-a-tuple', 60)
+        self.assertFalse(views._rate_limit_exceeded('contact_rate_9.9.9.9', 5))  # no TypeError
+
+    def test_cf_connecting_ip_must_be_valid(self):
+        from webapp import views
+        req = RequestFactory().post('/')
+        req.META['REMOTE_ADDR'] = '104.16.0.1'           # a Cloudflare peer
+        req.META['HTTP_CF_CONNECTING_IP'] = 'not-an-ip'  # malformed → must be ignored
+        self.assertEqual(views._get_client_ip(req), '104.16.0.1')
