@@ -23,6 +23,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Dependency vulnerability scan (advisory)
+        continue-on-error: true
+        run: |
+          pip install pip-audit
+          pip-audit --desc
+
       - name: System check
         env:
           DEBUG: "True"
