@@ -1,5 +1,7 @@
 # Suderra Website
 
+[![CI](https://github.com/Okan-wqm/suderra-website/actions/workflows/ci.yml/badge.svg)](https://github.com/Okan-wqm/suderra-website/actions/workflows/ci.yml)
+
 Marketing site for **Suderra AS** — a Norwegian **recirculating aquaculture (RAS)** partner.
 Suderra **designs**, **audits**, **finances**, **builds** and **runs** RAS facilities (the
 octagonal *Single Tank Design*), and operates them on the **Suderra Edge / Suderra OS**

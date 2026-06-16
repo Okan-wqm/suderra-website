@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      # Dummy values — real secrets live only in the server's .env (never committed).
+      SECRET_KEY: ci-not-a-real-secret-key-for-tests-only
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: System check
+        env:
+          DEBUG: "True"
+        run: python manage.py check
+
+      - name: Run test suite
+        env:
+          DEBUG: "True"
+        run: python manage.py test --verbosity 2
+
+      - name: Verify production static build (hashed + compressed)
+        env:
+          DEBUG: "False"
+          ALLOWED_HOSTS: "suderra.com"
+        run: python manage.py collectstatic --noinput
