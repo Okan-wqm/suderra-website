@@ -3,5 +3,5 @@ Django==5.1.6
 gunicorn==23.0.0
 whitenoise==6.8.2
 sqlparse==0.5.3
-tzdata==2025.1
+tzdata==2026.2
 python-decouple==3.8
