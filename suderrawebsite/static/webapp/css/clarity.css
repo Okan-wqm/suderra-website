@@ -242,7 +242,7 @@ main { position: relative; z-index: 2; }
 /* ---- Product ---- */
 .product-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(28px, 5vw, 64px); align-items: center; }
 .product-shot { position: relative; border-radius: var(--r); overflow: hidden; box-shadow: 0 40px 80px -40px rgba(12,39,51,.6); }
-.product-shot img { width: 100%; aspect-ratio: 4/5; object-fit: cover; }
+.product-shot img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 .product-shot figcaption {
   position: absolute; left: 0; right: 0; bottom: 0; padding: 20px;
   background: linear-gradient(to top, rgba(4,20,31,.92), transparent);
