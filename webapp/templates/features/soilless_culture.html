@@ -143,10 +143,11 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "name": "Suderra Soilless Culture Management",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, automated fertigation, and growth stage tracking.",
+  "description": "{% filter escapejs %}{% trans "Soilless farming software for hydroponics, aquaponics, and vertical farming. Nutrient recipe management, EC/pH monitoring, fertilizer automation, and growth stage tracking." %}{% endfilter %}",
   "provider": {
     "@type": "Organization",
     "name": "Suderra AS",
@@ -159,29 +160,30 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What types of soilless systems does Suderra support?",
+      "name": "{% filter escapejs %}{% trans "What types of soilless systems does Suderra support?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra supports NFT, DWC, ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems."
+        "text": "{% filter escapejs %}{% trans "Suderra supports NFT (Nutrient Film Technique), DWC (Deep Water Culture), ebb-and-flow, drip irrigation, vertical farming towers, and aquaponics systems. The platform adapts to any soilless growing method." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "How many nutrient recipes are included?",
+      "name": "{% filter escapejs %}{% trans "How many nutrient recipes are included?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra includes 24+ preset nutrient recipes for common crops. You can also create unlimited custom recipes."
+        "text": "{% filter escapejs %}{% trans "Suderra includes 24+ preset nutrient recipes for common crops including leafy greens, herbs, tomatoes, peppers, strawberries, and more. You can also create unlimited custom recipes and share them across facilities." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Can Suderra manage aquaponics systems?",
+      "name": "{% filter escapejs %}{% trans "Can Suderra manage aquaponics systems?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The aquaculture and soilless culture modules work together seamlessly for aquaponics, managing fish health, water quality, and plant nutrition from one dashboard."
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra's modular design means the aquaculture and soilless culture modules work together seamlessly. Monitor fish health, water quality, and plant nutrition from one dashboard — with automated nutrient cycling between systems." %}{% endfilter %}"
       }
     }
   ]
@@ -191,9 +193,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
-    {"@type": "ListItem", "position": 2, "name": "Soilless Culture Management", "item": "https://suderra.com{{ request.path }}"}
+    {"@type": "ListItem", "position": 1, "name": "{% filter escapejs %}{% trans "Home" %}{% endfilter %}", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "{% filter escapejs %}{% trans "Soilless Culture" %}{% endfilter %}", "item": "https://suderra.com{{ request.path }}"}
   ]
 }
 </script>

@@ -1,6 +1,7 @@
 {% extends "base_clarity.html" %}
 {% load static %}
 {% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
 
 {% block title %}SUDERRA — {% trans "Recirculating Aquaculture, Engineered in Norway" %}{% endblock %}
 {% block description %}{% trans "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI." %}{% endblock %}
@@ -398,7 +399,8 @@
   "@context": "https://schema.org",
   "@type": "Product",
   "name": "Suderra Single Tank Design (RAS)",
-  "category": "Recirculating Aquaculture System",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
+  "category": "{% filter escapejs %}{% trans 'Recirculating Aquaculture System' %}{% endfilter %}",
   "brand": {"@type": "Brand", "name": "Suderra"},
   "description": "Octagonal tank-in-tank recirculating aquaculture system: >94% water recirculation, ~95% less piping, 12–40 m diameter, 60–1500 t/yr.",
   "manufacturer": {"@type": "Organization", "name": "Suderra AS", "url": "https://suderra.com"}

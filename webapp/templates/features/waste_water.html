@@ -143,10 +143,11 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "name": "Suderra Waste Water Treatment Software",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance.",
+  "description": "{% filter escapejs %}{% trans "Waste water treatment software for flow monitoring, water quality tracking, TSS management, chemical load optimization, and effluent compliance reporting." %}{% endfilter %}",
   "provider": {
     "@type": "Organization",
     "name": "Suderra AS",
@@ -159,29 +160,30 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What parameters can Suderra monitor in a waste water plant?",
+      "name": "{% filter escapejs %}{% trans "What parameters can Suderra monitor in a waste water plant?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS, conductivity, temperature, COD, BOD, and more — depending on the sensors installed."
+        "text": "{% filter escapejs %}{% trans "Suderra can monitor flow rate, pH, dissolved oxygen, turbidity, TSS (Total Suspended Solids), conductivity, temperature, chemical oxygen demand (COD), biological oxygen demand (BOD), and more — depending on the sensors installed at your facility." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Is this the same platform used for aquaculture?",
+      "name": "{% filter escapejs %}{% trans "Is this the same platform used for aquaculture?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Suderra uses a modular architecture. The waste water module builds on the same proven sensor integration, automation, and dashboard framework used in aquaculture."
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Can Suderra automate chemical dosing?",
+      "name": "{% filter escapejs %}{% trans "Can Suderra automate chemical dosing?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings, optimizing reagent amounts to reduce costs."
+        "text": "{% filter escapejs %}{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards." %}{% endfilter %}"
       }
     }
   ]
@@ -191,9 +193,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
-    {"@type": "ListItem", "position": 2, "name": "Waste Water Treatment", "item": "https://suderra.com{{ request.path }}"}
+    {"@type": "ListItem", "position": 1, "name": "{% filter escapejs %}{% trans "Home" %}{% endfilter %}", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "{% filter escapejs %}{% trans "Waste Water Treatment" %}{% endfilter %}", "item": "https://suderra.com{{ request.path }}"}
   ]
 }
 </script>

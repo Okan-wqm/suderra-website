@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /suderradmin/
+Disallow: /i18n/setlang/
 
 Sitemap: https://suderra.com/sitemap.xml

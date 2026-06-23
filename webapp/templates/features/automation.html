@@ -149,10 +149,11 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "name": "Suderra Smart Automation & IoT",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Visual automation builder for aquaculture and industrial IoT. Feeder automation, dosing control, and multi-protocol sensor integration.",
+  "description": "{% filter escapejs %}{% trans "Feeder automation, dosing automation, sensor IoT integration for aquaculture. Visual automation builder, multi-protocol support (MQTT, Modbus, OPC-UA), and AI-powered control." %}{% endfilter %}",
   "provider": {
     "@type": "Organization",
     "name": "Suderra AS",
@@ -165,37 +166,38 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What protocols does the IoT gateway support?",
+      "name": "{% filter escapejs %}{% trans "What protocols does the IoT gateway support?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands."
+        "text": "{% filter escapejs %}{% trans "Suderra's IoT gateway supports MQTT, Modbus (RTU and TCP), and OPC-UA. It works with 8+ pump and motor brands and auto-registers new sensors from all major manufacturers." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Do I need programming skills to create automations?",
+      "name": "{% filter escapejs %}{% trans "Do I need programming skills to create automations?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. The visual automation builder uses a drag-and-drop interface. Select triggers, add conditions, define actions — all visually."
+        "text": "{% filter escapejs %}{% trans "No. The visual automation builder uses a drag-and-drop interface. You select triggers (sensor thresholds, time schedules), add conditions, and define actions — all visually. No code needed." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "What happens if the internet goes down?",
+      "name": "{% filter escapejs %}{% trans "What happens if the internet goes down?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "All automation programs run locally on the edge gateway. Automation continues without interruption during internet outages."
+        "text": "{% filter escapejs %}{% trans "All automation programs run locally on the edge gateway. If internet connectivity drops, automation continues without interruption. Data is stored locally and syncs when connectivity returns." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Can I automate feeding schedules?",
+      "name": "{% filter escapejs %}{% trans "Can I automate feeding schedules?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Suderra creates feeding schedules based on water temperature, fish size, growth stage, and environmental conditions. AI optimizes feed amounts in real time."
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra's feeder automation creates schedules based on water temperature, fish size, growth stage, and environmental conditions. The AI optimizes feed amounts in real time to minimize FCR and waste." %}{% endfilter %}"
       }
     }
   ]
@@ -205,9 +207,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
-    {"@type": "ListItem", "position": 2, "name": "Smart Automation & IoT", "item": "https://suderra.com{{ request.path }}"}
+    {"@type": "ListItem", "position": 1, "name": "{% filter escapejs %}{% trans "Home" %}{% endfilter %}", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "{% filter escapejs %}{% trans "Smart Automation & IoT" %}{% endfilter %}", "item": "https://suderra.com{{ request.path }}"}
   ]
 }
 </script>

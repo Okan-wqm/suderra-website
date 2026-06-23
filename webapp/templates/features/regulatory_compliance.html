@@ -143,10 +143,11 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "name": "Suderra Regulatory Compliance Module",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web",
-  "description": "Automated regulatory compliance and reporting for Norwegian aquaculture. Mattilsynet-ready reports for sea lice, biomass, mortality, and escape incidents.",
+  "description": "{% filter escapejs %}{% trans "Automated Mattilsynet compliance, sea lice reporting, biomass reporting, escape reporting, and Norwegian fish farm regulatory tools. Stay compliant effortlessly." %}{% endfilter %}",
   "provider": {
     "@type": "Organization",
     "name": "Suderra AS",
@@ -159,29 +160,30 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What Norwegian regulations does Suderra support?",
+      "name": "{% filter escapejs %}{% trans "What Norwegian regulations does Suderra support?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra supports reporting requirements from Mattilsynet and the Directorate of Fisheries, including sea lice counting, biomass/MTB tracking, mortality events, and escape incidents."
+        "text": "{% filter escapejs %}{% trans "Suderra supports reporting requirements from Mattilsynet (Norwegian Food Safety Authority) and the Directorate of Fisheries, including sea lice counting reports, biomass/MTB tracking, mortality event logs, and escape incident reports." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Can Suderra generate reports for other countries' regulations?",
+      "name": "{% filter escapejs %}{% trans "Can Suderra generate reports for other countries' regulations?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions."
+        "text": "{% filter escapejs %}{% trans "The platform is designed with modular reporting. While it ships with Norwegian regulatory templates, custom report formats can be configured for other jurisdictions. Contact us to discuss your specific compliance needs." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "How does the sea lice monitoring work?",
+      "name": "{% filter escapejs %}{% trans "How does the sea lice monitoring work?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra tracks sea lice count data, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission."
+        "text": "{% filter escapejs %}{% trans "Suderra tracks sea lice count data from your monitoring activities, maintains historical trends per pen and site, and alerts you when counts approach the regulatory threshold. Reports are automatically formatted for Mattilsynet submission." %}{% endfilter %}"
       }
     }
   ]
@@ -191,9 +193,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
-    {"@type": "ListItem", "position": 2, "name": "Regulatory Compliance", "item": "https://suderra.com{{ request.path }}"}
+    {"@type": "ListItem", "position": 1, "name": "{% filter escapejs %}{% trans "Home" %}{% endfilter %}", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "{% filter escapejs %}{% trans "Regulatory Compliance" %}{% endfilter %}", "item": "https://suderra.com{{ request.path }}"}
   ]
 }
 </script>

@@ -158,10 +158,11 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "name": "Suderra Aquaculture Software Platform",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Web, iOS, Android",
-  "description": "Complete fish farm management software for RAS monitoring, water chemistry, feed management, batch tracking, and AI-powered dosing.",
+  "description": "{% filter escapejs %}{% trans "Norway-built aquaculture software for RAS monitoring, salmon farming, water chemistry, feed management, and real-time sensor data. Offline-first. AI-powered." %}{% endfilter %}",
   "provider": {
     "@type": "Organization",
     "name": "Suderra AS",
@@ -174,37 +175,38 @@
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What types of aquaculture facilities does Suderra support?",
+      "name": "{% filter escapejs %}{% trans "What types of aquaculture facilities does Suderra support?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms."
+        "text": "{% filter escapejs %}{% trans "Suderra supports recirculating aquaculture systems (RAS), flow-through facilities, and open-pen operations. The modular architecture adapts to any setup — from small hatcheries to large-scale salmon farms." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Can Suderra integrate with my existing sensors?",
+      "name": "{% filter escapejs %}{% trans "Can Suderra integrate with my existing sensors?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss."
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra supports MQTT, Modbus, and OPC-UA protocols and works with 8+ pump and motor brands including Siemens, ABB, Grundfos, and Danfoss. The system auto-registers new sensors from all major manufacturers." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "Does Suderra work without internet?",
+      "name": "{% filter escapejs %}{% trans "Does Suderra work without internet?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection."
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra is offline-first. The edge gateway stores all data locally at the facility. The mobile app also works without an internet connection. When connectivity returns, data syncs automatically — no data loss." %}{% endfilter %}"
       }
     },
     {
       "@type": "Question",
-      "name": "How does the AI work in Suderra?",
+      "name": "{% filter escapejs %}{% trans "How does the AI work in Suderra?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Suderra's AI engine uses published scientific formulas and peer-reviewed data. The AI Engineer detects anomalies and the AI Manager suggests corrective actions. Operators control what the AI can auto-execute."
+        "text": "{% filter escapejs %}{% trans "Suderra's AI engine uses published scientific formulas and peer-reviewed data for every calculation. The AI Engineer detects anomalies and identifies root causes. The AI Manager suggests corrective actions. Operators control what the AI can auto-execute." %}{% endfilter %}"
       }
     }
   ]
@@ -214,9 +216,10 @@
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
   "itemListElement": [
-    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://suderra.com{% url 'index' %}"},
-    {"@type": "ListItem", "position": 2, "name": "Aquaculture Software", "item": "https://suderra.com{{ request.path }}"}
+    {"@type": "ListItem", "position": 1, "name": "{% filter escapejs %}{% trans "Home" %}{% endfilter %}", "item": "https://suderra.com{% url 'index' %}"},
+    {"@type": "ListItem", "position": 2, "name": "{% filter escapejs %}{% trans "Aquaculture Software" %}{% endfilter %}", "item": "https://suderra.com{{ request.path }}"}
   ]
 }
 </script>
