@@ -16,8 +16,10 @@ echo "› collect static (hashed + compressed)"
 "$PYBIN" manage.py collectstatic --noinput
 
 echo "› restart app server"
-if systemctl list-units --type=service --all 2>/dev/null | grep -qi gunicorn; then
-  svc="$(systemctl list-units --type=service --all --plain --no-legend | grep -oi '[^ ]*gunicorn[^ ]*\.service' | head -1)"
+if $SUDO systemctl cat gunicorn >/dev/null 2>&1; then
+  $SUDO systemctl restart gunicorn && echo "  restarted gunicorn"
+elif systemctl list-unit-files --no-legend 2>/dev/null | grep -qi gunicorn; then
+  svc="$(systemctl list-unit-files --no-legend 2>/dev/null | grep -i gunicorn | awk '{print $1}' | head -1)"
   $SUDO systemctl restart "$svc" && echo "  restarted $svc"
 elif command -v supervisorctl >/dev/null 2>&1; then
   $SUDO supervisorctl restart all && echo "  restarted via supervisor"
