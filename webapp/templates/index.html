@@ -34,7 +34,7 @@
       <div class="ticker-item"><span class="t-label">Turb</span><span class="t-val" data-metric="turb" data-base="1.2" data-range="0.9">1.2</span><span class="t-unit">NTU</span></div>
     </div>
   </div>
-  <div class="scroll-hint reveal" aria-hidden="true">
+  <div class="scroll-hint" aria-hidden="true">
     <span>{% trans "Scroll to clarify" %}</span>
     <div class="scroll-rail"><i></i></div>
   </div>
@@ -88,42 +88,42 @@
     </header>
 
     <div class="bento">
-      <article class="cell cell-lg glass reveal">
+      <article class="cell cell-lg glass reveal" style="--i:0">
         <div class="cell-ico">{% include "partials/ico.html" with name="check" %}</div>
         <h3>{% trans "Tested & CFD-validated" %}</h3>
         <p>{% trans "Biofilter, flow and bottom-drain design proven in the field and in simulation — not theory." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:1">
         <div class="cell-ico">{% include "partials/ico.html" with name="loop" %}</div>
         <h3>{% trans "Closed-loop, low piping" %}</h3>
         <p>{% trans "Site-dependent 90%+ recirculation and ~90% less piping." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:2">
         <div class="cell-ico">{% include "partials/ico.html" with name="drop" %}</div>
         <h3>{% trans "Fresh, salt, any climate" %}</h3>
         <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell cell-feature glass reveal" style="--i:3">
         <div class="cell-ico">{% include "partials/ico.html" with name="pulse" %}</div>
         <h3>{% trans "AI-driven water quality" %}</h3>
         <p>{% trans "AI-assisted live water-quality panel for fast, data-driven decisions." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:4">
         <div class="cell-ico">{% include "partials/ico.html" with name="clock" %}</div>
         <h3>{% trans "Fully automatic feeding" %}</h3>
         <p>{% trans "Scheduled, self-dosing feed delivery across every tank." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:5">
         <div class="cell-ico">{% include "partials/ico.html" with name="tune" %}</div>
         <h3>{% trans "Species-adaptive tuning" %}</h3>
         <p>{% trans "Stocking density, water velocity and biofilter sizing tune dynamically per species." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:6">
         <div class="cell-ico">{% include "partials/ico.html" with name="team" %}</div>
         <h3>{% trans "24/7 with a lean team" %}</h3>
         <p>{% trans "The whole site runs around the clock with a 3–4 person crew." %}</p>
       </article>
-      <article class="cell glass reveal">
+      <article class="cell glass reveal" style="--i:7">
         <div class="cell-ico">{% include "partials/ico.html" with name="shield" %}</div>
         <h3>{% trans "Uptime & IP-secured" %}</h3>
         <p>{% trans "Service without downtime; proprietary, protected design and software." %}</p>
@@ -233,13 +233,13 @@
         <div class="how-card-illustration">
           <svg viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="60" height="44" rx="6" fill="rgba(12,123,147,0.06)" stroke="#0C7B93" stroke-width="1.2"/><text x="40" y="26" text-anchor="middle" fill="#0C7B93" font-size="6.5" font-weight="600" font-family="sans-serif">Aquaculture</text>
-            <text x="18" y="42" fill="#566d76" font-size="5" font-family="sans-serif">Batch mgmt</text><text x="18" y="50" fill="#566d76" font-size="5" font-family="sans-serif">Feed plans</text>
+            <text x="18" y="42" fill="#34505b" font-size="5" font-family="sans-serif">Batch mgmt</text><text x="18" y="50" fill="#34505b" font-size="5" font-family="sans-serif">Feed plans</text>
             <rect x="90" y="10" width="60" height="44" rx="6" fill="rgba(43,212,217,0.06)" stroke="#2bd4d9" stroke-width="1.2"/><text x="120" y="26" text-anchor="middle" fill="#2bd4d9" font-size="6.5" font-weight="600" font-family="sans-serif">Soilless</text>
-            <text x="98" y="42" fill="#566d76" font-size="5" font-family="sans-serif">Nutrient recipes</text><text x="98" y="50" fill="#566d76" font-size="5" font-family="sans-serif">Growth stages</text>
+            <text x="98" y="42" fill="#34505b" font-size="5" font-family="sans-serif">Nutrient recipes</text><text x="98" y="50" fill="#34505b" font-size="5" font-family="sans-serif">Growth stages</text>
             <rect x="10" y="64" width="60" height="44" rx="6" fill="rgba(12,39,51,0.06)" stroke="#0c2733" stroke-width="1.2"/><text x="40" y="80" text-anchor="middle" fill="#0c2733" font-size="6.5" font-weight="600" font-family="sans-serif">Waste Water</text>
-            <text x="18" y="96" fill="#566d76" font-size="5" font-family="sans-serif">Flow &amp; TSS</text><text x="18" y="104" fill="#566d76" font-size="5" font-family="sans-serif">Chemical load</text>
+            <text x="18" y="96" fill="#34505b" font-size="5" font-family="sans-serif">Flow &amp; TSS</text><text x="18" y="104" fill="#34505b" font-size="5" font-family="sans-serif">Chemical load</text>
             <rect x="90" y="64" width="60" height="44" rx="6" fill="rgba(12,123,147,0.03)" stroke="#0C7B93" stroke-width="1" stroke-dasharray="4,2"/><text x="120" y="82" text-anchor="middle" fill="#0C7B93" font-size="6" font-weight="600" font-family="sans-serif">SHARED CORE</text>
-            <text x="120" y="94" text-anchor="middle" fill="#566d76" font-size="5.5" font-family="sans-serif">70% reuse</text><text x="120" y="104" text-anchor="middle" fill="#566d76" font-size="5" font-family="sans-serif">per new sector</text>
+            <text x="120" y="94" text-anchor="middle" fill="#34505b" font-size="5.5" font-family="sans-serif">70% reuse</text><text x="120" y="104" text-anchor="middle" fill="#34505b" font-size="5" font-family="sans-serif">per new sector</text>
           </svg>
         </div>
         <h3>{% trans "Operations Modules" %}</h3>
@@ -273,7 +273,7 @@
             <rect x="82" y="35" width="24" height="18" rx="3" fill="rgba(43,212,217,0.08)" stroke="#2bd4d9" stroke-width="0.5"/><text x="94" y="43" text-anchor="middle" fill="#2bd4d9" font-size="4" font-family="sans-serif">O₂</text><text x="94" y="50" text-anchor="middle" fill="#2bd4d9" font-size="6" font-weight="700" font-family="sans-serif">8.4</text>
             <rect x="54" y="56" width="52" height="20" rx="2" fill="rgba(12,123,147,0.03)"/><polyline points="58,72 64,68 70,70 76,64 82,66 88,62 94,65 100,60" stroke="#0C7B93" stroke-width="1" fill="none" stroke-linecap="round"/>
             <rect x="54" y="80" width="52" height="16" rx="3" fill="rgba(239,90,71,0.08)" stroke="#ef5a47" stroke-width="0.5"/><circle cx="60" cy="88" r="3" fill="#ef5a47"/><text x="68" y="90" fill="#ef5a47" font-size="4.5" font-family="sans-serif">NH₃ alert</text>
-            <text x="25" y="68" text-anchor="middle" fill="#8aa0a8" font-size="4.5" font-weight="600" font-family="sans-serif">OFFLINE OK</text>
+            <text x="25" y="68" text-anchor="middle" fill="#566d76" font-size="4.5" font-weight="600" font-family="sans-serif">OFFLINE OK</text>
             <text x="134" y="68" text-anchor="middle" fill="#0C7B93" font-size="4.5" font-weight="600" font-family="sans-serif">AUTO SYNC</text>
           </svg>
         </div>
@@ -329,9 +329,9 @@
       <h2 class="sec-title">{% trans "Sector-agnostic. Protocol-native." %}</h2>
     </header>
     <div class="sector-grid">
-      <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go">→</span></a>
-      <a href="{% url 'feature_soilless' %}" class="sector glass reveal"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go">→</span></a>
-      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal" style="--i:0"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_soilless' %}" class="sector glass reveal" style="--i:1"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal" style="--i:2"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go">→</span></a>
     </div>
   </div>
 </section>

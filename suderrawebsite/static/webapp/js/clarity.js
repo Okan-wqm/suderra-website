@@ -72,8 +72,11 @@
       if (document.hidden) return;
       state.forEach(function (s) {
         var target = s.base + (Math.random() - 0.5) * s.range;
-        s.v += (target - s.v) * 0.5;
+        s.v += (target - s.v) * 0.18;
         s.el.textContent = s.v.toFixed(dec[s.m] != null ? dec[s.m] : 1);
+        s.el.classList.remove('tick');
+        void s.el.offsetWidth;   // restart the one-frame settle glow
+        s.el.classList.add('tick');
       });
     }, 1300);
   }
