@@ -2254,3 +2254,11 @@ msgstr "sisteminizi."
 
 msgid "Something went wrong on our end. Please try again in a moment."
 msgstr "Tarafımızda bir şeyler ters gitti. Lütfen birazdan tekrar deneyin."
+
+#: webapp/templates/index.html:299
+msgid ""
+"Indicative terms based on our dialogue with Eksfin — subject to change and "
+"may vary by project and country."
+msgstr ""
+"Eksfin ile yaptığımız görüşmelere dayanan gösterge niteliğindeki koşullardır"
+" — değişebilir; projeye ve ülkeye göre farklılık gösterebilir."

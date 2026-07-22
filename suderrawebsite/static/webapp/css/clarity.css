@@ -329,6 +329,7 @@ main { position: relative; z-index: 2; }
 .loop-no { font-family: var(--mono); font-size: .82rem; color: var(--teal); letter-spacing: .05em; }
 .loop-step h3 { font-family: var(--serif); font-weight: 500; font-size: 1.55rem; color: var(--ink); margin: var(--s-4) 0 var(--s-2); letter-spacing: -.012em; line-height: 1.12; }
 .loop-step p { font-size: .95rem; color: var(--ink-2); }
+.loop-note { display: block; margin-top: var(--s-3); font-size: .78rem; line-height: 1.5; color: var(--ink-3); font-style: italic; }
 
 /* ---- Partners ---- */
 .partners { text-align: start; }

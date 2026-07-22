@@ -2190,3 +2190,11 @@ msgstr "نظامك."
 
 msgid "Something went wrong on our end. Please try again in a moment."
 msgstr "حدث خطأ ما من جانبنا. يرجى المحاولة مرة أخرى بعد قليل."
+
+#: webapp/templates/index.html:299
+msgid ""
+"Indicative terms based on our dialogue with Eksfin — subject to change and "
+"may vary by project and country."
+msgstr ""
+"شروط استرشادية مبنية على محادثاتنا مع إكسفين — قابلة للتغيير وقد تختلف بحسب "
+"المشروع والبلد."

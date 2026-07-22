@@ -2246,3 +2246,11 @@ msgstr "systemet ditt."
 
 msgid "Something went wrong on our end. Please try again in a moment."
 msgstr "Noe gikk galt hos oss. Vennligst prøv igjen om litt."
+
+#: webapp/templates/index.html:299
+msgid ""
+"Indicative terms based on our dialogue with Eksfin — subject to change and "
+"may vary by project and country."
+msgstr ""
+"Veiledende betingelser basert på vår dialog med Eksfin — kan endres og vil "
+"variere med prosjekt og land."
