@@ -2198,3 +2198,71 @@ msgid ""
 msgstr ""
 "شروط استرشادية مبنية على محادثاتنا مع إكسفين — قابلة للتغيير وقد تختلف بحسب "
 "المشروع والبلد."
+
+#: webapp/templates/index.html:236
+msgid "Batch mgmt"
+msgstr "إدارة الدفعات"
+
+#: webapp/templates/index.html:236
+msgid "Feed plans"
+msgstr "خطط التغذية"
+
+#: webapp/templates/index.html:236
+msgid "Soilless"
+msgstr "بدون تربة"
+
+#: webapp/templates/index.html:236
+msgid "Nutrient recipes"
+msgstr "وصفات المغذيات"
+
+#: webapp/templates/index.html:236
+msgid "Growth stages"
+msgstr "مراحل النمو"
+
+#: webapp/templates/index.html:236
+msgid "Flow &amp; TSS"
+msgstr "التدفق وTSS"
+
+#: webapp/templates/index.html:236
+msgid "Chemical load"
+msgstr "الحمل الكيميائي"
+
+#: webapp/templates/index.html:236
+msgid "SHARED CORE"
+msgstr "نواة مشتركة"
+
+#: webapp/templates/index.html:236
+msgid "70%% reuse"
+msgstr "إعادة استخدام 70%"
+
+#: webapp/templates/index.html:236
+msgid "per new sector"
+msgstr "لكل قطاع جديد"
+
+#: webapp/templates/index.html:236
+msgid "ACTION"
+msgstr "إجراء"
+
+#: webapp/templates/index.html:236
+msgid "OUTPUT"
+msgstr "مخرجات"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ = f(pH, T°C) → dose"
+msgstr "NH₃ = f(pH, T°C) → الجرعة"
+
+#: webapp/templates/index.html:236
+msgid "ONLINE"
+msgstr "متصل"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ alert"
+msgstr "تنبيه NH₃"
+
+#: webapp/templates/index.html:236
+msgid "OFFLINE OK"
+msgstr "يعمل دون اتصال"
+
+#: webapp/templates/index.html:236
+msgid "AUTO SYNC"
+msgstr "مزامنة تلقائية"

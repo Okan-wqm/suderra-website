@@ -2254,3 +2254,71 @@ msgid ""
 msgstr ""
 "Veiledende betingelser basert på vår dialog med Eksfin — kan endres og vil "
 "variere med prosjekt og land."
+
+#: webapp/templates/index.html:236
+msgid "Batch mgmt"
+msgstr "Batch-styring"
+
+#: webapp/templates/index.html:236
+msgid "Feed plans"
+msgstr "Fôrplaner"
+
+#: webapp/templates/index.html:236
+msgid "Soilless"
+msgstr "Jordløs"
+
+#: webapp/templates/index.html:236
+msgid "Nutrient recipes"
+msgstr "Næringsoppskrifter"
+
+#: webapp/templates/index.html:236
+msgid "Growth stages"
+msgstr "Vekstfaser"
+
+#: webapp/templates/index.html:236
+msgid "Flow &amp; TSS"
+msgstr "Strømning og TSS"
+
+#: webapp/templates/index.html:236
+msgid "Chemical load"
+msgstr "Kjemisk belastning"
+
+#: webapp/templates/index.html:236
+msgid "SHARED CORE"
+msgstr "FELLES KJERNE"
+
+#: webapp/templates/index.html:236
+msgid "70%% reuse"
+msgstr "70 % gjenbruk"
+
+#: webapp/templates/index.html:236
+msgid "per new sector"
+msgstr "per ny sektor"
+
+#: webapp/templates/index.html:236
+msgid "ACTION"
+msgstr "HANDLING"
+
+#: webapp/templates/index.html:236
+msgid "OUTPUT"
+msgstr "RESULTAT"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ = f(pH, T°C) → dose"
+msgstr "NH₃ = f(pH, T°C) → dose"
+
+#: webapp/templates/index.html:236
+msgid "ONLINE"
+msgstr "PÅ NETT"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ alert"
+msgstr "NH₃-varsel"
+
+#: webapp/templates/index.html:236
+msgid "OFFLINE OK"
+msgstr "OFFLINE OK"
+
+#: webapp/templates/index.html:236
+msgid "AUTO SYNC"
+msgstr "AUTOSYNK"

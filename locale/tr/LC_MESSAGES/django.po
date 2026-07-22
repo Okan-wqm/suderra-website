@@ -2262,3 +2262,71 @@ msgid ""
 msgstr ""
 "Eksfin ile yaptığımız görüşmelere dayanan gösterge niteliğindeki koşullardır"
 " — değişebilir; projeye ve ülkeye göre farklılık gösterebilir."
+
+#: webapp/templates/index.html:236
+msgid "Batch mgmt"
+msgstr "Parti yönetimi"
+
+#: webapp/templates/index.html:236
+msgid "Feed plans"
+msgstr "Yem planları"
+
+#: webapp/templates/index.html:236
+msgid "Soilless"
+msgstr "Topraksız"
+
+#: webapp/templates/index.html:236
+msgid "Nutrient recipes"
+msgstr "Besin reçeteleri"
+
+#: webapp/templates/index.html:236
+msgid "Growth stages"
+msgstr "Büyüme evreleri"
+
+#: webapp/templates/index.html:236
+msgid "Flow &amp; TSS"
+msgstr "Debi ve TSS"
+
+#: webapp/templates/index.html:236
+msgid "Chemical load"
+msgstr "Kimyasal yük"
+
+#: webapp/templates/index.html:236
+msgid "SHARED CORE"
+msgstr "ORTAK ÇEKİRDEK"
+
+#: webapp/templates/index.html:236
+msgid "70%% reuse"
+msgstr "%70 yeniden kullanım"
+
+#: webapp/templates/index.html:236
+msgid "per new sector"
+msgstr "yeni sektör başına"
+
+#: webapp/templates/index.html:236
+msgid "ACTION"
+msgstr "AKSİYON"
+
+#: webapp/templates/index.html:236
+msgid "OUTPUT"
+msgstr "ÇIKTI"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ = f(pH, T°C) → dose"
+msgstr "NH₃ = f(pH, T°C) → doz"
+
+#: webapp/templates/index.html:236
+msgid "ONLINE"
+msgstr "ÇEVRİMİÇİ"
+
+#: webapp/templates/index.html:236
+msgid "NH₃ alert"
+msgstr "NH₃ alarmı"
+
+#: webapp/templates/index.html:236
+msgid "OFFLINE OK"
+msgstr "ÇEVRİMDIŞI OK"
+
+#: webapp/templates/index.html:236
+msgid "AUTO SYNC"
+msgstr "OTO. SENKRON"
