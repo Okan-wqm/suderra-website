@@ -32,29 +32,6 @@ msgstr "3–4 مراحل للمرشح الحيوي، بسعات تناسب نو�
 msgid "70%% reuse"
 msgstr "يعاد استخدام 70%"
 
-msgid "A large building for the same volume"
-msgstr "مبنى كبير للحجم نفسه"
-
-msgid "A large crew for round-the-clock operation"
-msgstr "طاقم كبير للتشغيل على مدار الساعة"
-
-msgid ""
-"A new system performs best when the team running it is well trained from the"
-" start."
-msgstr ""
-"يحقق النظام الجديد أفضل أداء حين يكون الفريق المشغّل له مدرَّبًا جيدًا منذ "
-"البداية."
-
-msgid ""
-"A night-time drop in oxygen or a slow rise in ammonia can go unnoticed until"
-" it affects the fish."
-msgstr ""
-"قد يمرّ انخفاض الأكسجين ليلًا أو الارتفاع التدريجي للأمونيا دون أن يُلاحَظ "
-"حتى يؤثر في الأسماك."
-
-msgid "A smooth handover"
-msgstr "تسليم سلس"
-
 msgid "A word from our founder"
 msgstr "كلمة المؤسس"
 
@@ -144,9 +121,6 @@ msgstr "جميع الحقوق محفوظة."
 msgid "An error occurred. Please try again later."
 msgstr "حدث خطأ. يُرجى المحاولة مرة أخرى لاحقًا."
 
-msgid "An existing site below expectations"
-msgstr "منشأة قائمة دون الأداء المتوقع"
-
 msgid ""
 "An independent audit of water balance, biosecurity and risk, with a "
 "prioritized roadmap."
@@ -202,9 +176,6 @@ msgstr ""
 
 msgid "Aquaculture software, RAS equipment and design services from Norway."
 msgstr "برمجيات الاستزراع المائي ومعدات RAS وخدمات التصميم، من النرويج."
-
-msgid "Arranging capital can delay an otherwise good project."
-msgstr "قد يؤدي تدبير رأس المال إلى تأخير مشروع جيد."
 
 msgid "Audit"
 msgstr "التقييم الفني"
@@ -347,13 +318,6 @@ msgstr ""
 "تصميم المرشح الحيوي والتدفق والمصرف السفلي مُثبَت في الميدان وبالمحاكاة "
 "معًا."
 
-msgid ""
-"Biofilters, oxygenation and degassing sized by rule of thumb can fall short "
-"as the biomass grows."
-msgstr ""
-"قد لا تكفي المرشحات الحيوية وأنظمة الأكسجة وإزالة الغازات المحجَّمة بالتقدير"
-" التقريبي مع نمو الكتلة الحيوية."
-
 msgid "Biofiltration"
 msgstr "الترشيح الحيوي"
 
@@ -409,14 +373,8 @@ msgstr "هل يمكن ربط Suderra بالمستشعرات الموجودة ل�
 msgid "Can Suderra manage aquaponics systems?"
 msgstr "هل يمكن لـ Suderra إدارة أنظمة الأكوابونيك؟"
 
-msgid "Challenge"
-msgstr "التحدي"
-
 msgid "Change language"
 msgstr "تغيير اللغة"
-
-msgid "Changes that are hard to catch in time"
-msgstr "تغيّرات يصعب رصدها في الوقت المناسب"
 
 msgid "Chemical Dosing Control"
 msgstr "التحكم في الجرعات الكيميائية"
@@ -441,9 +399,6 @@ msgstr "دائرة مغلقة وأنابيب أقل"
 
 msgid "Cold or warm, freshwater or marine; multi-species ready."
 msgstr "مياه باردة أو دافئة، عذبة أو بحرية، مع إمكانية استزراع أنواع متعددة."
-
-msgid "Common challenges"
-msgstr "تحديات شائعة"
 
 msgid "Company"
 msgstr "الشركة"
@@ -513,13 +468,6 @@ msgstr ""
 "وتنبيهات تلقائية عندما تخرج القيم عن النطاقات المثلى لمحصولك الحالي."
 
 msgid ""
-"Continuous monitoring and early alerts flag the change in time, explain the "
-"likely cause and suggest what to do."
-msgstr ""
-"تكشف المراقبة المستمرة والتنبيهات المبكرة التغيّر في الوقت المناسب، وتوضّح "
-"سببه المرجّح، وتقترح الإجراء المناسب."
-
-msgid ""
 "Continuous monitoring of discharge quality against regulatory limits. "
 "Automated compliance reports and proactive alerts when parameters approach "
 "thresholds."
@@ -527,31 +475,8 @@ msgstr ""
 "مراقبة مستمرة لجودة المياه المصرّفة مقارنةً بالحدود التنظيمية، مع تقارير "
 "امتثال آلية وتنبيهات استباقية عندما تقترب المؤشرات من الحدود المسموح بها."
 
-msgid "Conventional RAS"
-msgstr "أنظمة RAS التقليدية"
-
-msgid ""
-"Conventional RAS often means many tanks, long pipe runs, a large building "
-"and a large crew. The Single Tank Design brings everything together in one "
-"CFD-validated tank-in-tank unit that recirculates over 94%% of its water, "
-"lowering both investment and operating costs."
-msgstr ""
-"غالبًا ما تتطلب أنظمة RAS التقليدية أحواضًا كثيرة، وأنابيب طويلة، ومبنى "
-"كبيرًا، وطاقمًا كبيرًا. أما تصميم الحوض الواحد فيجمع ذلك كله في وحدة واحدة "
-"بتصميم حوض داخل حوض، مُثبَتة بمحاكاة CFD، تعيد تدوير أكثر من 94% من مياهها، "
-"فتنخفض تكاليف الاستثمار والتشغيل معًا."
-
-msgid "Correctly sized water treatment"
-msgstr "تحديد سعات معالجة المياه بدقة"
-
-msgid "Data spread across many systems"
-msgstr "بيانات موزّعة على أنظمة متعددة"
-
 msgid "Deadline Management"
 msgstr "إدارة المواعيد النهائية"
-
-msgid "Decisions you can explain"
-msgstr "قرارات يمكنك تفسيرها"
 
 msgid "Decline"
 msgstr "رفض"
@@ -681,6 +606,9 @@ msgstr ""
 "لكل عميل قاعدة بيانات منفصلة خاصة به، فتبقى بياناتك دائمًا معزولة عن بيانات "
 "العملاء الآخرين."
 
+msgid "Every project is designed"
+msgstr "نصمّم كل مشروع"
+
 msgid "Experience"
 msgstr "الخبرة"
 
@@ -747,13 +675,6 @@ msgid ""
 msgstr ""
 "مراقبة التدفق والحمل الكيميائي وإدارة المياه المصرّفة، مع إمكانية تتبّع "
 "كاملة."
-
-msgid ""
-"Fluctuating water quality, losses or rising costs at an existing facility, "
-"without a clear cause."
-msgstr ""
-"تقلّبات في جودة المياه، أو خسائر، أو تكاليف متزايدة في منشأة قائمة، دون سبب "
-"واضح."
 
 msgid "Frequently Asked Questions"
 msgstr "الأسئلة الشائعة"
@@ -829,17 +750,11 @@ msgstr "مراحل النمو"
 msgid "Headquarters"
 msgstr "المقر الرئيسي"
 
-msgid "High build cost per cubic metre"
-msgstr "تكلفة إنشاء مرتفعة لكل متر مكعب"
-
 msgid "Home"
 msgstr "الرئيسية"
 
 msgid "How It Works"
 msgstr "آلية العمل"
-
-msgid "How Suderra helps"
-msgstr "كيف تساعد Suderra"
 
 msgid "How does the AI work in Suderra?"
 msgstr "كيف يعمل الذكاء الاصطناعي في Suderra؟"
@@ -849,9 +764,6 @@ msgstr "كيف تعمل مراقبة قمل البحر؟"
 
 msgid "How many nutrient recipes are included?"
 msgstr "كم عدد وصفات المغذيات المضمّنة؟"
-
-msgid "How we help"
-msgstr "كيف نساعدك"
 
 msgid "How we work"
 msgstr "طريقة عملنا"
@@ -964,13 +876,6 @@ msgstr "لتر/ث"
 msgid "Less piping"
 msgstr "أنابيب أقل"
 
-msgid ""
-"Lice counts, biomass and mortality figures are often compiled by hand for "
-"the authorities."
-msgstr ""
-"كثيرًا ما تُجمع أعداد قمل البحر وبيانات الكتلة الحيوية والنفوق يدويًا "
-"لتقديمها إلى الجهات الرقابية."
-
 msgid "Live"
 msgstr "مباشر"
 
@@ -982,9 +887,6 @@ msgstr ""
 
 msgid "Lower investment"
 msgstr "استثمار أقل"
-
-msgid "Make better use of"
-msgstr "استفد بشكل أفضل"
 
 msgid ""
 "Manage hydroponics, aquaponics, and vertical farming operations with "
@@ -1009,19 +911,6 @@ msgstr ""
 "المذاب، وقيمة pH، والأمونيا، ودرجة الحرارة، ومعامل تحويل العلف، ومعدلات "
 "النفوق. وتتصل منصة Suderra لبرمجيات الاستزراع المائي بكل مستشعر في منشأتك، "
 "وتجمع البيانات كلها في نظام واحد."
-
-msgid ""
-"Many issues in RAS facilities can be prevented at the design stage: "
-"correctly sized biofilters, good water flow, secured financing and a well-"
-"trained team. We support you at every step, from the first drawing to a "
-"running farm."
-msgstr ""
-"يمكن تفادي كثير من المشكلات في منشآت RAS منذ مرحلة التصميم: مرشحات حيوية "
-"بسعات صحيحة، وتدفق جيد للمياه، وتمويل مؤمَّن، وفريق مدرَّب جيدًا. ونحن معك "
-"في كل خطوة، من المخطط الأول إلى مزرعة قيد التشغيل."
-
-msgid "Many separate tanks and long pipe runs"
-msgstr "أحواض منفصلة كثيرة وأنابيب طويلة"
 
 msgid ""
 "Mattilsynet-format reports are prepared from your live data, saving hours of"
@@ -1229,13 +1118,6 @@ msgstr ""
 "أسبابها الجذرية، ويقترح الإجراءات التصحيحية."
 
 msgid ""
-"Our AI is built on published science: every recommendation is traceable, and"
-" you decide what may run automatically."
-msgstr ""
-"يقوم ذكاؤنا الاصطناعي على أبحاث علمية منشورة: كل توصية يمكن تتبّع مصدرها، "
-"وأنت من يقرر ما يُسمح بتنفيذه تلقائيًا."
-
-msgid ""
 "Our AI uses published scientific formulas — not black-box models. Every "
 "recommendation is traceable and explainable. Operators decide what the AI "
 "can auto-execute."
@@ -1243,6 +1125,21 @@ msgstr ""
 "يعتمد الذكاء الاصطناعي لدينا على معادلات علمية منشورة، لا على نماذج «الصندوق"
 " الأسود» المبهمة. كل توصية يمكن تتبّع أساسها وتفسيرها، والمشغّلون هم من "
 "يحددون ما يمكن للذكاء الاصطناعي تنفيذه تلقائيًا."
+
+msgid "Our approach"
+msgstr "نهجنا"
+
+msgid ""
+"Our system connects to the sensors and equipment already on your farm, "
+"monitors water quality in every tank around the clock and alerts your team "
+"early when a value changes — with clear, science-based recommendations."
+msgstr ""
+"يتصل نظامنا بالمستشعرات والمعدات الموجودة في مزرعتك، ويراقب جودة المياه في "
+"كل حوض على مدار الساعة، وينبّه فريقك مبكرًا عند تغيّر أي قيمة — مع توصيات "
+"واضحة قائمة على أسس علمية."
+
+msgid "Over 94%% of the water recirculated"
+msgstr "إعادة تدوير أكثر من 94% من المياه"
 
 msgid ""
 "Over 94%% recirculation, with site-dependent water exchange of 5%% or less."
@@ -1266,15 +1163,6 @@ msgstr ""
 
 msgid "Planning a new facility?"
 msgstr "هل تخطط لإنشاء منشأة جديدة؟"
-
-msgid ""
-"Planning a new farm? Many costs and risks are decided at the design stage. "
-"We supply the Single Tank system and design the facility around it, so it "
-"can run efficiently from day one."
-msgstr ""
-"هل تخطط لإنشاء مزرعة جديدة؟ يتحدد كثير من التكاليف والمخاطر في مرحلة "
-"التصميم. نورّد نظام الحوض الواحد ونصمّم المنشأة من حوله، لتعمل بكفاءة منذ "
-"اليوم الأول."
 
 msgid "Platform"
 msgstr "المنصة"
@@ -1309,9 +1197,6 @@ msgstr "لوحة تحكم العمليات"
 
 msgid "Production capacity"
 msgstr "الطاقة الإنتاجية"
-
-msgid "Pumping losses across the whole loop"
-msgstr "فواقد ضخ على امتداد الدورة كاملة"
 
 msgid "RAS Design & Engineering"
 msgstr "تصميم وهندسة أنظمة RAS"
@@ -1377,12 +1262,6 @@ msgstr ""
 " مستقل للمنشآت القائمة، وتمويل بدعم من Eksfin، ودعم الإنشاء، والتدريب "
 "والتشغيل."
 
-msgid ""
-"Recommendations are only useful when your team understands them and can "
-"justify them to auditors."
-msgstr ""
-"لا تكون التوصيات مفيدة إلا حين يفهمها فريقك ويستطيع تبريرها أمام المدقّقين."
-
 msgid "Reduce Chemical Costs"
 msgstr "خفض تكاليف المواد الكيميائية"
 
@@ -1409,13 +1288,6 @@ msgstr ""
 "لا تتوفر لمزارع الأسماك النائية دائمًا خدمة إنترنت موثوقة. لذلك تخزّن "
 "بوابتنا الطرفية البيانات محليًا، ويعمل تطبيق الجوال حتى دون تغطية. ولن تفقد "
 "أي بيانات، مهما حدث."
-
-msgid ""
-"Reports are generated from your live data in the format Mattilsynet "
-"requires, in a single step."
-msgstr ""
-"تُعدّ التقارير من بياناتك اللحظية بالصيغة التي تشترطها Mattilsynet، في خطوة "
-"واحدة."
 
 msgid "Reports in a few clicks"
 msgstr "تقارير ببضع نقرات"
@@ -1463,9 +1335,6 @@ msgstr ""
 msgid "Sectors"
 msgstr "القطاعات"
 
-msgid "Securing financing"
-msgstr "تأمين التمويل"
-
 msgid "See scale scenarios"
 msgstr "اطّلع على سيناريوهات الأحجام"
 
@@ -1487,13 +1356,6 @@ msgid ""
 msgstr ""
 "ربط المستشعرات وأتمتة التغذية والتحكم في الجرعات — على المعدات التي تعمل بها"
 " حاليًا."
-
-msgid ""
-"Sensors from different suppliers, control systems, logbooks and spreadsheets"
-" make it hard to see the full picture."
-msgstr ""
-"مع تعدّد موردي المستشعرات وأنظمة التحكم وسجلات التشغيل وجداول البيانات، يصعب"
-" الحصول على صورة كاملة."
 
 msgid "Server Error"
 msgstr "خطأ في الخادم"
@@ -1597,9 +1459,6 @@ msgstr ""
 "برمجيات للزراعة بدون تربة: الزراعة المائية والأكوابونيك والزراعة العمودية. "
 "إدارة وصفات المغذيات، ومراقبة EC/pH، وأتمتة التسميد، وتتبّع مراحل النمو."
 
-msgid "Solve it at the design stage,"
-msgstr "عالِج التحديات في مرحلة التصميم،"
-
 msgid "Something went wrong on our end. Please try again in a moment."
 msgstr "حدث خطأ من جهتنا. يُرجى المحاولة مرة أخرى بعد قليل."
 
@@ -1650,13 +1509,6 @@ msgstr ""
 "تطوّر Suderra AS منصة Suderra Edge وذكاءها الاصطناعي العلمي القابل للتحقق "
 "للاستزراع المائي، مدعومةً بخبرة عملية في هندسة RAS. Rambergveien 18، "
 "Tønsberg، النرويج."
-
-msgid ""
-"Suderra Edge connects to sensors over MQTT, Modbus or OPC-UA and brings "
-"every tank together on one screen."
-msgstr ""
-"يتصل Suderra Edge بالمستشعرات عبر MQTT أو Modbus أو OPC-UA، ويجمع جميع "
-"الأحواض على شاشة واحدة."
 
 msgid ""
 "Suderra Edge is a gateway installed at your farm. It reads every sensor and "
@@ -1715,16 +1567,6 @@ msgstr ""
 "(إجمالي المواد الصلبة العالقة) والتوصيل الكهربائي ودرجة الحرارة والطلب "
 "الكيميائي على الأكسجين (COD) والطلب الحيوي على الأكسجين (BOD) وغيرها — بحسب "
 "المستشعرات المركّبة في منشأتك."
-
-msgid ""
-"Suderra connects to the sensors and equipment you already have, monitors "
-"water quality in every tank around the clock and alerts you early when "
-"something changes — with clear, science-based recommendations your team can "
-"act on."
-msgstr ""
-"تتصل Suderra بالمستشعرات والمعدات الموجودة لديك، وتراقب جودة المياه في كل "
-"حوض على مدار الساعة، وتنبّهك مبكرًا عند حدوث أي تغيّر — مع توصيات واضحة "
-"قائمة على أسس علمية يستطيع فريقك العمل بها."
 
 msgid ""
 "Suderra helps fish farms use their water data more efficiently: Suderra Edge"
@@ -1876,6 +1718,16 @@ msgid "The Single Tank Design"
 msgstr "تصميم الحوض الواحد"
 
 msgid ""
+"The Single Tank Design is our approach to RAS: one CFD-validated tank-in-"
+"tank unit that recirculates over 94%% of its water — with less piping, a "
+"smaller footprint and a smaller crew, built around your species, site and "
+"scale."
+msgstr ""
+"تصميم الحوض الواحد هو نهجنا في أنظمة RAS: وحدة واحدة بتصميم حوض داخل حوض، "
+"مُثبَتة بمحاكاة CFD، تعيد تدوير أكثر من 94% من مياهها — بأنابيب أقل، ومساحة "
+"مطلوبة أقل، وطاقم أصغر، ومصمَّمة وفق نوع أسماكك وموقعك وحجم مشروعك."
+
+msgid ""
 "The Suderra Single Tank Design: a CFD-validated octagonal tank-in-tank RAS "
 "that recirculates over 94%% of its water — 12–40 m diameter, 60–1500 t/yr, "
 "about 30–35%% lower investment."
@@ -1929,9 +1781,6 @@ msgstr ""
 msgid "The whole site runs around the clock with a 3–4 person crew."
 msgstr "تعمل المنشأة بالكامل على مدار الساعة بطاقم من 3–4 أشخاص."
 
-msgid "Time-consuming reporting"
-msgstr "إعداد تقارير يستغرق وقتًا طويلًا"
-
 msgid "Toggle Menu"
 msgstr "فتح القائمة أو إغلاقها"
 
@@ -1972,9 +1821,6 @@ msgid ""
 msgstr ""
 "تتبّع المحصول في كل دورة زراعية، وقارن بين الوصفات، وحسّن ظروف النمو. رؤى "
 "مبنية على البيانات تساعدك على رفع كفاءة الإنتاج مع مرور الوقت."
-
-msgid "Turn your water data"
-msgstr "حوِّل بيانات مياهك"
 
 msgid "Under 2 kW per kg of fish (excl. heat)"
 msgstr "أقل من 2 كيلوواط لكل كجم من الأسماك (دون التدفئة)"
@@ -2073,8 +1919,34 @@ msgstr "تصميم سرعة المياه والمصرف السفلي، مُثب�
 msgid "Water-chemistry stability diagram"
 msgstr "مخطط استقرار كيمياء المياه"
 
+msgid ""
+"We also supply the Single Tank system and design the whole facility around "
+"it, so new farms run efficiently from day one."
+msgstr ""
+"كما نورّد نظام الحوض الواحد ونصمّم المنشأة بالكامل من حوله، لتعمل المزارع "
+"الجديدة بكفاءة منذ اليوم الأول."
+
+msgid "We audit existing facilities"
+msgstr "نقيّم المنشآت القائمة"
+
+msgid ""
+"We design RAS facilities around your species, site and scale, and stay with "
+"you from the first drawing to a running farm: design, independent audits, "
+"Eksfin-backed financing, construction support and training."
+msgstr ""
+"نصمّم منشآت RAS وفق نوع أسماكك وموقعك وحجم مشروعك، ونبقى معك من المخطط الأول"
+" إلى مزرعة قيد التشغيل: التصميم، والتقييم الفني المستقل، والتمويل بدعم من "
+"Eksfin، ودعم الإنشاء، والتدريب."
+
 msgid "We design, audit"
 msgstr "نصمّم ونقيّم"
+
+msgid ""
+"We designed the Single Tank around one idea: everything a RAS needs, in one "
+"compact, CFD-validated unit."
+msgstr ""
+"صمّمنا نظام الحوض الواحد انطلاقًا من فكرة واحدة: كل ما يحتاجه نظام RAS في "
+"وحدة واحدة مدمجة ومُثبَتة بمحاكاة CFD."
 
 msgid ""
 "We develop the Suderra Edge platform and its AI, and support it with hands-"
@@ -2085,6 +1957,9 @@ msgstr ""
 "نطوّر منصة Suderra Edge والذكاء الاصطناعي الخاص بها، وندعمها بخبرة عملية في "
 "أنظمة الاستزراع المائي بإعادة تدوير المياه (RAS). هدفنا أن نساعد المنتجين "
 "على تصميم منشآتهم وإنشائها وتشغيلها بثقة. ويقع مقرّنا في Tønsberg بالنرويج."
+
+msgid "We help secure financing"
+msgstr "نساعد في تأمين التمويل"
 
 msgid ""
 "We help you prepare and secure export financing backed by Eksfin, Norway's "
@@ -2107,6 +1982,9 @@ msgstr ""
 "نساعدك على تأمين تمويل بدعم من Eksfin — بنسبة 90% للمشاريع الأقل من 2 مليون "
 "يورو، و60–70% للمشاريع الأكبر."
 
+msgid "We size every system individually"
+msgstr "نحدد سعات كل نظام على حدة"
+
 msgid ""
 "We size flow, biofiltration, oxygenation and degassing to your species and "
 "density — and validate the design in CFD."
@@ -2119,12 +1997,25 @@ msgid ""
 "system with confidence."
 msgstr "ندعم الإنشاء والتشغيل التجريبي، وندرّب فريقك على تشغيل النظام بثقة."
 
+msgid "We train your team"
+msgstr "ندرّب فريقك"
+
+msgid "We turn water data"
+msgstr "نحوّل بيانات المياه"
+
 msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
 "browse, you consent to our use of cookies."
 msgstr ""
 "نستخدم ملفات تعريف الارتباط (الكوكيز) لتحسين تجربتك على موقعنا. وباستمرارك "
 "في التصفح، فإنك توافق على استخدامنا لها."
+
+msgid ""
+"We would be glad to show you how our system and services can support your "
+"farm — whether you are monitoring an existing site or planning a new one."
+msgstr ""
+"يسعدنا أن نعرض عليك كيف يمكن لنظامنا وخدماتنا دعم مزرعتك — سواء كنت تراقب "
+"منشأة قائمة أو تخطط لمنشأة جديدة."
 
 msgid "What Norwegian regulations does Suderra support?"
 msgstr "ما اللوائح النرويجية التي تدعمها Suderra؟"
@@ -2179,9 +2070,6 @@ msgstr "لماذا تختار Suderra لمعالجة مياه الصرف؟"
 
 msgid "Why Suderra"
 msgstr "لماذا Suderra؟"
-
-msgid "Why it matters"
-msgstr "ما الذي يعنيه ذلك عمليًا"
 
 msgid "Work with us"
 msgstr "لنعمل معًا"
@@ -2277,6 +2165,9 @@ msgstr "مزرعتك بالكامل"
 msgid "and monitor."
 msgstr "ونراقب."
 
+msgid "around your species and site."
+msgstr "وفق نوع أسماكك وموقعك."
+
 msgid "easier to run."
 msgstr "وتشغيل أيسر."
 
@@ -2289,11 +2180,8 @@ msgstr "للاستزراع المائي المستدام."
 msgid "from the same team."
 msgstr "من الفريق نفسه."
 
-msgid "into better decisions."
-msgstr "إلى قرارات أفضل."
-
-msgid "not after start-up."
-msgstr "لا بعد بدء التشغيل."
+msgid "into clear decisions."
+msgstr "إلى قرارات واضحة."
 
 msgid "on one screen."
 msgstr "على شاشة واحدة."
@@ -2306,9 +2194,6 @@ msgstr "النطاق الآمن"
 
 msgid "t/yr"
 msgstr "طن/سنة"
-
-msgid "the data you already have."
-msgstr "من البيانات المتوفرة لديك."
 
 msgid "to a full facility."
 msgstr "إلى منشأة متكاملة."
