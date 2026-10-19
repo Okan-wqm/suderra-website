@@ -23,7 +23,7 @@
     </nav>
     <span class="fhero-tag reveal">{% trans "Equipment" %} · {% trans "Recirculating Aquaculture System" %}</span>
     <h1 class="fhero-title reveal">{% trans "The Single Tank" %} <em class="serif">{% trans "Design." %}</em></h1>
-    <p class="fhero-sub reveal">{% trans "Conventional RAS often means many tanks, long pipe runs, a large building and a large crew. The Single Tank Design brings everything together in one CFD-validated tank-in-tank unit that recirculates over 94% of its water, lowering both investment and operating costs." %}</p>
+    <p class="fhero-sub reveal">{% trans "The Single Tank Design is our approach to RAS: one CFD-validated tank-in-tank unit that recirculates over 94% of its water — with less piping, a smaller footprint and a smaller crew, built around your species, site and scale." %}</p>
     <div class="fhero-cta reveal">
       <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
       <a href="#scale" class="btn btn-ghost">{% trans "See scale scenarios" %}</a>
@@ -31,35 +31,22 @@
   </div>
 </section>
 
-<!-- ============ WHY — conventional RAS vs Single Tank ============ -->
+<!-- ============ OUR DESIGN ============ -->
 <section class="fsec section" id="why">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "Why it matters" %}</span>
+      <span class="sec-tag">{% trans "Our approach" %}</span>
       <h2 class="sec-title">{% trans "Simpler to build," %} <em class="serif">{% trans "easier to run." %}</em></h2>
+      <p class="sec-lede">{% trans "We designed the Single Tank around one idea: everything a RAS needs, in one compact, CFD-validated unit." %}</p>
     </header>
-    <div class="compare">
-      <div class="compare-col is-problem reveal" style="--i:0">
-        <span class="ps-label">{% trans "Conventional RAS" %}</span>
-        <ul>
-          <li>{% trans "Many separate tanks and long pipe runs" %}</li>
-          <li>{% trans "A large building for the same volume" %}</li>
-          <li>{% trans "High build cost per cubic metre" %}</li>
-          <li>{% trans "Pumping losses across the whole loop" %}</li>
-          <li>{% trans "A large crew for round-the-clock operation" %}</li>
-        </ul>
-      </div>
-      <div class="compare-col is-solution reveal" style="--i:1">
-        <span class="ps-label">{% trans "Single Tank Design" %}</span>
-        <ul>
-          <li>{% trans "One tank-in-tank unit with 95% less piping" %}</li>
-          <li>{% trans "15–20% smaller footprint with the octagonal geometry" %}</li>
-          <li>{% trans "About 30–35% lower investment" %}</li>
-          <li>{% trans "Under 2 kW per kg of fish (excl. heat)" %}</li>
-          <li>{% trans "24/7 operation with a 3–4 person crew" %}</li>
-        </ul>
-      </div>
-    </div>
+    <ul class="benefit-list reveal">
+        <li>{% trans "One tank-in-tank unit with 95% less piping" %}</li>
+        <li>{% trans "15–20% smaller footprint with the octagonal geometry" %}</li>
+        <li>{% trans "About 30–35% lower investment" %}</li>
+        <li>{% trans "Under 2 kW per kg of fish (excl. heat)" %}</li>
+        <li>{% trans "24/7 operation with a 3–4 person crew" %}</li>
+        <li>{% trans "Over 94% of the water recirculated" %}</li>
+    </ul>
   </div>
 </section>
 

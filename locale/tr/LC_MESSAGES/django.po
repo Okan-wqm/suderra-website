@@ -35,29 +35,6 @@ msgstr ""
 msgid "70%% reuse"
 msgstr "%70 ortak kod"
 
-msgid "A large building for the same volume"
-msgstr "Aynı hacim için büyük bir bina"
-
-msgid "A large crew for round-the-clock operation"
-msgstr "7/24 işletme için kalabalık ekip"
-
-msgid ""
-"A new system performs best when the team running it is well trained from the"
-" start."
-msgstr ""
-"Yeni bir sistem, onu işletecek ekip en baştan iyi eğitildiğinde en iyi "
-"performansı gösterir."
-
-msgid ""
-"A night-time drop in oxygen or a slow rise in ammonia can go unnoticed until"
-" it affects the fish."
-msgstr ""
-"Gece yaşanan bir oksijen düşüşü ya da amonyaktaki yavaş bir artış, balıkları"
-" etkileyene kadar fark edilmeyebilir."
-
-msgid "A smooth handover"
-msgstr "Sorunsuz bir devir teslim"
-
 msgid "A word from our founder"
 msgstr "Kurucumuzun mesajı"
 
@@ -146,9 +123,6 @@ msgstr "Tüm hakları saklıdır."
 msgid "An error occurred. Please try again later."
 msgstr "Bir hata oluştu. Lütfen daha sonra tekrar deneyin."
 
-msgid "An existing site below expectations"
-msgstr "Beklenen performansı gösteremeyen tesis"
-
 msgid ""
 "An independent audit of water balance, biosecurity and risk, with a "
 "prioritized roadmap."
@@ -204,9 +178,6 @@ msgstr ""
 
 msgid "Aquaculture software, RAS equipment and design services from Norway."
 msgstr "Norveç'ten akuakültür yazılımı, RAS ekipmanı ve tasarım hizmetleri."
-
-msgid "Arranging capital can delay an otherwise good project."
-msgstr "Sermayenin bulunması, iyi bir projeyi bile geciktirebilir."
 
 msgid "Audit"
 msgstr "Denetim"
@@ -353,13 +324,6 @@ msgstr ""
 "Biyofiltre, akış ve dip drenajı tasarımı hem sahada hem de simülasyonda "
 "doğrulandı."
 
-msgid ""
-"Biofilters, oxygenation and degassing sized by rule of thumb can fall short "
-"as the biomass grows."
-msgstr ""
-"Kabaca boyutlandırılan biyofiltre, oksijenlendirme ve gaz giderme sistemleri"
-" biyokütle arttıkça yetersiz kalabilir."
-
 msgid "Biofiltration"
 msgstr "Biyofiltrasyon"
 
@@ -416,14 +380,8 @@ msgstr "Suderra mevcut sensörlerimle entegre çalışabilir mi?"
 msgid "Can Suderra manage aquaponics systems?"
 msgstr "Suderra akuaponik sistemleri yönetebilir mi?"
 
-msgid "Challenge"
-msgstr "Zorluk"
-
 msgid "Change language"
 msgstr "Dili değiştir"
-
-msgid "Changes that are hard to catch in time"
-msgstr "Zamanında fark edilmesi zor değişimler"
 
 msgid "Chemical Dosing Control"
 msgstr "Kimyasal dozlama kontrolü"
@@ -449,9 +407,6 @@ msgstr "Kapalı devre, az boru"
 msgid "Cold or warm, freshwater or marine; multi-species ready."
 msgstr ""
 "Soğuk ya da sıcak su, tatlı su ya da deniz suyu; çok türlü üretime hazır."
-
-msgid "Common challenges"
-msgstr "Sık karşılaşılan zorluklar"
 
 msgid "Company"
 msgstr "Şirket"
@@ -525,13 +480,6 @@ msgstr ""
 "otomatik uyarı."
 
 msgid ""
-"Continuous monitoring and early alerts flag the change in time, explain the "
-"likely cause and suggest what to do."
-msgstr ""
-"Sürekli izleme ve erken uyarılar değişimi zamanında bildirir, olası nedeni "
-"açıklar ve ne yapılması gerektiğini önerir."
-
-msgid ""
 "Continuous monitoring of discharge quality against regulatory limits. "
 "Automated compliance reports and proactive alerts when parameters approach "
 "thresholds."
@@ -539,32 +487,8 @@ msgstr ""
 "Deşarj kalitesinin yasal sınır değerlere göre sürekli izlenmesi. Otomatik "
 "uyum raporları ve parametreler eşiğe yaklaştığında proaktif uyarılar."
 
-msgid "Conventional RAS"
-msgstr "Klasik RAS"
-
-msgid ""
-"Conventional RAS often means many tanks, long pipe runs, a large building "
-"and a large crew. The Single Tank Design brings everything together in one "
-"CFD-validated tank-in-tank unit that recirculates over 94%% of its water, "
-"lowering both investment and operating costs."
-msgstr ""
-"Klasik RAS tesisleri genellikle çok sayıda tank, uzun boru hatları, büyük "
-"bir bina ve kalabalık bir ekip gerektirir. Tek Tank Tasarımı tüm bunları, "
-"suyunun %94'ünden fazlasını yeniden kullanan ve CFD ile doğrulanmış tek bir "
-"tank içinde tank ünitesinde birleştirir; böylece hem yatırım hem de işletme "
-"maliyetleri düşer."
-
-msgid "Correctly sized water treatment"
-msgstr "Su arıtımının doğru boyutlandırılması"
-
-msgid "Data spread across many systems"
-msgstr "Farklı sistemlere dağılmış veriler"
-
 msgid "Deadline Management"
 msgstr "Son tarih takibi"
-
-msgid "Decisions you can explain"
-msgstr "Gerekçesi açık kararlar"
 
 msgid "Decline"
 msgstr "Reddet"
@@ -697,6 +621,9 @@ msgstr ""
 "Her kurumun ayrı bir veritabanı vardır; verileriniz diğer kurumların "
 "verilerinden her zaman ayrı tutulur."
 
+msgid "Every project is designed"
+msgstr "Her projeyi"
+
 msgid "Experience"
 msgstr "Deneyim"
 
@@ -762,13 +689,6 @@ msgid ""
 "Flow monitoring, chemical load and effluent management with full "
 "traceability."
 msgstr "Debi izleme, kimyasal yük ve deşarj yönetimi — tam izlenebilirlikle."
-
-msgid ""
-"Fluctuating water quality, losses or rising costs at an existing facility, "
-"without a clear cause."
-msgstr ""
-"Mevcut bir tesiste belirgin bir nedeni olmayan su kalitesi dalgalanmaları, "
-"kayıplar veya artan maliyetler."
 
 msgid "Frequently Asked Questions"
 msgstr "Sıkça sorulan sorular"
@@ -843,17 +763,11 @@ msgstr "Büyüme evreleri"
 msgid "Headquarters"
 msgstr "Genel merkez"
 
-msgid "High build cost per cubic metre"
-msgstr "Metreküp başına yüksek yatırım maliyeti"
-
 msgid "Home"
 msgstr "Ana sayfa"
 
 msgid "How It Works"
 msgstr "Nasıl çalışır"
-
-msgid "How Suderra helps"
-msgstr "Suderra'nın çözümü"
 
 msgid "How does the AI work in Suderra?"
 msgstr "Suderra'da yapay zekâ nasıl çalışır?"
@@ -863,9 +777,6 @@ msgstr "Deniz biti izleme nasıl çalışır?"
 
 msgid "How many nutrient recipes are included?"
 msgstr "Kaç besin reçetesi hazır geliyor?"
-
-msgid "How we help"
-msgstr "Nasıl yardımcı oluyoruz"
 
 msgid "How we work"
 msgstr "Sürecimiz"
@@ -983,13 +894,6 @@ msgstr "L/sn"
 msgid "Less piping"
 msgstr "Daha az boru"
 
-msgid ""
-"Lice counts, biomass and mortality figures are often compiled by hand for "
-"the authorities."
-msgstr ""
-"Deniz biti sayımları, biyokütle ve ölüm verileri resmî kurumlar için çoğu "
-"zaman elle derlenir."
-
 msgid "Live"
 msgstr "Canlı"
 
@@ -1001,9 +905,6 @@ msgstr ""
 
 msgid "Lower investment"
 msgstr "Daha düşük yatırım"
-
-msgid "Make better use of"
-msgstr "Mevcut verilerinizi"
 
 msgid ""
 "Manage hydroponics, aquaponics, and vertical farming operations with "
@@ -1030,20 +931,6 @@ msgstr ""
 "oranları ve ölüm oranları. Suderra'nın su ürünleri yetiştiriciliği yazılım "
 "platformu tesisinizdeki tüm sensörlere bağlanır ve bütün verileri tek bir "
 "sistemde birleştirir."
-
-msgid ""
-"Many issues in RAS facilities can be prevented at the design stage: "
-"correctly sized biofilters, good water flow, secured financing and a well-"
-"trained team. We support you at every step, from the first drawing to a "
-"running farm."
-msgstr ""
-"RAS tesislerinde karşılaşılan birçok sorun tasarım aşamasında önlenebilir: "
-"doğru boyutlandırılmış biyofiltreler, iyi bir su akışı, güvence altına "
-"alınmış finansman ve iyi eğitilmiş bir ekip. İlk çizimden işleyen bir "
-"çiftliğe kadar her adımda yanınızdayız."
-
-msgid "Many separate tanks and long pipe runs"
-msgstr "Çok sayıda ayrı tank ve uzun boru hatları"
 
 msgid ""
 "Mattilsynet-format reports are prepared from your live data, saving hours of"
@@ -1256,13 +1143,6 @@ msgstr ""
 "önlemler önerir."
 
 msgid ""
-"Our AI is built on published science: every recommendation is traceable, and"
-" you decide what may run automatically."
-msgstr ""
-"Yapay zekâmız yayımlanmış bilimsel çalışmalara dayanır: her öneri "
-"izlenebilir ve neyin otomatik çalışacağına siz karar verirsiniz."
-
-msgid ""
 "Our AI uses published scientific formulas — not black-box models. Every "
 "recommendation is traceable and explainable. Operators decide what the AI "
 "can auto-execute."
@@ -1270,6 +1150,21 @@ msgstr ""
 "Yapay zekâmız kara kutu modeller değil, yayımlanmış bilimsel formüller "
 "kullanır. Her öneri izlenebilir ve açıklanabilir. Yapay zekânın neyi "
 "otomatik olarak uygulayabileceğine operatörler karar verir."
+
+msgid "Our approach"
+msgstr "Yaklaşımımız"
+
+msgid ""
+"Our system connects to the sensors and equipment already on your farm, "
+"monitors water quality in every tank around the clock and alerts your team "
+"early when a value changes — with clear, science-based recommendations."
+msgstr ""
+"Sistemimiz çiftliğinizdeki mevcut sensör ve ekipmanlara bağlanır, her "
+"tanktaki su kalitesini 7/24 izler ve bir değer değiştiğinde ekibinizi "
+"erkenden uyarır; bunu bilime dayalı, anlaşılır önerilerle yapar."
+
+msgid "Over 94%% of the water recirculated"
+msgstr "Suyun %94'ünden fazlası yeniden kullanılır"
 
 msgid ""
 "Over 94%% recirculation, with site-dependent water exchange of 5%% or less."
@@ -1298,16 +1193,6 @@ msgstr ""
 
 msgid "Planning a new facility?"
 msgstr "Yeni bir tesis mi planlıyorsunuz?"
-
-msgid ""
-"Planning a new farm? Many costs and risks are decided at the design stage. "
-"We supply the Single Tank system and design the facility around it, so it "
-"can run efficiently from day one."
-msgstr ""
-"Yeni bir tesis mi planlıyorsunuz? Maliyetlerin ve risklerin önemli bir kısmı"
-" tasarım aşamasında belirlenir. Tek Tank sistemini tedarik ediyor ve tesisi "
-"bu sisteme göre tasarlıyoruz; böylece tesisiniz ilk günden verimli "
-"çalışabilir."
 
 msgid "Platform"
 msgstr "Platform"
@@ -1343,9 +1228,6 @@ msgstr "Süreç kontrol paneli"
 
 msgid "Production capacity"
 msgstr "Üretim kapasitesi"
-
-msgid "Pumping losses across the whole loop"
-msgstr "Tüm devre boyunca pompalama kayıpları"
 
 msgid "RAS Design & Engineering"
 msgstr "RAS tasarımı ve mühendisliği"
@@ -1413,13 +1295,6 @@ msgstr ""
 "tesislerin bağımsız denetimi, Eksfin destekli finansman, inşaat desteği, "
 "eğitim ve işletme."
 
-msgid ""
-"Recommendations are only useful when your team understands them and can "
-"justify them to auditors."
-msgstr ""
-"Öneriler ancak ekibiniz tarafından anlaşıldığında ve denetçilere "
-"gerekçelendirilebildiğinde işe yarar."
-
 msgid "Reduce Chemical Costs"
 msgstr "Kimyasal maliyetlerinizi düşürün"
 
@@ -1446,13 +1321,6 @@ msgstr ""
 "Uzak balık çiftliklerinde internet her zaman güvenilir değildir. Saha ağ "
 "geçidimiz verileri yerel olarak saklar, mobil uygulama da çekim olmadan "
 "çalışır. Veri kaybı asla yaşanmaz."
-
-msgid ""
-"Reports are generated from your live data in the format Mattilsynet "
-"requires, in a single step."
-msgstr ""
-"Raporlar, canlı verilerinizden Mattilsynet'in istediği formatta tek adımda "
-"hazırlanır."
 
 msgid "Reports in a few clicks"
 msgstr "Birkaç tıkla rapor"
@@ -1500,9 +1368,6 @@ msgstr ""
 msgid "Sectors"
 msgstr "Sektörler"
 
-msgid "Securing financing"
-msgstr "Finansmanın sağlanması"
-
 msgid "See scale scenarios"
 msgstr "Ölçek senaryolarına bakın"
 
@@ -1524,13 +1389,6 @@ msgid ""
 msgstr ""
 "Sensör entegrasyonu, yemleme otomasyonu ve dozlama kontrolü — mevcut "
 "ekipmanınızla."
-
-msgid ""
-"Sensors from different suppliers, control systems, logbooks and spreadsheets"
-" make it hard to see the full picture."
-msgstr ""
-"Farklı tedarikçilerin sensörleri, kontrol sistemleri, kayıt defterleri ve "
-"tablolar, tesisin bütününü görmeyi zorlaştırır."
 
 msgid "Server Error"
 msgstr "Sunucu hatası"
@@ -1638,9 +1496,6 @@ msgstr ""
 "reçetesi yönetimi, EC/pH izleme, gübreleme otomasyonu ve büyüme evresi "
 "takibi."
 
-msgid "Solve it at the design stage,"
-msgstr "Sorunları işletmede değil,"
-
 msgid "Something went wrong on our end. Please try again in a moment."
 msgstr ""
 "Bizden kaynaklanan bir sorun oluştu. Lütfen biraz sonra tekrar deneyin."
@@ -1695,13 +1550,6 @@ msgstr ""
 "denetlenebilir, bilime dayalı yapay zekâsını geliştirir; bunu sahada "
 "edinilmiş RAS mühendisliği deneyimiyle destekler. Rambergveien 18, Tønsberg,"
 " Norveç."
-
-msgid ""
-"Suderra Edge connects to sensors over MQTT, Modbus or OPC-UA and brings "
-"every tank together on one screen."
-msgstr ""
-"Suderra Edge sensörlere MQTT, Modbus veya OPC-UA üzerinden bağlanır ve tüm "
-"tankları tek bir ekranda bir araya getirir."
 
 msgid ""
 "Suderra Edge is a gateway installed at your farm. It reads every sensor and "
@@ -1762,17 +1610,6 @@ msgstr ""
 "oksijen, bulanıklık, TSS (askıda katı madde), iletkenlik, sıcaklık, kimyasal"
 " oksijen ihtiyacı (KOİ), biyolojik oksijen ihtiyacı (BOİ) ve daha fazlasını "
 "izleyebilir."
-
-msgid ""
-"Suderra connects to the sensors and equipment you already have, monitors "
-"water quality in every tank around the clock and alerts you early when "
-"something changes — with clear, science-based recommendations your team can "
-"act on."
-msgstr ""
-"Suderra mevcut sensör ve ekipmanlarınıza bağlanır, her tanktaki su "
-"kalitesini 7/24 izler ve bir değişiklik olduğunda sizi erkenden uyarır. "
-"Ekibinizin hemen uygulayabileceği, bilime dayalı ve anlaşılır öneriler "
-"sunar."
 
 msgid ""
 "Suderra helps fish farms use their water data more efficiently: Suderra Edge"
@@ -1932,6 +1769,17 @@ msgid "The Single Tank Design"
 msgstr "Tek Tank Tasarımı"
 
 msgid ""
+"The Single Tank Design is our approach to RAS: one CFD-validated tank-in-"
+"tank unit that recirculates over 94%% of its water — with less piping, a "
+"smaller footprint and a smaller crew, built around your species, site and "
+"scale."
+msgstr ""
+"Tek Tank Tasarımı, RAS'a bakış açımızın ürünüdür: suyunun %94'ünden "
+"fazlasını yeniden kullanan, CFD ile doğrulanmış tek bir tank içinde tank "
+"ünitesi. Daha az boru, daha az alan ve daha küçük bir ekiple çalışır; "
+"türünüze, sahanıza ve ölçeğinize göre kurulur."
+
+msgid ""
 "The Suderra Single Tank Design: a CFD-validated octagonal tank-in-tank RAS "
 "that recirculates over 94%% of its water — 12–40 m diameter, 60–1500 t/yr, "
 "about 30–35%% lower investment."
@@ -1988,9 +1836,6 @@ msgstr ""
 msgid "The whole site runs around the clock with a 3–4 person crew."
 msgstr "Tüm tesis 3–4 kişilik bir ekiple gece gündüz çalışır."
 
-msgid "Time-consuming reporting"
-msgstr "Zaman alan raporlama"
-
 msgid "Toggle Menu"
 msgstr "Menüyü aç/kapat"
 
@@ -2034,9 +1879,6 @@ msgstr ""
 "Her üretim döngüsündeki verimi takip edin, reçeteleri karşılaştırın ve "
 "yetiştirme parametrelerini optimize edin. Veriye dayalı içgörüler, üretim "
 "verimliliğinizi zamanla artırmanıza yardımcı olur."
-
-msgid "Turn your water data"
-msgstr "Su verilerinizi"
 
 msgid "Under 2 kW per kg of fish (excl. heat)"
 msgstr "Kilogram balık başına 2 kW'tan az (ısıtma hariç)"
@@ -2136,8 +1978,34 @@ msgstr ""
 msgid "Water-chemistry stability diagram"
 msgstr "Su kimyası kararlılık diyagramı"
 
+msgid ""
+"We also supply the Single Tank system and design the whole facility around "
+"it, so new farms run efficiently from day one."
+msgstr ""
+"Tek Tank sistemini de biz tedarik ediyor, tesisin tamamını bu sisteme göre "
+"tasarlıyoruz; böylece yeni tesisler ilk günden verimli çalışır."
+
+msgid "We audit existing facilities"
+msgstr "Mevcut tesisleri denetliyoruz"
+
+msgid ""
+"We design RAS facilities around your species, site and scale, and stay with "
+"you from the first drawing to a running farm: design, independent audits, "
+"Eksfin-backed financing, construction support and training."
+msgstr ""
+"RAS tesislerini türünüze, sahanıza ve ölçeğinize göre tasarlıyor, ilk "
+"çizimden işleyen bir çiftliğe kadar yanınızda oluyoruz: tasarım, bağımsız "
+"denetim, Eksfin destekli finansman, inşaat desteği ve eğitim."
+
 msgid "We design, audit"
 msgstr "Tasarlıyor, denetliyor"
+
+msgid ""
+"We designed the Single Tank around one idea: everything a RAS needs, in one "
+"compact, CFD-validated unit."
+msgstr ""
+"Tek Tank'ı tek bir fikir üzerine tasarladık: bir RAS'ın ihtiyaç duyduğu her "
+"şey, CFD ile doğrulanmış tek ve kompakt bir ünitede."
 
 msgid ""
 "We develop the Suderra Edge platform and its AI, and support it with hands-"
@@ -2150,6 +2018,9 @@ msgstr ""
 "destekliyoruz. Amacımız, üreticilerin tesislerini güvenle tasarlamasına, "
 "kurmasına ve işletmesine yardımcı olmak. Merkezimiz Norveç'in Tønsberg "
 "şehrindedir."
+
+msgid "We help secure financing"
+msgstr "Finansmana erişiminizi destekliyoruz"
 
 msgid ""
 "We help you prepare and secure export financing backed by Eksfin, Norway's "
@@ -2170,7 +2041,10 @@ msgid ""
 "60–70%% above."
 msgstr ""
 "Eksfin destekli finansmana erişmenize yardımcı oluyoruz: 2 milyon € "
-"altındaki projelerde %90, üzerindekilerde %60–70."
+"altındaki projelerde %90, üzerindekilerde %60⁠–⁠70."
+
+msgid "We size every system individually"
+msgstr "Her sistemi ayrı ayrı boyutlandırıyoruz"
 
 msgid ""
 "We size flow, biofiltration, oxygenation and degassing to your species and "
@@ -2186,12 +2060,26 @@ msgstr ""
 "İnşaat ve devreye alma boyunca yanınızdayız; ekibinizi de sistemi güvenle "
 "işletebilmesi için eğitiyoruz."
 
+msgid "We train your team"
+msgstr "Ekibinizi eğitiyoruz"
+
+msgid "We turn water data"
+msgstr "Su verilerini"
+
 msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
 "browse, you consent to our use of cookies."
 msgstr ""
 "Sitemizdeki deneyiminizi iyileştirmek için çerez kullanıyoruz. Siteyi "
 "kullanmaya devam ederek çerez kullanımını kabul etmiş olursunuz."
+
+msgid ""
+"We would be glad to show you how our system and services can support your "
+"farm — whether you are monitoring an existing site or planning a new one."
+msgstr ""
+"Mevcut bir tesisi izlemek ya da yeni bir tesis planlamak için, sistemimizin "
+"ve hizmetlerimizin çiftliğinize nasıl destek olabileceğini memnuniyetle "
+"anlatırız."
 
 msgid "What Norwegian regulations does Suderra support?"
 msgstr "Suderra hangi Norveç düzenlemelerini destekliyor?"
@@ -2248,9 +2136,6 @@ msgstr "Atık su arıtmada neden Suderra?"
 
 msgid "Why Suderra"
 msgstr "Neden Suderra"
-
-msgid "Why it matters"
-msgstr "Neden önemli"
 
 msgid "Work with us"
 msgstr "Bizimle çalışın"
@@ -2351,6 +2236,9 @@ msgstr "Tüm çiftliğiniz"
 msgid "and monitor."
 msgstr "ve izliyoruz."
 
+msgid "around your species and site."
+msgstr "türünüze ve sahanıza göre tasarlıyoruz."
+
 msgid "easier to run."
 msgstr "işletmesi daha verimli."
 
@@ -2363,11 +2251,8 @@ msgstr "yazılım ve mühendislik."
 msgid "from the same team."
 msgstr "aynı ekipten."
 
-msgid "into better decisions."
-msgstr "doğru kararlara dönüştürün."
-
-msgid "not after start-up."
-msgstr "tasarım aşamasında çözün."
+msgid "into clear decisions."
+msgstr "net kararlara dönüştürüyoruz."
 
 msgid "on one screen."
 msgstr "tek ekranda."
@@ -2380,9 +2265,6 @@ msgstr "güvenli bölge"
 
 msgid "t/yr"
 msgstr "ton/yıl"
-
-msgid "the data you already have."
-msgstr "daha verimli kullanın."
 
 msgid "to a full facility."
 msgstr "tam ölçekli bir tesise."
