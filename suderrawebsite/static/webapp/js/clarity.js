@@ -406,7 +406,7 @@
             if (nfb) { nfb.textContent = data.message || ''; nfb.className = 'news-feedback ' + (data.status === 'success' ? 'success' : 'error'); }
             if (data.status === 'success' && input) input.value = '';
           })
-          .catch(function () { if (nfb) { nfb.textContent = 'An error occurred. Please try again.'; nfb.className = 'news-feedback error'; } })
+          .catch(function () { if (nfb) { nfb.textContent = nf.getAttribute('data-msg-error') || 'An error occurred. Please try again later.'; nfb.className = 'news-feedback error'; } })
           .finally(function () { if (sb) sb.disabled = false; });
       });
     }

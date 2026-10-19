@@ -2,10 +2,15 @@
 
 [![CI](https://github.com/Okan-wqm/suderra-website/actions/workflows/ci.yml/badge.svg)](https://github.com/Okan-wqm/suderra-website/actions/workflows/ci.yml)
 
-Marketing site for **Suderra AS** — a Norwegian **recirculating aquaculture (RAS)** partner.
-Suderra **designs**, **audits**, **finances**, **builds** and **runs** RAS facilities (the
-octagonal *Single Tank Design*), and operates them on the **Suderra Edge / Suderra OS**
-platform with real-time, AI-assisted water-quality intelligence.
+Marketing site for **Suderra AS** (org. no. 938 226 938, Rambergveien 18, 3115 Tønsberg) —
+Norwegian **aquaculture software**. The site is software-first, with three main tabs:
+
+- **Software** (homepage `/<lang>/`) — the **Suderra Edge / Suderra OS** platform with
+  real-time, AI-assisted water-quality intelligence, plus the software feature pages.
+- **Equipment** (`/<lang>/equipment/`) — the octagonal *Single Tank Design* RAS, its specs and
+  indicative scale scenarios.
+- **Design** (`/<lang>/design/`) — RAS design, audit, Eksfin-backed financing, build & train, run.
+- **About** (`/<lang>/about/`) — founder's letter (Okan Ozturk) and company details.
 
 Django 5.1 · vanilla JS + raw WebGL (no frontend framework) · 4 languages (en/no/tr/ar, with RTL).
 
@@ -79,7 +84,10 @@ templates/
   partials/flag_no.html Norwegian flag SVG
   404.html / 500.html   standalone Clarity error pages (noindex)
 webapp/templates/
-  index.html            homepage (extends base_clarity.html)
+  index.html            homepage = Software tab (extends base_clarity.html)
+  equipment.html        Equipment tab (Single Tank Design, scale scenarios)
+  design.html           Design tab (engineering services, financing)
+  about.html            About tab (founder letter, company details)
   features/_base_feature.html  feature layout (extends base_clarity.html)
   features/*.html       feature pages (Clarity design)
 locale/{no,tr,ar}/      translations (.po / .mo)
@@ -113,11 +121,14 @@ Concept: as you scroll, dark/murky water **clarifies** into the bright editorial
 - **Signature visual**: raw-WebGL water caustics + a rotating **3D octagonal tank-in-tank**
   with bioluminescent particles (`clarity.js`, library-free → CSP-safe). Fades out past the hero.
 - **3D motion**: scroll-driven CSS perspective reveals + cursor-following 3D card tilt.
-- **Sections**: hero (live sensor ticker) → Single Tank product (octagon + real metrics &
-  specs) → capabilities → multi-tenant **Platform** (isolated DB per tenant, unlimited
-  sensors, mobile ops, scientific charts, Mattilsynet-format reports, live AI dashboard) →
-  end-to-end loop (Design · Audit · Finance · Build · Run · Sense & decide) → partners →
-  sectors → about → contact.
+- **Homepage sections**: hero (live sensor ticker) → multi-tenant **Platform** (isolated DB
+  per tenant, unlimited sensors, mobile ops, scientific charts, Mattilsynet-format reports,
+  live AI dashboard) → how it works (4 steps) → sectors & modules → equipment/design teasers →
+  contact.
+- **Equipment page**: Single Tank product (octagon + metrics & specs) → capabilities bento →
+  scale-scenario table (numbers formatted per language in `views.equipment`).
+- **Design page**: end-to-end loop (Design · Audit · Finance · Build & Train · Run · Sense &
+  decide) → engineering scope → Eksfin financing.
 - **Type**: Fraunces (display/serif), Hanken Grotesk (body), JetBrains Mono (data).
 - **Accessibility**: skip link, ARIA on forms/feedback, sequential headings, and a full
   `prefers-reduced-motion` path (no WebGL animation loop, no tilt, instant reveals). A
@@ -131,7 +142,7 @@ legacy `base.html`/`main.js`/`style.css`/`rtl.css` and unused media have been re
 ## Tests
 
 ```bash
-python manage.py test    # 46 tests, also run on every push by GitHub Actions CI
+python manage.py test    # 54 tests, also run on every push by GitHub Actions CI
 ```
 
 `webapp/tests.py` covers routing/i18n, security headers + CSP nonce,

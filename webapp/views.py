@@ -16,6 +16,7 @@ from django.core.mail import EmailMessage
 from django.conf import settings
 from django.core.cache import cache
 from django.shortcuts import render
+from django.utils.translation import get_language, gettext as _
 
 logger = logging.getLogger('webapp')
 
@@ -101,6 +102,59 @@ def index(request):
     return render(request, 'index.html')
 
 
+# Indicative Single Tank scale scenarios (Suderra Single Tank Design brief).
+# (diameter m, volume m³, water exchange ≤5% L/s, annual production t, investment M€)
+SCALE_SCENARIOS = [
+    (12, 452, 9.4, (60,), (0.8, 0.9)),
+    (16, 1000, 20.8, (140,), (1.8, 2)),
+    (18, 1600, 33.3, (224,), (2.6, 2.9)),
+    (24, 3000, 62.5, (390,), (5.4, 5.9)),
+    (30, 5500, 114.6, (700, 750), (9, 10)),
+    (40, 12566, 261.8, (1500, 1600), (19, 21)),
+]
+
+# (decimal separator, thousands separator) per language; Django ships no formats for 'no'.
+_NUMBER_SEPARATORS = {'en': ('.', ','), 'no': (',', '\u00a0'), 'tr': (',', '.'), 'ar': ('.', ',')}
+
+
+def _fmt_number(value, lang):
+    dec, thou = _NUMBER_SEPARATORS.get(lang, _NUMBER_SEPARATORS['en'])
+    whole, _, frac = f'{value:,}'.partition('.')
+    whole = whole.replace(',', thou)
+    return f'{whole}{dec}{frac}' if frac else whole
+
+
+def _fmt_range(values, lang):
+    return '–'.join(_fmt_number(v, lang) for v in values)
+
+
+def equipment(request):
+    lang = get_language()
+    rows = [
+        {
+            'diameter': d,
+            'volume': _fmt_number(vol, lang),
+            'flow': _fmt_number(flow, lang),
+            'production': _fmt_range(prod, lang),
+            'investment': _fmt_range(inv, lang),
+        }
+        for d, vol, flow, prod, inv in SCALE_SCENARIOS
+    ]
+    return render(request, 'equipment.html', {
+        'scale_rows': rows,
+        'investment_per_m3': _fmt_range((1.75, 2), lang),
+    })
+
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def design(request):
+    # Indicative Eksfin interest range (%), formatted for the active language.
+    return render(request, 'design.html', {'interest': _fmt_range((2.5, 3.5), get_language())})
+
+
 def feature_aquaculture(request):
     return render(request, 'features/aquaculture_software.html')
 
@@ -129,11 +183,11 @@ def ajax_contact(request):
 
     # Layer 3: Rate limiting first — count EVERY attempt (bots, failures, successes).
     if _rate_limit_exceeded(f'contact_rate_{ip}', CONTACT_RATE_LIMIT):
-        return JsonResponse({'status': 'error', 'message': 'Too many submissions. Please try again later.'}, status=429)
+        return JsonResponse({'status': 'error', 'message': _('Too many submissions. Please try again later.')}, status=429)
 
     # Layer 1: Honeypot check — bots auto-fill hidden fields, humans never see them
     if request.POST.get('company_url', ''):
-        return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
+        return JsonResponse({'status': 'success', 'message': _('Your message was sent successfully.')})
 
     # Layer 2: Time-based check — server-side timestamp (not spoofable)
     form_ts = request.session.get('_form_ts')
@@ -141,7 +195,7 @@ def ajax_contact(request):
         elapsed = time.time() - form_ts
         if elapsed < 3:
             # Submitted faster than 3 seconds — likely a bot
-            return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
+            return JsonResponse({'status': 'success', 'message': _('Your message was sent successfully.')})
     else:
         # No server-side timestamp — form page was never loaded through our view
         # Fall back to client-side timestamp check
@@ -150,7 +204,7 @@ def ajax_contact(request):
             try:
                 elapsed_ms = time.time() * 1000 - int(float(form_loaded))
                 if elapsed_ms < 3000:
-                    return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
+                    return JsonResponse({'status': 'success', 'message': _('Your message was sent successfully.')})
             except (ValueError, TypeError):
                 pass
 
@@ -161,13 +215,13 @@ def ajax_contact(request):
     message = request.POST.get('message', '').strip()[:MAX_MESSAGE_LENGTH]
 
     if not (name and company and email and message):
-        return JsonResponse({'status': 'error', 'message': 'Must fill all the required areas.'})
+        return JsonResponse({'status': 'error', 'message': _('Please fill in all required fields.')})
 
     # Server-side email validation
     try:
         validate_email(email)
     except ValidationError:
-        return JsonResponse({'status': 'error', 'message': 'Please enter a valid email address.'})
+        return JsonResponse({'status': 'error', 'message': _('Please enter a valid email address.')})
 
     subject = f"Contact Form: {name[:100]}"
     mail_body = (
@@ -188,10 +242,10 @@ def ajax_contact(request):
             reply_to=[email],
         ).send(fail_silently=False)
         logger.info('Contact form submitted from IP %s', ip)
-        return JsonResponse({'status': 'success', 'message': 'Your message was sent successfully.'})
+        return JsonResponse({'status': 'success', 'message': _('Your message was sent successfully.')})
     except Exception:
         logger.exception('Failed to send contact form email (IP %s)', ip)
-        return JsonResponse({'status': 'error', 'message': 'An error occurred. Please try again later.'})
+        return JsonResponse({'status': 'error', 'message': _('An error occurred. Please try again later.')})
 
 
 @require_POST
@@ -201,28 +255,28 @@ def ajax_newsletter(request):
 
     # Rate limit first — count every attempt.
     if _rate_limit_exceeded(f'newsletter_rate_{ip}', NEWSLETTER_RATE_LIMIT):
-        return JsonResponse({'status': 'error', 'message': 'Too many attempts. Please try again later.'}, status=429)
+        return JsonResponse({'status': 'error', 'message': _('Too many attempts. Please try again later.')}, status=429)
 
     # Honeypot — bots fill the hidden field; humans never see it.
     if request.POST.get('company_url', ''):
-        return JsonResponse({'status': 'success', 'message': 'Successfully subscribed!'})
+        return JsonResponse({'status': 'success', 'message': _('Successfully subscribed!')})
 
     email = re.sub(r'[\r\n]', '', request.POST.get('email', '').strip())[:MAX_EMAIL_LENGTH].lower()
 
     if not email:
-        return JsonResponse({'status': 'error', 'message': 'Please enter your email address.'})
+        return JsonResponse({'status': 'error', 'message': _('Please enter your email address.')})
 
     try:
         validate_email(email)
     except ValidationError:
-        return JsonResponse({'status': 'error', 'message': 'Please enter a valid email address.'})
+        return JsonResponse({'status': 'error', 'message': _('Please enter a valid email address.')})
 
     # Save to local database (reactivating a previously unsubscribed address).
     from webapp.models import NewsletterSubscriber
     subscriber, created = NewsletterSubscriber.objects.get_or_create(email=email)
     if not created:
         if subscriber.is_active:
-            return JsonResponse({'status': 'success', 'message': 'You are already subscribed!'})
+            return JsonResponse({'status': 'success', 'message': _('You are already subscribed!')})
         # Re-subscribe a previously deactivated address.
         subscriber.is_active = True
         subscriber.save(update_fields=['is_active'])
@@ -235,7 +289,7 @@ def ajax_newsletter(request):
         _BREVO_POOL.submit(_sync_to_brevo, email, brevo_key, brevo_list)
 
     logger.info('Newsletter subscription from IP %s', ip)
-    return JsonResponse({'status': 'success', 'message': 'Successfully subscribed!'})
+    return JsonResponse({'status': 'success', 'message': _('Successfully subscribed!')})
 
 
 def _sync_to_brevo(email, api_key, list_id):

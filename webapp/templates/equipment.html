@@ -1,0 +1,226 @@
+{% extends "base_clarity.html" %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block title %}{% trans "Single Tank Design — Octagonal RAS Equipment" %} | SUDERRA{% endblock %}
+{% block description %}{% trans "The Suderra Single Tank Design: a CFD-validated octagonal tank-in-tank RAS that recirculates over 94% of its water — 12–40 m diameter, 60–1500 t/yr, about 30–35% lower investment." %}{% endblock %}
+{% block og_title %}{% trans "Single Tank Design — Octagonal RAS Equipment" %} | SUDERRA{% endblock %}
+{% block og_description %}{% trans "Octagonal tank-in-tank RAS: over 94% water recirculation, 95% less piping, 12–40 m diameter, 60–1500 t/yr." %}{% endblock %}
+{% block twitter_title %}{% trans "Single Tank Design — Octagonal RAS Equipment" %} | SUDERRA{% endblock %}
+{% block twitter_description %}{% trans "Octagonal tank-in-tank RAS: over 94% water recirculation, 95% less piping, 12–40 m diameter, 60–1500 t/yr." %}{% endblock %}
+{% block og_image %}https://suderra.com{% static 'webapp/images/oktagon.jpeg' %}{% endblock %}
+{% block twitter_image %}https://suderra.com{% static 'webapp/images/oktagon.jpeg' %}{% endblock %}
+
+{% block content %}
+<!-- ============ HERO ============ -->
+<section class="fhero" data-stage="murky">
+  <div class="container">
+    <nav class="fbreadcrumb reveal" aria-label="{% trans 'Breadcrumb' %}">
+      <a href="{% url 'index' %}">{% trans "Home" %}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{% trans "Equipment" %}</span>
+    </nav>
+    <span class="fhero-tag reveal">{% trans "Equipment" %} · {% trans "Recirculating Aquaculture System" %}</span>
+    <h1 class="fhero-title reveal">{% trans "The Single Tank" %} <em class="serif">{% trans "Design." %}</em></h1>
+    <p class="fhero-sub reveal">{% trans "Conventional RAS means many tanks, long pipe runs, a big building and a big crew. The Single Tank Design puts it all into one CFD-validated tank-in-tank unit that recirculates over 94% of its water — so you build for less and run with fewer people." %}</p>
+    <div class="fhero-cta reveal">
+      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
+      <a href="#scale" class="btn btn-ghost">{% trans "See scale scenarios" %}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY — conventional RAS vs Single Tank ============ -->
+<section class="fsec section" id="why">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Why it matters" %}</span>
+      <h2 class="sec-title">{% trans "Less to build." %} <em class="serif">{% trans "Less to run." %}</em></h2>
+    </header>
+    <div class="compare">
+      <div class="compare-col is-problem reveal" style="--i:0">
+        <span class="ps-label">{% trans "Conventional RAS" %}</span>
+        <ul>
+          <li>{% trans "Many separate tanks and long pipe runs" %}</li>
+          <li>{% trans "A large building for the same volume" %}</li>
+          <li>{% trans "High build cost per cubic metre" %}</li>
+          <li>{% trans "Pumping losses across the whole loop" %}</li>
+          <li>{% trans "A large crew for round-the-clock operation" %}</li>
+        </ul>
+      </div>
+      <div class="compare-col is-solution reveal" style="--i:1">
+        <span class="ps-label">{% trans "Single Tank Design" %}</span>
+        <ul>
+          <li>{% trans "One tank-in-tank unit with 95% less piping" %}</li>
+          <li>{% trans "15–20% smaller footprint with the octagonal geometry" %}</li>
+          <li>{% trans "About 30–35% lower investment" %}</li>
+          <li>{% trans "Under 2 kW per kg of fish (excl. heat)" %}</li>
+          <li>{% trans "24/7 operation with a 3–4 person crew" %}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRODUCT ============ -->
+<section class="fsec fsec-alt section" id="product">
+  <div class="container">
+    <div class="product-grid">
+      <figure class="product-shot reveal">
+        <img src="{% static 'webapp/images/oktagon.jpeg' %}" alt="{% trans 'Suderra octagonal tank-in-tank RAS concept' %}" loading="lazy">
+        <figcaption><span class="geo-badge">{% trans "Geometry 02" %}</span> {% trans "Octagonal tank-in-tank — 15–20% smaller footprint" %}</figcaption>
+      </figure>
+
+      <div class="product-side reveal">
+        <div class="metrics">
+          <div class="metric"><span class="metric-num">&gt;94<i>%</i></span><span class="metric-cap">{% trans "Water recirculated" %}</span></div>
+          <div class="metric"><span class="metric-num">−95<i>%</i></span><span class="metric-cap">{% trans "Less piping" %}</span></div>
+          <div class="metric"><span class="metric-num">~30–35<i>%</i></span><span class="metric-cap">{% trans "Lower investment" %}</span></div>
+          <div class="metric"><span class="metric-num">&lt;2<i>kW/kg</i></span><span class="metric-cap">{% trans "Energy per kg fish (excl. heat)" %}</span></div>
+        </div>
+
+        <div class="geos">
+          <div class="geo"><span class="geo-no">01</span><span>{% trans "Circular tank-in-tank" %}</span></div>
+          <div class="geo geo-on"><span class="geo-no">02</span><span>{% trans "Octagonal tank-in-tank" %}</span><span class="geo-flag">{% trans "Signature" %}</span></div>
+        </div>
+
+        <dl class="specs">
+          <div><dt>{% trans "Tank diameter" %}</dt><dd>12–40 m</dd></div>
+          <div><dt>{% trans "Production capacity" %}</dt><dd>60–1500 {% trans "t/yr" %}</dd></div>
+          <div><dt>{% trans "Biofilter stages" %}</dt><dd>3–4</dd></div>
+          <div><dt>{% trans "Investment" %}</dt><dd>{{ investment_per_m3 }}k $/m³</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CAPABILITIES — bento ============ -->
+<section class="capabilities section" id="capabilities">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "What's inside" %}</span>
+      <h2 class="sec-title">{% trans "Proven where it matters." %}</h2>
+    </header>
+
+    <div class="bento">
+      <article class="cell cell-lg glass reveal" style="--i:0">
+        <div class="cell-ico">{% include "partials/ico.html" with name="check" %}</div>
+        <h3>{% trans "Tested & CFD-validated" %}</h3>
+        <p>{% trans "Biofilter, flow and bottom-drain design proven in the field and in simulation — not theory." %}</p>
+      </article>
+      <article class="cell glass reveal" style="--i:1">
+        <div class="cell-ico">{% include "partials/ico.html" with name="loop" %}</div>
+        <h3>{% trans "Closed-loop, low piping" %}</h3>
+        <p>{% trans "Site-dependent 90%+ recirculation and ~90% less piping." %}</p>
+      </article>
+      <article class="cell glass reveal" style="--i:2">
+        <div class="cell-ico">{% include "partials/ico.html" with name="drop" %}</div>
+        <h3>{% trans "Fresh, salt, any climate" %}</h3>
+        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
+      </article>
+      <article class="cell cell-feature glass reveal" style="--i:3">
+        <div class="cell-ico">{% include "partials/ico.html" with name="pulse" %}</div>
+        <h3>{% trans "AI-driven water quality" %}</h3>
+        <p>{% trans "Ships with Suderra Edge: an AI-assisted live water-quality panel for fast, data-driven decisions." %}</p>
+        <a href="{% url 'index' %}#platform" class="cell-link">{% trans "See the platform" %} →</a>
+      </article>
+      <article class="cell glass reveal" style="--i:4">
+        <div class="cell-ico">{% include "partials/ico.html" with name="clock" %}</div>
+        <h3>{% trans "Fully automatic feeding" %}</h3>
+        <p>{% trans "Scheduled, self-dosing feed delivery across every tank." %}</p>
+      </article>
+      <article class="cell glass reveal" style="--i:5">
+        <div class="cell-ico">{% include "partials/ico.html" with name="tune" %}</div>
+        <h3>{% trans "Species-adaptive tuning" %}</h3>
+        <p>{% trans "Stocking density, water velocity and biofilter sizing tune dynamically per species." %}</p>
+      </article>
+      <article class="cell glass reveal" style="--i:6">
+        <div class="cell-ico">{% include "partials/ico.html" with name="team" %}</div>
+        <h3>{% trans "24/7 with a lean team" %}</h3>
+        <p>{% trans "The whole site runs around the clock with a 3–4 person crew." %}</p>
+      </article>
+      <article class="cell glass reveal" style="--i:7">
+        <div class="cell-ico">{% include "partials/ico.html" with name="shield" %}</div>
+        <h3>{% trans "Uptime & IP-secured" %}</h3>
+        <p>{% trans "Service without downtime; proprietary, protected design and software." %}</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SCALE SCENARIOS ============ -->
+<section class="fsec fsec-alt section" id="scale">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Scale scenarios" %}</span>
+      <h2 class="sec-title">{% trans "From a single tank" %} <em class="serif">{% trans "to a full facility." %}</em></h2>
+      <p class="sec-lede">{% trans "Indicative scenarios by tank diameter. Water demand and investment depend on site conditions." %}</p>
+    </header>
+    <div class="scale-wrap reveal">
+      <table class="scale-table">
+        <thead>
+          <tr>
+            <th scope="col">{% trans "Diameter" %}<small>m</small></th>
+            <th scope="col">{% trans "Volume" %}<small>m³</small></th>
+            <th scope="col">{% trans "Water exchange ≤5%" %}<small>{% trans "L/s" %}</small></th>
+            <th scope="col">{% trans "Annual production" %}<small>{% trans "t/yr" %}</small></th>
+            <th scope="col">{% trans "Investment" %}<small>M€</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for r in scale_rows %}
+          <tr>
+            <th scope="row">{{ r.diameter }}</th>
+            <td>{{ r.volume }}</td>
+            <td>{{ r.flow }}</td>
+            <td>{{ r.production }}</td>
+            <td>{{ r.investment }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <p class="scale-note reveal">{% trans "Indicative figures, not an offer. Financing terms are on the Design page." %} <a href="{% url 'design' %}#finance">{% trans "Financing" %} →</a></p>
+  </div>
+</section>
+
+<!-- ============ CROSS-LINKS ============ -->
+<section class="fsec section">
+  <div class="container">
+    <header class="sec-head reveal"><h2 class="sec-title">{% trans "Explore More" %}</h2></header>
+    <div class="feature-related-grid xlinks reveal">
+      <a href="{% url 'index' %}" class="feature-related-card"><span class="xlink-tag">{% trans "Software" %}</span><h3>{% trans "Operated on Suderra Edge" %}</h3><p>{% trans "Live water data, science-based AI and compliance reports for every tank." %}</p></a>
+      <a href="{% url 'design' %}" class="feature-related-card"><span class="xlink-tag">{% trans "Design" %}</span><h3>{% trans "Designed by our engineers" %}</h3><p>{% trans "Design, audit, financing, construction support and training." %}</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="fcta section">
+  <div class="container">
+    <div class="fcta-inner reveal">
+      <h2>{% trans "Planning a new facility?" %}</h2>
+      <p>{% trans "Tell us your species, site and target volume — we will size a Single Tank scenario for you." %}</p>
+      <a href="{% url 'index' %}#contact" class="btn btn-coral btn-lg">{% trans "Get in Touch" %}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Suderra Single Tank Design (RAS)",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
+  "category": "{% filter escapejs %}{% trans 'Recirculating Aquaculture System' %}{% endfilter %}",
+  "image": "https://suderra.com{% static 'webapp/images/oktagon.jpeg' %}",
+  "brand": {"@type": "Brand", "name": "Suderra"},
+  "description": "Octagonal tank-in-tank recirculating aquaculture system: >94% water recirculation, ~95% less piping, 12–40 m diameter, 60–1500 t/yr.",
+  "manufacturer": {"@id": "https://suderra.com/#organization"}
+}
+</script>
+{% endblock %}

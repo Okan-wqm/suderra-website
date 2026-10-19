@@ -43,6 +43,12 @@ class RoutingI18nTests(TestCase):
             with self.subTest(lang=lang):
                 self.assertEqual(self.client.get(f'/{lang}/').status_code, 200)
 
+    def test_equipment_and_design_pages_all_languages(self):
+        for lang in ('en', 'no', 'tr', 'ar'):
+            for slug in ('equipment', 'design', 'about'):
+                with self.subTest(lang=lang, slug=slug):
+                    self.assertEqual(self.client.get(f'/{lang}/{slug}/').status_code, 200)
+
     def test_feature_pages_all_languages(self):
         slugs = ['aquaculture-software', 'regulatory-compliance', 'automation', 'soilless-culture', 'waste-water']
         for lang in ('en', 'no', 'tr', 'ar'):
@@ -54,6 +60,8 @@ class RoutingI18nTests(TestCase):
         r = self.client.get('/sitemap.xml')
         self.assertEqual(r.status_code, 200)
         self.assertIn(b'aquaculture-software', r.content)
+        self.assertIn(b'/en/equipment/', r.content)
+        self.assertIn(b'/en/design/', r.content)
 
     def test_robots(self):
         r = self.client.get('/robots.txt')
@@ -282,12 +290,56 @@ class RedesignTests(TestCase):
         html = self.client.get('/en/').content.decode()
         self.assertIn('clarity.css', html)
         self.assertIn('id="waterCanvas"', html)
-        self.assertIn('oktagon.jpeg', html)
 
-    def test_homepage_shows_product_and_financing(self):
+    def test_homepage_is_software_first_and_links_tabs(self):
         html = self.client.get('/en/').content.decode()
+        self.assertIn('id="platform"', html)
+        self.assertLess(html.index('id="platform"'), html.index('id="beyond"'))
+        self.assertIn('href="/en/equipment/"', html)
+        self.assertIn('href="/en/design/"', html)
+
+    def test_equipment_page_shows_product_and_scale_table(self):
+        html = self.client.get('/en/equipment/').content.decode()
         self.assertIn('Single Tank', html)
+        self.assertIn('oktagon.jpeg', html)
+        self.assertIn('12,566', html)
+
+    def test_scale_table_uses_local_number_format(self):
+        html = self.client.get('/tr/equipment/').content.decode()
+        self.assertIn('12.566', html)
+        self.assertIn('9,4', html)
+
+    def test_design_page_shows_financing(self):
+        html = self.client.get('/en/design/').content.decode()
         self.assertIn('Eksfin', html)
+        self.assertIn('id="finance"', html)
+        self.assertIn('id="audit"', html)
+
+    def test_company_details_in_footer(self):
+        html = self.client.get('/en/').content.decode()
+        for token in ('938 226 938', 'Rambergveien 18, 3115 Tønsberg'):
+            self.assertIn(token, html)
+        self.assertNotIn('Sandefjord', html)
+
+    def test_about_page_has_founder_letter_and_ceo(self):
+        html = self.client.get('/en/about/').content.decode()
+        for token in ('id="founder"', 'Okan Ozturk', 'Egon Bjune', '938 226 938'):
+            self.assertIn(token, html)
+        self.assertNotIn('id="founder"', self.client.get('/en/').content.decode())
+
+    def test_active_tab_marked(self):
+        for path, label in (('/en/', 'Software'), ('/en/automation/', 'Software'),
+                            ('/en/equipment/', 'Equipment'), ('/en/design/', 'Design'),
+                            ('/en/about/', 'About')):
+            with self.subTest(path=path):
+                html = self.client.get(path).content.decode()
+                self.assertRegex(html, r'aria-current="page">' + label + '<')
+
+    def test_subpage_nav_points_back_to_homepage_sections(self):
+        html = self.client.get('/en/automation/').content.decode()
+        self.assertIn('href="/en/#sectors"', html)
+        self.assertIn('href="/en/about/"', html)
+        self.assertNotIn('href="#sectors"', html)
 
     def test_contact_form_contract_intact(self):
         # JS depends on these ids/fields; views depend on the honeypot + field names.

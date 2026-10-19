@@ -11,6 +11,9 @@ CONTENT_LASTMOD = date(2026, 6, 23)
 # Map each named view to the template whose mtime drives its <lastmod>.
 TEMPLATE_FOR = {
     'index': 'index.html',
+    'equipment': 'equipment.html',
+    'design': 'design.html',
+    'about': 'about.html',
     'feature_aquaculture': 'features/aquaculture_software.html',
     'feature_regulatory': 'features/regulatory_compliance.html',
     'feature_automation': 'features/automation.html',
@@ -29,7 +32,6 @@ def _tpl_mtime(item):
 
 
 class StaticViewSitemap(Sitemap):
-    priority = 1.0
     changefreq = 'weekly'
     protocol = 'https'
     i18n = True
@@ -38,7 +40,10 @@ class StaticViewSitemap(Sitemap):
     x_default = 'en'
 
     def items(self):
-        return ['index']
+        return ['index', 'equipment', 'design', 'about']
+
+    def priority(self, item):
+        return 1.0 if item == 'index' else 0.9
 
     def location(self, item):
         return reverse(item)
