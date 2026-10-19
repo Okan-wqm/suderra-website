@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>{% block title %}SUDERRA{% endblock %}</title>
   <meta name="google-site-verification" content="jJfmrvnn6dpNVPWYQn7HyDNt2GPmjl065L9brl3M5mQ" />
-  <meta name="description" content="{% block description %}{% trans "Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design." %}{% endblock %}">
+  <meta name="description" content="{% block description %}{% trans "Aquaculture software from Norway: Suderra Edge and science-based AI help you use the data from your existing sensors and equipment more efficiently. Plus RAS equipment and design." %}{% endblock %}">
   <link rel="canonical" href="https://suderra.com{{ request.path }}">
 
   <!-- Favicon -->
@@ -25,8 +25,8 @@
   <link rel="alternate" hreflang="x-default" href="https://suderra.com/en{{ request.path|slice:'3:' }}">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="{% block og_title %}SUDERRA — {% trans 'Aquaculture software and real-time water intelligence' %}{% endblock %}">
-  <meta property="og:description" content="{% block og_description %}{% trans 'Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design.' %}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}SUDERRA — {% trans "Aquaculture software and real-time water monitoring" %}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{% trans "Aquaculture software from Norway: Suderra Edge and science-based AI help you use the data from your existing sensors and equipment more efficiently. Plus RAS equipment and design." %}{% endblock %}">
   <meta property="og:image" content="{% block og_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
   <meta property="og:url" content="https://suderra.com{{ request.path }}">
   <meta property="og:type" content="website">
@@ -35,8 +35,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% block twitter_title %}SUDERRA — {% trans 'Aquaculture software and real-time water intelligence' %}{% endblock %}">
-  <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design.' %}{% endblock %}">
+  <meta name="twitter:title" content="{% block twitter_title %}SUDERRA — {% trans "Aquaculture software and real-time water monitoring" %}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{% trans "Aquaculture software from Norway: Suderra Edge and science-based AI help you use the data from your existing sensors and equipment more efficiently. Plus RAS equipment and design." %}{% endblock %}">
   <meta name="twitter:image" content="{% block twitter_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -157,7 +157,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <img src="{% static 'webapp/images/logo5.png' %}" alt="Suderra" class="foot-mark">
-        <p>{% trans "Aquaculture software, RAS equipment and design — run on live water data." %}</p>
+        <p>{% trans "Aquaculture software, RAS equipment and design services from Norway." %}</p>
         <address class="foot-loc">Suderra AS<br>Rambergveien 18, 3115 Tønsberg<br>{% trans "Norway" %} {% include "partials/flag_no.html" %}</address>
       </div>
       <div class="foot-col">
@@ -184,7 +184,7 @@
       </div>
       <div class="foot-col foot-news">
         <h4>{% trans "Newsletter" %}</h4>
-        <p>{% trans "Water-tech notes, occasionally." %}</p>
+        <p>{% trans "Occasional news on aquaculture technology." %}</p>
         <form id="newsletterForm" class="news-form" data-ajax-url="{% url 'ajax_newsletter' %}" data-msg-error="{% trans 'An error occurred. Please try again later.' %}">
           {% csrf_token %}
           <div class="hp" aria-hidden="true"><label>Company URL<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
