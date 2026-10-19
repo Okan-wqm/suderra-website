@@ -3,10 +3,10 @@
 {% load i18n %}
 {% get_current_language as CURRENT_LANGUAGE %}
 
-{% block title %}SUDERRA — {% trans "Aquaculture Software & Real-Time Water Intelligence" %}{% endblock %}
-{% block description %}{% trans "Suderra Edge connects to the sensors and equipment you already have; Suderra OS and science-based AI turn live water data into decisions. Norwegian aquaculture software — plus RAS equipment and design." %}{% endblock %}
-{% block og_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
-{% block twitter_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
+{% block title %}SUDERRA — {% trans "Aquaculture Software and Real-Time Water Monitoring" %}{% endblock %}
+{% block description %}{% trans "Suderra helps fish farms use their water data more efficiently: Suderra Edge connects to existing sensors and equipment, and science-based AI supports daily decisions. Aquaculture software from Norway, plus RAS equipment and design." %}{% endblock %}
+{% block og_description %}{% trans "Aquaculture software from Norway: Suderra Edge and science-based AI help you use the data from your existing sensors more efficiently — plus the Single Tank RAS and design services." %}{% endblock %}
+{% block twitter_description %}{% trans "Aquaculture software from Norway: Suderra Edge and science-based AI help you use the data from your existing sensors more efficiently — plus the Single Tank RAS and design services." %}{% endblock %}
 
 {% block content %}
 
@@ -17,15 +17,15 @@
   <div class="hero-inner">
     <p class="eyebrow reveal"><span class="eyebrow-dot"></span>Suderra Edge · Suderra OS · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
     <h1 class="hero-title reveal">
-      {% trans "Know what your water is doing" %}<br>
-      <em class="serif">{% trans "before your fish do." %}</em>
+      {% trans "Turn your water data" %}<br>
+      <em class="serif">{% trans "into better decisions." %}</em>
     </h1>
     <p class="hero-lede reveal">
-      {% trans "Oxygen drops at night, ammonia creeps up, reports pile up — and the data sits scattered across devices and spreadsheets. Suderra connects to the sensors and equipment you already have, watches every tank around the clock and tells you what to do while there is still time to act." %}
+      {% trans "Suderra connects to the sensors and equipment you already have, monitors water quality in every tank around the clock and alerts you early when something changes — with clear, science-based recommendations your team can act on." %}
     </p>
     <div class="hero-cta reveal">
       <a href="#contact" class="btn btn-coral">{% trans "Book a demo" %}</a>
-      <a href="#problems" class="btn btn-ghost">{% trans "See what it solves" %}</a>
+      <a href="#problems" class="btn btn-ghost">{% trans "How we help" %}</a>
     </div>
 
     <div class="ticker reveal" aria-hidden="true">
@@ -36,7 +36,7 @@
     </div>
   </div>
   <div class="scroll-hint" aria-hidden="true">
-    <span>{% trans "Scroll to clarify" %}</span>
+    <span>{% trans "Scroll down" %}</span>
     <div class="scroll-rail"><i></i></div>
   </div>
 </section>
@@ -45,25 +45,25 @@
 <section class="problems section" id="problems" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "The problem" %}</span>
-      <h2 class="sec-title">{% trans "You already have the data." %} <em class="serif">{% trans "You just can't use it yet." %}</em></h2>
+      <span class="sec-tag">{% trans "How we help" %}</span>
+      <h2 class="sec-title">{% trans "Make better use of" %} <em class="serif">{% trans "the data you already have." %}</em></h2>
     </header>
     <div class="ps-grid">
       <article class="ps-card reveal" style="--i:0">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Data scattered everywhere" %}</h3><p>{% trans "Sensors from different vendors, PLCs, logbooks and spreadsheets — nobody sees the whole picture." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Suderra Edge connects to any sensor over MQTT, Modbus or OPC-UA and puts every tank on one screen." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Data spread across many systems" %}</h3><p>{% trans "Sensors from different suppliers, control systems, logbooks and spreadsheets make it hard to see the full picture." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "How Suderra helps" %}</span><p>{% trans "Suderra Edge connects to sensors over MQTT, Modbus or OPC-UA and brings every tank together on one screen." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:1">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Problems found too late" %}</h3><p>{% trans "An oxygen drop at night or rising ammonia is often noticed only when the fish show it." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Live monitoring and AI alerts flag the drift early, explain the likely cause and suggest the fix." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Changes that are hard to catch in time" %}</h3><p>{% trans "A night-time drop in oxygen or a slow rise in ammonia can go unnoticed until it affects the fish." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "How Suderra helps" %}</span><p>{% trans "Continuous monitoring and early alerts flag the change in time, explain the likely cause and suggest what to do." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:2">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Reporting eats the week" %}</h3><p>{% trans "Lice counts, biomass and mortality are copied by hand into reports for the authorities." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Reports are built from your live data in the format Mattilsynet expects — in one click." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Time-consuming reporting" %}</h3><p>{% trans "Lice counts, biomass and mortality figures are often compiled by hand for the authorities." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "How Suderra helps" %}</span><p>{% trans "Reports are generated from your live data in the format Mattilsynet requires, in a single step." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:3">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "AI you can't check" %}</h3><p>{% trans "Black-box models give answers no one can explain — not to an auditor, not to themselves." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Our AI uses published science, every recommendation is traceable, and you decide what it may do on its own." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Decisions you can explain" %}</h3><p>{% trans "Recommendations are only useful when your team understands them and can justify them to auditors." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "How Suderra helps" %}</span><p>{% trans "Our AI is built on published science: every recommendation is traceable, and you decide what may run automatically." %}</p></div>
       </article>
     </div>
   </div>
@@ -75,15 +75,15 @@
     <div class="platform-grid">
       <div class="platform-copy reveal">
         <span class="sec-tag">{% trans "The platform" %}</span>
-        <h2 class="sec-title">{% trans "Your whole farm," %} <em class="serif">{% trans "one pane of glass." %}</em></h2>
-        <p class="platform-lede">{% trans "Suderra Edge is a gateway that sits at your farm, reads every sensor and keeps working even when the internet doesn't. Above it, Suderra OS gives you one secure place to see, decide and report — on the big screen or in your pocket." %}</p>
+        <h2 class="sec-title">{% trans "Your whole farm" %} <em class="serif">{% trans "on one screen." %}</em></h2>
+        <p class="platform-lede">{% trans "Suderra Edge is a gateway installed at your farm. It reads every sensor and keeps working even when the internet connection drops. On top of it, Suderra OS gives you one secure place to monitor, decide and report — from the control room or on your phone." %}</p>
         <ul class="platform-points">
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="loop" %}</span><div><strong>{% trans "Keeps running when the internet doesn't" %}</strong>{% trans "Suderra Edge stores data and runs automation on site. If the connection drops, monitoring and control carry on — and nothing is lost." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="pulse" %}</span><div><strong>{% trans "Works with what you already own" %}</strong>{% trans "MQTT, Modbus, OPC-UA and 8+ pump and motor brands. No rip-and-replace, no per-sensor ceiling — connected in minutes." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="shield" %}</span><div><strong>{% trans "Your data stays yours" %}</strong>{% trans "Every client has its own database — your data never mixes with anyone else's." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="chart" %}</span><div><strong>{% trans "See causes, not just numbers" %}</strong>{% trans "Science-based charts put every parameter in context, so you see why something changed — not only that it did." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="phone" %}</span><div><strong>{% trans "The farm in your pocket" %}</strong>{% trans "Log data, get alerts and act from the field — the mobile app works even without signal." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="report" %}</span><div><strong>{% trans "Reports in one click" %}</strong>{% trans "Mattilsynet-format reports built from your live data — hours of paperwork become a click." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="loop" %}</span><div><strong>{% trans "Works even without internet" %}</strong>{% trans "Suderra Edge stores data and runs automation on site. If the connection drops, monitoring and control continue and no data is lost." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="pulse" %}</span><div><strong>{% trans "Works with your existing equipment" %}</strong>{% trans "Supports MQTT, Modbus, OPC-UA and 8+ pump and motor brands. There is no need to replace equipment and no limit on the number of sensors, and it is connected in minutes." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="shield" %}</span><div><strong>{% trans "Your data stays yours" %}</strong>{% trans "Every client has its own separate database, so your data is always kept apart from other clients' data." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="chart" %}</span><div><strong>{% trans "Understand the reasons behind changes" %}</strong>{% trans "Science-based charts show each parameter in context, so you can see not only that a value changed, but also why." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="phone" %}</span><div><strong>{% trans "Manage operations from the field" %}</strong>{% trans "Enter data, receive alerts and take action from the field; the mobile app also works without mobile coverage." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="report" %}</span><div><strong>{% trans "Reports in a few clicks" %}</strong>{% trans "Mattilsynet-format reports are prepared from your live data, saving hours of manual work." %}</div></li>
         </ul>
       </div>
 
@@ -108,7 +108,7 @@
             </g>
             <!-- safe zone -->
             <rect class="dfx-safe" x="120" y="64" width="96" height="58" rx="12"/>
-            <text class="dfx-safe-lab" x="168" y="96" text-anchor="middle">{% trans "safe zone" %}</text>
+            <text class="dfx-safe-lab" x="168" y="115" text-anchor="middle">{% trans "safe zone" %}</text>
             <!-- axes -->
             <g stroke="rgba(255,255,255,.22)" stroke-width="1.2">
               <line x1="40" y1="16" x2="40" y2="172"/>
@@ -225,8 +225,8 @@
 <section class="sectors section" id="sectors" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "One platform, every sector" %}</span>
-      <h2 class="sec-title">{% trans "Sector-agnostic. Protocol-native." %}</h2>
+      <span class="sec-tag">{% trans "Sectors" %}</span>
+      <h2 class="sec-title">{% trans "One platform for fish farming, soilless culture and waste water." %}</h2>
     </header>
     <div class="sector-grid">
       <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal" style="--i:0"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
@@ -244,9 +244,9 @@
 <section class="beyond section" id="beyond" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "Beyond the software" %}</span>
-      <h2 class="sec-title">{% trans "Equipment and engineering," %} <em class="serif">{% trans "from the same team." %}</em></h2>
-      <p class="sec-lede">{% trans "Building a new farm? Most of the cost and risk is locked in at the design stage. We supply the Single Tank system and design the facility around it — so it runs efficiently from day one." %}</p>
+      <span class="sec-tag">{% trans "Equipment and design" %}</span>
+      <h2 class="sec-title">{% trans "Equipment and engineering" %} <em class="serif">{% trans "from the same team." %}</em></h2>
+      <p class="sec-lede">{% trans "Planning a new farm? Many costs and risks are decided at the design stage. We supply the Single Tank system and design the facility around it, so it can run efficiently from day one." %}</p>
     </header>
     <div class="beyond-grid">
       <a href="{% url 'equipment' %}" class="beyond-card reveal" style="--i:0">
@@ -254,7 +254,7 @@
         <div class="beyond-body">
           <span class="beyond-tag">{% trans "Equipment" %}</span>
           <h3>{% trans "The Single Tank Design" %}</h3>
-          <p>{% trans "Less piping, a smaller building and a smaller crew: an octagonal tank-in-tank RAS that recirculates over 94% of its water." %}</p>
+          <p>{% trans "An octagonal tank-in-tank RAS that recirculates over 94% of its water, with less piping, a smaller footprint and a smaller crew." %}</p>
           <span class="beyond-go">{% trans "Explore the equipment" %} <span aria-hidden="true">→</span></span>
         </div>
       </a>
@@ -272,7 +272,7 @@
         <div class="beyond-body">
           <span class="beyond-tag">{% trans "Design" %}</span>
           <h3>{% trans "RAS design & engineering" %}</h3>
-          <p>{% trans "Avoid costly design mistakes and financing gaps — design, audits, Eksfin-backed financing, build and training from one partner." %}</p>
+          <p>{% trans "Design, independent audits, Eksfin-backed financing, construction support and training — from one partner." %}</p>
           <span class="beyond-go">{% trans "Explore design services" %} <span aria-hidden="true">→</span></span>
         </div>
       </a>
@@ -286,7 +286,7 @@
     <div class="contact-copy reveal">
       <span class="sec-tag">{% trans "Get in Touch" %}</span>
       <h2 class="sec-title">{% trans "Tell us about" %} <em class="serif">{% trans "your system." %}</em></h2>
-      <p>{% trans "Tell us what keeps you up at night — oxygen, reporting or a new build — and we will show you how Suderra solves it." %}</p>
+      <p>{% trans "Whether you want to make better use of your sensor data, plan a new RAS facility or review an existing one, we would be glad to talk." %}</p>
       <ul class="contact-points">
         <li><a href="mailto:okan@suderra.com">okan@suderra.com</a></li>
         <li>Rambergveien 18, 3115 Tønsberg, {% trans "Norway" %}</li>
