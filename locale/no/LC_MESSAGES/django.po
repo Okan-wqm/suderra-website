@@ -9,6 +9,9 @@ msgstr ""
 msgid "10+ years hands-on experience"
 msgstr "10+ års praktisk erfaring"
 
+msgid "15–20%% smaller footprint with the octagonal geometry"
+msgstr "15–20 % mindre arealbehov med åttekantet geometri"
+
 msgid ""
 "24+ preset nutrient recipes for common crops. Create, modify, and share "
 "custom formulas. Track nutrient consumption per crop cycle for accurate cost"
@@ -17,6 +20,9 @@ msgstr ""
 "24+ ferdige næringsresepter for vanlige vekster. Lag, endre og del egne "
 "resepter. Følg næringsforbruket per dyrkingssyklus for nøyaktig "
 "kostnadsanalyse."
+
+msgid "24/7 operation with a 3–4 person crew"
+msgstr "Drift døgnet rundt med 3–4 personer"
 
 msgid "24/7 with a lean team"
 msgstr "24/7 med liten bemanning"
@@ -27,12 +33,21 @@ msgstr "3–4 biofiltertrinn, dimensjonert for arten og fisketettheten din."
 msgid "70%% reuse"
 msgstr "70 % gjenbruk"
 
-msgid ""
-"A tested, CFD-validated tank-in-tank system that recirculates over 94%% of "
-"its water — built around your species, your site, your scale."
+msgid "A crew left alone after handover"
+msgstr "Mannskap som står alene etter overlevering"
+
+msgid "A good project waits while the capital is arranged."
 msgstr ""
-"Et testet, CFD-validert kar-i-kar-system som resirkulerer over 94 % av "
-"vannet – bygget rundt din art, din lokalitet og din skala."
+"Et godt prosjekt blir stående og vente mens kapitalen kommer på plass."
+
+msgid "A large building for the same volume"
+msgstr "Stort bygg for samme volum"
+
+msgid "A large crew for round-the-clock operation"
+msgstr "Stort mannskap for drift døgnet rundt"
+
+msgid "A site that underperforms"
+msgstr "Et anlegg som ikke leverer"
 
 msgid "A word from our founder"
 msgstr "Et ord fra gründeren"
@@ -42,6 +57,9 @@ msgstr "TILTAK"
 
 msgid "AI Engine"
 msgstr "KI-motor"
+
+msgid "AI you can't check"
+msgstr "KI du ikke kan etterprøve"
 
 msgid ""
 "AI-driven anomaly detection with multi-channel alerts via SMS, email, and "
@@ -92,16 +110,20 @@ msgstr "AUTOSYNK"
 msgid "About"
 msgstr "Om oss"
 
+msgid "About 30–35%% lower investment"
+msgstr "Ca. 30–35 % lavere investering"
+
 msgid "About Suderra"
 msgstr "Om Suderra"
+
+msgid "About Suderra — Aquaculture Software from Norway"
+msgstr "Om Suderra – programvare for akvakultur fra Norge"
 
 msgid "Accept"
 msgstr "Godta"
 
-msgid "Add as many sensors and devices as you need — no per-sensor ceiling."
-msgstr ""
-"Legg til så mange sensorer og enheter du trenger – det er ingen øvre grense "
-"for antall sensorer."
+msgid "Address"
+msgstr "Adresse"
 
 msgid ""
 "All automation programs run locally on the edge gateway. If internet "
@@ -117,6 +139,20 @@ msgstr "Alle rettigheter forbeholdt."
 
 msgid "An error occurred. Please try again later."
 msgstr "Det oppstod en feil. Prøv igjen senere."
+
+msgid ""
+"An independent audit of water balance, biosecurity and risk, with a "
+"prioritized roadmap."
+msgstr ""
+"En uavhengig tilstandsvurdering av vannbalanse, biosikkerhet og risiko, med "
+"en prioritert tiltaksplan."
+
+msgid ""
+"An oxygen drop at night or rising ammonia is often noticed only when the "
+"fish show it."
+msgstr ""
+"Et oksygenfall om natten eller stigende ammoniakk merkes ofte først når "
+"fisken viser det."
 
 msgid "Annual production"
 msgstr "Årsproduksjon"
@@ -145,9 +181,6 @@ msgid ""
 msgstr ""
 "Norsk programvare for akvakultur: Suderra Edge og KI i sanntid, bygget på "
 "sensorene og utstyret du allerede har – pluss RAS-utstyr og design."
-
-msgid "Aquaculture software, RAS equipment & design"
-msgstr "Programvare for akvakultur, RAS-utstyr og design"
 
 msgid ""
 "Aquaculture software, RAS equipment and design — run on live water data."
@@ -273,6 +306,14 @@ msgstr ""
 "skyen. Selv om internettforbindelsen faller ut, går "
 "automatiseringsprogrammene dine videre uten avbrudd."
 
+msgid ""
+"Avoid costly design mistakes and financing gaps — design, audits, Eksfin-"
+"backed financing, build and training from one partner."
+msgstr ""
+"Unngå dyre prosjekteringsfeil og hull i finansieringen – design, "
+"tilstandsvurdering, Eksfin-støttet finansiering, bygging og opplæring fra én"
+" partner."
+
 msgid "Back to Home"
 msgstr "Tilbake til forsiden"
 
@@ -302,6 +343,13 @@ msgstr ""
 "Biofilter, strømning og bunnavløp er utprøvd i felt og i simulering – ikke "
 "bare på papiret."
 
+msgid ""
+"Biofilters, oxygenation and degassing sized by rule of thumb fall short as "
+"the biomass grows."
+msgstr ""
+"Biofiltre, oksygenering og avgassing dimensjonert etter tommelfingerregler "
+"kommer til kort når biomassen øker."
+
 msgid "Biofiltration"
 msgstr "Biofiltrering"
 
@@ -310,6 +358,13 @@ msgstr "Biomasserapportering"
 
 msgid "Biosecurity & risk"
 msgstr "Biosikkerhet og risiko"
+
+msgid ""
+"Black-box models give answers no one can explain — not to an auditor, not to"
+" themselves."
+msgstr ""
+"Svartboksmodeller gir svar ingen kan forklare – verken for en kontrollør "
+"eller for seg selv."
 
 msgid "Book a demo"
 msgstr "Bestill en demo"
@@ -332,6 +387,15 @@ msgstr ""
 "Lag automatiseringsprogrammer uten å skrive kode. Med Suderras visuelle "
 "automatiseringsbygger setter du opp fôringsplaner, doseringsrutiner og "
 "miljøstyring med dra-og-slipp – koblet til alle sensorene på anlegget."
+
+msgid ""
+"Building a new farm? Most of the cost and risk is locked in at the design "
+"stage. We supply the Single Tank system and design the facility around it — "
+"so it runs efficiently from day one."
+msgstr ""
+"Skal du bygge nytt anlegg? Mesteparten av kostnaden og risikoen låses "
+"allerede i designfasen. Vi leverer Single Tank-systemet og prosjekterer "
+"anlegget rundt det – så det går effektivt fra første dag."
 
 msgid "Built in Norway, for Norway"
 msgstr "Laget i Norge, for Norge"
@@ -384,15 +448,11 @@ msgstr "Lukket krets, lite rørføring"
 msgid "Cold or warm, freshwater or marine; multi-species ready."
 msgstr "Kaldt eller varmt, ferskvann eller sjøvann – klar for flere arter."
 
-msgid ""
-"Combined, science-based graphs that put every parameter in context, with AI-"
-"assisted decisions."
-msgstr ""
-"Kombinerte, vitenskapsbaserte grafer som setter alle parametere i sammenheng"
-" – med KI-assisterte beslutninger."
-
 msgid "Company"
 msgstr "Selskap"
+
+msgid "Company details"
+msgstr "Selskapsinformasjon"
 
 msgid ""
 "Complete audit trail for all data changes and report submissions. Every "
@@ -421,9 +481,6 @@ msgstr "Etterlevelse"
 
 msgid "Compliance Features"
 msgstr "Funksjoner for etterlevelse"
-
-msgid "Compliance-ready reports"
-msgstr "Rapporter klare for myndighetene"
 
 msgid "Conditional Alerts & Actions"
 msgstr "Regelstyrte varsler og tiltak"
@@ -469,6 +526,23 @@ msgstr ""
 "regelverket. Automatiske rapporter om etterlevelse og varsler i forkant når "
 "parameterne nærmer seg grensene."
 
+msgid "Conventional RAS"
+msgstr "Konvensjonelt RAS"
+
+msgid ""
+"Conventional RAS means many tanks, long pipe runs, a big building and a big "
+"crew. The Single Tank Design puts it all into one CFD-validated tank-in-tank"
+" unit that recirculates over 94%% of its water — so you build for less and "
+"run with fewer people."
+msgstr ""
+"Et konvensjonelt RAS-anlegg betyr mange kar, lange rørstrekk, et stort bygg "
+"og et stort mannskap. Single Tank Design samler alt i én CFD-validert kar-i-"
+"kar-enhet som resirkulerer over 94 % av vannet – så du bygger billigere og "
+"drifter med færre folk."
+
+msgid "Data scattered everywhere"
+msgstr "Data spredt på alle kanter"
+
 msgid "Deadline Management"
 msgstr "Fristoppfølging"
 
@@ -483,13 +557,6 @@ msgstr "Design og prosjektering"
 
 msgid "Design, audit, financing, construction support and training."
 msgstr "Design, tilstandsvurdering, finansiering, byggestøtte og opplæring."
-
-msgid ""
-"Design, independent audits, Eksfin-backed financing, construction support "
-"and training — one partner from the first drawing."
-msgstr ""
-"Design, uavhengige tilstandsvurderinger, Eksfin-støttet finansiering, "
-"byggestøtte og opplæring – én partner helt fra første tegning."
 
 msgid "Design."
 msgstr "Design."
@@ -580,13 +647,6 @@ msgstr "Utviklet i Norge"
 msgid "Engineering scope"
 msgstr "Prosjekteringsomfang"
 
-msgid ""
-"Enter farm data and run every operation from the field — offline-first "
-"mobile app."
-msgstr ""
-"Registrer data og styr all drift ute på anlegget – mobilappen fungerer også "
-"uten nett."
-
 msgid "Equipment"
 msgstr "Utstyr"
 
@@ -657,6 +717,12 @@ msgstr "Finansiering for prosjekter over 2 mill. euro"
 msgid "Financing for projects under €2M"
 msgstr "Finansiering for prosjekter under 2 mill. euro"
 
+msgid "Financing that stalls the project"
+msgstr "Finansiering som stanser prosjektet"
+
+msgid "Fix it on paper,"
+msgstr "Løs det på papiret,"
+
 msgid "Flow & hydraulics"
 msgstr "Strømning og hydraulikk"
 
@@ -672,9 +738,6 @@ msgid ""
 msgstr ""
 "Overvåking av vannføring, kjemikaliebruk og utslipp – med full sporbarhet."
 
-msgid "Focus"
-msgstr "Fokus"
-
 msgid "Frequently Asked Questions"
 msgstr "Ofte stilte spørsmål"
 
@@ -683,9 +746,6 @@ msgstr "Ferskvann, sjøvann, alle klima"
 
 msgid "From a single tank"
 msgstr "Fra ett enkelt kar"
-
-msgid "From raw sensor data"
-msgstr "Fra rå sensordata"
 
 msgid "From sensors to decisions — in four steps."
 msgstr "Fra sensorer til beslutninger – i fire trinn."
@@ -716,15 +776,6 @@ msgstr ""
 "Sporing av hele livsløpet fra smolt til slakt. Dødelighetsanalyse, "
 "vekstkurver, biomasseberegning og sammenligning mellom generasjoner – helt "
 "automatisk."
-
-msgid ""
-"Full recirculating aquaculture engineering — design, independent audits, "
-"Eksfin-backed financing, construction support and training. One partner, "
-"from the first drawing to live operation."
-msgstr ""
-"Komplett prosjektering av resirkuleringsanlegg – design, uavhengige "
-"tilstandsvurderinger, Eksfin-støttet finansiering, byggestøtte og opplæring."
-" Én partner fra første tegning til anlegget er i drift."
 
 msgid "Fully automatic feeding"
 msgstr "Helautomatisk fôring"
@@ -760,6 +811,9 @@ msgstr "Vekstfaser"
 
 msgid "Headquarters"
 msgstr "Hovedkontor"
+
+msgid "High build cost per cubic metre"
+msgstr "Høy byggekostnad per kubikkmeter"
 
 msgid "Home"
 msgstr "Forside"
@@ -853,14 +907,17 @@ msgstr "IoT-sensorintegrasjon, fôringsautomatikk og doseringsstyring"
 msgid "Is this the same platform used for aquaculture?"
 msgstr "Er dette den samme plattformen som brukes i akvakultur?"
 
-msgid "Isolated per client"
-msgstr "Isolert per kunde"
+msgid "Keeps running when the internet doesn't"
+msgstr "Fungerer selv når nettet svikter"
 
 msgid "Key Aquaculture Features"
 msgstr "Hovedfunksjoner for akvakultur"
 
 msgid "Key Features"
 msgstr "Hovedfunksjoner"
+
+msgid "Know what your water is doing"
+msgstr "Se hva som skjer i vannet"
 
 msgid ""
 "Knowledge has never reached every shore equally. A producer on a remote "
@@ -892,8 +949,35 @@ msgstr "L/s"
 msgid "Less piping"
 msgstr "Mindre rørføring"
 
+msgid ""
+"Less piping, a smaller building and a smaller crew: an octagonal tank-in-"
+"tank RAS that recirculates over 94%% of its water."
+msgstr ""
+"Mindre rørføring, mindre bygg og mindre bemanning: et åttekantet kar-i-kar-"
+"anlegg (RAS) som resirkulerer over 94 % av vannet."
+
+msgid "Less to build."
+msgstr "Mindre å bygge."
+
+msgid "Less to run."
+msgstr "Mindre å drifte."
+
+msgid ""
+"Lice counts, biomass and mortality are copied by hand into reports for the "
+"authorities."
+msgstr ""
+"Lusetall, biomasse og dødelighet skrives manuelt over i rapporter til "
+"myndighetene."
+
 msgid "Live"
 msgstr "Sanntid"
+
+msgid ""
+"Live monitoring and AI alerts flag the drift early, explain the likely cause"
+" and suggest the fix."
+msgstr ""
+"Sanntidsovervåking og KI-varsler fanger opp avviket tidlig, forklarer den "
+"sannsynlige årsaken og foreslår tiltak."
 
 msgid ""
 "Live water data, science-based AI and compliance reports for every tank."
@@ -901,8 +985,22 @@ msgstr ""
 "Vanndata i sanntid, vitenskapsbasert KI og myndighetsrapporter for hvert "
 "kar."
 
+msgid ""
+"Log data, get alerts and act from the field — the mobile app works even "
+"without signal."
+msgstr ""
+"Registrer data, få varsler og grip inn ute på anlegget – mobilappen fungerer"
+" også uten dekning."
+
 msgid "Lower investment"
 msgstr "Lavere investering"
+
+msgid ""
+"MQTT, Modbus, OPC-UA and 8+ pump and motor brands. No rip-and-replace, no "
+"per-sensor ceiling — connected in minutes."
+msgstr ""
+"MQTT, Modbus, OPC-UA og 8+ pumpe- og motormerker. Ingenting må byttes ut, "
+"ingen grense for antall sensorer – koblet til på få minutter."
 
 msgid ""
 "Manage hydroponics, aquaponics, and vertical farming operations with "
@@ -926,6 +1024,26 @@ msgstr ""
 "dødelighet. Suderras programvareplattform for akvakultur kobles til alle "
 "sensorene på anlegget og samler alle data i ett system."
 
+msgid ""
+"Many RAS problems are built in on day one: undersized biofilters, poor flow,"
+" a financing gap or a crew left alone after handover. We engineer them out —"
+" from the first drawing to a running farm."
+msgstr ""
+"Mange RAS-problemer bygges inn allerede første dag: underdimensjonerte "
+"biofiltre, dårlig strømning, hull i finansieringen eller et mannskap som "
+"står alene etter overlevering. Vi prosjekterer dem bort – fra første tegning"
+" til et anlegg i drift."
+
+msgid "Many separate tanks and long pipe runs"
+msgstr "Mange separate kar og lange rørstrekk"
+
+msgid ""
+"Mattilsynet-format reports built from your live data — hours of paperwork "
+"become a click."
+msgstr ""
+"Rapporter i Mattilsynets format, bygget fra sanntidsdataene dine – timer med"
+" papirarbeid blir til ett klikk."
+
 msgid "Message"
 msgstr "Melding"
 
@@ -934,9 +1052,6 @@ msgstr "Meldingen er sendt! Vi tar kontakt med deg snart."
 
 msgid "Mobile App"
 msgstr "Mobilapp"
-
-msgid "Mobile operations"
-msgstr "Mobil drift"
 
 msgid ""
 "Modern production facilities run on sensors and controllers — but most "
@@ -985,6 +1100,9 @@ msgid ""
 msgstr ""
 "Gå aldri glipp av en rapporteringsfrist. Suderra holder oversikt over alle "
 "innsendingsfrister og sender påminnelser til de ansvarlige i god tid."
+
+msgid "New systems struggle when the people running them never learned how."
+msgstr "Nye anlegg sliter når de som skal drive dem, aldri har lært hvordan."
 
 msgid "Newsletter"
 msgstr "Nyhetsbrev"
@@ -1075,13 +1193,6 @@ msgstr ""
 "Åttekantet kar-i-kar-anlegg (RAS) – spesifikasjoner og skalascenarioer."
 
 msgid ""
-"Octagonal tank-in-tank RAS: over 94%% of the water recirculated, 95%% less "
-"piping, 60–1500 t/yr."
-msgstr ""
-"Åttekantet kar-i-kar-anlegg (RAS): over 94 % av vannet resirkuleres, 95 % "
-"mindre rørføring, 60–1500 tonn/år."
-
-msgid ""
 "Octagonal tank-in-tank RAS: over 94%% water recirculation, 95%% less piping,"
 " 12–40 m diameter, 60–1500 t/yr."
 msgstr ""
@@ -1105,6 +1216,9 @@ msgstr ""
 
 msgid "One platform, every sector"
 msgstr "Én plattform, alle sektorer"
+
+msgid "One tank-in-tank unit with 95%% less piping"
+msgstr "Én kar-i-kar-enhet med 95 % mindre rørføring"
 
 msgid ""
 "One-click reports in the formats authorities expect — e.g. Mattilsynet."
@@ -1138,6 +1252,13 @@ msgstr ""
 "finner rotårsaker og foreslår korrigerende tiltak."
 
 msgid ""
+"Our AI uses published science, every recommendation is traceable, and you "
+"decide what it may do on its own."
+msgstr ""
+"KI-en vår bygger på publisert forskning, hver anbefaling kan spores, og du "
+"bestemmer hva den får gjøre på egen hånd."
+
+msgid ""
 "Our AI uses published scientific formulas — not black-box models. Every "
 "recommendation is traceable and explainable. Operators decide what the AI "
 "can auto-execute."
@@ -1151,6 +1272,17 @@ msgid ""
 msgstr ""
 "Over 94 % resirkulering, med vannutskifting på 5 % eller mindre, avhengig av"
 " lokalitet."
+
+msgid ""
+"Oxygen drops at night, ammonia creeps up, reports pile up — and the data "
+"sits scattered across devices and spreadsheets. Suderra connects to the "
+"sensors and equipment you already have, watches every tank around the clock "
+"and tells you what to do while there is still time to act."
+msgstr ""
+"Oksygenet faller om natten, ammoniakken kryper oppover, rapportene hoper seg"
+" opp – og dataene ligger spredt på enheter og regneark. Suderra kobles til "
+"sensorene og utstyret du allerede har, følger med på hvert kar døgnet rundt "
+"og sier fra om hva du bør gjøre mens det ennå er tid til å handle."
 
 msgid "Oxygenation & degassing"
 msgstr "Oksygenering og avgassing"
@@ -1194,6 +1326,12 @@ msgstr ""
 "Du får varsel i god tid når driftsparametere nærmer seg grenseverdiene i "
 "regelverket, slik at du rekker å sette inn tiltak før kravene brytes."
 
+msgid "Problem"
+msgstr "Problem"
+
+msgid "Problems found too late"
+msgstr "Problemene oppdages for sent"
+
 msgid "Process Dashboard"
 msgstr "Prosessdashbord"
 
@@ -1202,6 +1340,9 @@ msgstr "Produksjonskapasitet"
 
 msgid "Proven where it matters."
 msgstr "Utprøvd der det teller."
+
+msgid "Pumping losses across the whole loop"
+msgstr "Pumpetap gjennom hele kretsen"
 
 msgid "RAS Design & Engineering"
 msgstr "RAS-design og prosjektering"
@@ -1304,11 +1445,21 @@ msgstr ""
 "vår lagrer data lokalt, og mobilappen fungerer uten dekning. Du mister aldri"
 " data."
 
+msgid "Reporting eats the week"
+msgstr "Rapporteringen spiser opp uken"
+
+msgid ""
+"Reports are built from your live data in the format Mattilsynet expects — in"
+" one click."
+msgstr ""
+"Rapportene bygges fra sanntidsdataene dine, i formatet Mattilsynet forventer"
+" – med ett klikk."
+
+msgid "Reports in one click"
+msgstr "Rapporter med ett klikk"
+
 msgid "Run"
 msgstr "Drift"
-
-msgid "Runs on Suderra OS"
-msgstr "Kjører på Suderra OS"
 
 msgid "SHARED CORE"
 msgstr "FELLES KJERNE"
@@ -1325,8 +1476,12 @@ msgstr "Tidsstyrt fôring med automatisk dosering i alle kar."
 msgid "Science-Based AI"
 msgstr "Vitenskapsbasert KI"
 
-msgid "Scientific, unified charts"
-msgstr "Vitenskapelige grafer i ett bilde"
+msgid ""
+"Science-based charts put every parameter in context, so you see why "
+"something changed — not only that it did."
+msgstr ""
+"Vitenskapsbaserte grafer setter hver parameter i sammenheng, så du ser "
+"hvorfor noe endret seg – ikke bare at det skjedde."
 
 msgid "Scroll to clarify"
 msgstr "Rull ned – det klarner"
@@ -1349,11 +1504,17 @@ msgstr ""
 msgid "Sectors"
 msgstr "Sektorer"
 
+msgid "See causes, not just numbers"
+msgstr "Se årsaker, ikke bare tall"
+
 msgid "See scale scenarios"
 msgstr "Se skalascenarioer"
 
 msgid "See the platform"
 msgstr "Se plattformen"
+
+msgid "See what it solves"
+msgstr "Se hva Suderra løser"
 
 msgid "Send message"
 msgstr "Send melding"
@@ -1373,6 +1534,13 @@ msgid ""
 msgstr ""
 "Sensorintegrasjon, fôringsautomatikk og doseringsstyring – på utstyret du "
 "allerede har."
+
+msgid ""
+"Sensors from different vendors, PLCs, logbooks and spreadsheets — nobody "
+"sees the whole picture."
+msgstr ""
+"Sensorer fra ulike leverandører, PLS-er, loggbøker og regneark – ingen ser "
+"helheten."
 
 msgid "Server Error"
 msgstr "Serverfeil"
@@ -1518,6 +1686,22 @@ msgid "Successfully subscribed!"
 msgstr "Du er nå påmeldt!"
 
 msgid ""
+"Suderra AS builds the Suderra Edge platform and its auditable, science-based"
+" AI for aquaculture — backed by hands-on RAS engineering. Rambergveien 18, "
+"Tønsberg, Norway."
+msgstr ""
+"Suderra AS utvikler Suderra Edge-plattformen og etterprøvbar, "
+"vitenskapsbasert KI for akvakultur – med praktisk RAS-prosjektering i "
+"ryggen. Rambergveien 18, Tønsberg."
+
+msgid ""
+"Suderra Edge connects to any sensor over MQTT, Modbus or OPC-UA and puts "
+"every tank on one screen."
+msgstr ""
+"Suderra Edge kobles til alle sensorer via MQTT, Modbus eller OPC-UA og "
+"samler alle kar på én skjerm."
+
+msgid ""
 "Suderra Edge connects to the sensors and equipment you already have; Suderra"
 " OS and science-based AI turn live water data into decisions. Norwegian "
 "aquaculture software — plus RAS equipment and design."
@@ -1527,15 +1711,15 @@ msgstr ""
 "akvakulturprogramvare – pluss RAS-utstyr og design."
 
 msgid ""
-"Suderra Edge plugs into the sensors and equipment you already have — in "
-"minutes, with no rip-and-replace. Suderra OS and science-based AI turn every"
-" reading into decisions you approve, from the control room or the field, "
-"online or offline."
+"Suderra Edge is a gateway that sits at your farm, reads every sensor and "
+"keeps working even when the internet doesn't. Above it, Suderra OS gives you"
+" one secure place to see, decide and report — on the big screen or in your "
+"pocket."
 msgstr ""
-"Suderra Edge kobles til sensorene og utstyret du allerede har – på få "
-"minutter, uten å bytte ut noe. Suderra OS og vitenskapsbasert KI gjør hver "
-"måling om til beslutninger du godkjenner, fra kontrollrommet eller ute på "
-"anlegget, med eller uten nett."
+"Suderra Edge er en gateway som står på anlegget ditt, leser av hver sensor "
+"og jobber videre selv når nettet ikke gjør det. Oppå den gir Suderra OS deg "
+"ett sikkert sted å se, beslutte og rapportere – på storskjermen eller i "
+"lommen."
 
 msgid ""
 "Suderra Edge reads your existing sensors continuously and AI turns the data "
@@ -1545,30 +1729,12 @@ msgstr ""
 "gjør dataene om til beslutninger du godkjenner."
 
 msgid ""
-"Suderra Edge runs on any farm. If you are building a new one, we also supply"
-" the Single Tank system and design the facility around it."
+"Suderra Edge stores data and runs automation on site. If the connection "
+"drops, monitoring and control carry on — and nothing is lost."
 msgstr ""
-"Suderra Edge fungerer på alle anlegg. Skal du bygge nytt, leverer vi også "
-"Single Tank-systemet og prosjekterer anlegget rundt det."
-
-msgid ""
-"Suderra Edge runs on our own Suderra OS and plugs into your existing sensors"
-" and equipment in minutes — no rip-and-replace. Above it, a secure platform "
-"gives every client its own isolated database, unlimited sensors, mobile "
-"operations and science-based charts — with AI helping you decide."
-msgstr ""
-"Suderra Edge kjører på vårt eget Suderra OS og kobles til sensorene og "
-"utstyret du allerede har, på få minutter – uten å bytte ut noe. Oppå dette "
-"ligger en sikker plattform som gir hver kunde sin egen isolerte database, "
-"ubegrenset antall sensorer, mobil drift og vitenskapsbaserte grafer – og KI "
-"som hjelper deg å ta beslutninger."
-
-msgid ""
-"Suderra Edge speaks MQTT, Modbus and OPC-UA — it adapts to your existing "
-"sensors and equipment in minutes."
-msgstr ""
-"Suderra Edge støtter MQTT, Modbus og OPC-UA og tilpasser seg sensorene og "
-"utstyret du allerede har, på få minutter."
+"Suderra Edge lagrer data og kjører automatiseringen lokalt på anlegget. "
+"Faller forbindelsen ut, fortsetter overvåking og styring – og ingenting går "
+"tapt."
 
 msgid ""
 "Suderra automates the entire compliance workflow. Sensor data feeds directly"
@@ -1717,6 +1883,13 @@ msgid "Tell us about your system."
 msgstr "Fortell oss om anlegget ditt."
 
 msgid ""
+"Tell us what keeps you up at night — oxygen, reporting or a new build — and "
+"we will show you how Suderra solves it."
+msgstr ""
+"Fortell oss hva som holder deg våken om natten – oksygen, rapportering eller"
+" et nytt anlegg – så viser vi deg hvordan Suderra løser det."
+
+msgid ""
 "Tell us your species, site and target volume — we will size a Single Tank "
 "scenario for you."
 msgstr ""
@@ -1741,6 +1914,9 @@ msgstr ""
 "resirkulerer over 94 % av vannet – 12–40 m diameter, 60–1500 tonn/år, ca. "
 "30–35 % lavere investering."
 
+msgid "The farm in your pocket"
+msgstr "Anlegget i lommen"
+
 msgid "The platform"
 msgstr "Plattformen"
 
@@ -1763,6 +1939,9 @@ msgstr ""
 "Plattformen har modulær rapportering. Den leveres med maler for norsk "
 "regelverk, men egne rapportformater kan settes opp for andre land og "
 "myndigheter. Ta kontakt for å drøfte hvilke krav du må oppfylle."
+
+msgid "The problem"
+msgstr "Problemet"
 
 msgid ""
 "The visual automation builder lets operators create complex automation "
@@ -1832,6 +2011,12 @@ msgstr ""
 "dyrkingsparametrene. Datadrevet innsikt hjelper deg å øke "
 "produksjonseffektiviteten over tid."
 
+msgid "Under 2 kW per kg of fish (excl. heat)"
+msgstr "Under 2 kW per kg fisk (ekskl. varme)"
+
+msgid "Undersized water treatment"
+msgstr "Underdimensjonert vannbehandling"
+
 msgid "Unified Platform"
 msgstr "Én samlet plattform"
 
@@ -1849,9 +2034,6 @@ msgstr ""
 "Samlet oversikt over alle rensetrinn fra innløp til utløp. "
 "Prosessvisualisering i sanntid, med mulighet til å gå i dybden på hvert "
 "trinn."
-
-msgid "Unlimited sensors"
-msgstr "Ubegrenset antall sensorer"
 
 msgid "Uptime & IP-secured"
 msgstr "Oppetid og IP-beskyttelse"
@@ -1915,6 +2097,13 @@ msgstr "Vannutskifting ≤5 %"
 msgid "Water quality monitoring and effluent management"
 msgstr "Overvåking av vannkvalitet og utslipp"
 
+msgid ""
+"Water quality swings, losses and rising costs at an existing facility, with "
+"no clear cause."
+msgstr ""
+"Svingende vannkvalitet, tap og stigende kostnader på et eksisterende anlegg "
+"– uten noen klar årsak."
+
 msgid "Water recirculated"
 msgstr "Resirkulert vann"
 
@@ -1958,6 +2147,27 @@ msgstr ""
 "veiledende vilkår nedenfor."
 
 msgid ""
+"We help you secure Eksfin-backed financing — 90%% for projects under €2M, "
+"60–70%% above."
+msgstr ""
+"Vi hjelper deg å sikre Eksfin-støttet finansiering – 90 % for prosjekter "
+"under 2 mill. euro, 60–70 % over."
+
+msgid ""
+"We size flow, biofiltration, oxygenation and degassing to your species and "
+"density — and validate the design in CFD."
+msgstr ""
+"Vi dimensjonerer strømning, biofiltrering, oksygenering og avgassing for "
+"arten og fisketettheten din – og validerer designet i CFD."
+
+msgid ""
+"We support construction and commissioning, and train your team to run the "
+"system with confidence."
+msgstr ""
+"Vi bistår under bygging og igangkjøring og lærer opp teamet ditt til å drive"
+" anlegget med trygghet."
+
+msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
 "browse, you consent to our use of cookies."
 msgstr ""
@@ -1985,6 +2195,9 @@ msgstr "Hvilke typer jordfrie dyrkingssystemer støtter Suderra?"
 
 msgid "What's inside"
 msgstr "Under panseret"
+
+msgid "Where projects go wrong"
+msgstr "Der prosjekter går galt"
 
 msgid ""
 "Whether you run a recirculating aquaculture system (RAS), flow-through "
@@ -2015,6 +2228,12 @@ msgstr "Hvorfor velge Suderra til avløpsrensing"
 msgid "Why Suderra"
 msgstr "Hvorfor Suderra"
 
+msgid "Why it matters"
+msgstr "Derfor er det viktig"
+
+msgid "With Suderra"
+msgstr "Med Suderra"
+
 msgid "Work with us"
 msgstr "Samarbeid med oss"
 
@@ -2024,6 +2243,9 @@ msgid ""
 msgstr ""
 "Fungerer med sensorer, pumper og styringer fra alle produsenter. Siemens, "
 "ABB, Grundfos, Danfoss – koble alt til ett samlet automasjonssystem."
+
+msgid "Works with what you already own"
+msgstr "Bruker utstyret du allerede har"
 
 msgid "Years of term"
 msgstr "Løpetid i år"
@@ -2091,8 +2313,17 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "Avlingsanalyse"
 
+msgid "You already have the data."
+msgstr "Dataene har du allerede."
+
 msgid "You are already subscribed!"
 msgstr "Du er allerede påmeldt!"
+
+msgid "You just can't use it yet."
+msgstr "Du får bare ikke brukt dem ennå."
+
+msgid "Your data stays yours"
+msgstr "Dataene er og blir dine"
 
 msgid "Your message was sent successfully."
 msgstr "Meldingen din er sendt."
@@ -2103,6 +2334,9 @@ msgstr "Hele anlegget ditt,"
 msgid "and sense it."
 msgstr "og måler det."
 
+msgid "before your fish do."
+msgstr "før fisken merker det."
+
 msgid "financing."
 msgstr "finansiering."
 
@@ -2111,6 +2345,9 @@ msgstr "fra samme team."
 
 msgid "made measurable."
 msgstr "gjort målbar."
+
+msgid "not in the water."
+msgstr "ikke i vannet."
 
 msgid "one pane of glass."
 msgstr "på én skjerm."
@@ -2129,9 +2366,6 @@ msgstr "til et komplett anlegg."
 
 msgid "to a running farm."
 msgstr "til et anlegg i drift."
-
-msgid "to clear decisions."
-msgstr "til klare beslutninger."
 
 msgid "visits"
 msgstr "besøk"
