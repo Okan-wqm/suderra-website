@@ -315,9 +315,9 @@ class RedesignTests(TestCase):
         self.assertIn('id="finance"', html)
         self.assertIn('id="audit"', html)
 
-    def test_company_details_and_ceo(self):
+    def test_company_details_ceo_and_founder_message(self):
         html = self.client.get('/en/').content.decode()
-        for token in ('938 226 938', 'Rambergveien 18, 3115 Tønsberg', 'Egon Bjune', 'id="ceo"'):
+        for token in ('938 226 938', 'Rambergveien 18, 3115 Tønsberg', 'Egon Bjune', 'id="founder"', 'Okan Ozturk'):
             self.assertIn(token, html)
         self.assertNotIn('Sandefjord', html)
 

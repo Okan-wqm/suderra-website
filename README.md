@@ -122,7 +122,7 @@ Concept: as you scroll, dark/murky water **clarifies** into the bright editorial
 - **Homepage sections**: hero (live sensor ticker) → multi-tenant **Platform** (isolated DB
   per tenant, unlimited sensors, mobile ops, scientific charts, Mattilsynet-format reports,
   live AI dashboard) → how it works (4 steps) → sectors & modules → equipment/design teasers →
-  about → CEO message → contact.
+  about → founder message → contact.
 - **Equipment page**: Single Tank product (octagon + metrics & specs) → capabilities bento →
   scale-scenario table (numbers formatted per language in `views.equipment`).
 - **Design page**: end-to-end loop (Design · Audit · Finance · Build & Train · Run · Sense &
