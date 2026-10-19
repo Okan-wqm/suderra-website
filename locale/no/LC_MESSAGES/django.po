@@ -2041,8 +2041,8 @@ msgstr ""
 msgid "We train your team"
 msgstr "Vi lærer opp teamet ditt"
 
-msgid "We turn water data"
-msgstr "Vi gjør vanndata"
+msgid "We turn water chemistry data"
+msgstr "Vi gjør vannkjemiske måledata"
 
 msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
@@ -2226,8 +2226,8 @@ msgstr "for bærekraftig akvakultur."
 msgid "from the same team."
 msgstr "fra samme team."
 
-msgid "into clear decisions."
-msgstr "om til tydelige beslutninger."
+msgid "into clear operational decisions."
+msgstr "om til tydelige driftsbeslutninger."
 
 msgid "on one screen."
 msgstr "på én skjerm."

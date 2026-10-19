@@ -2000,8 +2000,8 @@ msgstr "ندعم الإنشاء والتشغيل التجريبي، وندرّب
 msgid "We train your team"
 msgstr "ندرّب فريقك"
 
-msgid "We turn water data"
-msgstr "نحوّل بيانات المياه"
+msgid "We turn water chemistry data"
+msgstr "نحوّل بيانات معايير كيمياء المياه"
 
 msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
@@ -2180,8 +2180,8 @@ msgstr "للاستزراع المائي المستدام."
 msgid "from the same team."
 msgstr "من الفريق نفسه."
 
-msgid "into clear decisions."
-msgstr "إلى قرارات واضحة."
+msgid "into clear operational decisions."
+msgstr "إلى قرارات تشغيلية واضحة."
 
 msgid "on one screen."
 msgstr "على شاشة واحدة."

@@ -2063,8 +2063,8 @@ msgstr ""
 msgid "We train your team"
 msgstr "Ekibinizi eğitiyoruz"
 
-msgid "We turn water data"
-msgstr "Su verilerini"
+msgid "We turn water chemistry data"
+msgstr "Su kimyası parametre verilerini"
 
 msgid ""
 "We use cookies to improve your experience on our website. By continuing to "
@@ -2251,8 +2251,8 @@ msgstr "yazılım ve mühendislik."
 msgid "from the same team."
 msgstr "aynı ekipten."
 
-msgid "into clear decisions."
-msgstr "net kararlara dönüştürüyoruz."
+msgid "into clear operational decisions."
+msgstr "net operasyonel kararlara dönüştürüyoruz."
 
 msgid "on one screen."
 msgstr "tek ekranda."
