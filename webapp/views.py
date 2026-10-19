@@ -146,6 +146,10 @@ def equipment(request):
     })
 
 
+def about(request):
+    return render(request, 'about.html')
+
+
 def design(request):
     # Indicative Eksfin interest range (%), formatted for the active language.
     return render(request, 'design.html', {'interest': _fmt_range((2.5, 3.5), get_language())})

@@ -111,7 +111,7 @@
         <a href="{% url 'equipment' %}"{% if tab == 'equipment' %} aria-current="page"{% endif %}>{% trans "Equipment" %}</a>
         <a href="{% url 'design' %}"{% if tab == 'design' %} aria-current="page"{% endif %}>{% trans "Design" %}</a>
         <a href="{% url 'index' %}#sectors">{% trans "Sectors" %}</a>
-        <a href="{% url 'index' %}#about">{% trans "About" %}</a>
+        <a href="{% url 'about' %}"{% if tab == 'about' %} aria-current="page"{% endif %}>{% trans "About" %}</a>
         <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="nav-portal">{% trans "Client Portal" %}</a>
       </nav>
       {% endwith %}
@@ -176,7 +176,8 @@
       </div>
       <div class="foot-col">
         <h4>{% trans "Company" %}</h4>
-        <a href="{% url 'index' %}#about">{% trans "About" %}</a>
+        <a href="{% url 'about' %}">{% trans "About" %}</a>
+        <a href="{% url 'about' %}#founder">{% trans "A word from our founder" %}</a>
         <a href="{% url 'index' %}#contact">{% trans "Contact" %}</a>
         <a href="mailto:okan@suderra.com">okan@suderra.com</a>
         <a href="https://app.suderra.com/" target="_blank" rel="noopener">{% trans "Client Portal" %}</a>

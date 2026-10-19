@@ -1,7 +1,7 @@
 # webapp/urls.py
 from django.urls import path
 from .views import (
-    index, equipment, design, ajax_contact, ajax_newsletter,
+    index, equipment, design, about, ajax_contact, ajax_newsletter,
     feature_aquaculture, feature_regulatory, feature_automation,
     feature_soilless, feature_waste_water,
 )
@@ -10,6 +10,7 @@ urlpatterns = [
     path('', index, name='index'),
     path('equipment/', equipment, name='equipment'),
     path('design/', design, name='design'),
+    path('about/', about, name='about'),
     path('ajax/contact/', ajax_contact, name='ajax_contact'),
     path('ajax/newsletter/', ajax_newsletter, name='ajax_newsletter'),
     path('aquaculture-software/', feature_aquaculture, name='feature_aquaculture'),

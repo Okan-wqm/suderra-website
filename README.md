@@ -10,6 +10,7 @@ Norwegian **aquaculture software**. The site is software-first, with three main 
 - **Equipment** (`/<lang>/equipment/`) — the octagonal *Single Tank Design* RAS, its specs and
   indicative scale scenarios.
 - **Design** (`/<lang>/design/`) — RAS design, audit, Eksfin-backed financing, build & train, run.
+- **About** (`/<lang>/about/`) — founder's letter (Okan Ozturk) and company details.
 
 Django 5.1 · vanilla JS + raw WebGL (no frontend framework) · 4 languages (en/no/tr/ar, with RTL).
 
@@ -86,6 +87,7 @@ webapp/templates/
   index.html            homepage = Software tab (extends base_clarity.html)
   equipment.html        Equipment tab (Single Tank Design, scale scenarios)
   design.html           Design tab (engineering services, financing)
+  about.html            About tab (founder letter, company details)
   features/_base_feature.html  feature layout (extends base_clarity.html)
   features/*.html       feature pages (Clarity design)
 locale/{no,tr,ar}/      translations (.po / .mo)
@@ -122,7 +124,7 @@ Concept: as you scroll, dark/murky water **clarifies** into the bright editorial
 - **Homepage sections**: hero (live sensor ticker) → multi-tenant **Platform** (isolated DB
   per tenant, unlimited sensors, mobile ops, scientific charts, Mattilsynet-format reports,
   live AI dashboard) → how it works (4 steps) → sectors & modules → equipment/design teasers →
-  about → founder message → contact.
+  contact.
 - **Equipment page**: Single Tank product (octagon + metrics & specs) → capabilities bento →
   scale-scenario table (numbers formatted per language in `views.equipment`).
 - **Design page**: end-to-end loop (Design · Audit · Finance · Build & Train · Run · Sense &
@@ -140,7 +142,7 @@ legacy `base.html`/`main.js`/`style.css`/`rtl.css` and unused media have been re
 ## Tests
 
 ```bash
-python manage.py test    # 53 tests, also run on every push by GitHub Actions CI
+python manage.py test    # 54 tests, also run on every push by GitHub Actions CI
 ```
 
 `webapp/tests.py` covers routing/i18n, security headers + CSP nonce,

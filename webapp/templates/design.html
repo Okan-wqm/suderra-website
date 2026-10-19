@@ -21,10 +21,38 @@
     </nav>
     <span class="fhero-tag reveal">{% trans "Design & engineering" %}</span>
     <h1 class="fhero-title reveal">{% trans "From the first drawing" %} <em class="serif">{% trans "to a running farm." %}</em></h1>
-    <p class="fhero-sub reveal">{% trans "Full recirculating aquaculture engineering — design, independent audits, Eksfin-backed financing, construction support and training. One partner, from the first drawing to live operation." %}</p>
+    <p class="fhero-sub reveal">{% trans "Many RAS problems are built in on day one: undersized biofilters, poor flow, a financing gap or a crew left alone after handover. We engineer them out — from the first drawing to a running farm." %}</p>
     <div class="fhero-cta reveal">
       <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
       <a href="#process" class="btn btn-ghost">{% trans "How we work" %}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEMS → SOLUTIONS ============ -->
+<section class="fsec section" id="problems">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Where projects go wrong" %}</span>
+      <h2 class="sec-title">{% trans "Fix it on paper," %} <em class="serif">{% trans "not in the water." %}</em></h2>
+    </header>
+    <div class="ps-grid">
+      <article class="ps-card reveal" style="--i:0">
+        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Undersized water treatment" %}</h3><p>{% trans "Biofilters, oxygenation and degassing sized by rule of thumb fall short as the biomass grows." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We size flow, biofiltration, oxygenation and degassing to your species and density — and validate the design in CFD." %}</p></div>
+      </article>
+      <article class="ps-card reveal" style="--i:1">
+        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "A site that underperforms" %}</h3><p>{% trans "Water quality swings, losses and rising costs at an existing facility, with no clear cause." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "An independent audit of water balance, biosecurity and risk, with a prioritized roadmap." %}</p></div>
+      </article>
+      <article class="ps-card reveal" style="--i:2">
+        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Financing that stalls the project" %}</h3><p>{% trans "A good project waits while the capital is arranged." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We help you secure Eksfin-backed financing — 90% for projects under €2M, 60–70% above." %}</p></div>
+      </article>
+      <article class="ps-card reveal" style="--i:3">
+        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "A crew left alone after handover" %}</h3><p>{% trans "New systems struggle when the people running them never learned how." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We support construction and commissioning, and train your team to run the system with confidence." %}</p></div>
+      </article>
     </div>
   </div>
 </section>

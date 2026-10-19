@@ -13,6 +13,7 @@ TEMPLATE_FOR = {
     'index': 'index.html',
     'equipment': 'equipment.html',
     'design': 'design.html',
+    'about': 'about.html',
     'feature_aquaculture': 'features/aquaculture_software.html',
     'feature_regulatory': 'features/regulatory_compliance.html',
     'feature_automation': 'features/automation.html',
@@ -39,7 +40,7 @@ class StaticViewSitemap(Sitemap):
     x_default = 'en'
 
     def items(self):
-        return ['index', 'equipment', 'design']
+        return ['index', 'equipment', 'design', 'about']
 
     def priority(self, item):
         return 1.0 if item == 'index' else 0.9

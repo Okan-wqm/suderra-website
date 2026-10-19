@@ -45,7 +45,7 @@ class RoutingI18nTests(TestCase):
 
     def test_equipment_and_design_pages_all_languages(self):
         for lang in ('en', 'no', 'tr', 'ar'):
-            for slug in ('equipment', 'design'):
+            for slug in ('equipment', 'design', 'about'):
                 with self.subTest(lang=lang, slug=slug):
                     self.assertEqual(self.client.get(f'/{lang}/{slug}/').status_code, 200)
 
@@ -315,23 +315,31 @@ class RedesignTests(TestCase):
         self.assertIn('id="finance"', html)
         self.assertIn('id="audit"', html)
 
-    def test_company_details_ceo_and_founder_message(self):
+    def test_company_details_in_footer(self):
         html = self.client.get('/en/').content.decode()
-        for token in ('938 226 938', 'Rambergveien 18, 3115 Tønsberg', 'Egon Bjune', 'id="founder"', 'Okan Ozturk'):
+        for token in ('938 226 938', 'Rambergveien 18, 3115 Tønsberg'):
             self.assertIn(token, html)
         self.assertNotIn('Sandefjord', html)
 
+    def test_about_page_has_founder_letter_and_ceo(self):
+        html = self.client.get('/en/about/').content.decode()
+        for token in ('id="founder"', 'Okan Ozturk', 'Egon Bjune', '938 226 938'):
+            self.assertIn(token, html)
+        self.assertNotIn('id="founder"', self.client.get('/en/').content.decode())
+
     def test_active_tab_marked(self):
         for path, label in (('/en/', 'Software'), ('/en/automation/', 'Software'),
-                            ('/en/equipment/', 'Equipment'), ('/en/design/', 'Design')):
+                            ('/en/equipment/', 'Equipment'), ('/en/design/', 'Design'),
+                            ('/en/about/', 'About')):
             with self.subTest(path=path):
                 html = self.client.get(path).content.decode()
                 self.assertRegex(html, r'aria-current="page">' + label + '<')
 
     def test_subpage_nav_points_back_to_homepage_sections(self):
         html = self.client.get('/en/automation/').content.decode()
-        self.assertIn('href="/en/#about"', html)
-        self.assertNotIn('href="#about"', html)
+        self.assertIn('href="/en/#sectors"', html)
+        self.assertIn('href="/en/about/"', html)
+        self.assertNotIn('href="#sectors"', html)
 
     def test_contact_form_contract_intact(self):
         # JS depends on these ids/fields; views depend on the honeypot + field names.
