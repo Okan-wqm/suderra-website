@@ -3,29 +3,29 @@
 {% load i18n %}
 {% get_current_language as CURRENT_LANGUAGE %}
 
-{% block title %}SUDERRA — {% trans "Recirculating Aquaculture, Engineered in Norway" %}{% endblock %}
-{% block description %}{% trans "Norwegian recirculating aquaculture (RAS) partner — we design, audit, finance, build and run land-based fish farms, from the octagonal Single Tank Design to the Suderra Edge platform with real-time AI." %}{% endblock %}
-{% block og_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
-{% block twitter_description %}{% trans "Norwegian RAS partner: design, audit, finance, build & run recirculating aquaculture — octagonal Single Tank Design and the Suderra Edge AI platform." %}{% endblock %}
+{% block title %}SUDERRA — {% trans "Aquaculture Software & Real-Time Water Intelligence" %}{% endblock %}
+{% block description %}{% trans "Suderra Edge connects to the sensors and equipment you already have; Suderra OS and science-based AI turn live water data into decisions. Norwegian aquaculture software — plus RAS equipment and design." %}{% endblock %}
+{% block og_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
+{% block twitter_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
 
 {% block content %}
 
-<!-- ============ HERO ============ -->
+<!-- ============ HERO — software ============ -->
 <section class="hero" id="hero" data-stage="murky">
   <video class="hero-video" muted loop playsinline preload="none" aria-hidden="true"
          data-src="{% static 'webapp/videos/salmondance.mp4' %}"></video>
   <div class="hero-inner">
-    <p class="eyebrow reveal"><span class="eyebrow-dot"></span>{% trans "Water Intelligence" %} · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
+    <p class="eyebrow reveal"><span class="eyebrow-dot"></span>Suderra Edge · Suderra OS · {% trans "Engineered in Norway" %} {% include "partials/flag_no.html" %}</p>
     <h1 class="hero-title reveal">
-      {% trans "From blueprint" %}<br>
-      <em class="serif">{% trans "to living biomass." %}</em>
+      {% trans "From raw sensor data" %}<br>
+      <em class="serif">{% trans "to clear decisions." %}</em>
     </h1>
     <p class="hero-lede reveal">
-      {% trans "Suderra designs and audits recirculating aquaculture systems — then runs them on Suderra Edge and real-time AI, integrating instantly with the sensors and equipment you already have. One partner, from the first drawing to the last decision." %}
+      {% trans "Suderra Edge plugs into the sensors and equipment you already have — in minutes, with no rip-and-replace. Suderra OS and science-based AI turn every reading into decisions you approve, from the control room or the field, online or offline." %}
     </p>
     <div class="hero-cta reveal">
-      <a href="#product" class="btn btn-coral">{% trans "See the Single Tank" %}</a>
-      <a href="#approach" class="btn btn-ghost">{% trans "How we work" %}</a>
+      <a href="#contact" class="btn btn-coral">{% trans "Book a demo" %}</a>
+      <a href="#platform" class="btn btn-ghost">{% trans "See the platform" %}</a>
     </div>
 
     <div class="ticker reveal" aria-hidden="true">
@@ -38,98 +38,6 @@
   <div class="scroll-hint" aria-hidden="true">
     <span>{% trans "Scroll to clarify" %}</span>
     <div class="scroll-rail"><i></i></div>
-  </div>
-</section>
-
-<!-- ============ PRODUCT — Single Tank Design ============ -->
-<section class="product section" id="product" data-stage="clearing">
-  <div class="container">
-    <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "Recirculating Aquaculture System" %}</span>
-      <h2 class="sec-title">{% trans "The Single Tank" %} <em class="serif">{% trans "Design." %}</em></h2>
-      <p class="sec-lede">{% trans "A tested, CFD-validated tank-in-tank system that recirculates over 94% of its water — built around your species, your site, your scale." %}</p>
-    </header>
-
-    <div class="product-grid">
-      <figure class="product-shot reveal">
-        <img src="{% static 'webapp/images/oktagon.jpeg' %}" alt="{% trans 'Suderra octagonal tank-in-tank RAS concept' %}" loading="lazy">
-        <figcaption><span class="geo-badge">{% trans "Geometry 02" %}</span> {% trans "Octagonal tank-in-tank — 15–20% more efficient footprint" %}</figcaption>
-      </figure>
-
-      <div class="product-side reveal">
-        <div class="metrics">
-          <div class="metric"><span class="metric-num">&gt;94<i>%</i></span><span class="metric-cap">{% trans "Water recirculated" %}</span></div>
-          <div class="metric"><span class="metric-num">−95<i>%</i></span><span class="metric-cap">{% trans "Less piping" %}</span></div>
-          <div class="metric"><span class="metric-num">~30–35<i>%</i></span><span class="metric-cap">{% trans "Lower investment" %}</span></div>
-          <div class="metric"><span class="metric-num">&lt;2<i>kW/kg</i></span><span class="metric-cap">{% trans "Energy per kg fish (excl. heat)" %}</span></div>
-        </div>
-
-        <div class="geos">
-          <div class="geo"><span class="geo-no">01</span><span>{% trans "Circular tank-in-tank" %}</span></div>
-          <div class="geo geo-on"><span class="geo-no">02</span><span>{% trans "Octagonal tank-in-tank" %}</span><span class="geo-flag">{% trans "Signature" %}</span></div>
-        </div>
-
-        <dl class="specs">
-          <div><dt>{% trans "Tank diameter" %}</dt><dd>12–40 m</dd></div>
-          <div><dt>{% trans "Production capacity" %}</dt><dd>60–1500 {% trans "t/yr" %}</dd></div>
-          <div><dt>{% trans "Biofilter stages" %}</dt><dd>3–4</dd></div>
-          <div><dt>{% trans "Investment" %}</dt><dd>1.75–2k $/m³</dd></div>
-        </dl>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CAPABILITIES — bento ============ -->
-<section class="capabilities section" id="capabilities" data-stage="clear">
-  <div class="container">
-    <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "What's inside" %}</span>
-      <h2 class="sec-title">{% trans "Proven where it matters." %}</h2>
-    </header>
-
-    <div class="bento">
-      <article class="cell cell-lg glass reveal" style="--i:0">
-        <div class="cell-ico">{% include "partials/ico.html" with name="check" %}</div>
-        <h3>{% trans "Tested & CFD-validated" %}</h3>
-        <p>{% trans "Biofilter, flow and bottom-drain design proven in the field and in simulation — not theory." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:1">
-        <div class="cell-ico">{% include "partials/ico.html" with name="loop" %}</div>
-        <h3>{% trans "Closed-loop, low piping" %}</h3>
-        <p>{% trans "Site-dependent 90%+ recirculation and ~90% less piping." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:2">
-        <div class="cell-ico">{% include "partials/ico.html" with name="drop" %}</div>
-        <h3>{% trans "Fresh, salt, any climate" %}</h3>
-        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
-      </article>
-      <article class="cell cell-feature glass reveal" style="--i:3">
-        <div class="cell-ico">{% include "partials/ico.html" with name="pulse" %}</div>
-        <h3>{% trans "AI-driven water quality" %}</h3>
-        <p>{% trans "AI-assisted live water-quality panel for fast, data-driven decisions." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:4">
-        <div class="cell-ico">{% include "partials/ico.html" with name="clock" %}</div>
-        <h3>{% trans "Fully automatic feeding" %}</h3>
-        <p>{% trans "Scheduled, self-dosing feed delivery across every tank." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:5">
-        <div class="cell-ico">{% include "partials/ico.html" with name="tune" %}</div>
-        <h3>{% trans "Species-adaptive tuning" %}</h3>
-        <p>{% trans "Stocking density, water velocity and biofilter sizing tune dynamically per species." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:6">
-        <div class="cell-ico">{% include "partials/ico.html" with name="team" %}</div>
-        <h3>{% trans "24/7 with a lean team" %}</h3>
-        <p>{% trans "The whole site runs around the clock with a 3–4 person crew." %}</p>
-      </article>
-      <article class="cell glass reveal" style="--i:7">
-        <div class="cell-ico">{% include "partials/ico.html" with name="shield" %}</div>
-        <h3>{% trans "Uptime & IP-secured" %}</h3>
-        <p>{% trans "Service without downtime; proprietary, protected design and software." %}</p>
-      </article>
-    </div>
   </div>
 </section>
 
@@ -285,26 +193,7 @@
   </div>
 </section>
 
-<!-- ============ APPROACH — end to end ============ -->
-<section class="approach section" id="approach" data-stage="clear">
-  <div class="container">
-    <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "End to end" %}</span>
-      <h2 class="sec-title">{% trans "We design it, audit it," %} <em class="serif">{% trans "and sense it." %}</em></h2>
-      <p class="sec-lede">{% trans "From the first drawing to live operation, Suderra stays in the loop — we design, help you audit, finance, build and run, and keep the water honest with sensors and AI." %}</p>
-    </header>
-    <ol class="loop">
-      <li class="loop-step reveal" style="--i:0"><span class="loop-no">01</span><h3>{% trans "Design" %}</h3><p>{% trans "Full RAS engineering — flow, biofiltration, oxygenation and degassing sized to your species and density." %}</p></li>
-      <li class="loop-step reveal" style="--i:1"><span class="loop-no">02</span><h3>{% trans "Audit" %}</h3><p>{% trans "Independent review of an existing facility — water balance, biosecurity and risk — with a prioritized roadmap." %}</p></li>
-      <li class="loop-step reveal" style="--i:2"><span class="loop-no">03</span><h3>{% trans "Finance" %}</h3><p>{% trans "We help you secure Eksfin-backed financing — 90% under €2M, 60–70% above · 10–15-year term · 2.5–3.5% interest." %}</p><small class="loop-note">{% trans "Indicative terms based on our dialogue with Eksfin — subject to change and may vary by project and country." %}</small></li>
-      <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build & Train" %}</h3><p>{% trans "Support through construction and commissioning — and we train your team to run the system with confidence." %}</p></li>
-      <li class="loop-step reveal" style="--i:4"><span class="loop-no">05</span><h3>{% trans "Run" %}</h3><p>{% trans "Operational support to keep the site running 24/7 with a lean 3–4 person crew." %}</p></li>
-      <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Sense & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously and AI turns the data into decisions you approve." %}</p></li>
-    </ol>
-  </div>
-</section>
-
-<!-- ============ SECTORS ============ -->
+<!-- ============ SECTORS & MODULES ============ -->
 <section class="sectors section" id="sectors" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
@@ -312,9 +201,53 @@
       <h2 class="sec-title">{% trans "Sector-agnostic. Protocol-native." %}</h2>
     </header>
     <div class="sector-grid">
-      <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal" style="--i:0"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go">→</span></a>
-      <a href="{% url 'feature_soilless' %}" class="sector glass reveal" style="--i:1"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go">→</span></a>
-      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal" style="--i:2"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go">→</span></a>
+      <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal" style="--i:0"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_soilless' %}" class="sector glass reveal" style="--i:1"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal" style="--i:2"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+    </div>
+    <div class="sector-grid sector-grid-2">
+      <a href="{% url 'feature_automation' %}" class="sector glass reveal" style="--i:3"><h3>{% trans "Smart Automation" %}</h3><p>{% trans "Sensor integration, feeder automation and dosing control — on the equipment you already run." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_regulatory' %}" class="sector glass reveal" style="--i:4"><h3>{% trans "Regulatory Compliance" %}</h3><p>{% trans "One-click reports in the formats authorities expect — e.g. Mattilsynet." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BEYOND SOFTWARE — equipment & design ============ -->
+<section class="beyond section" id="beyond" data-stage="clear">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Beyond the software" %}</span>
+      <h2 class="sec-title">{% trans "Equipment and engineering," %} <em class="serif">{% trans "from the same team." %}</em></h2>
+      <p class="sec-lede">{% trans "Suderra Edge runs on any farm. If you are building a new one, we also supply the Single Tank system and design the facility around it." %}</p>
+    </header>
+    <div class="beyond-grid">
+      <a href="{% url 'equipment' %}" class="beyond-card reveal" style="--i:0">
+        <div class="beyond-media"><img src="{% static 'webapp/images/oktagon.jpeg' %}" alt="{% trans 'Suderra octagonal tank-in-tank RAS concept' %}" loading="lazy"></div>
+        <div class="beyond-body">
+          <span class="beyond-tag">{% trans "Equipment" %}</span>
+          <h3>{% trans "The Single Tank Design" %}</h3>
+          <p>{% trans "Octagonal tank-in-tank RAS: over 94% of the water recirculated, 95% less piping, 60–1500 t/yr." %}</p>
+          <span class="beyond-go">{% trans "Explore the equipment" %} <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
+      <a href="{% url 'design' %}" class="beyond-card reveal" style="--i:1">
+        <div class="beyond-media beyond-blueprint" aria-hidden="true">
+          <svg viewBox="0 0 320 210" fill="none" stroke="currentColor" stroke-width="1.2">
+            <polygon points="226.5,72.4 187.6,33.5 132.4,33.5 93.5,72.4 93.5,127.6 132.4,166.5 187.6,166.5 226.5,127.6"/>
+            <polygon points="200.7,83.2 176.8,59.3 143.2,59.3 119.3,83.2 119.3,116.8 143.2,140.7 176.8,140.7 200.7,116.8" opacity=".55"/>
+            <circle cx="160" cy="100" r="13" opacity=".8"/>
+            <path d="M160 14v12M160 174v6M70 100h14M236 100h14" opacity=".6"/>
+            <path d="M93.5 188h133M93.5 184v8M226.5 184v8" opacity=".6"/>
+            <text x="160" y="204" text-anchor="middle" fill="currentColor" stroke="none" font-size="8" font-family="JetBrains Mono, monospace">Ø 12–40 m</text>
+          </svg>
+        </div>
+        <div class="beyond-body">
+          <span class="beyond-tag">{% trans "Design" %}</span>
+          <h3>{% trans "RAS design & engineering" %}</h3>
+          <p>{% trans "Design, independent audits, Eksfin-backed financing, construction support and training — one partner from the first drawing." %}</p>
+          <span class="beyond-go">{% trans "Explore design services" %} <span aria-hidden="true">→</span></span>
+        </div>
+      </a>
     </div>
   </div>
 </section>
@@ -325,15 +258,33 @@
     <div class="about-copy reveal">
       <span class="sec-tag">{% trans "About Suderra" %}</span>
       <h2 class="sec-title">{% trans "Norwegian water engineering," %} <em class="serif">{% trans "made measurable." %}</em></h2>
-      <p>{% trans "We pair recirculating aquaculture engineering with the Suderra Edge platform and AI so producers can build, audit and operate with confidence — from our home base in Sandefjord, Norway." %}</p>
+      <p>{% trans "We build the Suderra Edge platform and its AI, and back it with hands-on recirculating aquaculture engineering — so producers can design, build and operate with confidence. Our home base is Tønsberg, Norway." %}</p>
       <a href="#contact" class="btn btn-ghost">{% trans "Work with us" %}</a>
     </div>
     <div class="about-card glass reveal">
-      <div class="about-row"><span>{% trans "Headquarters" %}</span><strong>Sandefjord, {% trans "Norway" %} {% include "partials/flag_no.html" %}</strong></div>
-      <div class="about-row"><span>{% trans "Focus" %}</span><strong>{% trans "RAS engineering, design & management" %}</strong></div>
+      <div class="about-row"><span>{% trans "Headquarters" %}</span><strong>Tønsberg, {% trans "Norway" %} {% include "partials/flag_no.html" %}</strong></div>
+      <div class="about-row"><span>{% trans "Focus" %}</span><strong>{% trans "Aquaculture software, RAS equipment & design" %}</strong></div>
       <div class="about-row"><span>{% trans "Platform" %}</span><strong>Suderra Edge · Suderra OS</strong></div>
-      <div class="about-row"><span>{% trans "Strength" %}</span><strong>{% trans "10+ years hands-on experience" %}</strong></div>
+      <div class="about-row"><span>{% trans "Experience" %}</span><strong>{% trans "10+ years hands-on experience" %}</strong></div>
+      <div class="about-row"><span>{% trans "Org. no." %}</span><strong>938 226 938</strong></div>
     </div>
+  </div>
+</section>
+
+
+<!-- ============ CEO MESSAGE ============ -->
+<section class="ceo section" id="ceo" data-stage="clear">
+  <div class="container">
+    <figure class="ceo-quote reveal">
+      <span class="sec-tag">{% trans "A word from our CEO" %}</span>
+      <blockquote>
+        <p>{% trans "Aquaculture is entering the information age, and AI will soon touch every production decision. In food production, though, AI only earns its place when people can check it. That is why we built Suderra: to bring AI into production in a way that can be audited — every recommendation grounded in published science, every action traceable, and the final say always with the producer. We are not here to replace the people who know their fish and their water, but to give them better information, sooner — so they can grow more with less water, less energy and less risk." %}</p>
+      </blockquote>
+      <figcaption>
+        <span class="ceo-mono" aria-hidden="true">EB</span>
+        <span><strong>Egon Bjune</strong>{% trans "CEO, Suderra AS" %}</span>
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -343,10 +294,10 @@
     <div class="contact-copy reveal">
       <span class="sec-tag">{% trans "Get in Touch" %}</span>
       <h2 class="sec-title">{% trans "Tell us about" %} <em class="serif">{% trans "your system." %}</em></h2>
-      <p>{% trans "Designing a new RAS facility, auditing an existing one, or ready to put sensors in the water — start the conversation." %}</p>
+      <p>{% trans "Ready to put your sensors to work, planning a new RAS facility or auditing an existing one — start the conversation." %}</p>
       <ul class="contact-points">
         <li><a href="mailto:okan@suderra.com">okan@suderra.com</a></li>
-        <li>Sandefjord, {% trans "Norway" %}</li>
+        <li>Rambergveien 18, 3115 Tønsberg, {% trans "Norway" %}</li>
       </ul>
     </div>
 
@@ -378,13 +329,12 @@
 <script type="application/ld+json" nonce="{{ request.csp_nonce }}">
 {
   "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "Suderra Single Tank Design (RAS)",
+  "@type": "SoftwareApplication",
+  "name": "Suderra Edge",
+  "applicationCategory": "BusinessApplication",
   "inLanguage": "{{ CURRENT_LANGUAGE }}",
-  "category": "{% filter escapejs %}{% trans 'Recirculating Aquaculture System' %}{% endfilter %}",
-  "brand": {"@type": "Brand", "name": "Suderra"},
-  "description": "Octagonal tank-in-tank recirculating aquaculture system: >94% water recirculation, ~95% less piping, 12–40 m diameter, 60–1500 t/yr.",
-  "manufacturer": {"@type": "Organization", "name": "Suderra AS", "url": "https://suderra.com"}
+  "description": "Aquaculture operations platform: edge gateway for MQTT, Modbus and OPC-UA sensors, an isolated database per client, offline-first mobile app, science-based AI and Mattilsynet-format reports.",
+  "publisher": {"@id": "https://suderra.com/#organization"}
 }
 </script>
 {% endblock %}

@@ -1,0 +1,150 @@
+{% extends "base_clarity.html" %}
+{% load static %}
+{% load i18n %}
+{% get_current_language as CURRENT_LANGUAGE %}
+
+{% block title %}{% trans "RAS Design, Audit & Financing" %} | SUDERRA{% endblock %}
+{% block description %}{% trans "Recirculating aquaculture engineering from Norway: RAS design, independent audits of existing facilities, Eksfin-backed financing, construction support, training and operations." %}{% endblock %}
+{% block og_title %}{% trans "RAS Design, Audit & Financing" %} | SUDERRA{% endblock %}
+{% block og_description %}{% trans "RAS design, independent audits, Eksfin-backed financing, construction support and training — one partner from the first drawing to live operation." %}{% endblock %}
+{% block twitter_title %}{% trans "RAS Design, Audit & Financing" %} | SUDERRA{% endblock %}
+{% block twitter_description %}{% trans "RAS design, independent audits, Eksfin-backed financing, construction support and training — one partner from the first drawing to live operation." %}{% endblock %}
+
+{% block content %}
+<!-- ============ HERO ============ -->
+<section class="fhero" data-stage="murky">
+  <div class="container">
+    <nav class="fbreadcrumb reveal" aria-label="{% trans 'Breadcrumb' %}">
+      <a href="{% url 'index' %}">{% trans "Home" %}</a>
+      <span aria-hidden="true">/</span>
+      <span aria-current="page">{% trans "Design" %}</span>
+    </nav>
+    <span class="fhero-tag reveal">{% trans "Design & engineering" %}</span>
+    <h1 class="fhero-title reveal">{% trans "From the first drawing" %} <em class="serif">{% trans "to a running farm." %}</em></h1>
+    <p class="fhero-sub reveal">{% trans "Full recirculating aquaculture engineering — design, independent audits, Eksfin-backed financing, construction support and training. One partner, from the first drawing to live operation." %}</p>
+    <div class="fhero-cta reveal">
+      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
+      <a href="#process" class="btn btn-ghost">{% trans "How we work" %}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS — end to end ============ -->
+<section class="approach section" id="process">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "End to end" %}</span>
+      <h2 class="sec-title">{% trans "We design it, audit it," %} <em class="serif">{% trans "and sense it." %}</em></h2>
+      <p class="sec-lede">{% trans "From the first drawing to live operation, Suderra stays in the loop — we design, help you audit, finance, build and run, and keep the water honest with sensors and AI." %}</p>
+    </header>
+    <ol class="loop">
+      <li class="loop-step reveal" style="--i:0" id="design"><span class="loop-no">01</span><h3>{% trans "Design" %}</h3><p>{% trans "Full RAS engineering — flow, biofiltration, oxygenation and degassing sized to your species and density." %}</p></li>
+      <li class="loop-step reveal" style="--i:1" id="audit"><span class="loop-no">02</span><h3>{% trans "Audit" %}</h3><p>{% trans "Independent review of an existing facility — water balance, biosecurity and risk — with a prioritized roadmap." %}</p></li>
+      <li class="loop-step reveal" style="--i:2"><span class="loop-no">03</span><h3>{% trans "Finance" %}</h3><p>{% trans "We help you secure Eksfin-backed financing for the project — see the indicative terms below." %}</p></li>
+      <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build & Train" %}</h3><p>{% trans "Support through construction and commissioning — and we train your team to run the system with confidence." %}</p></li>
+      <li class="loop-step reveal" style="--i:4"><span class="loop-no">05</span><h3>{% trans "Run" %}</h3><p>{% trans "Operational support to keep the site running 24/7 with a lean 3–4 person crew." %}</p></li>
+      <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Sense & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously and AI turns the data into decisions you approve." %}</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ENGINEERING SCOPE ============ -->
+<section class="fsec section" id="scope">
+  <div class="container">
+    <header class="sec-head reveal">
+      <span class="sec-tag">{% trans "Engineering scope" %}</span>
+      <h2 class="sec-title">{% trans "Sized to your species," %} <em class="serif">{% trans "your site and your scale." %}</em></h2>
+    </header>
+    <div class="feature-cards-grid reveal">
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="loop" %}</div>
+        <h3>{% trans "Flow & hydraulics" %}</h3>
+        <p>{% trans "Water velocity and bottom-drain design, validated in CFD simulation and in the field." %}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="tune" %}</div>
+        <h3>{% trans "Biofiltration" %}</h3>
+        <p>{% trans "3–4 biofilter stages, sized to your species and stocking density." %}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="pulse" %}</div>
+        <h3>{% trans "Oxygenation & degassing" %}</h3>
+        <p>{% trans "Oxygenation and CO₂ degassing sized to your species and stocking density." %}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="drop" %}</div>
+        <h3>{% trans "Water balance" %}</h3>
+        <p>{% trans "Over 94% recirculation, with site-dependent water exchange of 5% or less." %}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="shield" %}</div>
+        <h3>{% trans "Biosecurity & risk" %}</h3>
+        <p>{% trans "Independent review of existing facilities, with a prioritized improvement roadmap." %}</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card-icon">{% include "partials/ico.html" with name="check" %}</div>
+        <h3>{% trans "Fresh, salt, any climate" %}</h3>
+        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINANCING ============ -->
+<section class="fsec fsec-alt section" id="finance">
+  <div class="container">
+    <div class="finance-grid">
+      <header class="sec-head reveal">
+        <span class="sec-tag">{% trans "Financing" %}</span>
+        <h2 class="sec-title">{% trans "Eksfin-backed" %} <em class="serif">{% trans "financing." %}</em></h2>
+        <p class="sec-lede">{% trans "We help you prepare and secure export financing backed by Eksfin, Norway's export credit agency." %}</p>
+      </header>
+      <div class="reveal">
+        <div class="metrics">
+          <div class="metric"><span class="metric-num">90<i>%</i></span><span class="metric-cap">{% trans "Financing for projects under €2M" %}</span></div>
+          <div class="metric"><span class="metric-num">60–70<i>%</i></span><span class="metric-cap">{% trans "Financing for projects above €2M" %}</span></div>
+          <div class="metric"><span class="metric-num">10–15</span><span class="metric-cap">{% trans "Years of term" %}</span></div>
+          <div class="metric"><span class="metric-num">{{ interest }}<i>%</i></span><span class="metric-cap">{% trans "Interest" %}</span></div>
+        </div>
+        <p class="loop-note">{% trans "Indicative terms based on our dialogue with Eksfin — subject to change and may vary by project and country." %}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CROSS-LINKS ============ -->
+<section class="fsec section">
+  <div class="container">
+    <header class="sec-head reveal"><h2 class="sec-title">{% trans "Explore More" %}</h2></header>
+    <div class="feature-related-grid xlinks reveal">
+      <a href="{% url 'equipment' %}" class="feature-related-card"><span class="xlink-tag">{% trans "Equipment" %}</span><h3>{% trans "The Single Tank Design" %}</h3><p>{% trans "Octagonal tank-in-tank RAS — specifications and scale scenarios." %}</p></a>
+      <a href="{% url 'index' %}" class="feature-related-card"><span class="xlink-tag">{% trans "Software" %}</span><h3>{% trans "Operated on Suderra Edge" %}</h3><p>{% trans "Live water data, science-based AI and compliance reports for every tank." %}</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="fcta section">
+  <div class="container">
+    <div class="fcta-inner reveal">
+      <h2>{% trans "Tell us about your system." %}</h2>
+      <p>{% trans "Designing a new RAS facility or auditing an existing one — start the conversation." %}</p>
+      <a href="{% url 'index' %}#contact" class="btn btn-coral btn-lg">{% trans "Get in Touch" %}</a>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script type="application/ld+json" nonce="{{ request.csp_nonce }}">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Recirculating Aquaculture System (RAS) — design, audit, finance, build & run",
+  "inLanguage": "{{ CURRENT_LANGUAGE }}",
+  "provider": {"@id": "https://suderra.com/#organization"},
+  "serviceType": "Recirculating aquaculture engineering",
+  "areaServed": ["NO", "EU", "TR", "SA", "AE"]
+}
+</script>
+{% endblock %}
