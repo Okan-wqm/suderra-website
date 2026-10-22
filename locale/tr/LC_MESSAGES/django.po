@@ -2357,14 +2357,14 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "Verim analitiği"
 
-msgid "You already have the data."
-msgstr "Veriniz zaten var."
+msgid "Fish can't tell you what's wrong."
+msgstr "Balıklar derdini söyleyemez."
 
 msgid "You are already subscribed!"
 msgstr "Zaten abonesiniz!"
 
-msgid "We make it easier to use."
-msgstr "Onu kullanmayı kolaylaştırıyoruz."
+msgid "We make what the sensors say easier for you to understand."
+msgstr "Sensörlerin söylediklerini sizin için daha anlaşılır kılıyoruz."
 
 msgid "Your data stays yours"
 msgstr "Verileriniz sizde kalır"

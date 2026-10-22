@@ -2341,14 +2341,14 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "Avlingsanalyse"
 
-msgid "You already have the data."
-msgstr "Dataene har du allerede."
+msgid "Fish can't tell you what's wrong."
+msgstr "Fisken kan ikke si hva som er galt."
 
 msgid "You are already subscribed!"
 msgstr "Du er allerede påmeldt!"
 
-msgid "We make it easier to use."
-msgstr "Vi gjør det enklere å bruke dem."
+msgid "We make what the sensors say easier for you to understand."
+msgstr "Vi gjør det sensorene forteller, lettere for deg å forstå."
 
 msgid "Your data stays yours"
 msgstr "Dataene er og blir dine"

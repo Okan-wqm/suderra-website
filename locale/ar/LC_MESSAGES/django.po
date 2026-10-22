@@ -2277,14 +2277,14 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "تحليلات المحصول"
 
-msgid "You already have the data."
-msgstr "البيانات لديك بالفعل."
+msgid "Fish can't tell you what's wrong."
+msgstr "الأسماك لا تستطيع أن تخبرك بما يزعجها."
 
 msgid "You are already subscribed!"
 msgstr "أنت مشترك بالفعل!"
 
-msgid "We make it easier to use."
-msgstr "نجعل الاستفادة منها أسهل."
+msgid "We make what the sensors say easier for you to understand."
+msgstr "نجعل ما تقوله المستشعرات أسهل فهمًا بالنسبة لك."
 
 msgid "Your data stays yours"
 msgstr "بياناتك تبقى ملكك"
