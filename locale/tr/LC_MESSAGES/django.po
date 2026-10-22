@@ -2357,9 +2357,6 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "Verim analitiği"
 
-msgid "Fish can't tell you what's wrong."
-msgstr "Balıklar derdini söyleyemez."
-
 msgid "You are already subscribed!"
 msgstr "Zaten abonesiniz!"
 

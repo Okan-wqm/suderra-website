@@ -2277,9 +2277,6 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "تحليلات المحصول"
 
-msgid "Fish can't tell you what's wrong."
-msgstr "الأسماك لا تستطيع أن تخبرك بما يزعجها."
-
 msgid "You are already subscribed!"
 msgstr "أنت مشترك بالفعل!"
 

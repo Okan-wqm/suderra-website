@@ -2341,9 +2341,6 @@ msgstr ""
 msgid "Yield Analytics"
 msgstr "Avlingsanalyse"
 
-msgid "Fish can't tell you what's wrong."
-msgstr "Fisken kan ikke si hva som er galt."
-
 msgid "You are already subscribed!"
 msgstr "Du er allerede påmeldt!"
 
