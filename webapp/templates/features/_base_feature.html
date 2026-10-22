@@ -22,7 +22,7 @@
     <span class="fhero-tag reveal">{% block hero_tag %}{% endblock %}</span>
     <h1 class="fhero-title reveal">{% block hero_title %}{% endblock %}</h1>
     <p class="fhero-sub reveal">{% block hero_subtitle %}{% endblock %}</p>
-    <div class="reveal"><a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a></div>
+    <div class="reveal"><a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Write to us" %}</a></div>
   </div>
 </section>
 
@@ -44,7 +44,7 @@
 <!-- Benefits -->
 <section class="fsec section">
   <div class="container">
-    <header class="sec-head reveal"><h2 class="sec-title">{% block benefits_title %}{% trans "Why Suderra" %}{% endblock %}</h2></header>
+    <header class="sec-head reveal"><h2 class="sec-title">{% block benefits_title %}{% trans "Why Suderra?" %}{% endblock %}</h2></header>
     <div class="reveal">{% block benefits %}{% endblock %}</div>
   </div>
 </section>
@@ -62,7 +62,7 @@
   <div class="container">
     <div class="fcta-inner reveal">
       <h2>{% block cta_title %}{% trans "Ready to Get Started?" %}{% endblock %}</h2>
-      <p>{% block cta_text %}{% trans "Contact our team to learn how Suderra can transform your operations." %}{% endblock %}</p>
+      <p>{% block cta_text %}{% trans "Write to our team to talk about how Suderra can help your business." %}{% endblock %}</p>
       <a href="{% url 'index' %}#contact" class="btn btn-coral btn-lg">{% trans "Get in Touch" %}</a>
     </div>
   </div>

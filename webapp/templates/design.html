@@ -21,9 +21,9 @@
     </nav>
     <span class="fhero-tag reveal">{% trans "Design & engineering" %}</span>
     <h1 class="fhero-title reveal">{% trans "From the first drawing" %} <em class="serif">{% trans "to a running farm." %}</em></h1>
-    <p class="fhero-sub reveal">{% trans "Many RAS problems are built in on day one: undersized biofilters, poor flow, a financing gap or a crew left alone after handover. We engineer them out — from the first drawing to a running farm." %}</p>
+    <p class="fhero-sub reveal">{% trans "Many RAS problems start on day one: undersized biofilters, poor flow, a financing gap or a crew left alone after handover. We work to reduce these risks at the design stage and stay with you from the first drawing until the farm is in production." %}</p>
     <div class="fhero-cta reveal">
-      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
+      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Write to us" %}</a>
       <a href="#process" class="btn btn-ghost">{% trans "How we work" %}</a>
     </div>
   </div>
@@ -33,24 +33,24 @@
 <section class="fsec section" id="problems">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "Where projects go wrong" %}</span>
+      <span class="sec-tag">{% trans "Common project problems" %}</span>
       <h2 class="sec-title">{% trans "Solve it on paper," %} <em class="serif">{% trans "not in the water." %}</em></h2>
     </header>
     <div class="ps-grid">
       <article class="ps-card reveal" style="--i:0">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Undersized water treatment" %}</h3><p>{% trans "Biofilters, oxygenation and degassing sized by rule of thumb fall short as the biomass grows." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We size flow, biofiltration, oxygenation and degassing to your species and density — and validate the design in CFD." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Undersized water treatment" %}</h3><p>{% trans "Biofilters, oxygenation and degassing sized by rule of thumb can fall short as the biomass grows." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We size flow, biofiltration, oxygenation and degassing to your species and density, and validate the design with CFD." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:1">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "A site that underperforms" %}</h3><p>{% trans "Water quality swings, losses and rising costs at an existing facility, with no clear cause." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "An independent audit of water balance, biosecurity and risk, with a prioritized roadmap." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "A site that underperforms" %}</h3><p>{% trans "An existing facility may see water quality swings, losses and rising costs, and the cause isn't always clear." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We review water balance, biosecurity and risk independently and prepare a prioritized roadmap." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:2">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Financing that stalls the project" %}</h3><p>{% trans "A good project waits while the capital is arranged." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Financing that stalls the project" %}</h3><p>{% trans "A good project can be left waiting while the capital is arranged." %}</p></div>
         <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We help you secure Eksfin-backed financing — 90% for projects under €2M, 60–70% above." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:3">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "A crew left alone after handover" %}</h3><p>{% trans "New systems struggle when the people running them never learned how." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "A crew left alone after handover" %}</h3><p>{% trans "New systems can run into problems when the team running them hasn't had enough training." %}</p></div>
         <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "We support construction and commissioning, and train your team to run the system with confidence." %}</p></div>
       </article>
     </div>
@@ -63,7 +63,7 @@
     <header class="sec-head reveal">
       <span class="sec-tag">{% trans "End to end" %}</span>
       <h2 class="sec-title">{% trans "We design it, audit it," %} <em class="serif">{% trans "and sense it." %}</em></h2>
-      <p class="sec-lede">{% trans "From the first drawing to live operation, Suderra stays in the loop — we design, help you audit, finance, build and run, and keep the water honest with sensors and AI." %}</p>
+      <p class="sec-lede">{% trans "From the first drawing to live operation we're with you at every stage: we design, support audits, financing, construction and operation, and follow water quality with sensors and AI." %}</p>
     </header>
     <ol class="loop">
       <li class="loop-step reveal" style="--i:0" id="design"><span class="loop-no">01</span><h3>{% trans "Design" %}</h3><p>{% trans "Full RAS engineering — flow, biofiltration, oxygenation and degassing sized to your species and density." %}</p></li>
@@ -71,7 +71,7 @@
       <li class="loop-step reveal" style="--i:2"><span class="loop-no">03</span><h3>{% trans "Finance" %}</h3><p>{% trans "We help you secure Eksfin-backed financing for the project — see the indicative terms below." %}</p></li>
       <li class="loop-step reveal" style="--i:3"><span class="loop-no">04</span><h3>{% trans "Build & Train" %}</h3><p>{% trans "Support through construction and commissioning — and we train your team to run the system with confidence." %}</p></li>
       <li class="loop-step reveal" style="--i:4"><span class="loop-no">05</span><h3>{% trans "Run" %}</h3><p>{% trans "Operational support to keep the site running 24/7 with a lean 3–4 person crew." %}</p></li>
-      <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Sense & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously and AI turns the data into decisions you approve." %}</p></li>
+      <li class="loop-step reveal" style="--i:5"><span class="loop-no">06</span><h3>{% trans "Monitor & decide" %}</h3><p>{% trans "Suderra Edge reads your existing sensors continuously; AI prepares recommendations from the data and you make the final decision." %}</p></li>
     </ol>
   </div>
 </section>
@@ -112,7 +112,7 @@
       <div class="feature-card">
         <div class="feature-card-icon">{% include "partials/ico.html" with name="check" %}</div>
         <h3>{% trans "Fresh, salt, any climate" %}</h3>
-        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
+        <p>{% trans "Cold or mild climates, freshwater or marine; suitable for multiple species." %}</p>
       </div>
     </div>
   </div>
@@ -131,7 +131,7 @@
         <div class="metrics">
           <div class="metric"><span class="metric-num">90<i>%</i></span><span class="metric-cap">{% trans "Financing for projects under €2M" %}</span></div>
           <div class="metric"><span class="metric-num">60–70<i>%</i></span><span class="metric-cap">{% trans "Financing for projects above €2M" %}</span></div>
-          <div class="metric"><span class="metric-num">10–15</span><span class="metric-cap">{% trans "Years of term" %}</span></div>
+          <div class="metric"><span class="metric-num">10–15</span><span class="metric-cap">{% trans "Term (years)" %}</span></div>
           <div class="metric"><span class="metric-num">{{ interest }}<i>%</i></span><span class="metric-cap">{% trans "Interest" %}</span></div>
         </div>
         <p class="loop-note">{% trans "Indicative terms based on our dialogue with Eksfin — subject to change and may vary by project and country." %}</p>

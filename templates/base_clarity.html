@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
   <title>{% block title %}SUDERRA{% endblock %}</title>
   <meta name="google-site-verification" content="jJfmrvnn6dpNVPWYQn7HyDNt2GPmjl065L9brl3M5mQ" />
-  <meta name="description" content="{% block description %}{% trans "Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design." %}{% endblock %}">
+  <meta name="description" content="{% block description %}{% trans "Aquaculture software from Norway: Suderra Edge works with the sensors and equipment you already have and offers real-time AI support. Plus RAS equipment and design services." %}{% endblock %}">
   <link rel="canonical" href="https://suderra.com{{ request.path }}">
 
   <!-- Favicon -->
@@ -25,8 +25,8 @@
   <link rel="alternate" hreflang="x-default" href="https://suderra.com/en{{ request.path|slice:'3:' }}">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="{% block og_title %}SUDERRA — {% trans 'Aquaculture software and real-time water intelligence' %}{% endblock %}">
-  <meta property="og:description" content="{% block og_description %}{% trans 'Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design.' %}{% endblock %}">
+  <meta property="og:title" content="{% block og_title %}SUDERRA — {% trans 'Aquaculture software and real-time water data' %}{% endblock %}">
+  <meta property="og:description" content="{% block og_description %}{% trans 'Aquaculture software from Norway: Suderra Edge works with the sensors and equipment you already have and offers real-time AI support. Plus RAS equipment and design services.' %}{% endblock %}">
   <meta property="og:image" content="{% block og_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
   <meta property="og:url" content="https://suderra.com{{ request.path }}">
   <meta property="og:type" content="website">
@@ -35,8 +35,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% block twitter_title %}SUDERRA — {% trans 'Aquaculture software and real-time water intelligence' %}{% endblock %}">
-  <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Aquaculture software from Norway — Suderra Edge and real-time AI on top of the sensors and equipment you already have, plus RAS equipment and design.' %}{% endblock %}">
+  <meta name="twitter:title" content="{% block twitter_title %}SUDERRA — {% trans 'Aquaculture software and real-time water data' %}{% endblock %}">
+  <meta name="twitter:description" content="{% block twitter_description %}{% trans 'Aquaculture software from Norway: Suderra Edge works with the sensors and equipment you already have and offers real-time AI support. Plus RAS equipment and design services.' %}{% endblock %}">
   <meta name="twitter:image" content="{% block twitter_image %}https://suderra.com{% static 'webapp/images/logo5.png' %}{% endblock %}">
 
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -112,15 +112,15 @@
         <a href="{% url 'design' %}"{% if tab == 'design' %} aria-current="page"{% endif %}>{% trans "Design" %}</a>
         <a href="{% url 'index' %}#sectors">{% trans "Sectors" %}</a>
         <a href="{% url 'about' %}"{% if tab == 'about' %} aria-current="page"{% endif %}>{% trans "About" %}</a>
-        <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="nav-portal">{% trans "Client Portal" %}</a>
+        <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="nav-portal">{% trans "Customer login" %}</a>
       </nav>
       {% endwith %}
 
       <div class="head-actions">
         <a href="https://app.suderra.com/" target="_blank" rel="noopener" class="portal-link">
-          {% trans "Client Portal" %}
+          {% trans "Customer login" %}
         </a>
-        <a href="{% url 'index' %}#contact" class="btn btn-coral btn-sm">{% trans "Talk to us" %}</a>
+        <a href="{% url 'index' %}#contact" class="btn btn-coral btn-sm">{% trans "Write to us" %}</a>
 
         <div class="lang" id="langSwitch">
           <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="{% trans 'Change language' %}">
@@ -177,14 +177,14 @@
       <div class="foot-col">
         <h4>{% trans "Company" %}</h4>
         <a href="{% url 'about' %}">{% trans "About" %}</a>
-        <a href="{% url 'about' %}#founder">{% trans "A word from our founder" %}</a>
+        <a href="{% url 'about' %}#founder">{% trans "A few words from our founder" %}</a>
         <a href="{% url 'index' %}#contact">{% trans "Contact" %}</a>
         <a href="mailto:okan@suderra.com">okan@suderra.com</a>
-        <a href="https://app.suderra.com/" target="_blank" rel="noopener">{% trans "Client Portal" %}</a>
+        <a href="https://app.suderra.com/" target="_blank" rel="noopener">{% trans "Customer login" %}</a>
       </div>
       <div class="foot-col foot-news">
         <h4>{% trans "Newsletter" %}</h4>
-        <p>{% trans "Water-tech notes, occasionally." %}</p>
+        <p>{% trans "Notes on water technology, shared occasionally." %}</p>
         <form id="newsletterForm" class="news-form" data-ajax-url="{% url 'ajax_newsletter' %}" data-msg-error="{% trans 'An error occurred. Please try again later.' %}">
           {% csrf_token %}
           <div class="hp" aria-hidden="true"><label>Company URL<input type="text" name="company_url" tabindex="-1" autocomplete="off"></label></div>
@@ -198,7 +198,7 @@
       <span>&copy; 2026 Suderra AS · {% trans "Org. no." %} 938 226 938 · {% trans "All rights reserved." %}</span>
       <span class="foot-meta">
         <span class="foot-visits"><i></i>{{ visit_count|intcomma }} {% trans "visits" %}</span>
-        <span class="foot-pulse"><i></i>{% trans "Systems nominal" %}</span>
+        <span class="foot-pulse"><i></i>{% trans "Systems running" %}</span>
       </span>
     </div>
   </footer>
@@ -206,7 +206,7 @@
 
   <!-- GDPR cookie banner -->
   <div id="cookie-consent-banner" class="cookie-banner" hidden>
-    <p>{% trans "We use cookies to improve your experience on our website. By continuing to browse, you consent to our use of cookies." %}</p>
+    <p>{% trans "We use cookies to make our website more useful. If you keep using the site, you agree to our use of cookies." %}</p>
     <div class="cookie-actions">
       <button id="cookie-accept" class="btn btn-coral btn-sm">{% trans "Accept" %}</button>
       <button id="cookie-decline" class="btn btn-ghost btn-sm">{% trans "Decline" %}</button>
