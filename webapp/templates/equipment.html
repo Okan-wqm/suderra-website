@@ -23,10 +23,10 @@
     </nav>
     <span class="fhero-tag reveal">{% trans "Equipment" %} · {% trans "Recirculating Aquaculture System" %}</span>
     <h1 class="fhero-title reveal">{% trans "The Single Tank" %} <em class="serif">{% trans "Design." %}</em></h1>
-    <p class="fhero-sub reveal">{% trans "Conventional RAS means many tanks, long pipe runs, a big building and a big crew. The Single Tank Design puts it all into one CFD-validated tank-in-tank unit that recirculates over 94% of its water — so you build for less and run with fewer people." %}</p>
+    <p class="fhero-sub reveal">{% trans "Conventional RAS facilities usually need many tanks, long pipe runs, a big building and a large crew. The Single Tank Design brings them together in one CFD-validated tank-in-tank unit that recirculates over 94% of its water, so build costs drop and fewer people are needed to run it." %}</p>
     <div class="fhero-cta reveal">
-      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Talk to us" %}</a>
-      <a href="#scale" class="btn btn-ghost">{% trans "See scale scenarios" %}</a>
+      <a href="{% url 'index' %}#contact" class="btn btn-coral">{% trans "Write to us" %}</a>
+      <a href="#scale" class="btn btn-ghost">{% trans "Explore scale scenarios" %}</a>
     </div>
   </div>
 </section>
@@ -74,7 +74,7 @@
 
       <div class="product-side reveal">
         <div class="metrics">
-          <div class="metric"><span class="metric-num">&gt;94<i>%</i></span><span class="metric-cap">{% trans "Water recirculated" %}</span></div>
+          <div class="metric"><span class="metric-num">&gt;94<i>%</i></span><span class="metric-cap">{% trans "Water reused" %}</span></div>
           <div class="metric"><span class="metric-num">−95<i>%</i></span><span class="metric-cap">{% trans "Less piping" %}</span></div>
           <div class="metric"><span class="metric-num">~30–35<i>%</i></span><span class="metric-cap">{% trans "Lower investment" %}</span></div>
           <div class="metric"><span class="metric-num">&lt;2<i>kW/kg</i></span><span class="metric-cap">{% trans "Energy per kg fish (excl. heat)" %}</span></div>
@@ -82,14 +82,14 @@
 
         <div class="geos">
           <div class="geo"><span class="geo-no">01</span><span>{% trans "Circular tank-in-tank" %}</span></div>
-          <div class="geo geo-on"><span class="geo-no">02</span><span>{% trans "Octagonal tank-in-tank" %}</span><span class="geo-flag">{% trans "Signature" %}</span></div>
+          <div class="geo geo-on"><span class="geo-no">02</span><span>{% trans "Octagonal tank-in-tank" %}</span><span class="geo-flag">{% trans "Featured design" %}</span></div>
         </div>
 
         <dl class="specs">
           <div><dt>{% trans "Tank diameter" %}</dt><dd>12–40 m</dd></div>
           <div><dt>{% trans "Production capacity" %}</dt><dd>60–1500 {% trans "t/yr" %}</dd></div>
-          <div><dt>{% trans "Biofilter stages" %}</dt><dd>3–4</dd></div>
-          <div><dt>{% trans "Investment" %}</dt><dd>{{ investment_per_m3 }}k $/m³</dd></div>
+          <div><dt>{% trans "Number of biofilter stages" %}</dt><dd>3–4</dd></div>
+          <div><dt>{% trans "Investment cost" %}</dt><dd>{{ investment_per_m3 }}k $/m³</dd></div>
         </dl>
       </div>
     </div>
@@ -101,14 +101,14 @@
   <div class="container">
     <header class="sec-head reveal">
       <span class="sec-tag">{% trans "What's inside" %}</span>
-      <h2 class="sec-title">{% trans "Proven where it matters." %}</h2>
+      <h2 class="sec-title">{% trans "Tested in the field and in simulation." %}</h2>
     </header>
 
     <div class="bento">
       <article class="cell cell-lg glass reveal" style="--i:0">
         <div class="cell-ico">{% include "partials/ico.html" with name="check" %}</div>
         <h3>{% trans "Tested & CFD-validated" %}</h3>
-        <p>{% trans "Biofilter, flow and bottom-drain design proven in the field and in simulation — not theory." %}</p>
+        <p>{% trans "Biofilter, flow and bottom-drain design tested both in the field and in simulation." %}</p>
       </article>
       <article class="cell glass reveal" style="--i:1">
         <div class="cell-ico">{% include "partials/ico.html" with name="loop" %}</div>
@@ -118,7 +118,7 @@
       <article class="cell glass reveal" style="--i:2">
         <div class="cell-ico">{% include "partials/ico.html" with name="drop" %}</div>
         <h3>{% trans "Fresh, salt, any climate" %}</h3>
-        <p>{% trans "Cold or warm, freshwater or marine; multi-species ready." %}</p>
+        <p>{% trans "Cold or mild climates, freshwater or marine; suitable for multiple species." %}</p>
       </article>
       <article class="cell cell-feature glass reveal" style="--i:3">
         <div class="cell-ico">{% include "partials/ico.html" with name="pulse" %}</div>
@@ -166,7 +166,7 @@
             <th scope="col">{% trans "Volume" %}<small>m³</small></th>
             <th scope="col">{% trans "Water exchange ≤5%" %}<small>{% trans "L/s" %}</small></th>
             <th scope="col">{% trans "Annual production" %}<small>{% trans "t/yr" %}</small></th>
-            <th scope="col">{% trans "Investment" %}<small>M€</small></th>
+            <th scope="col">{% trans "Investment cost" %}<small>M€</small></th>
           </tr>
         </thead>
         <tbody>
@@ -182,7 +182,7 @@
         </tbody>
       </table>
     </div>
-    <p class="scale-note reveal">{% trans "Indicative figures, not an offer. Financing terms are on the Design page." %} <a href="{% url 'design' %}#finance">{% trans "Financing" %} →</a></p>
+    <p class="scale-note reveal">{% trans "These figures are for guidance only and are not an offer. You can find financing terms on the Design page." %} <a href="{% url 'design' %}#finance">{% trans "Financing" %} →</a></p>
   </div>
 </section>
 
@@ -202,7 +202,7 @@
   <div class="container">
     <div class="fcta-inner reveal">
       <h2>{% trans "Planning a new facility?" %}</h2>
-      <p>{% trans "Tell us your species, site and target volume — we will size a Single Tank scenario for you." %}</p>
+      <p>{% trans "Share your species, site and target volume, and we'll work out a suitable Single Tank scenario together." %}</p>
       <a href="{% url 'index' %}#contact" class="btn btn-coral btn-lg">{% trans "Get in Touch" %}</a>
     </div>
   </div>

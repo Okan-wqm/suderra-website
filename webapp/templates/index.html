@@ -3,10 +3,10 @@
 {% load i18n %}
 {% get_current_language as CURRENT_LANGUAGE %}
 
-{% block title %}SUDERRA — {% trans "Aquaculture Software & Real-Time Water Intelligence" %}{% endblock %}
-{% block description %}{% trans "Suderra Edge connects to the sensors and equipment you already have; Suderra OS and science-based AI turn live water data into decisions. Norwegian aquaculture software — plus RAS equipment and design." %}{% endblock %}
-{% block og_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
-{% block twitter_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI on top of your existing sensors — plus the Single Tank RAS and design services." %}{% endblock %}
+{% block title %}SUDERRA — {% trans "Aquaculture Software & Real-Time Water Data" %}{% endblock %}
+{% block description %}{% trans "Suderra Edge connects to the sensors and equipment you already have; Suderra OS and science-based AI make it easier to turn live water data into decisions. Norwegian aquaculture software, plus RAS equipment and design services." %}{% endblock %}
+{% block og_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI that work with your existing sensors. Plus the Single Tank RAS and design services." %}{% endblock %}
+{% block twitter_description %}{% trans "Norwegian aquaculture software: Suderra Edge and science-based AI that work with your existing sensors. Plus the Single Tank RAS and design services." %}{% endblock %}
 
 {% block content %}
 
@@ -21,11 +21,11 @@
       <em class="serif">{% trans "before your fish do." %}</em>
     </h1>
     <p class="hero-lede reveal">
-      {% trans "Oxygen drops at night, ammonia creeps up, reports pile up — and the data sits scattered across devices and spreadsheets. Suderra connects to the sensors and equipment you already have, watches every tank around the clock and tells you what to do while there is still time to act." %}
+      {% trans "Oxygen can drop at night, ammonia can creep up and reports can pile up, while the data sits scattered across devices and spreadsheets. Suderra connects to the sensors and equipment you already have, watches every tank around the clock and suggests what you can do while there is still time to act." %}
     </p>
     <div class="hero-cta reveal">
       <a href="#contact" class="btn btn-coral">{% trans "Book a demo" %}</a>
-      <a href="#problems" class="btn btn-ghost">{% trans "See what it solves" %}</a>
+      <a href="#problems" class="btn btn-ghost">{% trans "See how it can help" %}</a>
     </div>
 
     <div class="ticker reveal" aria-hidden="true">
@@ -45,25 +45,25 @@
 <section class="problems section" id="problems" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "The problem" %}</span>
-      <h2 class="sec-title">{% trans "You already have the data." %} <em class="serif">{% trans "You just can't use it yet." %}</em></h2>
+      <span class="sec-tag">{% trans "Common challenges" %}</span>
+      <h2 class="sec-title">{% trans "You already have the data." %} <em class="serif">{% trans "We make it easier to use." %}</em></h2>
     </header>
     <div class="ps-grid">
       <article class="ps-card reveal" style="--i:0">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Data scattered everywhere" %}</h3><p>{% trans "Sensors from different vendors, PLCs, logbooks and spreadsheets — nobody sees the whole picture." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Suderra Edge connects to any sensor over MQTT, Modbus or OPC-UA and puts every tank on one screen." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Scattered data" %}</h3><p>{% trans "Sensors from different vendors, PLCs, logbooks and spreadsheets… it gets hard to see the whole picture in one place." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Suderra Edge connects to sensors over MQTT, Modbus or OPC-UA and brings every tank together on one screen." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:1">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Problems found too late" %}</h3><p>{% trans "An oxygen drop at night or rising ammonia is often noticed only when the fish show it." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Live monitoring and AI alerts flag the drift early, explain the likely cause and suggest the fix." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Problems noticed late" %}</h3><p>{% trans "An oxygen drop at night or rising ammonia is often noticed only once the fish show signs." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Live monitoring and AI alerts help you catch drift early, explain the likely cause and suggest what can be done." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:2">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "Reporting eats the week" %}</h3><p>{% trans "Lice counts, biomass and mortality are copied by hand into reports for the authorities." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Reports are built from your live data in the format Mattilsynet expects — in one click." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "Reporting takes a lot of time" %}</h3><p>{% trans "Lice counts, biomass and mortality are often copied by hand into reports for the authorities." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Reports can be built from your live data in the format Mattilsynet asks for, in one click." %}</p></div>
       </article>
       <article class="ps-card reveal" style="--i:3">
-        <div class="ps-problem"><span class="ps-label">{% trans "Problem" %}</span><h3>{% trans "AI you can't check" %}</h3><p>{% trans "Black-box models give answers no one can explain — not to an auditor, not to themselves." %}</p></div>
-        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Our AI uses published science, every recommendation is traceable, and you decide what it may do on its own." %}</p></div>
+        <div class="ps-problem"><span class="ps-label">{% trans "Challenge" %}</span><h3>{% trans "AI that doesn't show how it works" %}</h3><p>{% trans "Black-box models can give answers that are hard to explain, whether to an auditor or to yourself." %}</p></div>
+        <div class="ps-solution"><span class="ps-label">{% trans "With Suderra" %}</span><p>{% trans "Our AI is based on published science, you can see where each recommendation comes from, and you decide what it may do on its own." %}</p></div>
       </article>
     </div>
   </div>
@@ -76,14 +76,14 @@
       <div class="platform-copy reveal">
         <span class="sec-tag">{% trans "The platform" %}</span>
         <h2 class="sec-title">{% trans "Your whole farm," %} <em class="serif">{% trans "one pane of glass." %}</em></h2>
-        <p class="platform-lede">{% trans "Suderra Edge is a gateway that sits at your farm, reads every sensor and keeps working even when the internet doesn't. Above it, Suderra OS gives you one secure place to see, decide and report — on the big screen or in your pocket." %}</p>
+        <p class="platform-lede">{% trans "Suderra Edge is a gateway installed at your farm: it reads your sensors and keeps working when the internet drops. Suderra OS gives you one secure place to monitor, decide and report, on a large screen or on your phone." %}</p>
         <ul class="platform-points">
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="loop" %}</span><div><strong>{% trans "Keeps running when the internet doesn't" %}</strong>{% trans "Suderra Edge stores data and runs automation on site. If the connection drops, monitoring and control carry on — and nothing is lost." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="pulse" %}</span><div><strong>{% trans "Works with what you already own" %}</strong>{% trans "MQTT, Modbus, OPC-UA and 8+ pump and motor brands. No rip-and-replace, no per-sensor ceiling — connected in minutes." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="shield" %}</span><div><strong>{% trans "Your data stays yours" %}</strong>{% trans "Every client has its own database — your data never mixes with anyone else's." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="chart" %}</span><div><strong>{% trans "See causes, not just numbers" %}</strong>{% trans "Science-based charts put every parameter in context, so you see why something changed — not only that it did." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="phone" %}</span><div><strong>{% trans "The farm in your pocket" %}</strong>{% trans "Log data, receive alerts and act from the field — the mobile app works even without signal." %}</div></li>
-          <li><span class="pp-ico">{% include "partials/ico.html" with name="report" %}</span><div><strong>{% trans "Reports in one click" %}</strong>{% trans "Mattilsynet-format reports built from your live data — hours of paperwork become a click." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="loop" %}</span><div><strong>{% trans "Keeps running when the internet doesn't" %}</strong>{% trans "Suderra Edge stores data and runs automation on site. If the connection drops, monitoring and control carry on and your data is not lost." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="pulse" %}</span><div><strong>{% trans "Works with what you already own" %}</strong>{% trans "Works with MQTT, Modbus, OPC-UA and 8+ pump and motor brands. You don't need to replace your equipment, there is no limit on the number of sensors, and setup usually takes minutes." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="shield" %}</span><div><strong>{% trans "Your data stays yours" %}</strong>{% trans "Every client has its own database, so your data is not mixed with anyone else's." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="chart" %}</span><div><strong>{% trans "The reasons behind the numbers" %}</strong>{% trans "Science-based charts put every parameter in context, which makes it easier to understand why a value changed." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="phone" %}</span><div><strong>{% trans "Your farm on your phone" %}</strong>{% trans "Log data, receive alerts and act from the field — the mobile app works even without signal." %}</div></li>
+          <li><span class="pp-ico">{% include "partials/ico.html" with name="report" %}</span><div><strong>{% trans "Reports in one click" %}</strong>{% trans "Mattilsynet-format reports built from your live data; hours of paperwork are cut down to a click." %}</div></li>
         </ul>
       </div>
 
@@ -162,7 +162,7 @@
           </svg>
         </div>
         <h3>{% trans "Sensor Module" %}</h3>
-        <p>{% trans "Connects to any sensor or device on site. Stores all data locally at the facility via edge gateway — no cloud dependency. Auto-registers new sensors. Supports MQTT, Modbus, OPC-UA protocols and 8+ pump/motor brands." %}</p>
+        <p>{% trans "Connects to the sensors and devices on site. Stores data locally at the facility via the edge gateway, so it doesn't depend on the cloud. Automatically recognizes new sensors. Supports MQTT, Modbus and OPC-UA protocols and 8+ pump/motor brands." %}</p>
       </div>
 
       <div class="how-card reveal" style="--i:1">
@@ -180,7 +180,7 @@
           </svg>
         </div>
         <h3>{% trans "Operations Modules" %}</h3>
-        <p>{% trans "Sector-specific modules add meaning to data. The fish farm module knows batch management, feed plans, and mortality. The soilless culture module knows nutrient recipes and growth stages." %}</p>
+        <p>{% trans "Sector-specific modules make the data meaningful. The fish farm module works with batch management, feed plans and mortality records; the soilless culture module works with nutrient recipes and growth stages." %}</p>
       </div>
 
       <div class="how-card reveal" style="--i:2">
@@ -197,7 +197,7 @@
           </svg>
         </div>
         <h3>{% trans "AI Engine" %}</h3>
-        <p>{% trans "Our AI calculates — it doesn't guess. Every decision is based on published scientific formulas and peer-reviewed data. AI detects anomalies, identifies root causes, and suggests corrective actions." %}</p>
+        <p>{% trans "Our AI bases its recommendations on published scientific formulas and peer-reviewed data. It spots unusual values, shows likely causes and suggests how to correct them." %}</p>
       </div>
 
       <div class="how-card reveal" style="--i:3">
@@ -215,7 +215,7 @@
           </svg>
         </div>
         <h3>{% trans "Mobile App" %}</h3>
-        <p>{% trans "Offline-first mobile app works without signal. Operators check sensor data, receive alerts, and manage operations from anywhere. Data syncs automatically when connection returns." %}</p>
+        <p>{% trans "The mobile app works without signal. Operators can check sensor data, receive alerts and follow operations from anywhere. Data syncs automatically when the connection returns." %}</p>
       </div>
     </div>
   </div>
@@ -225,17 +225,17 @@
 <section class="sectors section" id="sectors" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "One platform, every sector" %}</span>
-      <h2 class="sec-title">{% trans "Sector-agnostic. Protocol-native." %}</h2>
+      <span class="sec-tag">{% trans "One platform, different sectors" %}</span>
+      <h2 class="sec-title">{% trans "Adapts to different sectors and protocols." %}</h2>
     </header>
     <div class="sector-grid">
       <a href="{% url 'feature_aquaculture' %}" class="sector glass reveal" style="--i:0"><h3>{% trans "Aquaculture" %}</h3><p>{% trans "Batch management, feed plans, mortality tracking and water quality for land-based fish farming." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
       <a href="{% url 'feature_soilless' %}" class="sector glass reveal" style="--i:1"><h3>{% trans "Soilless Culture" %}</h3><p>{% trans "Nutrient recipes, growth stages and climate for hydroponics and vertical farming." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
-      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal" style="--i:2"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management with full traceability." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_waste_water' %}" class="sector glass reveal" style="--i:2"><h3>{% trans "Waste Water" %}</h3><p>{% trans "Flow monitoring, chemical load and effluent management; all records are traceable." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
     </div>
     <div class="sector-grid sector-grid-2">
-      <a href="{% url 'feature_automation' %}" class="sector glass reveal" style="--i:3"><h3>{% trans "Smart Automation" %}</h3><p>{% trans "Sensor integration, feeder automation and dosing control — on the equipment you already run." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
-      <a href="{% url 'feature_regulatory' %}" class="sector glass reveal" style="--i:4"><h3>{% trans "Regulatory Compliance" %}</h3><p>{% trans "One-click reports in the formats authorities expect — e.g. Mattilsynet." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_automation' %}" class="sector glass reveal" style="--i:3"><h3>{% trans "Smart Automation" %}</h3><p>{% trans "Sensor integration, feeder automation and dosing control; on the equipment you already use." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
+      <a href="{% url 'feature_regulatory' %}" class="sector glass reveal" style="--i:4"><h3>{% trans "Regulatory Compliance" %}</h3><p>{% trans "One-click reports in the formats authorities ask for, such as Mattilsynet's." %}</p><span class="sector-go" aria-hidden="true">→</span></a>
     </div>
   </div>
 </section>
@@ -244,9 +244,9 @@
 <section class="beyond section" id="beyond" data-stage="clear">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="sec-tag">{% trans "Beyond the software" %}</span>
+      <span class="sec-tag">{% trans "Beyond software" %}</span>
       <h2 class="sec-title">{% trans "Equipment and engineering," %} <em class="serif">{% trans "from the same team." %}</em></h2>
-      <p class="sec-lede">{% trans "Building a new farm? Most of the cost and risk is locked in at the design stage. We supply the Single Tank system and design the facility around it — so it runs efficiently from day one." %}</p>
+      <p class="sec-lede">{% trans "Building a new farm? Most of the cost and risk takes shape at the design stage. We supply the Single Tank system and design the facility around it together with you, so it can run efficiently from day one." %}</p>
     </header>
     <div class="beyond-grid">
       <a href="{% url 'equipment' %}" class="beyond-card reveal" style="--i:0">
@@ -286,7 +286,7 @@
     <div class="contact-copy reveal">
       <span class="sec-tag">{% trans "Get in Touch" %}</span>
       <h2 class="sec-title">{% trans "Tell us about" %} <em class="serif">{% trans "your system." %}</em></h2>
-      <p>{% trans "Tell us what keeps you up at night — oxygen, reporting or a new build — and we will show you how Suderra solves it." %}</p>
+      <p>{% trans "Oxygen, reporting or a new build… Tell us what's on your mind and we'll look at it together." %}</p>
       <ul class="contact-points">
         <li><a href="mailto:okan@suderra.com">okan@suderra.com</a></li>
         <li>Rambergveien 18, 3115 Tønsberg, {% trans "Norway" %}</li>
@@ -298,7 +298,7 @@
           data-msg-required="{% trans 'Please fill in all required fields.' %}"
           data-msg-email="{% trans 'Please enter a valid email address.' %}"
           data-msg-sending="{% trans 'Sending…' %}"
-          data-msg-success="{% trans 'Message sent successfully! We will get back to you soon.' %}"
+          data-msg-success="{% trans 'Your message has reached us. We will get back to you soon.' %}"
           data-msg-error="{% trans 'Something went wrong. Please try again.' %}"
           data-msg-network-error="{% trans 'An error occurred. Please try again later.' %}"
           data-msg-submit="{% trans 'Send message' %}">

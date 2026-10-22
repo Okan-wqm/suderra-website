@@ -12,11 +12,11 @@
 {% block breadcrumb_title %}{% trans "Waste Water Treatment" %}{% endblock %}
 {% block hero_tag %}{% trans "Waste Water" %}{% endblock %}
 {% block hero_title %}{% trans "Waste Water Treatment" %}{% endblock %}
-{% block hero_subtitle %}{% trans "Monitor and optimize waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads, and effluent quality — all from a single platform designed for treatment plant operators." %}{% endblock %}
+{% block hero_subtitle %}{% trans "You can monitor and improve waste water treatment processes with real-time sensor data. Track flow rates, TSS levels, chemical loads and effluent quality from a single platform designed for treatment plant operators." %}{% endblock %}
 
 {% block overview %}
-<p>{% trans "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is critical. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results mean problems are caught too late." %}</p>
-<p>{% trans "Suderra brings the same sensor integration and automation capabilities that power our aquaculture platform to waste water treatment. Connect every sensor in your plant — flow meters, TSS probes, pH sensors, dissolved oxygen meters — to one unified dashboard with real-time alerts and automated chemical dosing." %}</p>
+<p>{% trans "Waste water treatment plants handle complex, multi-stage processes where real-time monitoring is important. From influent screening to final discharge, every stage must meet strict environmental standards. Manual monitoring and delayed lab results can cause problems to be noticed late." %}</p>
+<p>{% trans "Suderra brings the sensor integration and automation capabilities used in our aquaculture platform to waste water treatment as well. You can connect sensors such as flow meters, TSS probes, pH sensors and dissolved oxygen meters to one unified dashboard with real-time alerts and automated chemical dosing." %}</p>
 {% endblock %}
 
 {% block features_title %}{% trans "Waste Water Features" %}{% endblock %}
@@ -40,7 +40,7 @@
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
   </div>
   <h3>{% trans "TSS Management" %}</h3>
-  <p>{% trans "Total Suspended Solids monitoring with real-time alerts. Track sedimentation efficiency and sludge levels to optimize removal processes." %}</p>
+  <p>{% trans "Total Suspended Solids monitoring with real-time alerts. By tracking sedimentation efficiency and sludge levels you can improve removal processes." %}</p>
 </div>
 <div class="feature-card">
   <div class="feature-card-icon">
@@ -74,7 +74,7 @@
     </div>
     <div>
       <h3>{% trans "Same Platform, New Sector" %}</h3>
-      <p>{% trans "Suderra's modular architecture means the waste water module reuses 70% of the proven aquaculture codebase. Same reliability, same sensor integration, purpose-built for treatment plants." %}</p>
+      <p>{% trans "Thanks to Suderra's modular structure, the waste water module shares 70% of the codebase used in aquaculture. The same sensor integration and infrastructure are adapted to the needs of treatment plants." %}</p>
     </div>
   </div>
   <div class="benefit-item">
@@ -108,13 +108,13 @@
 <div class="faq-item">
   <button class="faq-question">{% trans "Is this the same platform used for aquaculture?" %}</button>
   <div class="faq-answer">
-    <p>{% trans "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations." %}</p>
+    <p>{% trans "Yes. Suderra's modular structure gives each sector its own operations module. The waste water module is built on the sensor integration, automation engine and dashboard framework we use in aquaculture and is adapted to treatment plants." %}</p>
   </div>
 </div>
 <div class="faq-item">
   <button class="faq-question">{% trans "Can Suderra automate chemical dosing?" %}</button>
   <div class="faq-answer">
-    <p>{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards." %}</p>
+    <p>{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. You set the target values and the AI adjusts reagent amounts accordingly, so costs can come down while treatment standards are maintained." %}</p>
   </div>
 </div>
 {% endblock %}
@@ -175,7 +175,7 @@
       "name": "{% filter escapejs %}{% trans "Is this the same platform used for aquaculture?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "{% filter escapejs %}{% trans "Yes. Suderra uses a modular architecture where each sector gets its own operations module. The waste water module builds on the same proven sensor integration, automation engine, and dashboard framework used in aquaculture — adapted for treatment plant operations." %}{% endfilter %}"
+        "text": "{% filter escapejs %}{% trans "Yes. Suderra's modular structure gives each sector its own operations module. The waste water module is built on the sensor integration, automation engine and dashboard framework we use in aquaculture and is adapted to treatment plants." %}{% endfilter %}"
       }
     },
     {
@@ -183,7 +183,7 @@
       "name": "{% filter escapejs %}{% trans "Can Suderra automate chemical dosing?" %}{% endfilter %}",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "{% filter escapejs %}{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. Set target parameters and let the AI optimize reagent amounts — reducing costs while maintaining treatment standards." %}{% endfilter %}"
+        "text": "{% filter escapejs %}{% trans "Yes. The automation engine can control chemical dosing pumps based on real-time sensor readings. You set the target values and the AI adjusts reagent amounts accordingly, so costs can come down while treatment standards are maintained." %}{% endfilter %}"
       }
     }
   ]
